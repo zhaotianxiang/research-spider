@@ -62,9 +62,9 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'MediaSpider.pipelines.MediaspiderPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'MediaSpider.pipelines.MediaspiderPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -86,12 +86,18 @@ AUTOTHROTTLE_MAX_DELAY = 2
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-IMAGE_PIPELINES={'scrapy.piplines.files.FilesPipeline':1}
+IMAGE_PIPELINES = {'scrapy.piplines.files.FilesPipeline':1}
 
-IMAGES_THUMBS={
+IMAGES_THUMBS = {
 	'small':(50,50),
 	'big':(2770,270)
 }
 
-FILE_STORE="./data/files/"
-IMAGES_STORE="./data/images/"
+FILE_STORE = "./data/files/"
+IMAGES_STORE = "./data/images/"
+
+# 导出文件格式和文件名称
+FEED_URI = 'data/%(name)s.csv'
+FEED_FORMAT = 'csv'
+FEED_EXPORT_ENCODING = 'utf-8'
+

@@ -1,0 +1,1208 @@
+newsCode,contentsCode,sourceCode,originSourceCode,popupYn,deskTime,serviceTime,photoYn,displayGubun,opinionYn,keyword,metatag,placeMetatag,personMetatag,newsTitle,originNewsTitle,summaryContents,newsContents,originNewsContents,correctComment,status,seriesYn,issueYn,relateYn,interYn,sisaYn,internetYn,danYn,broadYn,broadCode,broadDate,broadOrder,newsInfoId,imgYn,vodYn,dutyYn,dutyCode,infoYn,userApplicantYn,userReportYn,broadTime,editEndDate,delId,delDate,delComment,regId,regDate,modId,modDate,restoreId,restoreDate,restoreComment,contentsExpYn,broadExpYn,gpsPsitn,latitude,ongitude,pollYn,surveyYn,captionYn,newsTempContents,arguContents,comYn,comDate,relateExpYn,comQuest,comQuestDetail,successYn,newsDistId,localCode,localNewsId,sysMetatag,localReporterStationCode,listNum,viewCount,reporterCode,reporterName,imgUrl,imgDesc,orgImgUrl,imgGubun,script,contentsName,broadName,menuCode,menuName,vodDuration,listCategory,orderSeq,images,vods,reporters,mcontents,rcontents,image_urls,exporter_image_url
+5406553,0001,200,200,N,2022-03-01 15:00:18,2022-03-01 21:00:04,N,N,Y,,,,,[뉴스9 헤드라인],,,"<b>러, 우크라이나 공세 강화…내일 2차 협상 </b><br /><br />러시아군이 우크라이나 수도 키이우를 포함해 곳곳에서 공세를 강화하자, 우크라이나인들의 저항도 거세지고 있습니다. 양국은 첫 협상을 벌였지만 특별한 성과는 없었고, 또 협상하기로 했습니다. <br /><br /><b> 방역패스 중단…“개인 방역 더 중요해져”  </b><br /><br />오늘부터 다중이용시설에서 백신 접종 여부를 확인하는 방역패스 적용이 중단됐습니다. 전문가들은 유행이 정점에 이르지 않았다며 개인 방역은 더 중요한 상황이라고 강조했습니다.<br /><br /><b>이 “김동연과 사실상 단일화”…윤 “부패 정부 축출”</b><br /><br />민주당 이재명 후보는 통합 정부를 강조하며 새로운물결 김동연 후보와 사실상 단일화에 합의했습니다. 국민의힘 윤석열 후보는 자신이 진짜 통합을 이루겠다며 부패한 정권을 축출하자고 호소했습니다. <br /><br /><b>“일본, 역사 앞에 겸허해야”…‘수형인 명부’ 발견 </b><br /><br />문재인 대통령은 3.1절 기념사에서 일본은 역사 앞에 겸허해야 한다고 말했습니다. 독립운동가의 활동을 입증할 수 있는 수형인 명부가 충남 천안에서 잇따라 발견됐습니다. <br /><br /><b>경찰 골프장 고위직에 특혜?…내부 신고 처리는?  </b><br /><br />예약하기 아주 힘든 경찰 골프장에서 일부 고위 경찰관들이 특혜성 골프를 쳤다는 의혹이 불거졌습니다. 내부 직원은 직접 특혜 의혹을 제기했지만 제대로 처리되지 않았다고 주장하고 있습니다. ",,,10,N,N,,N,N,N,N,Y,0001,20220301,1,,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:00:03,sje0423,2022-03-01 21:05:51,,,,,N,,0,0,,,Y,,,,,,,,N,,00,,,,0,0,,KBS,/data/news/title_image/newsmp4/news9/2022/03/01/10_5406553.jpg,,,,,뉴스,뉴스 9,0001,뉴스,,뉴스 9,,"[{'imgCode': '5428671', 'newsCode': '5406553', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/10_5406553.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:05:08', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406553', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/10_5406553.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 20:59:54', 'vodEndTime': '2022-03-01 21:01:16', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:05:08', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/10_5406553.srt'}, {'newsCode': '5406553', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/10_5406553.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 20:59:54', 'vodEndTime': '2022-03-01 21:01:16', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:05:08', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/10_5406553.srt'}, {'newsCode': '5406553', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/10_5406553.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 20:59:54', 'vodEndTime': '2022-03-01 21:01:16', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:05:08', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/10_5406553.srt'}]",,,,,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406554,0006,200,200,N,2022-03-01 20:42:36,2022-03-01 21:01:42,N,N,Y,,,,,수도 키이우 공세 압박…“제2도시 하르키우 민간지역 포격”,"(슈퍼/9시)수도 키이우 공세 압박..""제2도시 하르키우 민간지역 포격""",," [앵커]<br /><br />안녕하십니까?<br /><br />3.1절 9시 뉴스는 러시아의 침공 엿새 째, 혼돈 속 우크라이나​ 소식으로 시작합니다.<br /><br />먼저, KBS는 오늘부터 우크라이나 지명을 러시아어가 아닌 우크라이나어를 기준으로 전해드린다는 점, 말씀드립니다.<br /><br />대표적으로 수도는 키예프에서 '키이우'로, 제 2의 도시 하리코프는 '하르키우'로 서부의  리비프는 '리비우'로 바꿔 부릅니다.<br /><br />외래어는 그 나라 발음에 최대한 가깝게 표기한다는 국립국어원과 KBS 한국어연구부의 자문을 거쳤습니다.<br /><br />러시아와 우크라이나는 협상 테이블에 앉았지만 포화는  멈추지 않았습니다.<br /><br />러시아 군은  주요 도시들, 특히 민간인 거주지까지​ 공격을 집중하고 있습니다.<br /><br />첫 소식, 신강문 기자입니다.<br /><br /> [리포트]<br /><br /> 미국 위성사진에 포착된 러시아군 수송 행렬입니다.<br /><br /> 탱크와 장갑차, 군용 트럭, 그리고 연료를 실은 유조차까지, 수송 행렬의 길이가 64km에 이른다고 외신은 전했습니다.<br /><br /> 우크라이나의 거센 저항과 연료, 식량 등 보급 차질로  현재 키이우 25km 외곽에 머물고 있는 러시아군, 병력과 장비를 추가 투입해  총공격을 준비하고 있는 것으로 보입니다.<br /><br /> [존 커비/미 국방부 대변인 : ""푸틴 대통령은 여전히 상당한 전투력을 보유하고 있습니다. 그는 모든 것을 우크라이나로 옮기지 않았습니다. 아직 우크라이나로 옮기지 못한 것이 많습니다.""]<br /><br /> 러시아군은  인구 140만 명의 우크라이나 제2 도시 하르키우에 무차별 포격을 했습니다.<br /><br /> 시 곳곳에서 폭발이 있었고 특히, 아파트 등 민간인 거주지에도  포탄이 떨어졌다고 외신이 보도했습니다.<br /><br /> 이번 포격으로 어린이 3명을 포함해 최소 9명이 숨지고 30여 명이 다쳤다고 하르키우 시장은 말했습니다.<br /><br /> 군시설만 타격했다고 주장해 온 러시아군이 진격이 지체되자 이제 무차별 공격을 시작했다는 우려가 나옵니다.<br /><br /> 러시아군이  비윤리적 대량살상무기까지  사용했다는 주장이 우크라이나 쪽에서 나왔습니다.<br /><br /> [옥사나 마르카로바/주미 우크라이나 대사 : ""그들은 오늘날 제네바 협약에서 실제로 금지된 '진공폭탄'을 사용했습니다. 따라서 러시아가 우크라이나에 가하려고 하는 피해는 매우 큽니다.""]<br /><br /> 진공폭탄은  폭발 반경을 진공 상태로 만들어 인체 장기에 치명적 손상을 주기 때문에 제네바협약에서 사용이 금지된 무기입니다.<br /><br /> 또, 수백개의 새끼폭탄으로  표적 일대를 완전히 초토화시키는 '집속탄'을 러시아군이 사용했다는 인권단체 주장도 나왔습니다.<br /><br /> 이들 무기의 실제 사용 여부는 확인되지 않았지만, 러시아군이 공격의 수위를 높이면서, 전쟁이 새 국면에 들어갔다는 분석입니다.<br /><br /> KBS 뉴스 신강문입니다.<br /><br /> 영상편집:서삼현/자료조사:김다형"," [앵커]
+
+ 러시아의 우크라이나 침공 6일째,
+
+ 러시아와 우크라이나  협상에도 불구하고 오늘도 양측의 교전은 계속됐습니다.
+
+ 러시아는 수도 키이우에 대한 압박을 강화했고
+
+ 제2의 도시 하르키우에서는 민간인 거주지에도 집중 포격이 있었다는 보도가 나왔습니다.
+
+ 신강문 기자가 보도합니다.
+
+ [리포트]
+
+ 미국 위성사진에 포착된 러시아군 수송 행렬입니다.
+
+ 탱크와 장갑차, 군용 트럭, 그리고 연료를 실은 유조차까지, 수송 행렬의 길이가 64km에 이른다고 외신은 전했습니다.
+
+ 우크라이나의 거센 저항과
+
+ 연료, 식량 등 보급 차질로  현재 키이우 25km 외곽에 머물고 있는 러시아군,
+
+ 병력과 장비를 추가 투입해  총공격을 준비하고 있는 것으로 보입니다.
+
+ 존 커비/미 국방부 대변인
+
+ [녹취] ""푸틴 대통령은 여전히 상당한 전투력을 보유하고 있습니다. 그는 모든 것을 우크라이나로 옮기지 않았습니다. 아직 우크라이나로 옮기지 못한 것이 많습니다. ""
+
+ 러시아군은  인구 140만 명의 우크라이나 제2 도시 하르키우에 무차별 포격을 했습니다.
+
+ 시 곳곳에서 폭발이 있었고 특히, 아파트 등 민간인 거주지에도  포탄이 떨어졌다고 외신이 보도했습니다.
+
+ 이번 포격으로 어린이 3명을 포함해 최소 9명이 숨지고 30여 명이 다쳤다고 하르키우 시장은 말했습니다.
+
+ 군시설만 타격했다고 주장해 온 러시아군이 진격이 지체되자
+
+ 이제 무차별 공격을 시작했다는 우려가 나옵니다.
+
+ 러시아군이  비윤리적 대량살상무기까지  사용했다는 주장이 우크라이나 쪽에서 나왔습니다.
+
+ [녹취] 옥사나 마르카로바/ 주미 우크라이나 대사
+
+ ""그들은 오늘날 제네바 협약에서 실제로 금지된 '진공폭탄'을 사용했습니다. 따라서 러시아가 우크라이나에 가하려고 하는 피해는 매우 큽니다.""
+
+ 진공폭탄은  폭발 반경을 진공 상태로 만들어 인체 장기에 치명적 손상을 주기 때문에 제네바협약에서 사용이 금지된 무기입니다.
+
+ 또, 수백개의 새끼폭탄으로  표적 일대를 완전히 초토화시키는 '집속탄'을 러시아군이 사용했다는 인권단체 주장도 나왔습니다.
+
+ 이들 무기의 실제 사용 여부는 확인되지 않았지만, 러시아군이 공격의 수위를 높이면서, 전쟁이 새 국면에 들어갔다는 분석입니다.
+
+ KBS뉴스 신강문입니다.
+
+ 영상편집: 서삼현  자료조사: 김다형
+
+ ",,10,N,Y,,N,N,N,N,Y,0001,20220301,2,AI202203010799064,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:01:42,wenrou315,2022-03-01 22:14:10,,,,Y,Y,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,신강문,/data/news/title_image/newsmp4/news9/2022/03/01/20_5406554.jpg,,,,,국제,뉴스 9,0029,국제,,뉴스 9,,"[{'imgCode': '5428672', 'newsCode': '5406554', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/20_5406554.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:07:53', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406554', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/20_5406554.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:01:17', 'vodEndTime': '2022-03-01 21:04:07', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:07:53', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/20_5406554.srt'}, {'newsCode': '5406554', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/20_5406554.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:01:17', 'vodEndTime': '2022-03-01 21:04:07', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:07:53', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/20_5406554.srt'}, {'newsCode': '5406554', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/20_5406554.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:01:17', 'vodEndTime': '2022-03-01 21:04:07', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:07:53', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/20_5406554.srt'}]","[{'newsCode': '5406554', 'reporterGubun': None, 'seq': None, 'reporterCode': '17242', 'reporterName': '신강문', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/737a19a70d83c5c3ac2a3bb118a09b2f.jpg', 'email': 'kmshin@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/737a19a70d83c5c3ac2a3bb118a09b2f.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406555,0006,200,200,N,2022-03-01 20:42:43,2022-03-01 21:04:37,N,N,Y,,,,,"우크라이나 국민, 엿새째 결사항전…“다시 조국으로”","(슈퍼/9시)우크라이나 국민, 엿새째 결사항전…""다시 조국으로""",," [앵커]<br /><br />가족과 이웃들의 안타까운 희생을 목격하며 우크라이나 국민들은  필사적으로 저항하고 있습니다.<br /><br />변변한 무기 하나 없이 나라를 지키겠다고 나서거나, 손 하나라도 보태겠다며 주변 나라에 살다 다시 우크라이나로 돌아는 사람들도 있습니다.<br /><br />최유경 기자입니다.<br /><br /> [리포트]<br /><br /> 전쟁은 6살 소녀에게도 예외가 아니었습니다.<br /><br /> [""여기로, 여기로!""]<br /><br /> 러시아군의 포격을 피하지 못한 아이는 끝내 눈을 뜨지 못했고, 지켜보던 의료진은 뒤돌아 눈물을 훔칩니다.<br /><br /> [의사 : ""이걸 푸틴에게 보여주세요. 이 아이의 눈, 눈물 흘리는 의사들…""]<br /><br /> 임시 대피소가 된 체육관에도 어린아이를 품에 안은 피란민들이 가득 모였습니다.<br /><br /> 갓 태어난 아기들은 무슨 일이 일어났는지도 모른 채 잠이 들었습니다.<br /><br /> [안나 델리나/마리우폴 주민 : ""모두가 평화를 원하고 민간인들이 죽임당하지 않길 바라기 때문에 희망이 있습니다. 여기선 다들 같은 마음입니다.""]<br /><br /> 엿새째 이어진 전쟁은 도시 곳곳에 상처를 남겼습니다.<br /><br /> 하지만 우크라이나인들의 저항은 예상보다 거세, 여기저기 부서지고 떨어져 나간 러시아 군용 차량들이 눈에 띕니다.<br /><br /> 온몸으로 러시아 탱크를 막아선 채 다 함께 국가를 부르는 우크라이나 시민들의 모습이  포착되기도 했습니다.<br /><br /> 러시아군에 맞서기 위해 일과 학업을 중단하고, 다시 우크라이나로 발길을 돌린 시민들도 있습니다.<br /><br /> [자니엘/폴란드 거주 우크라이나인 : ""러시아가 우리의 독립을 파괴하고 도시를 파괴하고, 우리 시민들, 아이들, 노인들을 죽이고 있는데 폴란드에 그대로 머물러서 보고만 있을 수가 없었습니다.""]<br /><br /> 조국을 지키기 위한 우크라이나의 항전은 오늘도 이어지고 있습니다.<br /><br /> KBS 뉴스 최유경입니다.<br /><br />영상편집:이웅/자료조사:김다형"," [앵커]
+
+ 이 같은 러시아군의 진격에 도시 곳곳에서 안타까운 희생이 이어지고 있지만,
+
+ 우크라이나 국민들은 필사적으로 저항하고 있습니다.
+
+ 국가를 부르며 러시아 탱크를 막아서는가 하면,
+
+ 인근 국가에서 다시 우크라이나로 돌아가 항전에 참여하는 이들도 있습니다.
+
+ 최유경 기자가 보도합니다.
+
+ [리포트] 전쟁은 6살 소녀에게도 예외가 아니었습니다.
+
+ [이펙트1] ""여기로, 여기로!""
+
+ 러시아군의 포격을 피하지 못한 아이는 끝내 눈을 뜨지 못했고,
+
+ 지켜보던 의료진은 뒤돌아 눈물을 훔칩니다.
+
+ 의사 [녹취] ""이걸 푸틴에게 보여주세요. 이 아이의 눈, 눈물 흘리는 의사들…""
+
+ 임시 대피소가 된 체육관에도 어린아이를 품에 안은 피란민들이 가득 모였습니다.
+
+ 갓 태어난 아기들은 무슨 일이 일어났는지도 모른 채 잠이 들었습니다.
+
+ 안나 델리나 / 마리우폴 주민 [녹취] ""모두가 평화를 원하고 민간인들이 죽임당하지 않길 바라기 때문에 희망이 있습니다. 여기선 다들 같은 마음입니다.""
+
+ 엿새째 이어진 전쟁은 도시 곳곳에 상처를 남겼습니다.
+
+ 하지만 우크라이나인들의 저항은 예상보다 거세,
+
+ 여기저기 부서지고 떨어져 나간 러시아 군용 차량들이 눈에 띕니다.
+
+ 온몸으로 러시아 탱크를 막아선 채 다 함께 국가를 부르는 우크라이나 시민들의 모습이  포착되기도 했습니다.
+
+ [이펙트2] 국가 소리
+
+ 러시아군에 맞서기 위해 일과 학업을 중단하고,
+
+ 다시 우크라이나로 발길을 돌린 시민들도 있습니다.
+
+ 자니엘 / 폴란드 거주 우크라이나인 [녹취] ""러시아가 우리의 독립을 파괴하고 도시를 파괴하고, 우리 시민들, 아이들, 노인들을 죽이고 있는데 폴란드에 그대로 머물러서 보고만 있을 수가 없었습니다.""
+
+ 조국을 지키기 위한 우크라이나의 항전은 오늘도 이어지고 있습니다.
+
+ KBS 뉴스, 최유경입니다.
+
+ (영상편집:이웅 자료조사: 김다형)  ",,10,N,Y,,N,N,N,N,Y,0001,20220301,3,AI202203010798987,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:04:36,wenrou315,2022-03-01 22:14:10,,,,Y,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,최유경,/data/news/2022/03/01/20220301_fke3iP.jpg,,,,,국제,뉴스 9,0029,국제,,뉴스 9,,"[{'imgCode': '5428673', 'newsCode': '5406555', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_fke3iP.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:09:35', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406555', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/30_5406555.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:04:08', 'vodEndTime': '2022-03-01 21:06:07', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:09:35', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/30_5406555.srt'}, {'newsCode': '5406555', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/30_5406555.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:04:08', 'vodEndTime': '2022-03-01 21:06:07', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:09:35', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/30_5406555.srt'}, {'newsCode': '5406555', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/30_5406555.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:04:08', 'vodEndTime': '2022-03-01 21:06:07', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:09:35', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/30_5406555.srt'}]","[{'newsCode': '5406555', 'reporterGubun': None, 'seq': None, 'reporterCode': '31690', 'reporterName': '최유경', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/f33c64866907e92c0fe0ed10fcb56c9f.jpg', 'email': '60@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/f33c64866907e92c0fe0ed10fcb56c9f.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406556,0006,200,200,N,2022-03-01 20:12:06,2022-03-01 21:06:47,N,N,Y,,,,,“밤에는 방공호로…우크라이나를 도와주세요”,"슈퍼/통합<9시/MNG+사전제작>""밤에는 방공호로…우크라이나를 도와주세요""",," [앵커]<br /><br /> 그럼 이번엔 우크라이나와 폴란드 국경으로 가보겠습니다.<br /><br />현지에 급파된 조빛나 기자  연결합니다.<br /><br />조 기자, 우크라이나 주민들과 화상으로 직접 얘기를 나눴죠?<br /><br /> [기자]<br /><br /> 여성과 아이가 대부분인 피란민들이 가장 걱정하는 건 가족, 친지, 고향 소식입니다.<br /><br /> 교전이 치열하게 벌어지고 있는 수도 키이우와 하르키우의 시민들과 화상 인터뷰를 진행했습니다.<br /><br /> 러시아와 우크라이나의 협상이 진행되고 있던 바로 그 시각.<br /><br /> 라이사 씨는 집안의 모든 불을 끄고 있었습니다.<br /><br /> [라이사/우크라이나 하르키우(하리코프) 시민 : ""러시아군이 불빛을 보고 폭격을 할 수 있기 때문에 불을 켜는 것은 허용되지 않습니다.""]<br /><br /> 아버지가  전장에 나선 마리 씨는 러시아군의 잇딴 민간 구역 폭격에 극도의 긴장 속에 살고 있습니다.<br /><br /> [마리/우크라이나 하르키우(하리코프) 시민 : ""오늘 가게에 갔는데 거의 두시간 줄을 섰어요. 차례를 기다리는 동안 아래쪽에서 폭음이 들렸고요.""]<br /><br /> 수도 키이우의 가나 씨... 매일 대피소에 가서 밤을 보냅니다.<br /><br /> [가나/우크라이나 키이우(키예프) 시민 : ""지하 차고에서 친구들과 지내고 있습니다. 지금은 집인데 밤 8시가 되면 매일 방공호로 가야 합니다.""]<br /><br /> 참혹한 상황, 우크라이나인들은 도움을 절실히 바랍니다.<br /><br /> [마리/하르키우(하리코프) 시민 : ""우크라이나를 도와주세요. 협상을 지원해주세요. 군사적 도움에도 감사하지만 우리는외교적인 도움도 필요합니다.""]<br /><br /> [라이사/하르키우(하리코프) 시민 : ""세상 모든 사람에게 말하고 싶습니다. 우리는 끝까지 싸울겁니다.""]<br /><br />[앵커]<br /><br />유럽에 사는  우리 교민들도 우크라이나 피란민들을 돕고 있다고요?<br /><br />[기자]<br /><br /> 그렇습니다. <br /><br /> 지금 이 곳은 점심시간입니다. <br /><br /> 무료로 샌드위치나 스프 같은 식사가 제공되고 있는데요.<br /><br /> 라면과 즉석밥, 과자 같은 식품을 실은 차량이 오늘 아침 오스트리아를 떠나  지금 폴란드로 오고 있습니다.<br /><br /> 유럽에서 식품 유통을 하는 한 한인 기업이 국내 기업과 함께 4만 유로 규모의 식품을 지원한 건데요.<br /><br /> 중부와 동부 유럽지역 한인들의 모금도 시작됐습니다.<br /><br />[정종완/민주평통 중동부유럽협의회장 : ""여러 곳에서 지금 '가능하면 작지만 참여하고 싶다' 이런 연락들이 왔기 때문에 수량에 관계 없이 모으는대로 보내려고 계획하고 있습니다.""]<br /><br /> 폴란드 정부는 피란민들을 위한 별도 홈페이지도 개설해 임시거처와 구호물품, 이동편 등에 대한 정보를 제공하고 있습니다.<br /><br /> 지금까지 우크라이나 접경도시 폴란드 프셰미실에서 KBS 뉴스 조빛나입니다.<br /><br />촬영기자:조세준 김재현/영상편집:서정혁/자료조사:김다형"," [앵커]
+
+ 이번엔 우크라이나와 폴란드 국경에서 취재 중인 기자를 연결해서 현재 상황 좀 더 알아보겠습니다.
+
+ 조빛나 기자(대답없음)
+
+ <질문>
+
+ 우크라이나 상황을 현지인 화상 인터뷰로 직접 들었다고요?
+
+ <답변>
+
+ 여성과 아이가 대부분인 피란민들이 가장 걱정하는 건 가족, 친지, 고향 소식입니다.
+
+ 교전이 치열하게 벌어지고 있는 수도 키이우와 하르키우의 시민들과 화상 인터뷰를 진행했습니다.
+
+ ==========VCR(사전제작) ====
+
+ 러시아와 우크라이나의 협상이 진행되고 있던 바로 그 시각.
+
+ 라이사 씨는 집안의 모든 불을 끄고 있었습니다.
+
+ 라이사/ 우크라이나 하르키우(하리코프) 시민 [녹취] 러시아군이 불빛을 보고 폭격을 할 수 있기 때문에 불을 켜는 것은 허용되지 않습니다.
+
+ 아버지가  전장에 나선 마리 씨는 러시아군의 잇딴 민간 구역 폭격에 극도의 긴장 속에 살고 있습니다.
+
+ 마리 /우크라이나 하르키우(하리코프) 시민 [녹취] 오늘 가게에 갔는데 거의 두시간 줄을 섰어요. 차례를 기다리는 동안 아래쪽에서 폭음이 들렸고요.
+
+ 수도 키이우의 가나 씨... 매일 대피소에 가서 밤을 보냅니다.
+
+ 가나/우크라이나 키이우(키예프) 시민  [녹취] 지하 차고에서 친구들과 지내고 있습니다. 지금은 집인데 밤 8시가 되면 매일 방공호로 가야 합니다.
+
+ 참혹한 상황, 우크라이나인들은 도움을 절실히 바랍니다.
+
+ 마리/ 하르키우(하리코프) 시민 [녹취] 마리/ 하르키우(하리코프) 시민 우크라이나를 도와주세요. 협상을 지원해주세요. 군사적 도움에도 감사하지만 우리는외교적인 도움도 필요합니다.
+
+ 라이사/하르키우(하리코프) 시민 [녹취] 세상 모든 사람에게 말하고 싶습니다. 우리는 끝까지 싸울겁니다. ----------------------------------
+
+ <질문>
+
+ 이런 전쟁 상황에 어쩔 수 없이 우크라이나를 떠난 피란민들을 위해 한인들도 나섰다고요?
+
+ <답변>
+
+ 그렇습니다. 지금 이 곳은 점심시간입니다. 무료로 샌드위치나 스프 같은 식사가 제공되고 있는데요.
+
+ 라면과 즉석밥, 과자 같은 식품을 실은 차량이 오늘 아침 오스트리아를 떠나  지금 폴란드로 오고 있습니다.
+
+ ==============VCR2 ===============
+
+ 유럽에서 식품 유통을 하는 한 한인 기업이 국내 기업과 함께 4만 유로 규모의 식품을 지원한 건데요
+
+ 중부와 동부 유럽지역 한인들의 모금도 시작됐습니다.
+
+ ===============VCR3============  정종완 /민주평통 중동부유럽협의회장 여러 곳에서 지금 '가능하면 작지만 참여하고 싶다' 이런 연락들이 왔기 때문에 수량에 관계 없이 모으는대로 보내려고 계획하고 있습니다.
+
+ 폴란드 정부는 피란민들을 위한 별도 홈페이지도 개설해 임시거처와 구호물품, 이동편 등에 대한 정보를 제공하고 있습니다.
+
+ 지금까지 우크라이나 접경도시 폴란드 프셰미실에서 KBS 뉴스 조빛나입니다.
+
+ (촬영기자/ 조세준 김재현 영상편집/ 서정혁  자료조사 /김다형)",,10,N,Y,,N,N,N,N,Y,0001,20220301,4,AI202203010798905,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:06:47,wenrou315,2022-03-01 22:14:10,,,,Y,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,조빛나,/data/news/2022/03/01/20220301_ubbr29.jpg,,,,,국제,뉴스 9,0029,국제,,뉴스 9,,"[{'imgCode': '5428675', 'newsCode': '5406556', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_ubbr29.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:13:56', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406556', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/40_5406556.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:06:07', 'vodEndTime': '2022-03-01 21:09:13', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:13:56', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/40_5406556.srt'}, {'newsCode': '5406556', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/40_5406556.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:06:07', 'vodEndTime': '2022-03-01 21:09:13', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:13:56', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/40_5406556.srt'}, {'newsCode': '5406556', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/40_5406556.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:06:07', 'vodEndTime': '2022-03-01 21:09:13', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:13:56', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/40_5406556.srt'}]","[{'newsCode': '5406556', 'reporterGubun': None, 'seq': None, 'reporterCode': '29254', 'reporterName': '조빛나', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/5ca429b0056550eab08bcfe770eaf98e.jpg', 'email': 'hymn@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/5ca429b0056550eab08bcfe770eaf98e.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406557,0006,200,200,N,2022-03-01 20:44:37,2022-03-01 21:09:49,N,N,Y,,,,,“내일 2차협상”…러시아 내부 상황은?,"대체슈퍼<9시/화상> ""내일 2차협상""…러시아 내부 상황은?",," [앵커]<br /><br />러시아에 대한 서방의 제재 수위가 높아지자 푸틴 러시아 대통령은  '핵' 얘기를 꺼냈습니다.<br /><br />러시아 모스크바 연결해서 자세한 내용 알아봅니다.<br /><br />김준호 특파원, 러시아와 우크라이나가 어제에 이어 다시 만납니까?<br /><br />[기자]<br /><br /> 네, 방금 전 러시아와 우크라이나가 현지시각 내일 2차 협상을 열기로 했다고 러시아 매체가 보도했습니다.<br /><br /> 1차 협상 후 이틀 만에 하는건데요.<br /><br /> 먼저 어제 첫 협상 후 양국 대표들의 발표 내용 들어보시죠. <br /><br /> [메드닌스키/러시아 측 협상대표단장 : ""가장 중요한 것은, 양측이 협상 과정을 계속하는데 동의했다는 것입니다.""]<br /><br /> [포돌랴크/우크라이나 대통령실 고문 : ""양측은 어떤 결정이 내려질 수 있는 우선 협상 주제 몇가지를 결정했습니다.""]<br /><br /> 젤렌스키 우크라이나 대통령은 얻고자 하는 결과물을 얻지는 못했다면서도 일부 '시그널'은 얻었다고 설명했습니다.<br /><br /> 다만, 러시아가 협상 중에도 우크라이나의 민간인 거주 지역을 무차별 포격하는 등 공세를 늦추지 않고 있는 것으로 보아, 러시아 측의 진정성을 기대하기는 어렵다는 관측이 우세합니다.<br /><br />[앵커]<br /><br />러시아 내부 상황도 궁금합니다.<br /><br />미국과 유럽 등에서 강력한 제재에 들어갔는데, 어떤 영향이 있을까요?<br /><br />[기자]<br /><br /> 푸틴 러시아 대통령은 어제 강력한 외화 통제 조치를 도입했습니다. <br /><br /> 러시아 증시는 어제에 이어 오늘도 폐장했고, 루블화도 급락세를 이어가고 있습니다.<br /><br /> 외국 기업들의 탈 러시아 행렬도 이어지고 있습니다.<br /><br /> 셸과 BP 등 에너지 기업들이 러시아 철수를 선언했고, 마스터카드는 러시아 금융기관들과의 결제망을 차단했습니다.<br /><br /> 많은 러시아인들이 해외에서 신용카드를 사용할 수 없다는 얘기입니다.<br /><br /> 러시아 매체는 현대차 상트페테르부르크 공장이 부품 부족으로 오늘(1일)부터 5일까지 가동을 중단한다고 보도했습니다.<br /><br /> 러시아와 유럽은  서로 하늘길도 막았습니다.<br /><br />[앵커]<br /><br />이런 상황에서  해외에서 우크라이나를 위해 참전하겠다면서 들어오는 외국인들도 있다고요?<br /><br />[기자]<br /><br /> 네, 영국 런던 주재  우크라이나 대사관 앞에서 한 청년의 얘기 들어보시겠습니다. <br /><br />[레온 도슨/참전 자원자 : ""그들은 도움이 필요해 보입니다. 우리는 젊고 강하고 건강한 남자들입니다. 도와줄 수 있는데 왜 안돕겠습니까?""]<br /><br /> 또, 발트 3국 중 하나인 라트비아 의회는 자국민이 원하면 우크라이나 전쟁에 참전하는 것을 허용했습니다.<br /><br /> 지금까지 모스크바에서 전해드렸습니다.<br /><br /> 영상편집:이현모  "," [앵커]
+
+ 이번엔 러시아 모스크바 연결해 현지 상황 알아봅니다.
+
+ <질문>
+
+ 어제 러시아와 우크라이나가 협상을 하지 않았습니까?
+
+ <답변>
+
+ 네, 방금 전 러시아와 우크라이나가 현지시각 내일 2차 협상을 열기로 했다고 러시아 매체가 보도했습니다.
+
+ 1차 협상 후 이틀만에 하는건데요
+
+ 먼저 어제 첫 협상 후 양국 대표들의 발표 내용 들어보시죠. ================= VCR 1 메드닌스키/러시아 측 협상대표단장 [녹취] ""가장 중요한 것은, 양측이 협상 과정을 계속하는데 동의했다는 것입니다.""
+
+ 포돌랴크/우크라이나 대통령실 고문 [녹취] ""양측은 어떤 결정이 내려질 수 있는 우선 협상 주제 몇가지를 결정했습니다.""
+
+ 젤렌스키 우크라이나 대통령은 얻고자 하는 결과물을 얻지는 못했다면서도 일부 '시그널'은 얻었다고 설명했습니다.
+
+ 다만, 러시아가 협상 중에도 우크라이나의 민간인 거주 지역을 무차별 포격하는 등 공세를 늦추지 않고 있는 것으로 보아, 러시아 측의 진정성을 기대하기는 어렵다는 관측이 우세합니다.
+
+ <질문>
+
+ 서방 제재가 이어지고 있는데, 러시아 내부 상황은 어떻습니까?
+
+ <답변>
+
+ 푸틴 러시아 대통령은 어제 강력한 외화 통제 조치를 도입했습니다. ============== VCR 2
+
+ 러시아 증시는 어제에 이어 오늘도 폐장했고, 루블화도 급락세를 이어가고 있습니다.
+
+ 외국 기업들의 탈 러시아 행렬도 이어지고 있습니다.
+
+ 셸과 BP 등 에너지 기업들이 러시아 철수를 선언했고, 마스터카드는 러시아 금융기관들과의 결제망을 차단했습니다.
+
+ 많은 러시아인들이 해외에서 신용카드를 사용할 수 없다는 얘기입니다.
+
+ 러시아 매체는 현대차 상트페테르부르크 공장이 부품 부족으로 오늘(1일)부터 5일까지 가동을 중단한다고 보도했습니다.
+
+ 러시아와 유럽은  서로 하늘길도 막았습니다.
+
+ <질문>
+
+ 우크라이나를 위해 직접 참전해 싸우겠다는 외국인들도 나오고 있죠?
+
+ <답변>
+
+ 네, 영국 런던 주재  우크라이나 대사관 앞에서 한 청년의 얘기 들어보시겠습니다. ==================  VCR 3  ==== 레온 도슨/참전 자원자 [녹취] ""그들은 도움이 필요해 보입니다. 우리는 젊고 강하고 건강한 남자들입니다. 도와줄 수 있는데 왜 안돕겠습니까?
+
+ 또, 발트 3국 중 하나인 라트비아 의회는 자국민이 원하면 우크라이나 전쟁에 참전하는 것을 허용했습니다.
+
+ 지금까지 모스크바에서 전해드렸습니다.
+
+ 영상편집:이현모  ",,10,N,Y,,N,N,N,N,Y,0001,20220301,5,AI202203010798966,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:09:49,wenrou315,2022-03-01 22:14:10,,,,Y,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,김준호,/data/news/2022/03/01/20220301_K3FCoy.jpg,,,,,국제,뉴스 9,0029,국제,,뉴스 9,,"[{'imgCode': '5428676', 'newsCode': '5406557', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_K3FCoy.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:16:24', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406557', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/50_5406557.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:09:13', 'vodEndTime': '2022-03-01 21:11:53', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:16:24', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/50_5406557.srt'}, {'newsCode': '5406557', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/50_5406557.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:09:13', 'vodEndTime': '2022-03-01 21:11:53', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:16:24', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/50_5406557.srt'}, {'newsCode': '5406557', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/50_5406557.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:09:13', 'vodEndTime': '2022-03-01 21:11:53', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:16:24', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/50_5406557.srt'}]","[{'newsCode': '5406557', 'reporterGubun': None, 'seq': None, 'reporterCode': '16518', 'reporterName': '김준호', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/40e1ada2c00e13a09e88143934e76efa.jpg', 'email': 'jhk88@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/40e1ada2c00e13a09e88143934e76efa.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406558,0006,200,200,N,2022-03-01 20:46:06,2022-03-01 21:12:29,N,N,Y,,,,,"미 추가 제재 단행…유엔 총회, 러시아 성토","(수퍼/9시 화상) 미 추가 제재 단행…유엔 총회, 러시아 성토",," [앵커]<br /><br />미국은 국부펀드 자산을 묶는 걸 비롯해 추가 제재로 러시아를 더 압박해 들어갔습니다.<br /><br />유엔의  긴급 특별 총회에선 러시아의 철군 결의안 논의가 시작됐습니다.<br /><br />워싱턴 연결합니다. 김기현 특파원!  먼저, 미국의 제재가 최고 수준입니다. <br /><br />어떤 것들이 더해졌죠?<br /><br />[기자]<br /><br /> 미국 재무부가 수천억 달러 규모의 러시아 중앙은행과  국부 펀드 자산 동결에 들어갔습니다.<br /><br /> 푸틴 대통령의  비자금 창구 제재로  돈줄을 죄겠다는 겁니다.<br /><br /> 러시아 상장 기업들의 주식 거래도 일시 중단됐습니다.<br /><br /> 유엔 주재 러시아 외교관 12명에 대해선  스파이 활동 혐의로 추방 명령을 내렸습니다.<br /><br /> 바이든 미국 대통령은 영국·일본 총리 등과 전화 통화에서 제재를 함께 시행한다는 원칙도 재확인했습니다.<br /><br />[앵커]<br /><br />유엔 회원국들은 어떤 논의를 하는지도 궁금한데요?<br /><br />[기자]<br /><br /> 우크라이나 철군 촉구  결의안 논의를 위해  유엔 창설 이래 열 한 번째 긴급 특별총회가 개최됐습니다.<br /><br />[안토니오 구테흐스/유엔 사무총장 : ""우크라이나 전쟁은 반드시 멈춰야 합니다. 육해공 전역에서 폭력사태를 초래하고 있습니다. 즉각 중단해야 합니다.""]<br /><br /> 앞서 열린 안보리에서 상임이사국 러시아가 거부권을 행사했기 때문입니다.<br /><br /> 안보리와 마찬가지로 대다수 회원국이  침공을 규탄했습니다.<br /><br /> 백여 개 회원국에서  관련 발언을 신청했기 때문에  표결은 현지시각 2일 쯤 이뤄질 것으로 보입니다.<br /><br />[앵커]<br /><br />바이든 대통령, 취임 뒤 처음 국정연설에 나서는데요.<br /><br />아무래도 지금 상황, 대외 정책에 무게를 두겠죠?<br /><br />[기자]<br /><br /> 당초 코로나19 극복과 경제 활성화에 초점을 맞췄던 연설이 대외정책 부분을 대폭 강화하는 쪽으로 수정된 겁니다.<br /><br /> [젠 사키/미 백악관 대변인 : ""국제사회 규범과 가치를 옹호하는 지도자로서 미국의 중요성과 관련한 (바이든 대통령의) 언급을 기대할 수 있습니다.""]<br /><br /> 평화와 인권이라는 규범을 위반한 러시아에  국제 사회가 책임을 묻고 그 중심에 미국이 있다는 걸 강조하는  연설이 될 거란 설명입니다.<br /><br /> 지금까지 워싱턴에서 전해드렸습니다.<br /><br /> 촬영기자:오범석/영상편집:김대범/자료조사:김다형 ","
+
+ [앵커]
+
+ 미국은
+
+ 국부펀드 자산 동결 등 추가 제재를 통한  러시아 압박을 계속했습니다.
+
+ 유엔에서 열린  긴급 특별 총회에선  러시아의 철군 결의안 논의가 시작됐습니다.
+
+ 워싱턴 연결합니다. 김기현 특파원 (대답 없고)
+
+ <질문> 먼저 미국이 단행한 추가 제재 내용부터 살펴볼까요?
+
+ <답변>
+
+ 미국 재무부가
+
+ 수천억 달러 규모의 러시아 중앙은행과  국부 펀드 자산
+
+ 동결에 들어갔습니다.
+
+ ==== 서버 1 ==========
+
+ 푸틴 대통령의  비자금 창구 제재로  돈줄을 죄겠다는 겁니다.
+
+ 러시아 상장 기업들의 주식 거래도 일시 중단됐습니다.
+
+ 유엔 주재
+
+ 러시아 외교관 12명에 대해선  스파이 활동 혐의로
+
+ 추방 명령을 내렸습니다.
+
+ 바이든 미국 대통령은
+
+ 영국·일본 총리 등과
+
+ 전화 통화에서 제재를 함께 시행한다는 원칙도 재확인했습니다.
+
+ <질문>  유엔에서 개최된 긴급 총회 소식도 살펴볼까요?
+
+ <답변>
+
+ 우크라이나 철군 촉구  결의안 논의를 위해  유엔 창설 이래 열 한 번째 긴급 특별총회가 개최됐습니다.
+
+ ======= 서버 2 ============
+
+ 안토니오 구테흐스/ 유엔 사무총장 [녹취] ""The fighting in Ukraine must stop. It is raging across the country from air, land and sea. It must stop now.""  ""우크라이나 전쟁은 반드시 멈춰야 합니다. 육해공 전역에서 폭력사태를 초래하고 있습니다. 즉각 중단해야 합니다.""
+
+ 앞서 열린 안보리에서 상임이사국 러시아가
+
+ 거부권을 행사했기 때문입니다.
+
+ 안보리와 마찬가지로 대다수 회원국이  침공을 규탄했습니다.
+
+ 백여 개 회원국에서  관련 발언을 신청했기 때문에  표결은 현지시각 2일 쯤 이뤄질 것으로 보입니다.
+
+ <질문> 바이든 대통령이 취임 후 처음으로 국정연설에 나서는 데, 정국 구상의 중심 축이 변경됐죠?
+
+ <답변>
+
+ 당초 코로나19 극복과 경제 활성화에 초점을 맞췄던 연설이 대외정책 부분을 대폭 강화하는 쪽으로 수정된 겁니다.
+
+ ==== 서버 3 ==========
+
+ 젠 사키/ 미 백악관 대변인
+
+ [녹취] ""People can expect to hear him, you know, position that as the importance of the United States as a leader in the world standing up for values standing up for for global norms.  ""국제사회 규범과 가치를 옹호하는 지도자로서 미국의 중요성과 관련한 (바이든 대통령의) 언급을 기대할 수 있습니다.""
+
+ 평화와 인권이라는
+
+ 규범을 위반한 러시아에  국제 사회가 책임을 묻고 그 중심에 미국이 있다는 걸 강조하는  연설이 될 거란 설명입니다.
+
+ 지금까지 워싱턴에서 전해드렸습니다.
+
+ 촬영기자: 오범석  영상편집: 김대범  자료조사: 김다형 ",,10,N,Y,,N,N,N,N,Y,0001,20220301,6,AI202203010799075,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:12:29,wenrou315,2022-03-01 22:14:10,,,,Y,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,김기현,/data/news/title_image/newsmp4/news9/2022/03/01/60_5406558.jpg,,,,,국제,뉴스 9,0029,국제,,뉴스 9,,"[{'imgCode': '5428678', 'newsCode': '5406558', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/60_5406558.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:17:45', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406558', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/60_5406558.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:11:54', 'vodEndTime': '2022-03-01 21:14:15', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:17:45', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/60_5406558.srt'}, {'newsCode': '5406558', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/60_5406558.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:11:54', 'vodEndTime': '2022-03-01 21:14:15', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:17:45', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/60_5406558.srt'}, {'newsCode': '5406558', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/60_5406558.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:11:54', 'vodEndTime': '2022-03-01 21:14:15', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:17:45', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/60_5406558.srt'}]","[{'newsCode': '5406558', 'reporterGubun': None, 'seq': None, 'reporterCode': '17347', 'reporterName': '김기현', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/45d77b8a40a2dcc87d0b55ea78dfa4f8.jpg', 'email': 'kimkh@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/45d77b8a40a2dcc87d0b55ea78dfa4f8.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406559,0003,200,200,N,2022-03-01 20:13:35,2022-03-01 21:14:46,N,N,Y,,,,,정부 “러시아 주요 은행과 거래 중단”,,,"  정부가 러시아 주요은행과 거래를 중단하는 내용의 추가 금융제재 방안을 발표했습니다.<br /><br />  기획재정부는   스베르방크와 노비콤 등  미국 정부의 제재 대상인   러시아 7개 은행과 자회사에 대해 금융 거래를 중단한다고 밝혔습니다.<br /><br />  또 러시아 국고채 거래 중단을 공공기관과 금융기관에 적극 권고하고 이미 발표한 국제금융통신망, 스위프트에서 러시아를 배제하는 조치도 차질없이 추진하기로 했습니다.",,,10,N,N,,N,N,N,N,Y,0001,20220301,7,,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:14:45,jojfzn,2022-03-01 21:25:14,,,,N,N,,0,0,,,Y,,,,,N,,,N,,00,,,,0,0,,KBS,/data/news/2022/03/01/20220301_7YOIqz.jpg,,,,,정치,뉴스 9,0010,정치,,뉴스 9,,"[{'imgCode': '5428677', 'newsCode': '5406559', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_7YOIqz.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:17:34', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406559', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/70_5406559.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:14:15', 'vodEndTime': '2022-03-01 21:14:44', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:17:34', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/70_5406559.srt'}, {'newsCode': '5406559', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/70_5406559.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:14:15', 'vodEndTime': '2022-03-01 21:14:44', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:17:34', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/70_5406559.srt'}, {'newsCode': '5406559', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/70_5406559.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:14:15', 'vodEndTime': '2022-03-01 21:14:44', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:17:34', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/70_5406559.srt'}]","[{'newsCode': '5406559', 'reporterGubun': None, 'seq': None, 'reporterCode': '99999', 'reporterName': 'KBS', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': None, 'imgUrl': None, 'email': None, 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/api/getNewsList?currentPageNo=1&rowsPerPage=500&exceptPhotoYn=Y&broadCode=0001&broadDate=20220301&needReporterInfo=Y&orderBy=broadDate_desc%2CbroadOrder_asc,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406560,0015,200,200,N,2022-03-01 20:12:30,2022-03-01 21:15:12,N,N,Y,,,,,"IOC-FIFA “러시아, 국제대회-월드컵에서 퇴출!”","(9시/자막)IOC-FIFA ""러시아, 국제대회-월드컵에서 퇴출!""",," [앵커]<br /><br /> 우크라이나를 침공한 러시아가 국제 스포츠 무대에서도 철저히 외면받고 있습니다.<br /><br /> 국제올림픽위원회 IOC는  러시아의 대회 출전을 막기로 했고 국제축구연맹 FIFA는  러시아를 월드컵 무대에서 퇴출시켰습니다.<br /><br /> 강재훈 기자의 보도입니다.<br /><br /> [리포트] <br /><br /> IOC는  전쟁을 일으킨 러시아와 여기에 동조한 벨라루스를 국제대회에 초청하지 말고 참가도 불허하라고 종목별 국제경기단체 등에  권고했습니다.<br /><br /> 불가피하게 참가하더라도 러시아와 벨라루스의 국가명이나 국기 사용을 금지하고,  중립 소속으로 표기할 것을 전달했습니다.<br /><br /> 우크라니아 침공 다음 날, 러시아와 벨라루스에서 국제대회를 열지 말라는 권고안에서 한 발 더 나간 겁니다.<br /><br /> 동하계 올림픽을 주관하는 IOC의 결정에 따라 러시아는 국제 대회에 참가할 길이 사실상 막혔습니다.<br /><br /> 체조와 유도, 배구 등이  러시아 대회를 이미 취소했고, 럭비, 빙상과 아이스하키 등  러시아의 출전을 금지한 국제경기단체도  늘어나고 있습니다.<br /><br /> 또, IOC는 올림픽 휴전 결의를 위반한 푸틴 대통령의 올림픽 훈장을 박탈하기로 했고, 세계태권도연맹은 명예 단증을 철회했습니다.<br /><br /> 국제축구연맹, 피파도 오는 11월 카타르월드컵에서 러시아를 아예 퇴출시켰습니다.<br /><br /> 피파는 싸늘한 여론을 의식한 듯 러시아 국가명 사용을 금지한 지 하루 만에 아예 무기한 출전 금지 징계를 내렸습니다.<br /><br /> 이로써 러시아는 오는 24일 카타르월드컵 유럽 지역 예선 플레이오프 출전이 원천봉쇄됐습니다.<br /><br /> 동계 올림픽 도핑 파문에 이어  러시아가 국제 스포츠계에서도 공공의 적이 됐습니다.<br /><br /> KBS 뉴스 강재훈입니다.<br /><br /> 영상편집:조완기"," [앵커]
+
+ 우크라이나를 침공한 러시아가 국제 스포츠 무대에서도 철저히 외면받고 있습니다.
+
+ 국제올림픽위원회 IOC는  러시아의 대회 출전을 막기로 했고 국제축구연맹 FIFA는  러시아를 월드컵 무대에서 퇴출시켰습니다.
+
+ 강재훈 기자의 보도입니다.
+
+ [리포트] IOC는  전쟁을 일으킨 러시아와 여기에 동조한 벨라루스를 국제대회에 초청하지 말고 참가도 불허하라고 종목별 국제경기단체 등에  권고했습니다.
+
+ 불가피하게 참가하더라도 러시아와 벨라루스의 국가명이나 국기 사용을 금지하고,  중립 소속으로 표기할 것을 전달했습니다.
+
+ 우크라니아 침공 다음 날, 러시아와 벨라루스에서 국제대회를 열지 말라는 권고안에서 한 발 더 나간 겁니다.
+
+ 동하계 올림픽을 주관하는 IOC의 결정에 따라 러시아는 국제 대회에 참가할 길이 사실상 막혔습니다.
+
+ 체조와 유도, 배구 등이  러시아 대회를 이미 취소했고, 럭비, 빙상과 아이스하키 등  러시아의 출전을 금지한 국제경기단체도  늘어나고 있습니다.
+
+ 또, IOC는 올림픽 휴전 결의를 위반한 푸틴 대통령의 올림픽 훈장을 박탈하기로 했고, 세계태권도연맹은 명예 단증을 철회했습니다.
+
+ 국제축구연맹, 피파도 오는 11월 카타르월드컵에서 러시아를 아예 퇴출시켰습니다
+
+ 피파는 싸늘한 여론을 의식한 듯 러시아 국가명 사용을 금지한 지 하루 만에 아예 무기한 출전 금지 징계를 내렸습니다.
+
+ 이로써 러시아는 오는 24일 카타르월드컵 유럽 지역 예선 플레이오프 출전이 원천봉쇄됐습니다.
+
+ 동계 올림픽 도핑 파문에 이어  러시아가 국제 스포츠계에서도 공공의 적이 됐습니다.
+
+ KBS 뉴스 강재훈입니다.
+
+ (영상편집: 조완기)",,10,N,Y,,N,N,N,N,Y,0001,20220301,8,AI202203010798871,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:15:12,wenrou315,2022-03-01 22:29:33,,,,N,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,강재훈,/data/news/title_image/newsmp4/news9/2022/03/01/80_5406560.jpg,,,,,종합,뉴스 9,0103,종합,,뉴스 9,,"[{'imgCode': '5428679', 'newsCode': '5406560', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/80_5406560.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:20:01', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406560', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/80_5406560.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:14:44', 'vodEndTime': '2022-03-01 21:16:34', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:20:01', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/80_5406560.srt'}, {'newsCode': '5406560', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/80_5406560.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:14:44', 'vodEndTime': '2022-03-01 21:16:34', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:20:01', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/80_5406560.srt'}, {'newsCode': '5406560', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/80_5406560.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:14:44', 'vodEndTime': '2022-03-01 21:16:34', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:20:01', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/80_5406560.srt'}]","[{'newsCode': '5406560', 'reporterGubun': None, 'seq': None, 'reporterCode': '30329', 'reporterName': '강재훈', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/76cb2624c9d093d029a3a43ae55148f1.jpg', 'email': 'bahn@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/76cb2624c9d093d029a3a43ae55148f1.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406561,0005,200,200,N,2022-03-01 20:14:44,2022-03-01 21:17:17,N,N,Y,,,,,오늘부터 방역패스 중단…“거리두기도 풀어야” vs “불안해요”,"대체(슈퍼/9시)오늘부터 방역패스 중단…""거리두기도 풀어야"" vs ""불안해요""",," [앵커]<br /><br />이어서 코로나 19 소식입니다.<br /><br />백신 접종 여부를 확인하는 방역패스 제도가 오늘(1일)부터 중단됐습니다. <br /><br />지난해 11월 도입된 후 넉 달만인데,  시민들의 반응은 엇갈렸습니다.<br /><br />중단 첫 날 표정을 김혜주 기자가 현장 취재했습니다.<br /><br /> [리포트]  <br /><br /> 서울의 한 실내체육시설.<br /><br /> 출입구에 놓여있던 QR 인증장비가 사라졌습니다.<br /><br /> [""QR 안 찍어도 되나요? (네, 오늘부터 방역패스는 시행되지 않습니다)""]<br /><br /> 전국 다중이용시설에서 방역패스 적용이 오늘부터 중단됐습니다.<br /><br /> 각종 방역조치에 피로감을 호소해 온 자영업자들은 방역패스 중단을 반겼습니다.<br /><br /> [최두훈/실내체육시설 운영 : ""한 분이라도 더 센터에 방문하실 수 있게 되고, 회원님들도 불편함이나 이런 부분이 감소가 됐다는 게….""]<br /><br /> 이참에  영업시간 제한 등  거리두기도 더 풀어야 한다는 목소리도 나왔습니다.<br /><br /> [김영훈/식당 운영 : ""정확하게 거리두기 제한이라든지 이런 부분에 있어 가지고서 좀 더 세밀하게 내용이 나온 것이 없고….""]<br /><br /> 시민들도 QR 인증 없이 식당 등을 이용할 수 있어. 편리하다는 반응이었습니다.<br /><br /> [박선민/서울시 서대문구 : ""백신을 다 접종해도 걸리는 사람들이 있고. 이제 미접종인 분들인데도 안 걸리는 분들이 있더라고요. 그래서 저는 방역패스는 무의미하다고 봅니다.""]<br /><br /> 불편함은 줄었지만 아직은 불안하다는 의견도 있었습니다.<br /><br /> [정유진/서울 서대문구 : ""QR코드를 안 찍어도 돼서 되게 편하긴 한데, 다른 분들이 백신을 맞았는지 확인할 수 없어서 조금 불안한 것도 있는 것 같아요.""]<br /><br /> 방역 당국은 방역지표가 안정적으로 관리되면 새로운 거리두기 조정안을 마련할 계획입니다.<br /><br /> KBS 뉴스 김혜주입니다.<br /><br /> 촬영기자:문아미/영상편집:남은주"," [앵커]
+
+ 오늘 음식점 등을 방문하신 분들, QR인증 없이 들어 가셨을텐데요.
+
+ 오늘부터 전국에서  방역패스 시행이
+
+ 전면 중단됐습니다.
+
+ 지난해 11월 전면 도입된 뒤 4달 만인데, 시민들의 반응은 엇갈렸습니다.
+
+ 방역패스 중단 첫날 표정을 김혜주 기자가 현장 취재했습니다.
+
+ [리포트]  서울의 한 실내체육시설.
+
+ 출입구에 놓여있던 QR 인증장비가 사라졌습니다.
+
+ [이펙트1] ""QR 안 찍어도 되나요?"" ""네, 오늘부터 방역패스는 시행되지 않습니다.""
+
+ 전국 다중이용시설에서 방역패스 적용이 오늘부터 중단됐습니다.
+
+ 각종 방역조치에 피로감을 호소해 온 자영업자들은 방역패스 중단을 반겼습니다.
+
+ 최두훈/실내체육시설 운영 [인터뷰] ""한 분이라도 더 센터에 방문하실 수 있게 되고, 회원님들도 불편함이나 이런 부분이 감소가 됐다는 게….""
+
+ 이참에  영업시간 제한 등  거리두기도 더 풀어야 한다는 목소리도 나왔습니다.
+
+ 김영훈/식당 운영 [인터뷰] ""정확하게 거리두기 제한이라든지 이런 부분에 있어 가지고서 좀 더 세밀하게 내용이 나온 것이 없고….""
+
+ 시민들도 QR 인증 없이 식당 등을 이용할 수 있어. 편리하다는 반응이었습니다.
+
+ 박선민/서울시 서대문구 [인터뷰] ""백신을 다 접종해도 걸리는 사람들이 있고. 이제 미접종인 분들인데도 안 걸리는 분들이 있더라고요. 그래서 저는 방역패스는 무의미하다고 봅니다.""
+
+ 불편함은 줄었지만 아직은 불안하다는 의견도 있었습니다.
+
+ 정유진/서울 서대문구 [인터뷰] ""QR코드를 안 찍어도 돼서 되게 편하긴 한데, 다른 분들이 백신을 맞았는지 확인할 수 없어서 조금 불안한 것도 있는 것 같아요.""
+
+ 방역 당국은 방역지표가 안정적으로 관리되면 새로운 거리두기 조정안을 마련할 계획입니다.
+
+ KBS 뉴스, 김혜주입니다.
+
+ 촬영기자 : 문아미 영상편집 : 남은주",,10,N,Y,,N,N,N,N,Y,0001,20220301,9,AI202203010798814,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:17:16,wenrou315,2022-03-01 22:13:57,,,,Y,Y,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,김혜주,/data/news/2022/03/01/20220301_hhcyl7.jpg,,,,,사회,뉴스 9,0023,사회,,뉴스 9,,"[{'imgCode': '5428680', 'newsCode': '5406561', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_hhcyl7.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:21:28', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406561', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/90_5406561.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:16:34', 'vodEndTime': '2022-03-01 21:18:17', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:21:28', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/90_5406561.srt'}, {'newsCode': '5406561', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/90_5406561.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:16:34', 'vodEndTime': '2022-03-01 21:18:17', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:21:28', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/90_5406561.srt'}, {'newsCode': '5406561', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/90_5406561.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:16:34', 'vodEndTime': '2022-03-01 21:18:17', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:21:28', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/90_5406561.srt'}]","[{'newsCode': '5406561', 'reporterGubun': None, 'seq': None, 'reporterCode': '32010', 'reporterName': '김혜주', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/ca221f3782e56e064509f198a8acc215.jpg', 'email': 'khj@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/ca221f3782e56e064509f198a8acc215.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406562,0005,200,200,N,2022-03-01 20:14:51,2022-03-01 21:18:48,N,N,Y,,,,,정점 앞두고 방역 완화…“미접종자·취약자 각별히 조심해야”,"(슈퍼/9시)정점 앞두고 방역 완화…""미접종자·취약자 각별히 조심해야""",," [앵커]<br /><br /> 정부가 이렇게 방역 조치를 완화하면서 우려의 목소리도 나오고 있습니다.<br /><br />​특히, 고위험군과 ​백신 미접종자들은 ​각별히 조심해야 한다는 ​지적입니다.<br /><br />신민혜 의학전문기자가 보도합니다.<br /><br />  [리포트]<br /><br /> 정부의 잇따른 방역조치 완화의 배경은 방역 역량의 집중입니다.<br /><br /> 자가격리자 관리, 음성확인서 등에 분산됐던 보건소의 역량을 고위험군 관리에 집중하겠단 겁니다.<br /><br /> 방역패스에 대한 잇따른 제소와 법원 결정, 높아진 접종률도 고려됐습니다.<br /><br /> [박향/중앙사고수습본부 방역총괄반장/어제 : ""예방접종률이 향상돼서 방역패스의 필요성에 대한 논란과 갈등이 커지고…""]<br /><br /> 신규 확진자는 13만 8천여 명, 이틀째 13만 명 대입니다. <br /><br /> 대선일인 이달 9일쯤에는 23만 명 이상의 일일 신규 확진과 1,200명 이상의  위중증 환자가 예상됩니다. <br /><br /> 유행 정점이 이달 중 언제가 될지도 가늠하기 힘듭니다.<br /><br /> 잇따른 방역완화 조치가 성급하단 우려가 나오는 이윱니다.<br /><br /> [염호기/코로나19 대책전문위원회 위원장 : ""얼마든지 환자가 더 폭증할 수 있는 상황입니다. 중환자가 증가 될 수도 있고요. 국민들에게 잘못된 신호를 줘서 감염통제가 더 어려운 상황이 벌어지기 때문에 아직까지는 시기 상조라고 생각합니다.""]<br /><br /> 방역패스의 목적은 백신 접종을 유도하고 미접종자를 보호하기 위한  것이었습니다.<br /><br /> 방역패스 중단 등으로  자율적 개인 방역의 중요성이 커진 만큼, 고령자·기저질환자 등 고위험군과  미접종자들은 방역 긴장감을 늦춰선 안 된단 지적입니다.<br /><br />[김우주/고대구로병원 감염내과 교수 :"" ""(지금이) 가장 위험한 시기라는 걸 자각하고 본인이 고위험 요인이 있으면 백신 접종과 가급적 사람 만나지 않고, 수칙 준수를 잘하는 것이 중요하다고 봅니다.""]<br /><br /> 최근 소아·청소년 확진자가 늘고 있는 가운데, 청소년 방역패스 시행이 중단되면서 관련 방역대책이 필요하다는 지적도 나오고 있습니다.<br /><br /> KBS 뉴스 신민혜입니다.<br /><br /> 영상편집:박철식/그 래 픽:안재우 "," [앵커]
+
+ 이렇게 정부가
+
+ 방역 조치를 완화하면서
+
+ 우려의 목소리도 나오고 있습니다.
+
+ 유행이 정점에 이르지도 않았는데,
+
+ 이러한 조치가 위중증 환자와 사망자 증가에 영향을 줄 수 있다는 건데요.
+
+ 전문가들은 개인 방역이 중요해진 상황에서 방역 긴장감을  늦추지 말아야 한다고 지적했습니다.
+
+ 신민혜 의학전문기자의 보도입니다.
+
+ [리포트]
+
+ 정부의 잇따른 방역조치 완화의 배경은 방역 역량의 집중입니다.
+
+ [TGA]
+
+ 자가격리자 관리, 음성확인서 등에 분산됐던 보건소의 역량을 고위험군 관리에 집중하겠단 겁니다.
+
+ 방역패스에 대한 잇따른 제소와 법원 결정, 높아진 접종률도 고려됐습니다. [/TGA]
+
+ 박향/중앙사고수습본부 방역총괄반장(어제) [녹취] ""예방접종률이 향상돼서 방역패스의 필요성에 대한 논란과 갈등이 커지고…""
+
+ [TGA]
+
+ 신규 확진자는 13만 8천여 명, 이틀째 13만 명 대입니다. [/TGA]
+
+ [TGA]
+
+ 대선일인 이달 9일쯤에는 23만 명 이상의 일일 신규 확진과 1,200명 이상의  위중증 환자가 예상됩니다. [/TGA]
+
+ 유행 정점이 이달 중 언제가 될지도 가늠하기 힘듭니다.
+
+ 잇따른 방역완화 조치가 성급하단 우려가 나오는 이윱니다.
+
+ 염호기/코로나19 대책전문위원회 위원장 [인터뷰] ""얼마든지 환자가 더 폭증할 수 있는 상황입니다. 중환자가 증가 될 수도 있고요. 국민들에게 잘못된 신호를 줘서 감염통제가 더 어려운 상황이 벌어지기 때문에 아직까지는 시기 상조라고 생각합니다.""
+
+ 방역패스의 목적은 백신 접종을 유도하고 미접종자를 보호하기 위한  것이었습니다.
+
+ 방역패스 중단 등으로  자율적 개인 방역의 중요성이 커진 만큼,
+
+ 고령자·기저질환자 등 고위험군과  미접종자들은 방역 긴장감을 늦춰선 안 된단 지적입니다.
+
+ 김우주/고대구로병원 감염내과 교수 [녹취] ""지금이 가장 위험한 시기라는 걸 자각하고 본인이 고위험 요인이 있으면 백신 접종과 가급적 사람 만나지 않고, 수칙 준수를 잘하는 것이 중요하다고 봅니다.""
+
+ 최근 소아·청소년 확진자가 늘고 있는 가운데, 청소년 방역패스 시행이 중단되면서 관련 방역대책이 필요하다는 지적도 나오고 있습니다.
+
+ KBS 뉴스, 신민혜입니다.
+
+ 영상편집 박철식 그 래 픽 안재우 ",,10,N,Y,,N,N,N,N,Y,0001,20220301,10,AI202203010798971,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:18:47,wenrou315,2022-03-01 22:13:57,,,,Y,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,신민혜,/data/news/title_image/newsmp4/news9/2022/03/01/100_5406562.jpg,,,,,사회,뉴스 9,0023,사회,,뉴스 9,,"[{'imgCode': '5428681', 'newsCode': '5406562', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/100_5406562.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:24:48', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406562', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/100_5406562.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:18:17', 'vodEndTime': '2022-03-01 21:20:22', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:24:48', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/100_5406562.srt'}, {'newsCode': '5406562', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/100_5406562.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:18:17', 'vodEndTime': '2022-03-01 21:20:22', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:24:48', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/100_5406562.srt'}, {'newsCode': '5406562', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/100_5406562.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:18:17', 'vodEndTime': '2022-03-01 21:20:22', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:24:48', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/100_5406562.srt'}]","[{'newsCode': '5406562', 'reporterGubun': None, 'seq': None, 'reporterCode': '32897', 'reporterName': '신민혜', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': None, 'imgUrl': '/images/news/reporter/be6e7b1db161c6bf9709b00a99e030d4.jpg', 'email': 'medical@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/be6e7b1db161c6bf9709b00a99e030d4.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406563,0005,200,200,N,2022-03-01 20:14:59,2022-03-01 21:21:05,N,N,Y,,,,,입국자 격리 형평성 논란에 “접종 입국자 격리 면제 검토”,"(슈퍼/9시)입국자 격리 형평성 논란에 ""접종 입국자 격리 면제 검토""",," [앵커]<br /><br /> 오늘(1일)부터는 확진자의 동거인도 접종 여부와 상관 없이 격리를 하지 않아도 됩니다.<br /><br />해외에서 입국할 경우엔, 면제 국가를 빼곤 격리를 해야하는데  형평성 문제가 계속되고 있습니다. <br /><br />정부는 입국자 격리도  완화하는 방안을 검토 중입니다. <br /><br />이 내용은 이승재 기자가 전해드립니다.<br /><br /> [리포트]<br /><br /> 지난달 27일, 미국 연수를 마치고 귀국한 대학생 박세원 씨, <br /><br /> 사흘째 자가 격리하며  회사 인턴 업무를 처리하고 있습니다.<br /><br /> [박세원/해외입국 격리자 : ""(직접) 출근하면서 전달 사항을 받을 때와 비교하면 너무 불편한 상황인 것 같습니다.""]<br /><br /> 격리 면제국가인 싱가포르와 사이판을 제외하고 해외 입국자들은 접종 여부와 관계없이 7일 간 격리해야 합니다.<br /><br /> 오미크론 대응 체계 전환에 따라 자가 격리 대상이 완화되고 있는데 음성 확인까지 받은 해외 입국자에 대한 격리를 유지하는 건  형평성에 어긋난다는 지적이 나오고 있습니다.<br /><br /> [김 모 씨/해외입국 격리자/음성변조 : ""귀국하고 나서 24시간 이내에 PCR 검사를 받는데, 일주일씩 자가 격리를 할 필요가 있는지 다시 검토를 해서 좀 완화를 해도...""]<br /><br /> 실제로 오늘부턴 확진자와 함께 사는 사람이라도 접종 여부와 상관없이 격리를 하지 않아도 됩니다.<br /><br /> 격리를 해야하는 건  확진자와  요양 시설 내 밀접 접촉자, 그리고 해외 입국자 뿐입니다.<br /><br /> 이에 따라 정부는 백신 접종을 완료한 입국자에 대해 자가 격리를 면제하는 방안을 검토 중이라고 밝혔습니다.<br /><br /> [정은경/중앙방역대책본부장/어제 : ""유행 상황이 안정화되는 시기 등을 고려해해외 입국자에 대한 관리도 개인의 위험도 기반으로 변경하는 것을 추진할 예정입니다.""]<br /><br /> 정부는  예방접종력과 음성확인서, 여행이력 등의 정보를 입력, 제출하는  사전입국신고 시범 사업을 토대로 해외 입국자 관리 방안을  변경할 예정이라고 설명했습니다.<br /><br /> KBS 뉴스 이승재입니다.<br /><br /> 촬영기자:김준우/영상편집:박주연/그래픽 제작:김지훈"," [앵커]
+
+ 오늘(1일)부터 확진자의 동거인은 접종 여부와 상관 없이 자가 격리를 하지 않아도 됩니다.
+
+ 이로써 자가 격리 대상은 확진자, 요양시설 내 밀접 접촉자, 그리고 해외 입국자만 남았는데요.
+
+ 해외 입국자 격리 기준을 놓고 형평성 문제가 제기되자
+
+ 정부는 입국자 격리도 완화하는 방안을 검토 중이라고 밝혔습니다.
+
+ 이승재 기자가 취재했습니다.
+
+ [리포트]
+
+ 지난달 27일, 미국 연수를 마치고 귀국한 대학생 박세원 씨,
+
+ 사흘째 자가 격리하며  회사 인턴 업무를 처리하고 있습니다.
+
+ 박세원 씨 / 해외입국 격리자 [녹취] ""(직접) 출근하면서 전달 사항을 받을 때와 비교하면 너무 불편한 상황인 것 같습니다.""
+
+ 격리 면제국가인 싱가포르와 사이판을 제외하고 해외 입국자들은 접종 여부와 관계없이 7일 간 격리해야 합니다.
+
+ 오미크론 대응 체계 전환에 따라 자가 격리 대상이 완화되고 있는데
+
+ 음성 확인까지 받은
+
+ 해외 입국자에 대한 격리를 유지하는 건  형평성에 어긋난다는 지적이 나오고 있습니다.
+
+ 김 모 씨 / 해외입국 격리자 (음성변조) [녹취] ""귀국하고 나서 24시간 이내에 PCR 검사를 받는데, 일주일씩 자가 격리를 할 필요가 있는지 다시 검토를 해서 좀 완화를 해도...""
+
+ 실제로 오늘부턴 확진자와 함께 사는 사람이라도 접종 여부와 상관없이 격리를 하지 않아도 됩니다.
+
+ 격리를 해야하는 건  확진자와  요양 시설 내 밀접 접촉자, 그리고 해외 입국자 뿐입니다.
+
+ 이에 따라 정부는 백신 접종을 완료한 입국자에 대해 자가 격리를 면제하는 방안을 검토 중이라고 밝혔습니다.
+
+ 정은경 / 중앙방역대책본부장 (어제) [녹취] ""유행 상황이 안정화되는 시기 등을 고려해해외 입국자에 대한 관리도 개인의 위험도 기반으로 변경하는 것을 추진할 예정입니다.""
+
+ 정부는  예방접종력과 음성확인서, 여행이력 등의 정보를 입력, 제출하는  사전입국신고 시범 사업을 토대로 해외 입국자 관리 방안을  변경할 예정이라고 설명했습니다.
+
+ KBS뉴스 이승재입니다.
+
+ 촬영기자 : 김준우 영상편집 : 박주연 그래픽 제작 : 김지훈
+
+ ",,10,N,Y,,N,N,N,N,Y,0001,20220301,11,AI202203010798184,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:21:04,wenrou315,2022-03-01 22:13:57,,,,Y,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,이승재,/data/news/2022/03/01/20220301_pW9bxE.jpg,,,,,사회,뉴스 9,0023,사회,,뉴스 9,,"[{'imgCode': '5428682', 'newsCode': '5406563', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_pW9bxE.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:25:48', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406563', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/110_5406563.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:20:22', 'vodEndTime': '2022-03-01 21:22:23', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:25:48', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/110_5406563.srt'}, {'newsCode': '5406563', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/110_5406563.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:20:22', 'vodEndTime': '2022-03-01 21:22:23', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:25:48', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/110_5406563.srt'}, {'newsCode': '5406563', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/110_5406563.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:20:22', 'vodEndTime': '2022-03-01 21:22:23', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:25:48', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/110_5406563.srt'}]","[{'newsCode': '5406563', 'reporterGubun': None, 'seq': None, 'reporterCode': '31588', 'reporterName': '이승재', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/7ccacc3131595affe7e7c19638e4b1d9.jpg', 'email': 'sjl@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/7ccacc3131595affe7e7c19638e4b1d9.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406564,0005,200,200,N,2022-03-01 20:27:29,2022-03-01 21:23:24,N,N,Y,,,,,[제보] 코로나 치매 노인 입원 나흘 만에…유족 “관리 소홀”,"대체/[제보](슈퍼/9시)코로나 치매 노인 입원 나흘 만에...유족 ""관리 소홀""",," [앵커]<br /><br />코로나19에 감염된 90대 할머니가 전담 요양병원으로  옮겨진지 나흘 만에 숨졌습니다.<br /><br />​코로나19가 사인이긴 하지만 유족들은 병원에서 식사를 제대로 주지 않는 등 환자 관리가 부실했다고 주장하고 있습니다.<br /><br />​환자 진료기록에도 의심스러운 부분이 발견돼 경찰이 수사에 착수했습니다.<br /><br />시청자와 함께 만드는 뉴스 제보 황현규 기잡니다.<br /><br /> [리포트]<br /><br /> 턱받이를 한 할머니가 식판 앞에 가만히 앉아있습니다.<br /><br /> 10분 가까이 요양보호사가 밥을 떠먹여 주지 않습니다.<br /><br /> 또 다른 영상을 보면 할머니 앞에 있다 수거된 식판에 음식이 대부분 남아있습니다.<br /><br /> 코로나19에 걸린  이 90대 환자는 파킨슨병에 치매까지 걸려 혼자선 식사할 수 없는 상태였습니다.<br /><br /> 요양원에 머물던 할머니는 코로나 19에 확진돼 이 병원으로 옮겨졌는데, 입원한 지 4일 만에 세상을 떠났습니다.<br /><br /> 사인은 코로나19지만, 유족들은 병원 측의 부실한 환자 관리도 문제였다고 주장합니다.<br /><br /> [유가족/음성변조 : ""요양병원에 계속 전화해서 식사 어떻게 되고 있는지, 식사가 안 되면 제발 주사라도 놔드리라고 말씀을 드렸는데…""]<br /><br /> 병원 측은 강제로 밥을 먹이다 음식이 기도로 넘어가면 위험할 수 있다고 해명했지만, 영양 주사 등을 처방하진 않았습니다.<br /><br /> 또 누가 노인의 식사 등을 담당했는지조차 확인하지 못하고 있습니다.<br /><br /> [병원 관계자/음성변조 : ""(요양사는 아직 파악이 안 된 거죠?) 기억을 못 합니다. (이게 서류로 남아있는 이렇게 돼 있는 건 아닌가봐요?) 그런 건 없어요.""]<br /><br /> 진료기록부도 할머니가 숨진 뒤까지도 미리 작성돼 있었고, 의사가 서명까지 했던 거로  파악됐습니다.<br /><br /> [유가족/음성변조 : ""사망하기 전 기록에도 전혀 신뢰할 수가 없고, 뭘 해드렸는지 전혀 믿을 수가 없었어요.""]<br /><br /> [이봉주/서울대 사회복지학과 교수 : ""감염병 전담 병원은 사실 외부로부터 완전히 통제되는 시스템이기 때문에 외부에서의 모니터링이라든지 어떤 이런 상황에 대한 관리, 감독 이런 게 오히려 더 어려워질 수가 있기 때문에...""]<br /><br /> 관할 보건소는 진료기록을 허위로 작성한 이 요양병원을  의료법 위반 혐의로 고발했고, 경찰은 수사에 착수했습니다.<br /><br /> KBS 뉴스 황현규입니다.<br /><br />촬영기자:최석규 하정현/영상편집:남은주/그래픽:이경민"," [앵커]
+
+ 코로나19에 감염된 90대 노인이 감염병 전담 요양병원으로 옮겨진 지 나흘 만에 숨졌습니다.
+
+ 이 노인이 거동이 불편하고  치매 증상이 있었는데, 유족들은 병원에서 제대로 돌보지 않았다고 주장하고 있습니다.
+
+ 황현규 기자가 취재했습니다.
+
+ [리포트]
+
+ 턱받이를 한 할머니가 식판 앞에 가만히 앉아있습니다.
+
+ 10분 가까이 요양보호사가 밥을 떠먹여 주지 않습니다.
+
+ 또 다른 영상을 보면 할머니 앞에 있다 수거된 식판에 음식이 대부분 남아있습니다.
+
+ 코로나19에 걸린  이 90대 환자는 파킨슨병에 치매까지 걸려 혼자선 식사할 수 없는 상태였습니다.
+
+ <ON> 요양원에 머물던 할머니는 코로나 19에 확진돼 이 병원으로 옮겨졌는데, 입원한 지 4일 만에 세상을 떠났습니다.</ON>
+
+ 사인은 코로나19지만, 유족들은 병원 측의 부실한 환자 관리도 문제였다고 주장합니다.
+
+ 유가족(음성변조) [인터뷰] ""요양병원에 계속 전화해서 식사 어떻게 되고 있는지, 식사가 안 되면 제발 주사라도 놔드리라고 말씀을 드렸는데…""
+
+ 병원 측은 강제로 밥을 먹이다 음식이 기도로 넘어가면 위험할 수 있다고 해명했지만, 영양 주사 등을 처방하진 않았습니다.
+
+ 또 누가 노인의 식사 등을 담당했는지조차 확인하지 못하고 있습니다.
+
+ 병원 관계자(음성변조) [인터뷰] ""(요양사는 아직 파악이 안 된 거죠?) 기억을 못 합니다. (이게 서류로 남아있는 이렇게 돼 있는 건 아닌가봐요?) 그런 건 없어요.""
+
+ 진료기록부도 할머니가 숨진 뒤까지도 미리 작성돼 있었고, 의사가 서명까지 했던 거로  파악됐습니다.
+
+ 유가족(음성변조) [인터뷰] ""사망하기 전 기록에도 전혀 신뢰할 수가 없고, 뭘 해드렸는지 전혀 믿을 수가 없었어요.""
+
+ 이봉주/서울대 사회복지학과 교수 [인터뷰] ""감염병 전담 병원은 사실 외부로부터 완전히 통제되는 시스템이기 때문에 외부에서의 모니터링이라든지 어떤 이런 상황에 대한 관리, 감독 이런 게 오히려 더 어려워질 수가 있기 때문에...""
+
+ 관할 보건소는 진료기록을 허위로 작성한 이 요양병원을  의료법 위반 혐의로 고발했고, 경찰은 수사에 착수했습니다.
+
+ KBS 뉴스 황현규입니다.
+
+ (촬영기자 : 최석규, 하정현 / 영상편집  : 남은주 / 그래픽 : 이경민)",,10,N,Y,,N,N,N,N,Y,0001,20220301,12,AI202202250790599,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:23:24,wenrou315,2022-03-01 22:13:56,,,,Y,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,황현규,/data/news/2022/03/01/20220301_QOlnos.jpg,,,,,사회,뉴스 9,1075,제대로 보겠습니다,,뉴스 9,,"[{'imgCode': '5428683', 'newsCode': '5406564', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '100', 'imgUrl': '/data/news/2022/03/01/20220301_QOlnos.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:28:21', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406564', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/120_5406564.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:22:24', 'vodEndTime': '2022-03-01 21:24:44', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:28:21', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/120_5406564.srt'}, {'newsCode': '5406564', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/120_5406564.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:22:24', 'vodEndTime': '2022-03-01 21:24:44', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:28:21', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/120_5406564.srt'}, {'newsCode': '5406564', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/120_5406564.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:22:24', 'vodEndTime': '2022-03-01 21:24:44', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:28:21', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/120_5406564.srt'}]","[{'newsCode': '5406564', 'reporterGubun': None, 'seq': None, 'reporterCode': '33076', 'reporterName': '황현규', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/396bb038ac6ff551ed4b7be444669904.jpg', 'email': 'help@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/396bb038ac6ff551ed4b7be444669904.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406565,0003,200,200,N,2022-03-01 20:29:48,2022-03-01 21:25:21,N,N,Y,,,,,이재명 ‘인물론’‘통합정부’ 호소…김동연과 사실상 단일화,(슈퍼/9시)이재명 '인물론''통합정부' 호소..김동연과 사실상 단일화,," [앵커]<br /><br />대선을 8일 앞두고, 여야는 서울에서 총력전을 펼쳤습니다.<br /><br />먼저, 민주당 이재명 후보는 부동산에 대한 불만을 넘어서기 위해 인물론을 내세웠고, 국민 통합 정부를 내세워 중도, 부동층의 마음을 얻는데 주력했습니다.<br /><br />김동연 후보와는 사실상 단일화에 합의했습니다.<br /><br />손서영 기자의 보도입니다.<br /><br /> [리포트]<br /><br /> 민주당 이재명 후보는  서울에서 총력전에 나섰습니다.<br /><br /> 서울에서 앞서야만 당선될 수 있다고 판단합니다.<br /><br /> 악화된 부동산 민심에서 출발한 정권 교체 심리를 의식해, 인물론으로 지지를 호소했습니다.<br /><br /> [이재명/민주당 대선후보 : ""부동산 정책은 섬세해야 합니다. 정책의 세밀함, 그리고 정책의 현장성, 이재명의 주특기 아닙니까? 이재명이 제일 잘하는 것입니다.""]<br /><br /> 윤석열 후보를 겨냥해선  아무런 비전과 정책도 없이 정권 교체만 외친다고 비판했습니다.<br /><br /> [이재명/민주당 대선후보 : ""앞으로 뭘 하겠다는 말은 없이 정치 보복하겠다, 이런 말 공언하는 정치 세력이 과연 이 나라의 미래를 책임질 수 있겠습니까?""]<br /><br /> 국민 통합정부도 내세웠습니다.<br /><br /> 때마침  과거 안철수 후보를 도왔던  윤여준 전 장관 등이 차기 정부를 향해  통합 내각 구성 등을 제안하자, 이 후보는 즉각 화답했습니다.<br /><br /> [이재명/민주당 대선후보 : ""원로 분들의 제안을 적극적으로 수용하고, 이재명이 통합정부 구성, 통합의 정치 확실하게 하겠다고 약속드립니다, 여러분.""]<br /><br /> 정치 개혁을 고리로 새로운물결 김동연 후보와도  사실상 단일화에 합의했습니다. <br /><br /> [김동연/새로운물결 대선후보 : ""정치 교체와 또 통합 정부 운영과 구성에 대한 합의를 이루게 된 것을 대단히 기쁘게 생각합니다.""]<br /><br /> 이재명 후보는 남은 기간  서울 지역과 노년층, 2030, 여성 등 부동층 공략에 집중할 계획입니다.<br /><br /> 이틀 뒤부터 여론조사 공표가 금지되는데, 그때까지 최대한 지지율을 끌어올려  승기를 잡겠다는 전략입니다. <br /><br /> KBS 뉴스 손서영입니다.<br /><br /> 촬영기자:최연송 송상엽/영상편집:이윤진"," [앵커]
+
+ 대선을 8일 앞두고,  여야는 서울에서 총력전을 펼쳤습니다.
+
+ 먼저, 민주당 이재명 후보는 부동산 불만을 넘어서기 위해 인물론을 내세웠고,
+
+ 국민 통합 정부를 내세워  중도, 부동층의 마음을 얻는데 주력했습니다.
+
+ 김동연 후보와는  사실상 단일화에 합의했습니다.
+
+ 손서영 기자의 보도입니다.
+
+ [리포트]
+
+ 민주당 이재명 후보는  서울에서 총력전에 나섰습니다.
+
+ 서울에서 앞서야만
+
+ 당선될 수 있다고 판단합니다.
+
+ 악화된 부동산 민심에서 출발한 정권 교체 심리를 의식해,
+
+ 인물론으로 지지를 호소했습니다.
+
+ 이재명/민주당 대선후보  [녹취] ""부동산 정책은 섬세해야 합니다. 정책의 세밀함, 그리고 정책의 현장성, 이재명의 주특기 아닙니까? 이재명이 제일 잘하는 것입니다.""
+
+ 윤석열 후보를 겨냥해선  아무런 비전과 정책도 없이
+
+ 정권 교체만 외친다고 비판했습니다.
+
+ 이재명/민주당 대선후보  [녹취] ""앞으로 뭘 하겠다는 말은 없이 정치 보복하겠다, 이런 말 공언하는 정치 세력이 과연 이 나라의 미래를 책임질 수 있겠습니까?""
+
+ 국민 통합정부도 내세웠습니다.
+
+ 때마침  과거 안철수 후보를 도왔던  윤여준 전 장관 등이
+
+ 차기 정부를 향해  통합 내각 구성 등을 제안하자,
+
+ 이 후보는 즉각 화답했습니다.
+
+ 이재명/민주당 대선후보  [녹취] ""원로 분들의 제안을 적극적으로 수용하고, 이재명이 통합정부 구성, 통합의 정치 확실하게 하겠다고 약속드립니다, 여러분.""
+
+ /TGA/ 정치 개혁을 고리로
+
+ 새로운물결 김동연 후보와도  사실상 단일화에 합의했습니다. /TGA/
+
+ 김동연/새로운물결 대선후보  [녹취] ""정치 교체와 또 통합 정부 운영과 구성에 대한 합의를 이루게 된 것을 대단히 기쁘게 생각합니다.""
+
+ <ON>
+
+ 이재명 후보는 남은 기간  서울 지역과 노년층, 2030, 여성 등 부동층 공략에 집중할 계획입니다.
+
+ 이틀 뒤부터 여론조사 공표가 금지되는데,
+
+ 그때까지 최대한 지지율을 끌어올려  승기를 잡겠다는 전략입니다. </ON>
+
+ KBS 뉴스, 손서영입니다.
+
+ 촬영기자: 최연송, 송상엽 영상편집: 이윤진
+
+ ",,10,N,Y,,N,N,N,N,Y,0001,20220301,13,AI202203010799073,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:25:21,looby83,2022-03-02 06:39:02,,,,N,Y,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,손서영,/data/news/2022/03/01/20220301_SEWe6X.jpg,,,,,정치,뉴스 9,0010,정치,,뉴스 9,,"[{'imgCode': '5428684', 'newsCode': '5406565', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '100', 'imgUrl': '/data/news/2022/03/01/20220301_SEWe6X.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:31:07', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406565', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/130_5406565.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:24:44', 'vodEndTime': '2022-03-01 21:26:52', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:31:07', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/130_5406565.srt'}, {'newsCode': '5406565', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/130_5406565.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:24:44', 'vodEndTime': '2022-03-01 21:26:52', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:31:07', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/130_5406565.srt'}, {'newsCode': '5406565', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/130_5406565.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:24:44', 'vodEndTime': '2022-03-01 21:26:52', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:31:07', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/130_5406565.srt'}]","[{'newsCode': '5406565', 'reporterGubun': None, 'seq': None, 'reporterCode': '30830', 'reporterName': '손서영', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/a93dc621a446eb77129989e557dd50d0.jpg', 'email': 'bellesy@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/a93dc621a446eb77129989e557dd50d0.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406566,0003,200,200,N,2022-03-01 20:48:03,2022-03-01 21:28:24,N,N,Y,,,,,첫 원팀 유세 윤석열 “정권 교체가 정치교체”,"(슈퍼/9시) 첫 원팀 유세 윤석열 ""정권 교체가 정치교체""",," [앵커]<br /><br /> 국민의힘 윤석열 후보도 서울 유세에 집중했습니다.<br /><br />처음으로 경선 경쟁자들이 다 한 팀으로 모였고, 민주당의 정치교체론에 맞서 정권 교체가 정치교체라고 강조했습니다.<br /><br />강푸른 기자입니다.<br /><br /> [리포트]<br /><br /> 3·1절을 맞아 독립 운동가 묘역을 참배하고 자유 민주주의를 강조한 국민의힘 윤석열 후보.<br /><br /> 이어진 대학가 유세에선  민주당의 정치교체, 통합 정부론을 강하게 비판했습니다.<br /><br /> 대선을 직전에 둔 상황에서 '사기' 아니냐고 표현했습니다. <br /><br />  [윤석열/국민의힘 대선 후보 : ""국민 통합 아무나 합니까? 썩고 부패한 사람이 통합하자면 누가 거기에 호응하겠습니까, 여러분. 집에 갈 준비를 해야 될 사람들이 무슨 국민 통합입니까?""]<br /><br /> 이재명 후보의 정치 교체 주장에는  정권 교체로 맞받았습니다.<br /><br /> 야권 표심 결집 목적도 있어 보입니다.<br /><br /> [윤석열/국민의힘 대선 후보 : ""정권 교체가 정치 개혁입니다. 저 같은 정치 신인이 이 나라의 정부를 맡게 되는 것이 엄청난 정치 개혁 아닙니까, 여러분.""]<br /><br /> 그리고 정권교체 필요성의 이유로, 특히 경제와 외교안보를 들었습니다. <br /><br />  [윤석열/국민의힘 대선 후보 : ""민주당 정권은 어떻게 했습니까? 도발이라는 말도 못 한 벙어리 행세를 했죠. 이런 정권이 국민의 생명과 안전을 지킬 수 있습니까?""]<br /><br /> 윤 후보의 신촌 유세에는  처음으로 경선 경쟁자들이 함께 해 '원 팀' 유세를 했습니다.<br /><br /> 안철수 후보와 단일화가 사실상 무산된 상태에서, 윤 후보를  야권 유일 후보라고도 규정했습니다.<br /><br /> 윤석열 후보는  지지자들의 투표율을 최대한 끌어올리는데 집중하고 있습니다.<br /><br /> 3월 9일까지 기다릴 것 없이  이번 금요일과 토요일,  사전투표에 참여해 달라고 독려했습니다. <br /><br /> KBS 뉴스 강푸른입니다.<br /><br />촬영기자:조승연 송혜성/영상편집:김태형"," [앵커]
+
+ 국민의힘 윤석열 후보도  서울 유세에 집중했습니다.
+
+ 처음으로 경선 경쟁자들이 다 모여 원팀 유세에 나섰고,
+
+ 민주당의 정치교체론에 맞서 정권 교체가 정치교체라고 강조했습니다.
+
+ 강푸른 기자가 보도합니다.
+
+ [리포트]
+
+ 3·1절을 맞아 독립 운동가 묘역을 참배하고 자유 민주주의를 강조한
+
+ 국민의힘 윤석열 후보.
+
+ 이어진 대학가 유세에선  민주당의 정치교체, 통합 정부론을 강하게 비판했습니다.
+
+ 대선을 직전에 둔 상황에서 '사기' 아니냐고 표현했습니다. <br />  [녹취] 윤석열/국민의힘 대선 후보 ""국민 통합 아무나 합니까? 썩고 부패한 사람이 통합하자면 누가 거기에 호응하겠습니까, 여러분. 집에 갈 준비를 해야 될 사람들이 무슨 국민 통합입니까?""
+
+ 이재명 후보의 정치 교체 주장에는  정권 교체로 맞받았습니다.
+
+ 야권 표심 결집 목적도 있어 보입니다.
+
+ [녹취] 윤석열/국민의힘 대선 후보 ""정권 교체가 정치 개혁입니다. 저 같은 정치 신인이 이 나라의 정부를 맡게 되는 것이 엄청난 정치 개혁 아닙니까, 여러분.""
+
+ 그리고 정권교체 필요성의 이유로, 특히 경제와 외교안보를 들었습니다. <br />  [녹취] 윤석열/국민의힘 대선 후보 ""민주당 정권은 어떻게 했습니까? 도발이라는 말도 못 한 벙어리 행세를 했죠. 이런 정권이 국민의 생명과 안전을 지킬 수 있습니까?""
+
+ 윤 후보의 신촌 유세에는  처음으로 경선 경쟁자들이 함께 해 '원 팀' 유세를 했습니다.
+
+ 안철수 후보와 단일화가 사실상 무산 상태에서,
+
+ 윤 후보를  야권 유일 후보라고도 규정했습니다.
+
+ <ON>윤석열 후보는  지지자들의 투표율을 최대한 끌어올리는데 집중하고 있습니다.
+
+ 3월 9일까지 기다릴 것 없이  이번 금요일과 토요일,  사전투표에 참여해 달라고 독려했습니다.  </ON>
+
+ KBS 뉴스, 강푸른입니다.",,10,N,Y,,N,N,N,N,Y,0001,20220301,14,AI202203010799082,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:28:24,looby83,2022-03-02 06:39:02,,,,N,Y,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,강푸른,/data/news/2022/03/01/20220301_XJpJ9s.jpg,,,,,정치,뉴스 9,0010,정치,,뉴스 9,,"[{'imgCode': '5428685', 'newsCode': '5406566', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '100', 'imgUrl': '/data/news/2022/03/01/20220301_XJpJ9s.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:32:32', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406566', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/140_5406566.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:26:52', 'vodEndTime': '2022-03-01 21:28:53', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:32:32', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/140_5406566.srt'}, {'newsCode': '5406566', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/140_5406566.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:26:52', 'vodEndTime': '2022-03-01 21:28:53', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:32:32', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/140_5406566.srt'}, {'newsCode': '5406566', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/140_5406566.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:26:52', 'vodEndTime': '2022-03-01 21:28:53', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:32:32', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/140_5406566.srt'}]","[{'newsCode': '5406566', 'reporterGubun': None, 'seq': None, 'reporterCode': '31111', 'reporterName': '강푸른', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/dc86327c4738b2c6f09825829e492b8d.jpg', 'email': 'strongblue@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/dc86327c4738b2c6f09825829e492b8d.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406567,0003,200,200,N,2022-03-01 20:48:13,2022-03-01 21:29:42,N,N,Y,,,,,심 “심상정 찍어야 통합정부”…안 “尹 만날 용의 있어”,"(수퍼/9시)심 ""심상정 찍어야 통합정부""…안 ""尹 만날 용의 있어""",," [앵커]<br /><br />정의당 심상정 후보는 거대 양당 기득권 정치를 비판하며, 통합정부를 위해 자신을 찍어달라고 호소했습니다.<br /><br />국민의당 안철수 후보는 단일화 협상 과정에 불만을 드러내면서도 어떤 정치인이든 만날 용의가 있다고 여지를 남겼습니다.<br /><br />이어서  조태흠 기자입니다.<br /><br /> [리포트]<br /><br /> 정의당 심상정 후보, 민주당, 국민의힘은 통합정부 말하면서, 진영을 갈라 표를 강요하고 있다, 했습니다.<br /><br /> 결국은 표를 몰아달라는 얘기일 뿐이고, 시민을 볼모로 삼는 정치라 비판했습니다.<br /><br /> 진짜 다당제 통합정부를 원하면 유일한 '진보 후보'인 자신을 찍어달라, 호소했습니다.<br /><br /> [심상정/정의당 대선 후보 : ""다당제 통합 정부를 위해서도 양당에 표 몰아주시면 안 되죠? 기득권이 아닌 후보와 정당에 표를 주셔야 다당제 되고 연합정치 될 거 아닙니까 여러분.""]<br /><br /> 고향 파주, 지역구인 고양에서는 군사 접경 지역으로, 특별한 희생을 해온 지역인 만큼, 특별한 보상을 하겠다고 약속했습니다.<br /><br /> 국민의당 안철수 후보는 토론 준비로 최소화한 공식 일정 도중에도 단일화 협상에 대한 입장을 자세히 설명했습니다.<br /><br /> 국민의힘이 진정성이 없었다, 책임을 묻는 말이었습니다.<br /><br /> 윤석열 후보를 만날 의향을 묻자, 이렇게 답했습니다.<br /><br /> [안철수/국민의당 대선 후보 : ""저는 정치인들끼리 중요한 어떤 어젠다에 대해서 논의를 하자고 한다면, 어떤 정치인이든지 만날 용의가 있습니다.""]<br /><br /> 인명진 전 새누리당 비대위원장이 지지를 철회하는 등 당 안팎의 단일화 압력이 잇따르자 여지를 남긴 것 아니냐 해석이 나왔는데, 국민의당 측은 '원론적 이야기'라 선을 그었습니다.<br /><br /> KBS 뉴스 조태흠입니다."," [앵커]
+
+ 정의당 심상정 후보는 거대 양당 기득권 정치를 비판하며, 통합정부를 위해 자신을 찍어달라고 호소했습니다.
+
+ 국민의당 안철수 후보는 단일화 협상 과정에 불만을 표하면서도, 어떤 정치인이든 만날 용의가 있다고 여지를 남겼습니다.
+
+ 심상정, 안철수 후보 소식은 조태흠 기자입니다.
+
+ [리포트]
+
+ 정의당 심상정 후보, 민주당, 국민의힘은 통합정부 말하면서, 진영을 갈라 표를 강요하고 있다, 했습니다.
+
+ 결국은 표를 몰아달라는 얘기일 뿐이고, 시민을 볼모로 삼는 정치라 비판했습니다.
+
+ 진짜 다당제 통합정부를 원하면 유일한 '진보 후보'인 자신을 찍어달라, 호소했습니다.
+
+ 심상정 / 정의당 대선 후보 [녹취] 다당제 통합 정부를 위해서도 양당에 표 몰아주시면 안 되죠? 기득권이 아닌 후보와 정당에 표를 주셔야 다당제 되고 연합정치 될 거 아닙니까 여러분.
+
+ 고향 파주, 지역구인 고양에서는
+
+ 군사 접경 지역으로, 특별한 희생을 해온 지역인 만큼, 특별한 보상을 하겠다고 약속했습니다.
+
+ 국민의당 안철수 후보는 토론 준비로 최소화한 공식 일정 도중에도
+
+ 단일화 협상에 대한 입장을 자세히 설명했습니다.
+
+ 국민의힘이 진정성이 없었다, 책임을 묻는 말이었습니다.
+
+ 윤석열 후보를 만날 의향을 묻자, 이렇게 답했습니다.
+
+ 안철수 / 국민의당 대선 후보 [녹취] 저는 정치인들끼리 중요한 어떤 어젠다에 대해서 논의를 하자고 한다면, 어떤 정치인이든지 만날 용의가 있습니다.
+
+ 인명진 전 새누리당 비대위원장이 지지를 철회하는 등 당 안팎의 단일화 압력이 잇따르자 여지를 남긴 것 아니냐 해석이 나왔는데,
+
+ 국민의당 측은 '원론적 이야기'라 선을 그었습니다.
+
+ KBS 뉴스 조태흠입니다.",,10,N,Y,,N,N,N,N,Y,0001,20220301,15,AI202203010799080,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:29:42,wenrou315,2022-03-01 22:13:07,,,,Y,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,조태흠,/data/news/2022/03/01/20220301_qt9i9E.jpg,,,,,정치,뉴스 9,0010,정치,,뉴스 9,,"[{'imgCode': '5428686', 'newsCode': '5406567', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '100', 'imgUrl': '/data/news/2022/03/01/20220301_qt9i9E.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:34:00', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406567', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/150_5406567.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:28:53', 'vodEndTime': '2022-03-01 21:30:38', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:34:00', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/150_5406567.srt'}, {'newsCode': '5406567', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/150_5406567.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:28:53', 'vodEndTime': '2022-03-01 21:30:38', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:34:00', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/150_5406567.srt'}, {'newsCode': '5406567', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/150_5406567.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:28:53', 'vodEndTime': '2022-03-01 21:30:38', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:34:00', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/150_5406567.srt'}]","[{'newsCode': '5406567', 'reporterGubun': None, 'seq': None, 'reporterCode': '29995', 'reporterName': '조태흠', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/dd8a25785dcb6f7ceca55668d9ad9dc6.jpg', 'email': 'jotem@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/dd8a25785dcb6f7ceca55668d9ad9dc6.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406568,0005,200,200,N,2022-03-01 20:15:46,2022-03-01 21:31:48,N,N,Y,,,,,[탐사K/단독]① ‘경찰과 골프’…고위직에 예약 특혜,(슈퍼/탐사K①/단독/9시)'경찰과 골프'...고위직에 예약 특혜,," [앵커]<br /><br /> 경기도 용인과 충남 아산에는 경찰이 운영하는 골프장이 있습니다.<br /><br />나랏돈으로 만들어진 이 골프장은 이용료가 한 사람에 2만 원으로, 민간 골프장의 10분의 1 정도입니다.<br /><br />인기가 많아서 주말엔 예약경쟁률이 8대 1을 넘기도 한다는데 취재 결과, 일부 경찰 고위 간부들이 비정상적인 방법으로 골프장을 이용해온 걸로 <br /><br />먼저 유호윤 기자입니다.<br /><br /> [리포트]<br /><br /> 40만 제곱미터 규모로 탁 트인 필드.<br /><br /> 경찰이 운영하는 골프장입니다.<br /><br /> 지난해 12월, 주말을 맞아 한 경찰 고위직이 클럽하우스에 도착합니다.<br /><br /> 당시 경찰 인재개발원장이던 이명교 치안감입니다.<br /><br /> 골프 접대를 받아 지난해 정직 3개월의  중징계를 받기도 한 이 치안감.<br /><br /> 힘찬 샷을 날리며 골프를 시작했지만, 사실 이 치안감은 이날 골프를 칠 수 없었습니다.<br /><br /> 10일 전 경쟁 추첨 방식으로  확정된 예약자리에 이 치안감은 없었기 때문입니다.<br /><br /> 하지만 불과 6일 전 추첨도 없이 이 치안감의 자리가 만들어졌습니다. <br /><br />  [A씨/경찰골프장 직원/음성변조 : ""(예약) 프로그램 회사에도 한번 문의를 해봤더니 이거는 추첨 이후에 만들어진 티라고 하더라고요.""]<br /><br /> 또 다른 주말에도 외부인 3명과 골프를 쳤는데 이번엔 미리 빼놓은 자리를 이용한 것으로 파악됐습니다. <br /><br /> [A 씨/경찰골프장 직원/음성변조 : ""주말에 현직 경찰들 경쟁이 치열해서 외부인들이 3명 같이하면 공정한 추첨을 통해서는 거의 당첨되기 어렵다고 봐야죠.""]<br /><br /> 경쟁을 거치지 않고 골프를 칠 수 있었던 건 직원들의 예약시스템 조작이 있었기 때문입니다.<br /><br /> KBS 탐사보도부가 경찰 골프장의  예약자료를 입수해 분석한 결과 예약시스템이 무시된 채 이 치안감이 골프장을 이용한 횟수는 지난해 3월부터 12월까지 모두 11번입니다.<br /><br /> 다른 경찰 고위직도 있습니다.<br /><br /> 현 인재개발원장인  이명호 치안감입니다.<br /><br /> 지난 연말 평일 오전에 조퇴를 내고 골프를 쳤는데 라운딩 동반자는 이 치안감의 부인이었습니다.<br /><br /> 역시 추첨이 끝난 뒤 별도로 만들어진 자리를 이용했습니다. <br /><br />  [이영기/호루라기 재단 이사장/변호사 : ""이러한 (예약)청탁을 들어줌으로써 어떠한 이익을 얻었는지, 이런 부분에 초점을 맞춰서 적극적으로 수사할 필요가 있다.""]<br /><br /> 이에 대해 이명교, 이명호 치안감은 담당 직원에게 예약을 부탁했을 뿐이고 예약이 취소된 시간에 이용한 것으로  ""알고 있다""고 밝혔습니다.<br /><br /> 경찰 체력단련을 주목적으로 만들어진 경찰 골프장은 운영 적자로 한 해 10억 안팎의 세금이 투입되지만 민간 골프장에 비해 이용료는 약 10분의 1 수준으로 저렴합니다.<br /><br /> KBS 뉴스 유호윤입니다.<br /><br /> 촬영기자:박상욱/그래픽:노경일"," [앵커]
+
+ 경기도 용인과 충남 아산에는 경찰이 운영하는 골프장이 있습니다.
+
+ 나랏돈으로 만들어진 이 골프장은 이용료가 1인당 2만 원으로  민간 골프장의 10분의 1 정도로 저렴합니다.
+
+ 지역 주민들과 경찰 내 골프애호가들에게 인기가 많은데 주말 예약경쟁률이 8대 1을 넘기도 합니다.
+
+ 그런데 일부 경찰 고위직들이 비정상적인 방법으로 골프장 이용 특혜를 누린 사실이 KBS 탐사보도부 취재결과 드러났습니다.
+
+ 유호윤 기자의 단독 보도입니다.
+
+ [리포트]
+
+ 40만 제곱미터 규모로 탁 트인 필드
+
+ 경찰이 운영하는 골프장입니다.
+
+ 지난해 12월, 주말을 맞아 한 경찰 고위직이 클럽하우스에 도착합니다.
+
+ 당시 경찰 인재개발원장이던 이명교 치안감입니다.
+
+ 골프 접대를 받아 지난해 정직 3개월의  중징계를 받기도 한 이 치안감.
+
+ 힘찬 샷을 날리며 골프를 시작했지만, 사실 이 치안감은 이날 골프를 칠 수 없었습니다.
+
+ 10일 전 경쟁 추첨 방식으로  확정된 예약자리에 이 치안감은 없었기 때문입니다.
+
+ 하지만 불과 6일 전 추첨도 없이 이 치안감의 자리가 만들어졌습니다. <br />  [녹취] A씨/경찰골프장 직원(음성변조) (예약) 프로그램 회사에도 한번 문의를 해봤더니 이거는 추첨 이후에 만들어진 티라고 하더라고요.
+
+ 또 다른 주말에도 외부인 3명과 골프를 쳤는데 이번엔 미리 빼놓은 자리를 이용한 것으로 파악됐습니다. <br /> A [녹취] A 씨/경찰골프장 직원(음성변조) 주말에 현직 경찰들 경쟁이 치열해서 외부인들이 3명 같이하면 공정한 추첨을 통해서는 거의 당첨되기 어렵다고 봐야죠.
+
+ 경쟁을 거치지 않고 골프를 칠 수 있었던 건 직원들의 예약시스템 조작이 있었기 때문입니다.
+
+ KBS 탐사보도부가 경찰 골프장의  예약자료를 입수해 분석한 결과 예약시스템이 무시된 채 이 치안감이 골프장을 이용한 횟수는 지난해 3월부터 12월까지 모두 11번입니다.
+
+ 다른 경찰 고위직도 있습니다.
+
+ 현 인재개발원장인  이명호 치안감입니다.
+
+ 지난 연말 평일 오전에 조퇴를 내고 골프를 쳤는데 라운딩 동반자는 이 치안감의 부인이었습니다.
+
+ 역시 추첨이 끝난 뒤 별도로 만들어진 자리를 이용했습니다. <br />  [녹취] 이영기/호루라기 재단 이사장(변호사) 이러한 (예약)청탁을 들어줌으로써 어떠한 이익을 얻었는지, 이런 부분에 초점을 맞춰서 적극적으로 수사할 필요가 있다.
+
+ 이에 대해 이명교, 이명호 치안감은 담당 직원에게 예약을 부탁했을 뿐이고 예약이 취소된 시간에 이용한 것으로  ""알고 있다""고 밝혔습니다.
+
+ 경찰 체력단련을 주목적으로 만들어진 경찰 골프장은 운영 적자로 한 해 10억 안팎의 세금이 투입되지만 민간 골프장에 비해 이용료는 약 10분의 1 수준으로 저렴합니다.
+
+ KBS뉴스 유호윤입니다.
+
+ 촬영기자 : 박상욱 그래픽 : 노경일",,10,N,N,,N,N,N,N,Y,0001,20220301,16,AI202202280796929,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:31:48,wenrou315,2022-03-01 22:13:56,,,,Y,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,유호윤,/data/news/title_image/newsmp4/news9/2022/03/01/160_5406568.jpg,,,,,사회,뉴스 9,1016,탐사K,,뉴스 9,,"[{'imgCode': '5428687', 'newsCode': '5406568', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/160_5406568.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:37:34', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406568', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/160_5406568.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:30:40', 'vodEndTime': '2022-03-01 21:33:36', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:37:34', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/160_5406568.srt'}, {'newsCode': '5406568', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/160_5406568.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:30:40', 'vodEndTime': '2022-03-01 21:33:36', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:37:34', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/160_5406568.srt'}, {'newsCode': '5406568', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/160_5406568.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:30:40', 'vodEndTime': '2022-03-01 21:33:36', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:37:34', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/160_5406568.srt'}]","[{'newsCode': '5406568', 'reporterGubun': None, 'seq': None, 'reporterCode': '30833', 'reporterName': '유호윤', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/afd2cd234908613bcd2de4dfc1f06ce0.jpg', 'email': 'live@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/afd2cd234908613bcd2de4dfc1f06ce0.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406569,0005,200,200,N,2022-03-01 20:35:07,2022-03-01 21:34:32,N,N,Y,,,,,[탐사K]② ‘경찰과 골프’…장기간 조직적 예약 부정,대체(슈퍼/탐사K②)'경찰과 골프'…장기간 조직적 예약 부정,," [앵커]<br /><br /> 이렇게 일부 경찰고위직에 혜택이 돌아간 게 다가 아닙니다.<br /><br />관리부서 안에 오랜 시간 부정이 있었다며 내부 직원이 경찰청에 감사까지 요청했지만 해결되지 않았습니다.<br /><br />이유가 뭔지, 이어서 송수진 기자가 보도합니다.<br /><br /> [리포트]<br /><br /> 한 퇴직 경찰 공무원은 2019년 한 해 동안 경찰 골프장을 342번이나 이용했습니다.<br /><br /> 1년간 거의 매일 골프를 쳤다는 얘깁니다.<br /><br /> 경찰 골프장의 한 내부직원은 예약관리부서에서 부정한 방법으로 수년간 예약 시스템에 손을 대왔다고 말합니다. <br /><br />  [A씨/경찰 골프장 직원/음성변조 : ""업무용 프로그램을 이용하게 되면 미리 홈페이지에 예약을 신청할 필요도 없고 예약을 잡아놓을 수가 있죠.""]<br /><br /> 예약 기록을 분석해봤습니다.<br /><br /> 예약자 이름 대신 점을 넣어, 자리를 빼내거나, 이용 이력이 없는 계정들로 당첨 받은 뒤 특정인에게 예약을 넘기는 행위 등이 반복됩니다.<br /><br /> 지난해 예약 비리로 추정되는 사례는 아산 골프장에서만 최소 100회.<br /><br /> 혜택을 본 사람은 현직 경찰 공무원 101명을 포함해 190명이나 됐습니다.<br /><br /> [A씨/경찰골프장 직원 : ""자신들의 친목 관리라든가 아니면 상급자들한테 잘 보이기 위해서랄까 그런 식으로 이용하면서 정당한 회원들한테 이용할 수 있는 권리를 뺏는다고 보는데,""]<br /><br /> 경찰골프장은 주변 일반인도 이용할 수 있는데에 2019년 12월 A씨는 이 문제를 경찰청 감찰에 알렸습니다.<br /><br /> 그런데 신고자 신원이 바로 다음날 유출됐습니다. <br /><br />  [A씨/경찰 골프장 직원/음성변조 : ""(골프장) 관리자가 저에게 신고를 취하하라는 얘기를 하시는 거예요. 제가 비밀인데 어떻게 알게 되었냐고 물어봤더니 상급자가 알려줬다고.""]<br /><br /> 조사를 맡은 경찰 인재개발원 감찰은 조사결과도 알려주지 않았습니다. <br /><br />  [A씨/경찰 골프장 직원/음성변조 : ""제 진술만 받고 저한테 이런저런 자료만 물어보고 얘기하시더니 그 뒤에 어떻게 됐는지 어떠한 조치도 저한테 어떻게 결과도 알려준 게 없었어요.""]<br /><br /> A씨는 신고 사실을 부서 관리자에게 알린  관리자의 상급자도 예약 특혜를 받았다고 말했습니다.<br /><br /> 게다가 감찰 담당 직원은 특정인 당첨을 위해 자기 계정을 빌려 준 사실도 드러났습니다.  <br /><br />  [B씨/당시 감찰 직원/음성변조 : ""말씀하신 분이 지인이에요. (그래서 계정을 빌려주신 거네요) 예, 제가 그랬던 것 같아요.""]<br /><br /> A씨는 오히려 신고한 자신이 업무에서 배제되는 등 직장내 괴롭힘에 시달렸다고 호소합니다. <br /><br /> [A씨/경찰 골프장 직원/음성변조 : ""관리자가 전체 직원들을 모이라고 하더니 신고하고 진정 넣는 사람이 있는데, 조직을 화합을 다 망치고 있으니까 근무평가를 통해서 해고를 시키겠다고 하는거에요.""]<br /><br /> 경찰골프장 예약비리에 대해 국민권익위는 부패방지법 위반 여부를 두고 조사를 진행중인것으로 확인됐습니다.<br /><br /> KBS 뉴스 송수진입니다.<br /><br /> 촬영기자:박상욱/그래픽:노경일  "," [앵커]
+
+ 앞서 보신 것처럼 경찰 골프장 예약 비리는 일부 경찰고위직에만 국한된 게 아닙니다.
+
+ 오랜 기간 동안 예약관리부서내에서 조직적이고 광범위한 예약 부정이 있었기 때문인데요.
+
+ 보다 못한 한 내부 직원이 경찰청에 감사까지 요청했지만 제대로 해결되지 않았습니다.
+
+ 감사가 제대로 되지 않은 이유도 역시 골프장과 연관이 있어 보입니다.
+
+ 이어서 송수진 기자가 보도합니다.
+
+ [리포트]
+
+ (TGA)한 퇴직 경찰 공무원은 2019년 한 해 동안 경찰 골프장을 342번이나 이용했습니다.(TGA)
+
+ 1년간 거의 매일 골프를 쳤다는 얘깁니다.
+
+ 경찰 골프장의 한 내부직원은 예약관리부서에서 부정한 방법으로 수년간 예약 시스템에 손을 대왔다고 말합니다. <br />  [녹취] A씨/경찰 골프장 직원(음성변조) 업무용 프로그램을 이용하게 되면 미리 홈페이지에 예약을 신청할 필요도 없고 예약을 잡아놓을 수가 있죠.
+
+ 예약 기록을 분석해봤습니다.
+
+ 예약자 이름 대신 점을 넣어, 자리를 빼내거나, 이용 이력이 없는 계정들로 당첨 받은 뒤 특정인에게 예약을 넘기는 행위 등이 반복됩니다.
+
+ 지난해 예약 비리로 추정되는 사례는 아산 골프장에서만 최소 100회.
+
+ 혜택을 본 사람은 현직 경찰 공무원 101명을 포함해 190명이나 됐습니다.
+
+ A씨/경찰골프장 직원 [녹취] 자신들의 친목 관리라든가 아니면 상급자들한테 잘 보이기 위해서랄까 그런 식으로 이용하면서 정당한 회원들한테 이용할 수 있는 권리를 뺏는다고 보는데
+
+ 경찰골프장은 주변 일반인도 이용할 수 있는데에 2019년 12월 A씨는 이 문제를 경찰청 감찰에 알렸습니다.
+
+ 그런데 신고자 신원이 바로 다음날 유출됐습니다. <br />  [녹취] A씨/경찰 골프장 직원(음성변조) (골프장) 관리자가 저에게 신고를 취하하라는 얘기를 하시는 거예요. 제가 비밀인데 어떻게 알게 되었냐고 물어봤더니 상급자가 알려줬다고.
+
+ 조사를 맡은 경찰 인재개발원 감찰은 조사결과도 알려주지 않았습니다. <br />  [녹취] A씨/경찰 골프장 직원(음성변조) 제 진술만 받고 저한테 이런저런 자료만 물어보고 얘기하시더니 그 뒤에 어떻게 됐는지 어떠한 조치도 저한테 어떻게 결과도 알려준 게 없었어요.
+
+ A씨는 신고 사실을 부서 관리자에게 알린  관리자의 상급자도 예약 특혜를 받았다고 말했습니다.
+
+ 게다가 감찰 담당 직원은 특정인 당첨을 위해 자기 계정을 빌려 준 사실도 드러났습니다.  <br />  [녹취] B씨/당시 감찰 직원(음성변조) 말씀하신 분이 지인이에요. {그래서 계정을 빌려주신 거네요}.예, 제가 그랬던 것 같아요
+
+ A씨는 오히려 신고한 자신이 업무에서 배제되는 등 직장내 괴롭힘에 시달렸다고 호소합니다. <br /> 제 [녹취] A씨/경찰 골프장 직원(음성변조) 관리자가 전체 직원들을 모이라고 하더니 신고하고 진정 넣는 사람이 있는데, 조직을 화합을 다 망치고 있으니까 근무평가를 통해서 해고를 시키겠다고 하는거에요.
+
+ 경찰골프장 예약비리에 대해 국민권익위는 부패방지법 위반 여부를 두고 조사를 진행중인것으로 확인됐습니다.
+
+ KBS 뉴스 송수진입니다.
+
+ 촬영기자 : 박상욱 그래픽 : 노경일  ",,10,N,N,,N,N,N,N,Y,0001,20220301,17,AI202202280797165,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:34:32,jojfzn,2022-03-01 21:47:18,,,,N,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,송수진,/data/news/2022/03/01/20220301_5tt3pY.jpg,,,,,사회,뉴스 9,1016,탐사K,,뉴스 9,,"[{'imgCode': '5428689', 'newsCode': '5406569', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_5tt3pY.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:40:46', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406569', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/170_5406569.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:33:36', 'vodEndTime': '2022-03-01 21:36:31', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:40:46', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/170_5406569.srt'}, {'newsCode': '5406569', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/170_5406569.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:33:36', 'vodEndTime': '2022-03-01 21:36:31', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:40:46', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/170_5406569.srt'}, {'newsCode': '5406569', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/170_5406569.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:33:36', 'vodEndTime': '2022-03-01 21:36:31', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:40:46', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/170_5406569.srt'}]","[{'newsCode': '5406569', 'reporterGubun': None, 'seq': None, 'reporterCode': '30006', 'reporterName': '송수진', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/f7d2f44008cdf8ab52bff2e2c1cc92bd.jpg', 'email': 'reportersong@gmail.com', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/f7d2f44008cdf8ab52bff2e2c1cc92bd.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406570,0003,200,200,N,2022-03-01 20:16:05,2022-03-01 21:37:03,N,N,Y,,,,,"3·1절에 임시정부 기념관 개관…文 “日, 역사 앞에 겸허해야”","(수퍼/9시)3·1절에 임시정부 기념관 개관...文 ""日, 역사 앞에 겸허해야""",," [앵커]<br /><br />오늘 3.1절을 맞아, 대한민국 임시정부 기념관이 문을 열었습니다.<br /><br />문재인 대통령은 임기 마지막 3.1절 기념사에서 일본은 역사 앞에 겸허해야 한다고 말했고, 국제질서가 요동치는 가운데, 강대국 질서에 휘둘리지 않을 힘이 있어야 한다고도 강조했습니다.<br /><br />이철호 기자가 보도합니다.<br /><br /> [리포트]<br /><br /> 일제 강점기  독립 운동가들이 투옥됐던 서대문형무소가 내려다 보이는 곳에, 임시정부 기념관이 들어섰습니다.<br /><br /> 임시정부와 관련된 자료들이 모인 곳이자, 독립운동의 공적을 기리기 위한 장소입니다.<br /><br /> 이 곳에서 열린 3.1절 기념식에서 문재인 대통령은 한일 양국이 불행했던 역사를 딛고 협력할 수 있어야 한다며, 일본에 대화의 문을 열어두겠다고 밝혔습니다.<br /><br /> 다만, 전제는  일본의 반성이라는 점도 분명히 했습니다.<br /><br /> [문재인 대통령 : ""일본이 선진국으로서 리더십을 가지기를 진심으로 바랍니다. 그러기 위해서 일본은 역사를 직시하고 역사 앞에서 겸허해야 합니다.""]<br /><br /> 최근 우크라이나 사태를 염두에 둔 듯, 요동치는 국제 정세 속에서 '힘'의 중요성을 강조하기도 했습니다.<br /><br /> [문재인 대통령 : ""강대국 중심의 국제질서에 휘둘리지 않고 우리의 역사를 우리가 주도해 나갈 수 있는 힘을 가져야 한다는 것입니다.""]<br /><br /> 시민사회단체들은  평화의 소녀상 앞에서 3.1절을 기렸습니다.<br /><br /> 위안부 강제 동원에 대한 일본 정부의 사죄를 요구하고, '사도 광산'을 유네스코 세계문화유산으로  추진하는 데 대해서도 역사 왜곡이라고 비판했습니다.  <br /><br /> KBS 뉴스 이철호입니다.<br /><br /> 촬영기자:윤희진 정민욱/영상편집:신남규  "," [앵커]
+
+ 오늘 3.1절을 맞아, 대한민국 임시정부 기념관이  문을 열었습니다.
+
+ 문재인 대통령은  임기 마지막 3.1절 기념사에서 일본은 역사 앞에 겸허해야 할 것이라는 대일 메시지를 내놨습니다.
+
+ 국제질서가 요동치는 가운데, 강대국 질서에 휘둘리지 않을  힘이 있어야 한다는 점도 강조했습니다.
+
+ 이철호 기자가 보도합니다.
+
+ [리포트]
+
+ 일제 강점기  독립 운동가들이 투옥됐던 서대문형무소가 내려다 보이는 곳에,
+
+ 임시정부 기념관이 들어섰습니다.
+
+ 임시정부와 관련된 자료들이 모인 곳이자,
+
+ 독립운동의 공적을 기리기 위한 장소입니다.
+
+ 이 곳에서 열린 3.1절 기념식에서 문재인 대통령은
+
+ 한일 양국이 불행했던 역사를 딛고 협력할 수 있어야 한다며, 일본에 대화의 문을 열어두겠다고 밝혔습니다.
+
+ 다만, 전제는  일본의 반성이라는 점도 분명히 했습니다.
+
+ 문재인 대통령 [녹취] 일본이 선진국으로서 리더십을 가지기를 진심으로 바랍니다. 그러기 위해서 일본은 역사를 직시하고 역사 앞에서 겸허해야 합니다.
+
+ 최근 우크라이나 사태를 염두에 둔 듯,
+
+ 요동치는 국제 정세 속에서 '힘'의 중요성을 강조하기도 했습니다.
+
+ 문재인 대통령 [녹취] 강대국 중심의 국제질서에 휘둘리지 않고 우리의 역사를 우리가 주도해 나갈 수 있는 힘을 가져야 한다는 것입니다.
+
+ 시민사회단체들은  평화의 소녀상 앞에서 3.1절을 기렸습니다.
+
+ 위안부 강제 동원에 대한 일본 정부의 사죄를 요구하고,
+
+ '사도 광산'을
+
+ 유네스코 세계문화유산으로  추진하는 데 대해서도
+
+ 역사 왜곡이라고 비판했습니다.  KBS 뉴스 이철호입니다.
+
+ 촬영기자 : 윤희진 정민욱 영상편집 : 신남규  ",,10,N,N,,N,N,N,N,Y,0001,20220301,18,AI202203010798876,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:37:02,wenrou315,2022-03-01 22:13:07,,,,Y,Y,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,이철호,/data/news/2022/03/01/20220301_Nhl2Ep.jpg,,,,,정치,뉴스 9,0010,정치,,뉴스 9,,"[{'imgCode': '5428690', 'newsCode': '5406570', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_Nhl2Ep.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:41:36', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406570', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/180_5406570.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:36:31', 'vodEndTime': '2022-03-01 21:38:14', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:41:36', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/180_5406570.srt'}, {'newsCode': '5406570', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/180_5406570.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:36:31', 'vodEndTime': '2022-03-01 21:38:14', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:41:36', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/180_5406570.srt'}, {'newsCode': '5406570', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/180_5406570.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:36:31', 'vodEndTime': '2022-03-01 21:38:14', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:41:36', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/180_5406570.srt'}]","[{'newsCode': '5406570', 'reporterGubun': None, 'seq': None, 'reporterCode': '29877', 'reporterName': '이철호', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/fecd1185063ed3d28b657ef4816b63f6.jpg', 'email': 'manjeok@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/fecd1185063ed3d28b657ef4816b63f6.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406573,0005,200,200,N,2022-03-01 20:16:13,2022-03-01 21:39:29,N,N,Y,,,,,‘수형인 명부’ 잇따라 발견…독립운동 입증 핵심 자료,(슈퍼/9시/대전)'수형인 명부' 잇따라 발견...독립운동 입증 핵심 자료,," [앵커]<br /><br />일제강점기 때 작성된 수형인 명부가 뒤늦게  충남 천안의 행정기관에서 발견되고 있습니다.<br /><br />죄명부터 형벌 내용까지 자세하게 적혀 있어서 독립운동가들의 활동을 입증하는 데 중요한 사료가 되고 있습니다.<br /><br />​황정환 기자가 보도합니다.<br /><br /> [리포트]<br /><br /> 독립운동의 산실 충남 천안의 행정복지센터  문서고에서 발견된  일제강점기 수형인 명부입니다.<br /><br /> 일본식 연호인 대정 8년, 즉,3.1 만세운동이 있었던 1919년에  황 씨 성을 가진 사람에게  보안법 위반으로 태형 60대를 가했다고 나와 있습니다.<br /><br /> 다른 사람도 보안법 위반으로  징역 6월의 판결을 받은 거로 기록돼 있습니다.<br /><br /> [박순섭/국가보훈처 학예연구사 : ""그 당시 독립운동가들은 대부분 보안법 위반으로 처벌했다고 보시면 됩니다.""]<br /><br /> 또 다른 행정복지센터에서도 일제강점기 수형인 명부가 발견됐습니다.<br /><br /> 형을 받은 사람의 이름과 주소,  죄명과 형기가 자세히 기록돼 독립운동 내역을 파악하는 귀중한 자료로 평가됩니다.<br /><br /> 천안시는  수형인 명부 등에서  독립운동가 195명을 새로 발굴해  국가보훈처에 서훈을 신청했습니다.<br /><br /> [맹영호/천안시 복지정책과장 : ""천안은 만세운동 등 독립운동이 활발했던 고장입니다. 독립유공자가 그동안 101명에 불과해 이번에 발굴작업을 진행하게 됐습니다.""]<br /><br /> 국가보훈처는 2019년 전국 행정기관의  수형인 명부를 조사해  2천 4백여 명의 미서훈 독립운동가를 발굴하는 성과를 냈습니다.<br /><br /> 하지만, 백여 년 동안  누적된 다양한 문서에서 수형인 명부를 찾기란 쉽지 않습니다.<br /><br /> [김선무/천안시 병천면행정복지센터 : ""문서고에 전산화되지 않은 자료가  상당히 많았었는데, 이번에 정리하는  과정에서 새롭게 발견하게 됐습니다.""]<br /><br /> 국가보훈처는 아직도 자치단체 문서고에 잠들어 있는  수형인 명부 발굴에  적극 나서기로 했습니다.<br /><br /> KBS 뉴스 황정환입니다.<br /><br /> 촬영기자:홍순용"," [앵커]
+
+ 일제강점기 때 작성된 수형인 명부가 뒤늦게 독립운동의 산실, 충남 천안의 행정기관에서  잇따라 발견되고 있습니다.
+
+ 죄명과 형벌 등이 자세하게 기록돼 있어 독립운동가의 활동을 입증할 수 있는  귀중한 자료로 평가받고 있습니다.
+
+ 황정환 기자가 보도합니다.
+
+ [리포트]
+
+ 독립운동의 산실 충남 천안의 행정복지센터  문서고에서 발견된  일제강점기 수형인 명부입니다.
+
+ 일본식 연호인 대정 8년,
+
+ 즉,3.1 만세운동이 있었던 1919년에  황 씨 성을 가진 사람에게  보안법 위반으로
+
+ 태형 60대를 가했다고 나와 있습니다.
+
+ 다른 사람도 보안법 위반으로  징역 6월의 판결을 받은 거로 기록돼 있습니다.
+
+ [녹취] 박순섭/국가보훈처 학예연구사  ""그 당시 독립운동가들은 대부분 보안법 위반으로 처벌했다고 보시면 됩니다.""
+
+ 또 다른 행정복지센터에서도 일제강점기 수형인 명부가 발견됐습니다.
+
+ 형을 받은 사람의 이름과 주소,  죄명과 형기가 자세히 기록돼 독립운동 내역을 파악하는 귀중한 자료로 평가됩니다.
+
+ 천안시는  수형인 명부 등에서  독립운동가 195명을 새로 발굴해  국가보훈처에 서훈을 신청했습니다.
+
+ [녹취] 맹영호/ 천안시 복지정책과장 ""천안은 만세운동 등 독립운동이 활발했던 고장입니다. 독립유공자가 그동안 101명에 불과해 이번에 발굴작업을 진행하게 됐습니다.""
+
+ 국가보훈처는 2019년 전국 행정기관의  수형인 명부를 조사해  2천 4백여 명의 미서훈 독립운동가를 발굴하는 성과를 냈습니다.
+
+ 하지만, 백여 년 동안  누적된 다양한 문서에서 수형인 명부를 찾기란 쉽지 않습니다.
+
+ [인터뷰] 김선무/천안시 병천면행정복지센터 ""문서고에 전산화되지 않은 자료가  상당히 많았었는데, 이번에 정리하는  과정에서 새롭게 발견하게 됐습니다.""
+
+ 국가보훈처는 아직도 자치단체 문서고에 잠들어 있는  수형인 명부 발굴에  적극 나서기로 했습니다.
+
+ KBS뉴스 황정환입니다.
+
+ 촬영기자 홍순용",,10,N,N,,N,N,N,N,Y,0001,20220301,19,AI202202280797202,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:39:29,sje0423,2022-03-01 21:46:18,,,,,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,황정환,/data/news/title_image/newsmp4/news9/2022/03/01/190_5406573.jpg,,,,,사회,뉴스 9,0023,사회,01:58,뉴스 9,,"[{'imgCode': '5428804', 'newsCode': '5406573', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/190_5406573.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:21:54', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406573', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/190_5406573.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': '00:01:58.00', 'vodStartTime': '2022-03-01 21:38:15', 'vodEndTime': '2022-03-01 21:40:12', 'vodLength': '118', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:21:54', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/190_5406573.srt'}, {'newsCode': '5406573', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/190_5406573.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': '00:01:58.00', 'vodStartTime': '2022-03-01 21:38:15', 'vodEndTime': '2022-03-01 21:40:12', 'vodLength': '118', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:21:54', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/190_5406573.srt'}, {'newsCode': '5406573', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/190_5406573.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': '00:01:58.00', 'vodStartTime': '2022-03-01 21:38:15', 'vodEndTime': '2022-03-01 21:40:12', 'vodLength': '118', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:21:54', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/190_5406573.srt'}]","[{'newsCode': '5406573', 'reporterGubun': None, 'seq': None, 'reporterCode': '30157', 'reporterName': '황정환', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/650cee762ff8291600de84b1ba99f5a4.jpg', 'email': 'baram@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/650cee762ff8291600de84b1ba99f5a4.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406578,0004,200,200,N,2022-03-01 20:16:23,2022-03-01 21:41:15,N,N,Y,,,,,[공약 돋보기] 논란의 복수의결권…후보들 입장은?,대체<슈퍼-9시/공약 돋보기>논란의 복수의결권…후보들 입장은?,,"  [앵커]<br /><br />'유니콘 기업'<br /><br />기업 가치가 1조 원 이상인 비상장 스타트업 기업을 말합니다.<br /><br />지난해 국내 유니콘 기업은 가장 많이 증가해  모두 18개에 달했습니다. <br /><br />산업계에서는 유니콘 기업이 더 늘어나기 위해서 '복수의결권'을 도입해야 한다고 주장하고 있습니다.<br /><br />복수의결권은 창업주가, 보유한 지분 이상의 의결권을 행사할 수 있게 하는 제도입니다.<br /><br />자금력이 약한  벤처 기업 창업주는  투자금을 모으면서  경영권도 유지할 수 있습니다.<br /><br />경제협력개발기구 OECD 회원국 가운데  17개 나라가 도입했는데 우리나라는 아직  시행하지 않고 있습니다. <br /><br />그럼 대선 후보들은  이 복수의결권에 대해 어떤 입장일까요?<br /><br />작은 공약을  크게 들여다보는 공약 돋보기 김지숙 기잡니다.<br /><br /> [리포트] <br /><br /> 국내 유니콘기업이었던 쿠팡의 미국 증시 상장.<br /><br /> 미국 상장을 통해  쿠팡 창업주인 김범석 의장은 보유 주식의 29배에 달하는 의결권을 갖게 됐습니다.<br /><br /> [박신애/KB증권 수석연구위원 : ""외부 투자를 많이 받으면서 창업주의 지분율이 꾸준히 낮아져왔다 보니까 경영권을 안정적으로 보호하기 위해서...""]<br /><br /> 쿠팡의 미국행이  우리나라엔 없는 복수의결권 때문 아니냐는 분석이 나오는 가운데  관련 법안은  1년 넘게 국회에 계류중입니다.<br /><br /> 비상장 벤처기업 창업주에게 주당 최대 10배의 의결권을 허용하는 것 등이 주요 내용입니다.<br /><br /> 법안에 대한 대선후보들의 입장은 엇갈립니다.<br /><br /> 이재명 민주당 후보는 제도 도입의 필요성을 인정하면서도  우려되는 부분들이  조정돼야 한다는 입장입니다.<br /><br /> 창업주가 적은 지분으로 지배권을 행사해 소액주주들의 이익을 해칠 우려가 있다는 겁니다.<br /><br /> 특히  벤처기업에 복수 의결권을 인정할 경우  대기업까지 확대돼 재벌 세습의 도구가 될 수 있다는  걱정도 있습니다.<br /><br /> [김우찬/고려대 경영학과 교수 : ""벤처 기업이 나중에 증권시장에 상장되고 나서 만약에 일몰 조항이 없어지게 되면 이미 상장돼 있는 기업은 그게 벤처가 아니거든요.""]<br /><br /> 윤석열 국민의힘 후보는 복수의결권은  경영권 위협 없이 투자를 유치해 기업의 성장에 기여할 수 있는 제도인 만큼 도입하겠다고 약속했습니다.<br /><br /> 복수의결권은  세계적 IT기업인  구글 같은 기업의 성공 배경이자  자금력이 부족해도  기술력으로 성공할 수 있는 요인이 될 수 있다는 겁니다.<br /><br /> [권재열/경희대 법학전문대학원 교수 : ""경영권이 안정되다보니까 장기적인 계획을 가지고 R&D라든가 아니면 회사를 성장시키는데 집중할 수 있는 그런 계기가 된다고 생각을 합니다.""]<br /><br /> 심상정 정의당 후보는 반대, 안철수 국민의당 후보는 찬성 입장을 밝혔습니다. <br /><br /> 하지만 국내 360만 개 중소기업 중 벤처 인증을 받은 비상장 기업은 1%.<br /><br /> 일부 기업에 한정돼 실효성에 의문이 제기된다는 지적과 벤처기업이 유니콘 기업으로 도약하려면 안정적인 대규모 투자 유치가 필수라는 주장이 여전히 접점을 찾지 못하고 있습니다.<br /><br /> KBS 뉴스 김지숙입니다.<br /><br />영상편집:안영아/그래픽:최창준","  [앵커]
+
+ '유니콘 기업' 기업 가치가 1조 원 이상인 비상장 스타트업 기업을 말합니다.
+
+ 지난해 국내 유니콘 기업은 가장 많이 증가해  모두 18개에 달했습니다.
+
+ 산업계에서는 유니콘 기업이 더 늘어나기 위해서는 '복수의결권'을 도입해야 한다는  주장이 제기되고 있습니다.
+
+ 복수의결권은 창업주가, 보유한 지분 이상의 의결권을 행사할 수 있게 하는 제도입니다.
+
+ 자금력이 약한 벤처기업 창업주는  투자금을 모으면서  경영권도 유지할 수 있습니다.
+
+ 경제협력개발기구 OECD 회원국 가운데 17개 나라가 이미 도입했는데 우리나라는 아직  시행되지 않고 있습니다.
+
+ 대선 후보들은  이 복수의결권에 대해 어떤 입장일까요?
+
+ 작은 공약을  크게 들여다보는 공약돋보기.
+
+ 오늘은 김지숙 기자가 복수의결권을 들여다 봤습니다.
+
+ [리포트] [이펙트1] 땡땡땡 (개장벨 소리)
+
+ 국내 유니콘기업이었던 쿠팡의 미국 증시 상장.
+
+ <타가>미국 상장을 통해  쿠팡 창업주인 김범석 의장은 보유 주식의 29배에 달하는 의결권을 갖게 됐습니다.<타가>
+
+ 박신애/KB증권 수석연구위원 [인터뷰] ""외부 투자를 많이 받으면서 창업주의 지분율이 꾸준히 낮아져왔다 보니까 경영권을 안정적으로 보호하기 위해서...""
+
+ 쿠팡의 미국행이  우리나라엔 없는 복수의결권 때문 아니냐는 분석이 나오는 가운데  관련 법안은  1년 넘게 국회에 계류중입니다.
+
+ <타가> 비상장 벤처기업 창업주에게 주당 최대 10배의 의결권을 허용하는 것 등이 주요 내용입니다.<타가>
+
+ 법안에 대한 대선후보들의 입장은 엇갈립니다.
+
+ 이재명 민주당 후보는 제도 도입의 필요성을 인정하면서도  우려되는 부분들이  조정돼야 한다는 입장입니다.
+
+ 창업주가 적은 지분으로 지배권을 행사해 소액주주들의 이익을 해칠 우려가 있다는 겁니다.
+
+ 특히  벤처기업에 복수 의결권을 인정할 경우  대기업까지 확대돼 재벌 세습의 도구가 될 수 있다는  걱정도 있습니다.
+
+ 김우찬/고려대 경영학과 교수 [녹취] ""벤처 기업이 나중에 증권시장에 상장되고 나서 만약에 일몰 조항이 없어지게 되면 이미 상장돼 있는 기업은 그게 벤처가 아니거든요.""
+
+ 윤석열 국민의힘 후보는 복수의결권은  경영권 위협 없이 투자를 유치해 기업의 성장에 기여할 수 있는 제도인 만큼 도입하겠다고 약속했습니다.
+
+ 복수의결권은  세계적 IT기업인  구글 같은 기업의 성공 배경이자  자금력이 부족해도  기술력으로 성공할 수 있는 요인이 될 수 있다는 겁니다.
+
+ 권재열/경희대 법학전문대학원 교수 [녹취] ""경영권이 안정되다보니까 장기적인 계획을 가지고 R&D라든가 아니면 회사를 성장시키는데 집중할 수 있는 그런 계기가 된다고 생각을 합니다.""
+
+ <타가>심상정 정의당 후보는 반대, 안철수 국민의당 후보는 찬성 입장을 밝혔습니다. <타가>
+
+ 하지만 국내 360만 개 중소기업 중 벤처 인증을 받은 비상장 기업은 1%.
+
+ 일부 기업에 한정돼 실효성에 의문이 제기된다는 지적과
+
+ 벤처기업이 유니콘 기업으로 도약하려면 안정적인 대규모 투자 유치가 필수라는 주장이 여전히 접점을 찾지 못하고 있습니다.
+
+ KBS 뉴스 김지숙입니다.
+
+ (영상편집: 안영아/그래픽: 최창준)",,10,N,Y,,N,N,N,N,Y,0001,20220301,20,AI202203010799003,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:41:15,wenrou315,2022-03-01 22:13:38,,,,Y,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,김지숙,/data/news/2022/03/01/20220301_JcQK8B.jpg,,,,,경제,뉴스 9,0017,경제,,뉴스 9,,"[{'imgCode': '5428704', 'newsCode': '5406578', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_JcQK8B.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:46:59', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406578', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/200_5406578.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:40:12', 'vodEndTime': '2022-03-01 21:43:22', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:46:59', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/200_5406578.srt'}, {'newsCode': '5406578', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/200_5406578.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:40:12', 'vodEndTime': '2022-03-01 21:43:22', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:46:59', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/200_5406578.srt'}, {'newsCode': '5406578', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/200_5406578.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:40:12', 'vodEndTime': '2022-03-01 21:43:22', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:46:59', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/200_5406578.srt'}]","[{'newsCode': '5406578', 'reporterGubun': None, 'seq': None, 'reporterCode': '30566', 'reporterName': '김지숙', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/71c5ac516da3a947454404f77fbbf58a.jpg', 'email': 'jskim84@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/71c5ac516da3a947454404f77fbbf58a.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406586,0003,200,200,N,2022-03-01 20:16:37,2022-03-01 21:44:11,N,N,Y,,,,,“발달장애인도 공약보고 투표하고 싶어요”,"(슈퍼/9시) ""발달장애인도 공약보고 투표하고 싶어요""",," [앵커]<br /><br />대선 후보들의 공약을 쉽게 이해하고 투표하는 것,<br /><br />모든 유권자들의 당연한 권리입니다.<br /><br />하지만 이런 권리를 누리기 어려운 사람들이 있습니다.<br /><br />바로 발달 장애인 유권자인데요.<br /><br />​조지현 기자가 이 문제 짚어봤습니다.<br /><br /> [리포트] <br /><br />[""공보물이 집으로 왔는데 혹시 받아보신 분? 후보자의 공약을 완벽히 이해했다?""]<br /><br /> 공약은 어떤 것이고, 투표는 어떻게 해야 하는지 교육을 받고 있는 발달 장애인들.<br /><br /> 한자어 투성이의 공보물은 발달장애를 가진 유권자들에게 일단, 쉽지 않습니다.<br /><br /> [최우진/28/지적장애인  : ""한자고 이렇게 막 어려운 공약들이 있고 어떻게 해야 할지 몰라서 그냥 읽기만 하고 (투표를) 포기한 적 있었어요.""]<br /><br /> 그래서 미국,영국 등 국가에서는  발달장애인 등을 위해 쉬운 언어로 정보를 전달하는 공약집을 따로 만듭니다.<br /><br /> 이번 대선에서 선관위가 처음으로  사회적 기업과 협업해, 발달장애인들을 위한 안내를 담은 자료집을 내놨습니다.<br /><br /> [이은혜/선관위 정당과장 : ""정보 약자분들에게도 이런 정책 선거가 닿을 수 있게 그렇게 저희가 준비를 했고..""]<br /><br /> 하지만, 후보들 개별 공약을 쉬운 말로 옮기는 작업은 빠졌습니다.<br /><br /> 우리 선거법은 시각장애인을 위한  점자형 선거 공보 등만 의무화하고 있기 때문입니다.<br /><br /> [이용석/한국장애인총연합회 정책실장 : ""이분(발달장애인)들이 그것을 읽어도 제대로 이해할 수 없다고 미리 예단하는 것, 발달장애인분들의 자기결정권을 정부에서, 또 국가에서 제대로 권리로서 인정하지 않는….""]<br /><br /> 이번 대선에서  발달장애인 유권자는 등록된 장애인만 따져도 16만 명에 달합니다.<br /><br /> [김대범/지적장애인 : ""장애인들은 선거를 못할 거 같아 무시하지 말고 우선은 좀 기다려주고 경청해주고 우리가 투표를 할 수 있게끔 도와주면 우리도 투표할 수 있다.""]<br /><br /> KBS 뉴스 조지현입니다."," [앵커]
+
+ 대선 후보들의 공약을 쉽게 접하고  투표하는 건 유권자라면 누구나 누려야 할 권리입니다
+
+ 그런데 이 권리를 얘기하기 쉽지 않은 사람들이 있습니다.
+
+ 발달장애인 유권자들 얘기인데요.
+
+ 후보들 공약을 이해하기 어려운 상황인데,
+
+ 그렇다고 손 놓고 있어야 할까요.
+
+ 조지현 기자가 이 문제, 짚어봅니다.
+
+ [리포트] [이펙트1] 공보물이 집으로 왔는데 혹시 받아보신 분? 후보자의 공약을 완벽히 이해했다?
+
+ 공약은 어떤 것이고, 투표는 어떻게 해야 하는지 교육을 받고 있는 발달 장애인들.
+
+ 한자어 투성이의 공보물은 발달장애를 가진 유권자들에게 일단, 쉽지 않습니다.
+
+ 최우진(28)/지적장애인 [인터뷰] 한자고 이렇게 막 어려운 공약들이 있고 어떻게 해야 할지 몰라서 그냥 읽기만 하고 (투표를) 포기한 적 있었어요.
+
+ 그래서 미국,영국 등 국가에서는  발달장애인 등을 위해 쉬운 언어로 정보를 전달하는 공약집을 따로 만듭니다.
+
+ 이번 대선에서 선관위가 처음으로  사회적 기업과 협업해,
+
+ 발달장애인들을 위한 안내를 담은 자료집을 내놨습니다.
+
+ 이은혜/선관위 정당과장 [인터뷰]  정보 약자분들에게도 이런 정책 선거가 닿을 수 있게 그렇게 저희가 준비를 했고..
+
+ 하지만, 후보들 개별 공약을 쉬운 말로 옮기는 작업은 빠졌습니다.
+
+ 우리 선거법은 시각장애인을 위한  점자형 선거 공보 등만 의무화하고 있기 때문입니다.
+
+ 이용석/한국장애인총연합회 정책실장 [인터뷰] 이분(발달장애인)들이 그것을 읽어도 제대로 이해할 수 없다고 미리 예단하는 것, 발달장애인분들의 자기결정권을 정부에서, 또 국가에서 제대로 권리로서 인정하지 않는….
+
+ 이번 대선에서  발달장애인 유권자는 등록된 장애인만 따져도 16만 명에 달합니다.
+
+ 김대범/지적장애인 [인터뷰] 장애인들은 선거를 못할 거 같아 무시하지 말고 우선은 좀 기다려주고 경청해주고 우리가 투표를 할 수 있게끔 도와주면 우리도 투표할 수 있다.
+
+ KBS 뉴스 조지현입니다.
+
+ ",,10,N,Y,,N,N,N,N,Y,0001,20220301,21,AI202202280795817,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:44:10,wenrou315,2022-03-01 22:13:19,,,,Y,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,조지현,/data/news/2022/03/01/20220301_5S8nfY.jpg,,,,,정치,뉴스 9,0010,정치,,뉴스 9,,"[{'imgCode': '5428711', 'newsCode': '5406586', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_5S8nfY.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:48:55', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406586', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/210_5406586.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:43:22', 'vodEndTime': '2022-03-01 21:45:27', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:48:55', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/210_5406586.srt'}, {'newsCode': '5406586', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/210_5406586.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:43:22', 'vodEndTime': '2022-03-01 21:45:27', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:48:55', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/210_5406586.srt'}, {'newsCode': '5406586', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/210_5406586.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:43:22', 'vodEndTime': '2022-03-01 21:45:27', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:48:55', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/210_5406586.srt'}]","[{'newsCode': '5406586', 'reporterGubun': None, 'seq': None, 'reporterCode': '30232', 'reporterName': '조지현', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/9b01ea73aa4de36440a527d52e63870a.jpg', 'email': 'cho2008@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/9b01ea73aa4de36440a527d52e63870a.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406593,0005,200,200,N,2022-03-01 20:16:47,2022-03-01 21:46:22,N,N,Y,,,,,합천·고령 산불 27시간 만에 진화…675ha 피해 추정,(슈퍼/9시/대구)합천.고령 산불 27시간 만에 진화..675ha 피해 추정,," [앵커]<br /><br />어제(28일) 오후 경남 합천에서 시작해 경북 고령까지 번진 산불은 약 27시간 만에 꺼졌습니다.<br /><br />피해 규모가​ 축구장 950개 넓이에  달하는 것으로 추정됩니다.<br /><br />김지홍 기자가 취재했습니다.<br /><br /> [리포트] <br /><br /> 진화 헬기가 분주히 오갑니다.<br /><br /> 마을에는 매캐한 연기가 자욱합니다.<br /><br /> 긴급히 마을회관으로 대피한 주민들은 두고 온 집 걱정에  뜬눈으로 밤을 지샜습니다.<br /><br /> [조의섭/경북 고령군 합가2리 이장 : ""산불 확장이 얼마나 빠른지 순식간에 동네 가까이 몇백 미터 지점까지…. 밤새도록 잠 안 자고 골짜기가 많으니까 이 골짜기도 산불, 저 골짜기도 산불….""]<br /><br /> 어제(28일) 오후 2시 반쯤 경남 합천에서 발생한 산불은 강풍을 타고 경북 고령까지 번졌습니다.<br /><br /> 산림 당국은 한때 가용인력과 자원을 총동원하는 산불 3단계를 발령했습니다.<br /><br /> 마을과 불과 몇 미터 떨어지지 않은 이곳까지 불길이 번지면서 소방차로 방어선이 만들어지기도 했습니다. <br /><br /> 산림 당국은 이틀에 걸쳐 헬기 40여 대와 인력 2천여 명을 투입하면서 불이 난지 27시간여 만인 오늘(1일) 오후 6시쯤 진화됐습니다.<br /><br /> [고기연/산림청 산림항공본부장 : ""바람이 일고 있고 광범위한 지역에 연기하고 아침에 형성된 연무가 있습니다. 그런 것들이 공중에서의 헬기 진화에 장애 요인들이기 때문에(진화가 계획보다 늦어졌습니다).""]<br /><br /> 이번 산불의 피해 영향구역은 축구장 950개와 맞먹는 675헥타르로 추정되고 있습니다.<br /><br /> 대피했던 합천 주민 30여 명과 고령 주민 300여 명은 오늘 오후 대부분 귀가했습니다.<br /><br /> 산림 당국은 날이 저물면서 헬기가 철수함에 따라 진화대를 집중 투입해 잔불 정리에 나설 계획입니다.<br /><br /> 또 산불이 경남 합천의 민가 주변에서 시작된 것으로 보고 산불전문조사반을 투입해 발화 원인을 조사하고 있습니다.  <br /><br /> KBS 뉴스 김지홍입니다.<br /><br /> 촬영기자:신상응/영상편집:이병민"," [앵커]
+
+ 어제 오후 경남 합천에서 발화해 경북 고령까지 번진 대형 산불이 27시간여 만에 진화됐습니다.
+
+ 화재 현장의 짙은 안개와 연기, 또 축구장 950개와 맞먹는 광범위한 피해 면적 탓에 진화에 어려움을 겪었습니다.
+
+ 김지홍 기자가 취재했습니다.
+
+ [리포트] 진화 헬기가 분주히 오갑니다.
+
+ 마을에는 매캐한 연기가 자욱합니다.
+
+ 긴급히 마을회관으로 대피한 주민들은 두고 온 집 걱정에  뜬눈으로 밤을 지샜습니다.
+
+ [인터뷰] 조의섭/경북 고령군 합가2리 이장 ""산불 확장이 얼마나 빠른지 순식간에 동네 가까이 몇백 미터 지점까지…. 밤새도록 잠 안 자고 골짜기가 많으니까 이 골짜기도 산불, 저 골짜기도 산불….""
+
+ 어제(28일) 오후 2시 반쯤 경남 합천에서 발생한 산불은 강풍을 타고 경북 고령까지 번졌습니다.
+
+ 산림 당국은 한때 가용인력과 자원을 총동원하는 산불 3단계를 발령했습니다.
+
+ <ON>마을과 불과 몇 미터 떨어지지 않은 이곳까지 불길이 번지면서 소방차로 방어선이 만들어지기도 했습니다. </ON>
+
+ 산림 당국은 이틀에 걸쳐 헬기 40여 대와 인력 2천여 명을 투입하면서 불이 난지 27시간여 만인 오늘 오후 6시쯤 진화됐습니다.
+
+ [인터뷰] 고기연/산림청 산림항공본부장 ""바람이 일고 있고 광범위한 지역에 연기하고 아침에 형성된 연무가 있습니다. 그런 것들이 공중에서의 헬기 진화에 장애 요인들이기 때문에(진화가 계획보다 늦어졌습니다.)""
+
+ 이번 산불의 피해 영향구역은 축구장 950개와 맞먹는 675헥타르로 추정되고 있습니다.
+
+ 대피했던 합천 주민 30여 명과 고령 주민 300여 명은 오늘 오후 대부분 귀가했습니다.
+
+ 산림 당국은 날이 저물면서 헬기가 철수함에 따라 진화대를 집중 투입해 잔불 정리에 나설 계획입니다.
+
+ 또 산불이 경남 합천의 민가 주변에서 시작된 것으로 보고 산불전문조사반을 투입해 발화 원인을 조사하고 있습니다.  KBS 뉴스 김지홍입니다.
+
+ 촬영기자 신상응 영상편집 이병민",,10,N,N,,N,N,N,N,Y,0001,20220301,22,AI202203010798955,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:46:22,jojfzn,2022-03-01 21:55:00,,,,N,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,김지홍,/data/news/2022/03/01/20220301_LideI7.jpg,,,,,사회,뉴스 9,0023,사회,,뉴스 9,,"[{'imgCode': '5428714', 'newsCode': '5406593', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_LideI7.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:50:58', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406593', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/220_5406593.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:45:28', 'vodEndTime': '2022-03-01 21:47:26', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:50:58', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/220_5406593.srt'}, {'newsCode': '5406593', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/220_5406593.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:45:28', 'vodEndTime': '2022-03-01 21:47:26', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:50:58', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/220_5406593.srt'}, {'newsCode': '5406593', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/220_5406593.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:45:28', 'vodEndTime': '2022-03-01 21:47:26', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:50:58', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/220_5406593.srt'}]","[{'newsCode': '5406593', 'reporterGubun': None, 'seq': None, 'reporterCode': '32337', 'reporterName': '김지홍', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/93c89a4b9cb44ca5abe30785d226d695.jpg', 'email': 'kjhong@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/93c89a4b9cb44ca5abe30785d226d695.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406597,0004,200,200,N,2022-03-01 20:16:56,2022-03-01 21:48:04,N,N,Y,,,,,“이만큼 줄였어요”…쓰레기 축소에 골몰하는 기업들,"<슈퍼-9시>""이만큼 줄였어요""…쓰레기 축소에 골몰하는 기업들",,"  [앵커]<br /><br />코로나 19시대, 일회용품 사용이 늘면서 쓰레기도 급증하고 있죠.<br /><br />​기업들이  불필요한 쓰레기를 조금이라도 줄여보자며 아이디어를 내고 있는데 소비자들도 좋은 반응을 보이고 있습니다.<br /><br />​박민경 기자의 보돕니다.<br /><br /> [리포트] <br /><br /> 백화점 하역장 한쪽에 마련된 쓰레기 집하 시설.<br /><br /> 매장에서 내보낸 각종 쓰레기가 끝도 없이 밀려 나옵니다.<br /><br /> 이 백화점 전국 매장에서 나오는 종이 쓰레기는 해마다 8,700톤 정도.<br /><br /> 올해부터 새로운 물건으로 바뀌기 시작했습니다.<br /><br /> 1년에 800만 장씩 쓰는 쇼핑 봉투를 이렇게 버려지는 종이로 만들고 있습니다.<br /><br /> 봉투를 받아든 고객들의 반응도 나쁘지 않습니다. <br /><br /> [명영희/서울 동작구 : ""(쇼핑 봉투를 사용하는 게)  환경 파괴가 아닌가 그렇게 생각을  했었어요. 폐지를 사용한다는 것은  버리지 않으면서도 계속 재활용한다는  거니까 좋은 의미 같고요.""]<br /><br /> [원종구/서울 강남구 : ""고급스러운 봉투를 받으면 기분은 좋기는  한데 환경친화적으로 가는 부분이라서  바뀌는 것이라면 충분히 받아들일 수  있다고 생각하고...""]<br /><br /> 조미김을 먹을 때마다 나오는 플라스틱 쓰레기.<br /><br /> 아예 플라스틱 용기를 없앤 이 제품은  나온 지 1년 반 만에 1,000만 봉 넘게 팔렸습니다.<br /><br /> 플라스틱 사용을 줄인 것은 물론 포장 부피가 줄다 보니 종이상자까지 절감하는, 1석 2조의 효과를 거뒀습니다.<br /><br /> 비슷한 아이디어의 제품이 잇따라 나오면서 소비자들도 환영하는 분위기입니다. <br /><br />[박원준/서울 강서구 : ""장 볼 때도 매번 이렇게 큰 걸 다 지고  가려면 크기도 문제고 쌓는 것도 문제였는데, 오히려 이런 것들이 줄어들고  환경에도 도움이 된다면 더 좋을 것  같아요.""]<br /><br /> 지난해 가정과 식당, 유통업체 등에서 나온 쓰레기는 2,200만 톤 정도 코로나 19 여파까지 겹치면서 1년 전보다 6% 넘게 늘었습니다.<br /><br /> 불필요한 쓰레기를 줄여보자는 기업들의 노력이 소비자들의 긍정적 반응 속에 자연 지킴 운동으로 이어질 지 주목됩니다.<br /><br /> KBS 뉴스 박민경입니다.<br /><br /> 촬영기자:송상엽 박상욱/영상편집:강정희/그래픽:고석훈","  [앵커]
+
+ 코로나 19시대, 일회용품 사용이 늘면서 쓰레기도 급증하고 있죠.
+
+ 지금의 사정상 어쩔 수 없는 일이란 얘기도 나오지만, 그래도 불필요한 쓰레기는 좀 줄여보자는 기업들의 움직임은 소비자 호응을 얻고 있습니다.
+
+ 박민경 기자입니다.
+
+ [리포트] 백화점 하역장 한쪽에 마련된 쓰레기 집하 시설.
+
+ 매장에서 내보낸 각종 쓰레기가 끝도 없이 밀려 나옵니다.
+
+ (타가)이 백화점 전국 매장에서 나오는 종이 쓰레기는 해마다 8,700톤 정도.
+
+ 올해부터 새로운 물건으로 바뀌기 시작했습니다./
+
+ 1년에 800만 장씩 쓰는 쇼핑 봉투를 이렇게 버려지는 종이로 만들고 있습니다.
+
+ 봉투를 받아든 고객들의 반응도 나쁘지 않습니다. <br /> 명영희 / 서울 동작구 [인터뷰] ""(쇼핑 봉투를 사용하는 게)  환경 파괴가 아닌가 그렇게 생각을  했었어요. 폐지를 사용한다는 것은  버리지 않으면서도 계속 재활용한다는  거니까 좋은 의미 같고요."" <br /> 원종구 / 서울 강남구 [인터뷰] ""고급스러운 봉투를 받으면 기분은 좋기는  한데 환경친화적으로 가는 부분이라서  바뀌는 것이라면 충분히 받아들일 수  있다고 생각하고...""
+
+ 조미김을 먹을 때마다 나오는 플라스틱 쓰레기.
+
+ 아예 플라스틱 용기를 없앤 이 제품은  나온 지 1년 반 만에 1,000만 봉 넘게 팔렸습니다.
+
+ (타가)플라스틱 사용을 줄인 것은 물론 포장 부피가 줄다 보니 종이상자까지 절감하는, 1석 2조의 효과를 거뒀습니다./
+
+ 비슷한 아이디어의 제품이 잇따라 나오면서 소비자들도 환영하는 분위기입니다. <br /> 박원준 / 서울 강서구 [인터뷰] ""장 볼 때도 매번 이렇게 큰 걸 다 지고  가려면 크기도 문제고 쌓는 것도
+
+ 문제였는데, 오히려 이런 것들이 줄어들고  환경에도 도움이 된다면 더 좋을 것  같아요.""
+
+ 지난해 가정과 식당, 유통업체 등에서 나온 쓰레기는 2,200만 톤 정도
+
+ 코로나 19 여파까지 겹치면서 1년 전보다 6% 넘게 늘었습니다.
+
+ 불필요한 쓰레기를 줄여보자는 기업들의 노력이 소비자들의 긍정적 반응 속에 자연 지킴 운동으로 이어질 지 주목됩니다.
+
+ KBS 뉴스 박민경입니다.
+
+ (촬영기자 : 송상엽, 박상욱  영상편집 : 강정희  그래픽 : 고석훈)
+
+ ",,10,N,N,,N,N,N,N,Y,0001,20220301,23,AI202203010798849,Y,Y,N,N,N,N,N,,,,,,wenrou315,2022-03-01 21:48:03,wenrou315,2022-03-01 22:13:38,,,,Y,N,,0,0,,,Y,,,,,N,,,Y,,00,,,,0,0,,박민경,/data/news/2022/03/01/20220301_g0DxhH.jpg,,,,,경제,뉴스 9,0017,경제,,뉴스 9,,"[{'imgCode': '5428723', 'newsCode': '5406597', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': '', 'sourceCode': '999', 'imgUrl': '/data/news/2022/03/01/20220301_g0DxhH.jpg', 'imgDesc': '', 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:52:54', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406597', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/230_5406597.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:47:26', 'vodEndTime': '2022-03-01 21:49:26', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:52:54', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/230_5406597.srt'}, {'newsCode': '5406597', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/230_5406597.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:47:26', 'vodEndTime': '2022-03-01 21:49:26', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:52:54', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/230_5406597.srt'}, {'newsCode': '5406597', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/230_5406597.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:47:26', 'vodEndTime': '2022-03-01 21:49:26', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:52:54', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/230_5406597.srt'}]","[{'newsCode': '5406597', 'reporterGubun': None, 'seq': None, 'reporterCode': '31471', 'reporterName': '박민경', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/78cba486049b9522d556899edb9f10bd.jpg', 'email': 'pmg@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/78cba486049b9522d556899edb9f10bd.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406601,0002,200,200,N,2022-03-01 20:17:16,2022-03-01 21:49:42,N,N,Y,,,,,[스포츠9 헤드라인],,,,,,10,N,N,,N,N,N,N,Y,0001,20220301,24,,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:49:41,sje0423,2022-03-01 21:55:31,,,,,N,,0,0,,,,,,,,,,,N,,00,,,,0,0,,KBS,/data/news/title_image/newsmp4/news9/2022/03/01/240_5406601.jpg,,,,,스포츠,뉴스 9,0002,스포츠,,뉴스 9,,"[{'imgCode': '5428722', 'newsCode': '5406601', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/240_5406601.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:52:23', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406601', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/240_5406601.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:49:27', 'vodEndTime': '2022-03-01 21:49:44', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:52:23', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': None}, {'newsCode': '5406601', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/240_5406601.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:49:27', 'vodEndTime': '2022-03-01 21:49:44', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:52:23', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': None}, {'newsCode': '5406601', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/240_5406601.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:49:27', 'vodEndTime': '2022-03-01 21:49:44', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:52:23', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': None}]",,,,,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406603,0050,200,200,N,2022-03-01 21:19:14,2022-03-01 21:50:44,N,N,Y,,,,,"울산 바코, PK 실축에 울다가 결승골에 웃었다","(스포츠/자막)울산 바코, PK 실축에 울다가, 결승골에 웃었다",," [앵커]<br /><br /> 프로축구 K리그 원에서 울산이 수원 FC에 역전승을 거두고 초반 2연승으로 선두에 올랐습니다.<br /><br /> 외국인 선수 바코가 페널티킥을 한번 실축했지만 기어코 결승골을 터뜨려 지옥과 천당을 오갔습니다.<br /><br /> 손기성 기자입니다.<br /><br /> [리포트] <br /><br /> 울산은 전반 10분 수원FC 김승준에게 헤딩 선제골을 내주고 끌려갔습니다.<br /><br /> 출발이 불안했던 울산의 해결사는  J리그 출신 아마노 준이었습니다.<br /><br /> 전반 42분 아마노의 방향전환 패스가 설영우를 거쳐 김민준의 골로 완성됐습니다.<br /><br /> 후반 4분에도 아마노는 절묘한 전진패스로 페널티킥을 이끌어냈습니다.<br /><br /> 하지만 키커로 나선 바코가 허무하게 공을 골대 옆으로 차버렸습니다.<br /><br /> 2경기 연속 페널티킥을 실축한  바코는 실망감에 고개를 푹 숙였습니다.<br /><br /> 실수에도 기죽지 않은 바코에게  후반 21분 기회가 찾아왔습니다.<br /><br /> 이청용의 프리킥이 수비를 맞고 흐르자 바코가 멋진 터닝슛으로 마무리했습니다.<br /><br /> 페널티킥 실축의 아쉬움을 털어낸 골, 울산은 수원FC를 꺾고 2연승을 거뒀습니다.<br /><br /> [이청용/울산 미드필더 : ""성남전 그리고 오늘 경기까지 승리로 이어가서 좋은 분위기 이어갈 수 있었고요. 이번 주말에 중요한 전북전 있으니까 이 흐름 이어가겠습니다.""]<br /><br /> 인천은 후반 41분 이명주가 찔러준 긴 패스를 김준엽이 멋진 발리 슛으로  연결해 강원을 1대 0으로 이겼습니다.<br /><br /> 제주 역시 수원 원정에서 김주공의 결승골로 시즌 첫 승을 챙겼습니다.<br /><br /> KBS 뉴스 손기성입니다.<br /><br /> 촬영기자:이병권/영상편집:송장섭"," [앵커]
+
+ 프로축구 K리그 원에서 울산이 수원 FC에 역전승을 거두고 초반 2연승으로 선두에 올랐습니다.
+
+ 외국인 선수 바코가 페널티킥을 한번 실축했지만 기어코 결승골을 터뜨려 지옥과 천당을 오갔습니다.
+
+ 손기성 기자입니다.
+
+ [리포트] 울산은 전반 10분 수원FC 김승준에게 헤딩 선제골을 내주고 끌려갔습니다.
+
+ 출발이 불안했던 울산의 해결사는  J리그 출신 아마노 준이었습니다.
+
+ 전반 42분 아마노의 방향전환 패스가 설영우를 거쳐 김민준의 골로 완성됐습니다.
+
+ 후반 4분에도 아마노는 절묘한 전진패스로 페널티킥을 이끌어냈습니다.
+
+ 하지만 키커로 나선 바코가 허무하게 공을 골대 옆으로 차버렸습니다.
+
+ 2경기 연속 페널티킥을 실축한  바코는 실망감에 고개를 푹 숙였습니다.
+
+ 실수에도 기죽지 않은 바코에게  후반 21분 기회가 찾아왔습니다.
+
+ 이청용의 프리킥이 수비를 맞고 흐르자 바코가 멋진 터닝슛으로 마무리했습니다.
+
+ 페널티킥 실축의 아쉬움을 털어낸 골, 울산은 수원FC를 꺾고 2연승을 거뒀습니다.
+
+ 이청용/울산 미드필더 [인터뷰] 성남전 그리고 오늘 경기까지 승리로 이어가서 좋은 분위기 이어갈 수 있었고요. 이번 주말에 중요한 전북전 있으니까 이 흐름 이어가겠습니다.
+
+ 인천은 후반 41분 이명주가 찔러준 긴 패스를 김준엽이 멋진 발리 슛으로  연결해 강원을 1대 0으로 이겼습니다.
+
+ 제주 역시 수원 원정에서 김주공의 결승골로 시즌 첫 승을 챙겼습니다.
+
+ KBS 뉴스 손기성입니다.
+
+ 촬영기자 이병권, 영상편집 송장섭",,10,N,N,,N,N,N,N,Y,0001,20220301,25,AI202203010798972,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:50:43,sje0423,2022-03-01 21:55:57,,,,,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,손기성,/data/news/title_image/newsmp4/news9/2022/03/01/250_5406603.jpg,,,,,K리그,뉴스 9,0086,축구,,뉴스 9,,"[{'imgCode': '5428734', 'newsCode': '5406603', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/250_5406603.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:55:17', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406603', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/250_5406603.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:49:44', 'vodEndTime': '2022-03-01 21:51:29', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:55:17', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/250_5406603.srt'}, {'newsCode': '5406603', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/250_5406603.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:49:44', 'vodEndTime': '2022-03-01 21:51:29', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:55:17', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/250_5406603.srt'}, {'newsCode': '5406603', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/250_5406603.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:49:44', 'vodEndTime': '2022-03-01 21:51:29', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:55:17', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/250_5406603.srt'}]","[{'newsCode': '5406603', 'reporterGubun': None, 'seq': None, 'reporterCode': '29267', 'reporterName': '손기성', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/1bc967477f11983ba1d41e2167ae575b.jpg', 'email': 'son@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/1bc967477f11983ba1d41e2167ae575b.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406610,0047,200,200,N,2022-03-01 21:19:30,2022-03-01 21:52:19,N,N,Y,,,,,류현진도 끄덕 ‘한화 루키’ 문동주 155km 찍었다!,(스포츠/자막)류현진도 끄덕 '한화 루키' 문동주 155km 찍었다!,,"  [앵커]  <br /><br /> 프로야구 특급 신인으로 꼽히는 한화 투수 문동주가 1군 첫 불펜 투구에서 시속 155km의 강속구를 뿌렸습니다.<br /><br /> 문동주를 관심 있게 지켜보던 류현진이 고개를 끄덕일 정도였습니다.<br /><br /> 박선우 기자가 전합니다.<br /><br /> [리포트]  <br /><br /> 문동주가 류현진을 향해 달려가 주먹 인사를 나눕니다.<br /><br /> 류현진은 자신을 닮고 싶다고 말한 특급 신인을 주의 깊게 관찰합니다.<br /><br /> 문동주는 포수 미트에 시원하게 꽂히는 불펜 투구로 강한 인상을 심었습니다.<br /><br /> [""와~""]<br /><br /> 수베로 감독과 정민철 단장 등 구단 관계자들이 모두 지켜볼 정도로 높은 관심을 보였습니다.<br /><br /> 최고 시속 155km를 찍은 묵직한 강속구에 류현진과 손혁 코디네이터가 고개를 끄덕였습니다.<br /><br /> 문동주는 전력 투구를 마친 뒤 미소를 지었고, 감독도 어깨를 두드리며 기대감을 드러냈습니다.<br /><br /> [문동주/한화 : ""류현진 선배가 던지기 전에 힘들어 가지 말고 평소처럼 던지라고 조언했습니다. (시속) 160km까지 노려보고 싶습니다.""]<br /><br /> 188cm 당당한 체격을 자랑하는 문동주는 2003년 12월생으로 프로야구 등록 선수 가운데 가장 어립니다.<br /><br /> 지난해 23세 이하 야구월드컵에서 인상적인 투구를 뽐낸 문동주는 항저우 아시안게임 대표 선발까지 꿈꾸고 있습니다.<br /><br /> [문동주/한화 : ""(대표팀에) 뽑히게 된다면 제가 던지는 경기는 무조건 이길 수 있도록 하겠습니다. 금메달 따는 게 큰 목표인 것 같습니다.""]<br /><br /> '제2의 이종범' 김도영을 지명한 KIA가 막판까지 선택에 저울질했던 문동주, 팀 선배 류현진처럼  신인왕을 향해 달려갑니다.<br /><br /> KBS 뉴스 박선우입니다.<br /><br />촬영기자:김한빈/영상편집:박경상","  [앵커]  프로야구 특급 신인으로 꼽히는 한화 투수 문동주가 1군 첫 불펜 투구에서 시속 155km의 강속구를 뿌렸습니다.
+
+ 문동주를 관심 있게 지켜보던 류현진이 고개를 끄덕일 정도였습니다.
+
+ 박선우 기자가 전합니다.
+
+ [리포트]  문동주가 류현진을 향해 달려가 주먹 인사를 나눕니다.
+
+ 류현진은 자신을 닮고 싶다고 말한 특급 신인을 주의 깊게 관찰합니다.
+
+ 문동주는 포수 미트에 시원하게 꽂히는 불펜 투구로 강한 인상을 심었습니다.
+
+ [이펙트1]""와~""
+
+ 수베로 감독과 정민철 단장 등 구단 관계자들이 모두 지켜볼 정도로 높은 관심을 보였습니다.
+
+ 최고 시속 155km를 찍은 묵직한 강속구에 류현진과 손혁 코디네이터가 고개를 끄덕였습니다.
+
+ 문동주는 전력 투구를 마친 뒤 미소를 지었고, 감독도 어깨를 두드리며 기대감을 드러냈습니다.
+
+ 문동주/한화  [인터뷰] ""류현진 선배가 던지기 전에 힘들어 가지 말고 평소처럼 던지라고 조언했습니다. (시속) 160km까지 노려보고 싶습니다.""
+
+ 188cm 당당한 체격을 자랑하는 문동주는 2003년 12월생으로 프로야구 등록 선수 가운데 가장 어립니다.
+
+ 지난해 23세 이하 야구월드컵에서 인상적인 투구를 뽐낸 문동주는
+
+ 항저우 아시안게임 대표 선발까지 꿈꾸고 있습니다.
+
+ 문동주/한화
+
+ [인터뷰] ""(대표팀에) 뽑히게 된다면 제가 던지는 경기는 무조건 이길 수 있도록 하겠습니다. 금메달 따는 게 큰 목표인 것 같습니다.""
+
+ '제2의 이종범' 김도영을 지명한 KIA가 막판까지 선택에 저울질했던 문동주,
+
+ 팀 선배 류현진처럼  신인왕을 향해 달려갑니다.
+
+ KBS 뉴스, 박선우입니다.
+
+ (촬영기자 김한빈, 영상편집 박경상)",,10,N,N,,N,N,N,N,Y,0001,20220301,26,AI202203010798836,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:52:18,sje0423,2022-03-01 22:01:42,,,,,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,박선우,/data/news/title_image/newsmp4/news9/2022/03/01/260_5406610.jpg,,,,,국내프로야구,뉴스 9,0079,야구,,뉴스 9,,"[{'imgCode': '5428745', 'newsCode': '5406610', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/260_5406610.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:43', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406610', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/260_5406610.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:51:29', 'vodEndTime': '2022-03-01 21:53:19', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:43', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/260_5406610.srt'}, {'newsCode': '5406610', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/260_5406610.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:51:29', 'vodEndTime': '2022-03-01 21:53:19', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:43', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/260_5406610.srt'}, {'newsCode': '5406610', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/260_5406610.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:51:29', 'vodEndTime': '2022-03-01 21:53:19', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:43', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/260_5406610.srt'}]","[{'newsCode': '5406610', 'reporterGubun': None, 'seq': None, 'reporterCode': '30015', 'reporterName': '박선우', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/1772d7476f7f38debfcd459a8489217f.jpg', 'email': 'bergkamp@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/1772d7476f7f38debfcd459a8489217f.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406620,0057,200,200,N,2022-03-01 21:20:12,2022-03-01 21:54:57,N,N,Y,,,,,"현대건설, 1위 확정 또 연기…‘승점 1점’ 부족","(스포츠/자막) 현대건설, 1위 확정 또 연기…'승점 1점' 부족",," [앵커]<br /><br /> 여자 프로배구 현대건설이 또 다시 도로공사에 발목 잡히며 정규리그 1위 확정을 미뤘습니다.<br /><br /> 이겼지만 승점 1점이 부족했습니다.<br /><br /> 문영규 기자의 보도입니다.<br /><br /> [리포트]<br /><br /> 정규리그 1위를 확정 지으려는 현대건설과 이를 저지하려는 도로공사.<br /><br /> 초반부터 몸을 날리는 등  혼신의 힘을 다했습니다.<br /><br /> 현대건설은 양효진과 황민경을 앞세워 1, 2세트를 내리 따내며  순조롭게 승점 3점을 가져가는 듯 했습니다.<br /><br /> 하지만 도로공사의 반격이 거셌습니다.<br /><br /> 배유나는 경기 도중 눈을 다쳐 눈물을 펑펑 흘리고도  블로킹 등으로 맹활약을 펼쳤습니다.<br /><br /> 도로공사는 3, 4세트를 따내 승부를 원점으로 돌렸습니다.<br /><br /> 5세트를 이겨도 현대건설로선 승점 2점을 얻는 데 그치기 때문에  이 순간 1위 확정은 무산됐습니다.<br /><br /> 도로공사 김종민 감독이 거세게 항의하다가 경고를 받는 등 어수선하게 진행됐던 5세트.<br /><br /> [김종민/한국도로공사 감독 : ""경기를 지금 흐름을 바꿔버리면 어떡하냐고!""]<br /><br /> 결국, 현대건설이 3대 2로 이겼지만 승점 3점이 아닌 2점만 얻어 1위 확정을 또 미뤘습니다.<br /><br /> [양효진/현대건설 : ""3세트 때가 계속 생각이 날 것 같아요. 배구는 한 점 싸움으로 이기고 지고 하는 게 있기 때문에, 다음에 그런 기회가 오면 어떤 식으로 잘 풀어갈까 이런 것들을 더 많이 생각해야 할 것 같습니다.""]<br /><br /> 현대건설은 오는 4일 GS칼텍스와의 경기에서 승점 단 1점만 기록해도 1위를 확정합니다.<br /><br /> KBS 뉴스 문영규입니다.<br /><br /> 촬영기자:이호/영상편집:김종선"," [앵커]
+
+ 여자 프로배구 현대건설이 또 다시 도로공사에 발목 잡히며 정규리그 1위 확정을 또 미뤘습니다.
+
+ 이겼지만 승점 1점이 부족했습니다.
+
+ 문영규 기자의 보도입니다.
+
+ [리포트]
+
+ 정규리그 1위를 확정 지으려는 현대건설과 이를 저지하려는 도로공사.
+
+ 초반부터 몸을 날리는 등  혼신의 힘을 다했습니다.
+
+ 현대건설은 양효진과 황민경을 앞세워 1, 2세트를 내리 따내며  순조롭게 승점 3점을 가져가는 듯 했습니다.
+
+ 하지만 도로공사의 반격이 거셌습니다
+
+ 배유나는 경기 도중 눈을 다쳐 눈물을 펑펑 흘리고도  블로킹 등으로 맹활약을 펼쳤습니다.
+
+ 도로공사는 3, 4세트를 따내 승부를 원점으로 돌렸습니다.
+
+ 5세트를 이겨도 현대건설로선 승점 2점을 얻는 데 그치기 때문에  이 순간 1위 확정은 무산됐습니다.
+
+ 도로공사 김종민 감독이 거세게 항의하다가 경고를 받는 등 어수선하게 진행됐던 5세트.
+
+ [이펙트1]김종민/한국도로공사 감독 경기를 지금 흐름을 바꿔버리면 어떡하냐고!
+
+ 결국, 현대건설이 3대 2로 이겼지만 승점 3점이 아닌 2점만 얻어 1위 확정을 또 미뤘습니다.
+
+ 양효진/현대건설 [인터뷰] 3세트 때가 계속 생각이 날 것 같아요. 배구는 한 점 싸움으로 이기고 지고 하는 게 있기 때문에, 다음에 그런 기회가 오면 어떤 식으로 잘 풀어갈까 이런 것들을 더 많이 생각해야 할 것 같습니다.
+
+ 현대건설은 오는 4일 GS칼텍스와의 경기에서 승점 단 1점만 기록해도 1위를 확정합니다.
+
+ KBS 뉴스 문영규입니다.
+
+ 촬영기자 : 이호 영상편집 : 김종선
+
+ ",,10,N,N,,N,N,N,N,Y,0001,20220301,27,AI202203010798977,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:54:57,sje0423,2022-03-01 22:01:58,,,,,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,문영규,/data/news/title_image/newsmp4/news9/2022/03/01/270_5406620.jpg,,,,,여자프로배구,뉴스 9,0096,배구,,뉴스 9,,"[{'imgCode': '5428742', 'newsCode': '5406620', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/270_5406620.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:27', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406620', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/270_5406620.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:53:19', 'vodEndTime': '2022-03-01 21:54:54', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:27', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/270_5406620.srt'}, {'newsCode': '5406620', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/270_5406620.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:53:19', 'vodEndTime': '2022-03-01 21:54:54', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:27', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/270_5406620.srt'}, {'newsCode': '5406620', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/270_5406620.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:53:19', 'vodEndTime': '2022-03-01 21:54:54', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:27', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/270_5406620.srt'}]","[{'newsCode': '5406620', 'reporterGubun': None, 'seq': None, 'reporterCode': '31271', 'reporterName': '문영규', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기자', 'imgUrl': '/images/news/reporter/0ab605102670807b661d9a1a4e618745.jpg', 'email': 'youngq@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/0ab605102670807b661d9a1a4e618745.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406624,0015,200,200,N,2022-03-01 21:21:42,2022-03-01 21:56:00,N,N,Y,,,,,"국제빙상연맹, 러시아·벨라루스 선수 대회 참가 불허","(MC/자막) 국제빙상연맹, 러시아·벨라루스 선수 대회 참가 불허",," 국제빙상경기연맹이 우크라이나를 침공한 러시아와 여기에 동조한 벨라루스 선수들에게 국제대회 참가를 불허하기로 했습니다.<br /><br /> 이에 따라 이번 달 열릴 피겨 세계선수권에 발리예바 등이 출전하지 못하게 됐습니다.<br /><br /> 국제빙상경기연맹의 이 같은 결정은 국제올림픽위원회 IOC의 권고에 따른 것입니다.<br /><br /> 가장 먼저 이번 달 피겨, 스피드스케이팅, 쇼트트랙 세계선수권 대회가 열리는데 발리예바 등 러시아와 벨라루스 선수들은 모두 참가하지 못합니다.  <br /><br /> 가족과 이별한 후  배를 타고 루마니아로 이동해서  우여곡절 끝에 프랑스 대회에 참가한  우크라이나의 야스트렘스카 자매 테니스 선수.<br /><br /> 복식 1회전에서 탈락했지만 가족의 헌신과 자매의 용기에 응원이 보내졌습니다. <br /><br /> 대한컬링연맹도 오늘  반러시아 물결에 동참했습니다.<br /><br /> 연맹은 국제 대회에서 러시아와 만나더라도 모든 경기를 보이콧한다고 밝혔습니다."," [앵커]
+
+ 국제빙상경기연맹이 우크라이나를 침공한 러시아와 여기에 동조한 벨라루스 선수들에게 국제대회 참가를 불허하기로 했습니다.
+
+ 이에 따라 이번 달 열릴 피겨 세계선수권에 발리예바 등이 출전하지 못하게 됐습니다.
+
+ [리포트]  국제빙상경기연맹의 이 같은 결정은 국제올림픽위원회 IOC의 권고에 따른 것입니다.
+
+ 가장 먼저 이번 달 피겨, 스피드스케이팅, 쇼트트랙 세계선수권 대회가 열리는데 발리예바 등 러시아와 벨라루스 선수들은 모두 참가하지 못합니다.  -----------------------------
+
+ 가족과 이별한 후  배를 타고 루마니아로 이동해서  우여곡절 끝에 프랑스 대회에 참가한  우크라이나의 야스트렘스카 자매 테니스 선수.
+
+ 복식 1회전에서 탈락했지만 가족의 헌신과 자매의 용기에 응원이 보내졌습니다. -------------------------------
+
+ 대한컬링연맹도 오늘  반러시아 물결에 동참했습니다.
+
+ 연맹은 국제 대회에서 러시아와 만나더라도 모든 경기를 보이콧한다고 밝혔습니다.
+
+ (끝)
+
+ ",,10,N,N,,N,N,N,N,Y,0001,20220301,28,AI202203010798891,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:56:00,sje0423,2022-03-01 22:02:11,,,,,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,KBS,/data/news/title_image/newsmp4/news9/2022/03/01/280_5406624.jpg,,,,,종합,뉴스 9,0103,종합,,뉴스 9,,"[{'imgCode': '5428747', 'newsCode': '5406624', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/280_5406624.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:53', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406624', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/280_5406624.mp4', 'vodKind': '10', 'vodBlockingYn': 'Y', 'duration': None, 'vodStartTime': '2022-03-01 21:54:54', 'vodEndTime': '2022-03-01 21:55:59', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:53', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/280_5406624.srt'}, {'newsCode': '5406624', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/280_5406624.mp4', 'vodKind': '10', 'vodBlockingYn': 'Y', 'duration': None, 'vodStartTime': '2022-03-01 21:54:54', 'vodEndTime': '2022-03-01 21:55:59', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:53', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/280_5406624.srt'}, {'newsCode': '5406624', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/280_5406624.mp4', 'vodKind': '10', 'vodBlockingYn': 'Y', 'duration': None, 'vodStartTime': '2022-03-01 21:54:54', 'vodEndTime': '2022-03-01 21:55:59', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 21:58:53', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/280_5406624.srt'}]","[{'newsCode': '5406624', 'reporterGubun': None, 'seq': None, 'reporterCode': '99999', 'reporterName': 'KBS', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': None, 'imgUrl': None, 'email': None, 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/api/getNewsList?currentPageNo=1&rowsPerPage=500&exceptPhotoYn=Y&broadCode=0001&broadDate=20220301&needReporterInfo=Y&orderBy=broadDate_desc%2CbroadOrder_asc,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406627,0015,200,200,N,2022-03-01 21:22:12,2022-03-01 21:57:08,N,N,Y,,,,,심석희 ‘험담 피해자’ 김아랑도 대표팀 합류,(MC/자막) 심석희 '험담 피해자' 김아랑도 대표팀 합류,," 동료 험담 징계가 끝난 쇼트트랙 심석희가 대표팀 복귀를 선언했는데요.<br /><br /> 피해자인 최민정에 이어 김아랑도 대표팀 합류를 결정해 세 선수가 다시 모이게 됐습니다.<br /><br /> 이달 말 세계선수권 대회를 앞둔 쇼트트랙 대표팀은 내일 진천 선수촌에서 훈련에 돌입합니다.<br /><br /> 베이징 동계올림픽에 출전했던 최민정이 내일 입촌하고 맏언니 김아랑은 부상에서 회복한 후 합류할 예정입니다.<br /><br /> 이로써 동료 험담 물의를 일으킨 심석희와 피해 선수인 최민정, 김아랑이 다시 대표팀에서 만나게 됐습니다.<br /><br /> 세 선수가 함께 훈련하는 건 심석희가 대표팀에서 분리된 지난해 10월 이후 약 5개월 만입니다."," [앵커]
+
+ 동료 험담 징계가 끝난 쇼트트랙 심석희가 대표팀 복귀를 선언했는데요.
+
+ 피해자인 최민정에 이어 김아랑도 대표팀 합류를 결정해 세 선수가 다시 모이게 됐습니다.
+
+ [리포트]
+
+ 이달 말 세계선수권 대회를 앞둔 쇼트트랙 대표팀은 내일 진천 선수촌에서 훈련에 돌입합니다.
+
+ 베이징 동계올림픽에 출전했던 최민정이 내일 입촌하고 맏언니 김아랑은 부상에서 회복한 후 합류할 예정입니다.
+
+ 이로써 동료 험담 물의를 일으킨 심석희와 피해 선수인 최민정, 김아랑이 다시 대표팀에서 만나게 됐습니다.
+
+ 세 선수가 함께 훈련하는 건 심석희가 대표팀에서 분리된 지난해 10월 이후 약 5개월 만입니다.
+
+ (끝)
+
+ ",,10,N,N,,N,N,N,N,Y,0001,20220301,29,AI202203010798911,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:57:07,sje0423,2022-03-01 22:02:24,,,,,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,KBS,/data/news/title_image/newsmp4/news9/2022/03/01/290_5406627.jpg,,,,,종합,뉴스 9,0103,종합,,뉴스 9,,"[{'imgCode': '5428754', 'newsCode': '5406627', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/290_5406627.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:01:35', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406627', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/290_5406627.mp4', 'vodKind': '10', 'vodBlockingYn': 'Y', 'duration': None, 'vodStartTime': '2022-03-01 21:55:59', 'vodEndTime': '2022-03-01 21:56:46', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:01:35', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/290_5406627.srt'}, {'newsCode': '5406627', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/290_5406627.mp4', 'vodKind': '10', 'vodBlockingYn': 'Y', 'duration': None, 'vodStartTime': '2022-03-01 21:55:59', 'vodEndTime': '2022-03-01 21:56:46', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:01:35', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/290_5406627.srt'}, {'newsCode': '5406627', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/290_5406627.mp4', 'vodKind': '10', 'vodBlockingYn': 'Y', 'duration': None, 'vodStartTime': '2022-03-01 21:55:59', 'vodEndTime': '2022-03-01 21:56:46', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:01:35', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/290_5406627.srt'}]","[{'newsCode': '5406627', 'reporterGubun': None, 'seq': None, 'reporterCode': '99999', 'reporterName': 'KBS', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': None, 'imgUrl': None, 'email': None, 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/api/getNewsList?currentPageNo=1&rowsPerPage=500&exceptPhotoYn=Y&broadCode=0001&broadDate=20220301&needReporterInfo=Y&orderBy=broadDate_desc%2CbroadOrder_asc,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406631,0055,200,200,N,2022-03-01 21:34:00,2022-03-01 21:58:07,N,N,Y,,,,,[오늘의 영상] 모란트의 환상적인 공중 쇼,끝영상-스포츠9,, 미국 프로농구에서  멤피스의 에이스 모란트가  동료의 엔드라인 패스를 받아  환상적인 앨리웁 버저비터를 성공시켰습니다.<br /><br /> 오늘의 영상입니다.," [앵커]
+
+ 미국 프로농구에서  멤피스의 에이스 모란트가  동료의 엔드라인 패스를 받아  환상적인 앨리웁 버저비터를 성공시켰습니다.
+
+ 오늘의 영상입니다.
+
+ ",,10,N,N,,N,N,N,N,Y,0001,20220301,30,AI202203010798774,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:58:06,sje0423,2022-03-01 22:02:37,,,,,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,KBS,/data/news/title_image/newsmp4/news9/2022/03/01/300_5406631.jpg,,,,,NBA,뉴스 9,0092,농구,,뉴스 9,,"[{'imgCode': '5428755', 'newsCode': '5406631', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/300_5406631.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:01:45', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406631', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/300_5406631.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:56:46', 'vodEndTime': '2022-03-01 21:57:15', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:01:45', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/300_5406631.srt'}, {'newsCode': '5406631', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/300_5406631.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:56:46', 'vodEndTime': '2022-03-01 21:57:15', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:01:45', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/300_5406631.srt'}, {'newsCode': '5406631', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/300_5406631.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:56:46', 'vodEndTime': '2022-03-01 21:57:15', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:01:45', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/300_5406631.srt'}]","[{'newsCode': '5406631', 'reporterGubun': None, 'seq': None, 'reporterCode': '99999', 'reporterName': 'KBS', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': None, 'imgUrl': None, 'email': None, 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/api/getNewsList?currentPageNo=1&rowsPerPage=500&exceptPhotoYn=Y&broadCode=0001&broadDate=20220301&needReporterInfo=Y&orderBy=broadDate_desc%2CbroadOrder_asc,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5406633,0009,200,200,N,2022-03-01 21:58:17,2022-03-01 21:58:40,N,N,Y,,,,,[뉴스9 날씨] 내일 대체로 맑음…건조한 날씨 속 산불 등 화재 주의,[뉴스9 날씨] 내일 대체로 맑음...건조한 날씨 속 산불 등 화재 주의,," 건조한 날씨 속에 크고 작은 산불이 자주 발생하고 있습니다.<br /><br /> 보통 이맘때 산불이 잦은데요.<br /><br /> 초목이 바짝 마른데다, 기온이 서서히 상승하면서  실효습도가 낮아지기 때문입니다.<br /><br /> 현재, 실효습도가 35% 이하로 낮아진 강원 영동과 영남을 중심으로 건조 특보가 내려져 있습니다.<br /><br /> 특히, 내일 낮부터 강원 영동과 영남에 순간적으로 초속 15m 이상의 강풍이 불 텐데요.<br /><br /> 바람에 의해 작은 불씨가 대형 화재로 번질 위험이 큰 만큼, 화재 예방에 각별한 주의가 필요합니다.<br /><br /> 내일은 밤 한때 수도권과 충청도의 초미세먼지 농도가 '나쁨' 수준을 보이겠습니다.<br /><br /> 내일은 전국이 대체로 맑겠지만, 남부지방과 제주도는 오전까지 구름이 다소 끼겠습니다.<br /><br /> 내일 서울과 대전의 아침 기온은 영하 3도 등으로  오늘보다 7도에서 8도 정도 낮아 춥겠습니다.<br /><br /> 내일 대구의 아침 0도, 낮 기온 13도 로  전국적으로 일교차가 크겠습니다.<br /><br /> 물결은 동해 먼바다에서 2에서 3미터로 높게 일겠습니다.<br /><br /> 금요일에는, 중부 내륙과 산간에 비가 내릴 전망입니다.<br /><br /> 날씨였습니다.<br /><br /> 강아랑<br /> (그래픽 : 김보나, 진행 : 이주현)","
+
+ 건조한 날씨 속에 크고 작은 산불이 자주 발생하고 있습니다.
+
+ 보통 이맘때 산불이 잦은데요.
+
+ 초목이 바짝 마른데다, 기온이 서서히 상승하면서  실효습도가 낮아지기 때문입니다.
+
+ 현재, 실효습도가 35% 이하로 낮아진 강원 영동과 영남을 중심으로 건조 특보가 내려져 있습니다.
+
+ 특히, 내일 낮부터 강원 영동과 영남에 순간적으로 초속 15m 이상의 강풍이 불 텐데요.
+
+ 바람에 의해 작은 불씨가 대형 화재로 번질 위험이 큰 만큼,
+
+ 화재 예방에 각별한 주의가 필요합니다.
+
+ 내일은 밤 한때 수도권과 충청도의 초미세먼지 농도가 '나쁨' 수준을 보이겠습니다.
+
+ 내일은 전국이 대체로 맑겠지만,
+
+ 남부지방과 제주도는 오전까지 구름이 다소 끼겠습니다.
+
+ 내일 서울과 대전의 아침 기온은 영하 3도 등으로  오늘보다 7도에서 8도 정도 낮아 춥겠습니다.
+
+ 내일 대구의 아침 0도, 낮 기온 13도 로  전국적으로 일교차가 크겠습니다.
+
+ 물결은 동해 먼바다에서 2에서 3미터로 높게 일겠습니다.
+
+ 금요일에는, 중부 내륙과 산간에 비가 내릴 전망입니다.
+
+ 날씨였습니다.
+
+ 강아랑
+
+ (그래픽 : 김보나, 진행 : 이주현)",,10,N,N,,N,N,N,N,Y,0001,20220301,31,AI202203010798886,Y,Y,N,N,N,,N,,,,,,wenrou315,2022-03-01 21:58:39,sje0423,2022-03-01 22:06:13,,,,,N,,0,0,,,Y,,,,,,,,Y,,00,,,,0,0,,강아랑,/data/news/title_image/newsmp4/news9/2022/03/01/310_5406633.jpg,,,,,기상뉴스,뉴스 9,0048,기상뉴스,,뉴스 9,,"[{'imgCode': '5428758', 'newsCode': '5406633', 'mediasetSeq': '1', 'orderSeq': '100', 'imgTitle': None, 'sourceCode': '999', 'imgUrl': '/data/news/title_image/newsmp4/news9/2022/03/01/310_5406633.jpg', 'imgDesc': None, 'orgImgUrl': None, 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:02:52', 'imgGubun': None, 'script': None}]","[{'newsCode': '5406633', 'vodType': 'D', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/500k/310_5406633.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:57:16', 'vodEndTime': '2022-03-01 21:58:41', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:02:52', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/310_5406633.srt'}, {'newsCode': '5406633', 'vodType': 'K', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/1500k/310_5406633.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:57:16', 'vodEndTime': '2022-03-01 21:58:41', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:02:52', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/310_5406633.srt'}, {'newsCode': '5406633', 'vodType': 'G', 'mediasetSeq': '1', 'vodUrl': '/newsmp4/news9/2022/03/01/10M/310_5406633.mp4', 'vodKind': '10', 'vodBlockingYn': 'N', 'duration': None, 'vodStartTime': '2022-03-01 21:57:16', 'vodEndTime': '2022-03-01 21:58:41', 'vodLength': '0', 'dutyYn': 'N', 'cdnYn': 'Y', 'regId': 'mediaFactory', 'regDate': '2022-03-01 22:02:52', 'localVodStart': '0', 'localVodEnd': '0', 'caption': None, 'thumbnailImageUrl': None, 'subtitleUrl': '/data/srt/FIXED/newsmp4/news9/2022/03/01/500k/310_5406633.srt'}]","[{'newsCode': '5406633', 'reporterGubun': None, 'seq': None, 'reporterCode': 'w1011', 'reporterName': '강아랑', 'deptCode': None, 'regId': None, 'regDate': None, 'modId': None, 'modDate': None, 'employeeNo': None, 'name': None, 'positionCode': None, 'positionName': None, 'positionDetail': None, 'positionType': None, 'duty': None, 'jobName': '기상캐스터', 'imgUrl': '/images/news/reporter/20a65966ed332fff1d3d6ea8fcd01398.jpg', 'email': 'arang@kbs.co.kr', 'twitter': None, 'facebook': None, 'metoday': None, 'yozm': None, 'cyworld': None, 'useYn': None, 'changeYn': None, 'substituteIdForExternalIf': None}]",,,https://news.kbs.co.kr/images/news/reporter/20a65966ed332fff1d3d6ea8fcd01398.jpg,++++++++++++++++++++++++++++++++++++++++++++++++++++++++
