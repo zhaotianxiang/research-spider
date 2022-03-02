@@ -1,5 +1,4 @@
 import scrapy
-import logging
 import datetime
 import json
 
@@ -20,6 +19,7 @@ class KBS(scrapy.Spider):
         if not responseObj["success"]:
             self.logger.error(responseObj)
             yield None
+
         for item in responseObj["data"]:
             item['image_urls']=[]
             if item['reporters']:
