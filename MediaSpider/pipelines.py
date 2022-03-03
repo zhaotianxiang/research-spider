@@ -16,7 +16,7 @@ class MediaspiderPipeline:
 
 class ImgspiderPipeline(ImagesPipeline):
     def get_media_requests(self, item, info):
-        yield Request(url=item['reporter_image_url'], meta={"image_name": "kbs/"+item['reporter_image_url'].split("/")[-1]})
+        yield Request(url=item['reporter_image_url'], meta={"image_name": "voa/"+item['reporter_image_url'].split("/")[-1]})
 
     def file_path(self, request, response=None, info=None):
         return request.meta["image_name"]
