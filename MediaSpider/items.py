@@ -9,7 +9,6 @@ import scrapy
 class MediaspiderItem(scrapy.Item):
     news_id=scrapy.Field()
     news_title=scrapy.Field()
-    news_summary_contents=scrapy.Field()
     news_contents=scrapy.Field()
     broad_time=scrapy.Field()
     reporter_id = scrapy.Field()
