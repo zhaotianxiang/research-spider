@@ -1,6 +1,7 @@
 import scrapy
 import datetime
 import json
+from ..items import MediaspiderItem
 
 def dateRange(start, end, step=1, format="%Y%m%d"):
     strptime, strftime = datetime.datetime.strptime, datetime.datetime.strftime
@@ -12,7 +13,7 @@ def generateUrlList(dateStr):
 
 class KBS(scrapy.Spider):
     name = 'kbs'
-    start_urls = list(map(generateUrlList, dateRange("20220301","20220302")))
+    start_urls = list(map(generateUrlList, dateRange("20210101","20220303")))
 
     def parse(self, response):
         responseObj=json.loads(response.body)
@@ -24,5 +25,16 @@ class KBS(scrapy.Spider):
             item['image_urls']=[]
             if item['reporters']:
                 for reporter in item['reporters']:
-                    item['image_urls'].append(response.urljoin(reporter['imgUrl']))
-            yield item
+                    mediaspiderItem=MediaspiderItem()
+                    mediaspiderItem["news_id"]=item["newsCode"]
+                    mediaspiderItem["news_title"]=item["newsTitle"]
+                    mediaspiderItem["news_contents"]=item["newsContents"]
+                    mediaspiderItem["broad_time"]=item["broadDate"]
+                    mediaspiderItem["reporter_id"]=reporter["reporterCode"]
+                    mediaspiderItem["reporter_name"]=reporter["reporterName"]
+                    mediaspiderItem["reporter_email"]=reporter["email"]
+                    mediaspiderItem["reporter_twitter"]=reporter["twitter"]
+                    mediaspiderItem["reporter_facebook"]=reporter["facebook"]
+                    mediaspiderItem["reporter_job_name"]=reporter["jobName"]
+                    mediaspiderItem["reporter_image_url"]=response.urljoin(reporter['imgUrl'])
+                    yield mediaspiderItem

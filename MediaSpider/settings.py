@@ -25,7 +25,7 @@ CONCURRENT_REQUESTS = 32
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = 0.5
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -50,9 +50,9 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'MediaSpider.middlewares.MediaspiderDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+    'MediaSpider.middlewares.MediaspiderDownloaderMiddleware': 543,
+}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -70,9 +70,9 @@ ITEM_PIPELINES = {
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-AUTOTHROTTLE_START_DELAY = 1
+AUTOTHROTTLE_START_DELAY = 0.1
 # The maximum download delay to be set in case of high latencies
-AUTOTHROTTLE_MAX_DELAY = 2
+AUTOTHROTTLE_MAX_DELAY = 0.5
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
 #AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
@@ -86,15 +86,28 @@ AUTOTHROTTLE_MAX_DELAY = 2
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-IMAGE_PIPELINES = {'scrapy.piplines.files.FilesPipeline':1}
+
+ITEM_PIPELINES = {'MediaSpider.pipelines.ImgspiderPipeline': 1}
 
 IMAGES_THUMBS = {
-	'small':(50,50),
-	'big':(2770,270)
+    'small': (50, 50),
+    'big': (470, 470),
 }
 
-FILE_STORE = "./data/files/"
 IMAGES_STORE = "./data/images/"
+
+IMAGES_URLS_FIELD = 'field_name_for_your_images_urls'
+IMAGES_RESULT_FIELD = 'field_name_for_your_processed_images'
+
+FILES_RESULT_FIELD = 'field_name_for_your_processed_files'
+
+# 120 days of delay for files expiration
+FILES_EXPIRES = 120
+
+# 30 days of delay for images expiration
+IMAGES_EXPIRES = 30
+
+MEDIA_ALLOW_REDIRECTS = True
 
 # 导出文件格式和文件名称
 FEED_URI = 'data/%(name)s.csv'

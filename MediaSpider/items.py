@@ -7,5 +7,15 @@ import scrapy
 
 
 class MediaspiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    name = scrapy.Field()
+    news_id=scrapy.Field()
+    news_title=scrapy.Field()
+    news_summary_contents=scrapy.Field()
+    news_contents=scrapy.Field()
+    broad_time=scrapy.Field()
+    reporter_id = scrapy.Field()
+    reporter_name = scrapy.Field()
+    reporter_email=scrapy.Field()
+    reporter_twitter=scrapy.Field()
+    reporter_facebook=scrapy.Field()
+    reporter_job_name=scrapy.Field()
+    reporter_image_url = scrapy.Field()
