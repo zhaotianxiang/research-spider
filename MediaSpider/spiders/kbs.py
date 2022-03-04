@@ -22,7 +22,6 @@ class KBS(scrapy.Spider):
             yield None
 
         for item in responseObj["data"]:
-            item['image_urls']=[]
             if item['reporters']:
                 for reporter in item['reporters']:
                     mediaspiderItem=MediaspiderItem()
