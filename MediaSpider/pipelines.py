@@ -5,8 +5,6 @@
 
 
 # useful for handling different item types with a single interface
-from itemadapter import ItemAdapter
-import os
 from scrapy import Request
 from scrapy.pipelines.images import ImagesPipeline
 
