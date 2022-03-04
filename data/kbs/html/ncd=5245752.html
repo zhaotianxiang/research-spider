@@ -1,0 +1,2680 @@
+
+
+
+	
+	
+	
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+		<link rel="shortcut icon" href="/resources/images/v1/favicon/favicon.ico" sizes="16x16"/>
+		<link rel="shortcut icon" type="image/png" href="/resources/images/v1/favicon/favicon.png" sizes="128x128"/>
+
+		
+
+
+
+
+
+
+
+
+<!--  for global var  -->                                                                                  
+<script type="text/javascript">
+	var GV_DOMAIN    = "news.kbs.co.kr";
+	
+	var GV_RESPATH   = "/resources";
+	
+	var GV_IMGPATH   = "";
+	var GV_IMGPATH_m_thum	= "https://img.kbs.co.kr/kbs/160/news.kbs.co.kr";
+	var GV_IMGPATH_m_big	= "https://img.kbs.co.kr/kbs/620/news.kbs.co.kr"; 
+	var GV_IMGPATH_m_reporter	= "https://img.kbs.co.kr/kbs/44/news.kbs.co.kr";
+	var GV_IMGPATH_m_reco   = "https://img.kbs.co.kr/kbs/160";
+	
+	var GV_CONTEXTPATH = "";
+	
+	var GV_VOD_DEFAULT_IMG = "/resources/images/common/noimg_633_355.png";
+	var GV_DEFAULT_IMG = "/resources/images/common/noimg_633_355.png";
+	
+	var PAGING_ROW_PER_PAGE = '10';
+	
+	var PAGING_NAVIGATION_TYPE = 'A';
+	    
+	var GV_LIVEREPATH  = "news.kbs.co.kr:80";
+
+	var GV_LIVERE_CONSUMER_SEQ = 418;
+	var GV_LIVERE_SMARTLOGIN_SEQ = 462;
+	var GV_LIVERE_LIVERE_SEQ = 23640; //dev: 27626
+
+	var GV_LOGINON         = 'false';
+	var GV_MEMBER_ID       = '';
+</script>
+
+		<title>KBS NEWS</title>
+
+		<meta name="apple-itunes-app" content="app-id=376746898, affiliate-data=myAffiliateData, app-argument=https://mn.kbs.co.kr/mobile/news/view.do?ncd=5245752">
+		<meta name="google-play-app" content="app-id=kr.co.kbs.news301">
+		
+		<link rel="stylesheet" type="text/css" href="/resources/css/mobile/v1/reset.css" />
+                <link rel="stylesheet" type="text/css" href="/resources/css/mobile/v1/font.css" />
+                <link rel="stylesheet" type="text/css" href="/resources/css/mobile/v1/swiper.min.css" />
+                <link rel="stylesheet" type="text/css" href="/resources/css/mobile/v1/common.css?v=20220304174039" />
+		<link rel="stylesheet" type="text/css" href="/resources/css/mobile/v1/layout.css?v=20220304174039" />
+		<link rel="stylesheet" type="text/css" href="/resources/css/mobile/v1/contents.css?v=20220304174039" />
+		<!-- 플레이어관련 css -->
+		<link rel="stylesheet" type="text/css" href="/resources/js/jwplayer7_9_3/skins/kbsnoon.css?v=20220304174039" media="all">
+
+		<script type="text/javascript" src="/resources/js/moment.min.js"></script>
+		<script type="text/javascript" src="/resources/js/common.js"></script>
+
+		<script type="text/javascript" src="/resources/js/mobile/v1/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/v1/swiper.jquery.min.js"></script>
+		<script type="text/javascript" src="/resources/js/jquery.bxSlider.js"></script>		
+		
+		
+		<script type="text/javascript" src="/resources/js/mobile/v1/ui_common.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/v1/ui_main.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/v1/ui_contents.js?v=20220304174039"></script>
+
+		<script src="/resources/js/mobile/zoom/jquery.panzoom.min.js"></script>
+		<script src="/resources/js/mobile/zoom/jquery.mousewheel.js"></script>
+
+		<script type="text/javascript" src="/resources/js/mobile/jquery.mobile.min.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/jquery.dotdotdot.min.js"></script>
+		<script type="text/javascript" src="/resources/js/jquery.form.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/jquery.blockUI-2.70.js"></script>
+		<script type="text/javascript" src="/resources/js/json2.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/slick.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/iscroll.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/mobileCommon.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/contents.js"></script>
+		
+		
+		<script type="text/javascript" src="/resources/js/mobile/mobileApp-main.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/iscroll4.js"></script>
+
+		<script type="text/javascript" src="/resources/js/linkURL.js"></script>
+		<script type="text/javascript" src="/resources/js/validate.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/lnb.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/searchMobile.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/mobile.js?v=20220304174039"></script>
+		<script type="text/javascript" src="/resources/js/mobile/mobileApp.js"></script>
+		<script type="text/javascript" src="/resources/js/mobile/htmlGenerator.js?v=20220304174039"></script>
+		<script type="text/javascript" src="/resources/js/jwplayer7_9_3/jwplayer.js" ></script>
+		<script type="text/javascript">
+			var ieBrowser = '9';
+			jwplayer.key="wL1VG89d0RJwTeAjmXfOGEztrKfZYekhwBp9bd6UEvskWYWk";
+		</script>
+		
+		<script type="text/javascript" src="/resources/js/jquery.lazyload.js"></script>
+		
+		<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+		<script type="text/javascript" src="/resources/js/v1/lib/jquery-ui.min.js"></script>
+
+		<style type="text/css">
+			.news-media-area iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+
+		<script type="text/javascript" src="/resources/js/kbsplayer/kbsPlayer7.js"></script>
+
+		<script type="text/javascript">
+			var GV_LOGINON = 'false'; 
+			var GV_MEMBER_ID = '' ; 
+		</script>
+		
+		<!-- additional head area -->
+		
+<meta name="title" content="‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”" />
+<meta name="url" content="//news.kbs.co.kr/mobile/news/view.do?ncd=5245752" />
+<meta name="description" content="양궁 국가대표 안산 선수에 대한 온라인상 혐오 표현과 윤석열 전 검찰총장 배우자 김건희 씨를 비방한 벽..." />
+<meta name="keywords" content="" />
+
+<!-- 페이스북 / 카카오 스토리 -->
+<meta id="facebook_title" property="og:title" content="‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”" />
+<meta property="og:site_name" content="KBS 뉴스" />
+<meta property="og:type" content="article" />    
+<meta id="facebook_url" property="og:url" content="//news.kbs.co.kr/mobile/news/view.do?ncd=5245752"/> 
+<meta id="facebook_img" property="og:image" content="https://news.kbs.co.kr/data/news/title_image/newsmp4/news9/2021/07/30/150_5245752.jpg"/>
+<meta id="facebook_desc" property="og:description" content="양궁 국가대표 안산 선수에 대한 온라인상 혐오 표현과 윤석열 전 검찰총장 배우자 김건희 씨를 비방한 벽..."/>
+
+<!-- 트위터 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="KBS 뉴스">
+<meta name="twitter:title" content="‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”">
+<meta name="twitter:creator" content="KBS 뉴스">
+<meta name="twitter:image" content="https://news.kbs.co.kr/data/news/title_image/newsmp4/news9/2021/07/30/150_5245752.jpg">
+<meta name="twitter:description" content="양궁 국가대표 안산 선수에 대한 온라인상 혐오 표현과 윤석열 전 검찰총장 배우자 김건희 씨를 비방한 벽...">
+
+<!-- Google -->
+<meta itemprop="name" content="‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”">
+<meta itemprop="description" content="양궁 국가대표 안산 선수에 대한 온라인상 혐오 표현과 윤석열 전 검찰총장 배우자 김건희 씨를 비방한 벽...">
+<meta itemprop="image" content="https://news.kbs.co.kr/data/news/title_image/newsmp4/news9/2021/07/30/150_5245752.jpg">
+
+		<!--// additional head area -->
+		<link rel="canonical" href="https://news.kbs.co.kr/news/view.do?ncd=5245752" />
+
+		<script>
+
+	function getParameterByName(name, url) {
+		if (!url) url = window.location.href;
+		name = name.replace(/[\[\]]/g, '\\$&');
+		var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+		    results = regex.exec(url);
+		if (!results) return null;
+		if (!results[2]) return '';
+		return decodeURIComponent(results[2].replace(/\+/g, ' '));
+	}
+
+	function setPageNavigation( obj, param ) {
+		var totalSize 		        = param.totalSize;
+		var currentPageNo 	= param.currentPageNo;
+		var rowPerPage 		= param.rowPerPage;		// 한페이지에 보여지는 행 개수
+		var pagePerPage  	    = param.pagePerPage;
+
+		var startPageNo = 0;    // 첫번째 페이지 번호
+		var endPageNo   = 0;	// 마지막번째 페이지 번호
+		var totalPageNo = 0;   	// 전체 페이지 번호
+
+		var prevPageNo      = 0;
+		var nextPageNo      = 0;		
+		var prevBlockPageNo = 0;		// 이전 Block 첫 페이지 번호
+		var nextBlockPageNo = 0;		// 다음 Block 첫 페이지 번호
+
+		totalPageNo = totalSize % rowPerPage == 0 ? parseInt( totalSize / rowPerPage ) : parseInt( totalSize / rowPerPage ) + 1;
+
+		startPageNo = currentPageNo % pagePerPage == 0 ? 	( parseInt( currentPageNo / pagePerPage ) * pagePerPage ) - ( pagePerPage - 1 ): ( parseInt( currentPageNo / pagePerPage ) * pagePerPage ) + 1;
+
+		endPageNo   = parseInt( startPageNo ) + parseInt( pagePerPage ) -1;
+		endPageNo   = endPageNo >= totalPageNo ? totalPageNo : endPageNo;
+
+		prevPageNo = currentPageNo-1 < 1 ? -1 : (currentPageNo-1);
+		nextPageNo = currentPageNo >= totalPageNo ? -1 : (currentPageNo+1);
+
+		prevBlockPageNo = startPageNo == 1 ? -1 : startPageNo - pagePerPage;
+		nextBlockPageNo = endPageNo + 1 > totalPageNo ?  -1 : endPageNo + 1;
+
+		if( isNaN( startPageNo ) && isNaN( endPageNo ) )
+		{
+			startPageNo = 1;	endPageNo = 1;	currentPageNo = 1;
+		}		
+
+		$(obj).empty();
+
+		if(param.navigationType == undefined || param.navigationType == 'undefined' || param.navigationType == ''){
+			param.navigationType = 'A';
+		}
+
+		var pagiHtml = '';
+		switch(param.navigationType){
+			case 'A' : pagiHtml = getATypePagiHtml(param.pageClickFunctionName, currentPageNo, startPageNo, endPageNo, prevPageNo, nextPageNo, prevBlockPageNo, nextBlockPageNo);
+				break;		
+			case 'Z' : pagiHtml = getZTypePagiHtml(param.pageClickFunctionName, currentPageNo, startPageNo, endPageNo, prevPageNo, nextPageNo, prevBlockPageNo, nextBlockPageNo);
+				break;							
+			default : pagiHtml = getDefaultPagiHtml(param.pageClickFunctionName, currentPageNo, startPageNo, endPageNo, prevPageNo, nextPageNo, prevBlockPageNo, nextBlockPageNo);
+				break;		
+		}
+
+		$(obj).append( pagiHtml );
+	}
+
+
+	function getDefaultPagiHtml(pageClickFunctionName, currentPageNo, startPageNo, endPageNo, prevPageNo, nextPageNo, prevBlockPageNo, nextBlockPageNo) {
+		var pagiHtml = '';
+
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\'' + prevBlockPageNo + '\');" title="10페이지 앞으로" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_first.png" alt="10페이지 앞으로" />';
+		pagiHtml += '</button>&nbsp;';
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\'' + prevPageNo + '\');" title="이전 페이지"  >';
+		pagiHtml += '    <img src="/resources/images/common/paging_prev.png" alt="이전 페이지" />';
+		pagiHtml += '</button>&nbsp;';
+
+		for(var pageNo=startPageNo; pageNo<=endPageNo; pageNo++)
+		{
+			if(pageNo == currentPageNo)
+			{
+				pagiHtml += '<button type="button" class="on">'+currentPageNo+'</button>&nbsp;';
+			}
+			else
+			{
+				pagiHtml += '<button type="button" onClick="'+pageClickFunctionName+'(\''+pageNo+'\');" >'+pageNo+'</button>&nbsp;';
+			}
+		}	
+
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\''+nextPageNo+'\');" title="다음 페이지" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_next.png" alt="다음 페이지" />';
+		pagiHtml += '</button>&nbsp;';
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\''+nextBlockPageNo+'\');" title="10페이지 뒤로" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_last.png" alt="10페이지 뒤로" />';
+		pagiHtml += '</button>';
+		return pagiHtml;
+	}
+
+	function getATypePagiHtml(pageClickFunctionName, currentPageNo, startPageNo, endPageNo, prevPageNo, nextPageNo, prevBlockPageNo, nextBlockPageNo) {
+		var pagiHtml = '';
+
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\'' + prevBlockPageNo + '\');" title="10페이지 앞으로" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_first.png" alt="10페이지 앞으로" />';
+		pagiHtml += '</button>&nbsp;';
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\'' + prevPageNo + '\');" title="이전 페이지" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_prev.png" alt="이전 페이지" />';
+		pagiHtml += '</button>&nbsp;';
+
+		for(var pageNo=startPageNo; pageNo<=endPageNo; pageNo++)
+		{
+			if(pageNo == currentPageNo)
+			{
+				pagiHtml += '<button type="button" class="on">'+currentPageNo+'</button>&nbsp;';
+			}
+			else
+			{
+				pagiHtml += '<button type="button" onClick="'+pageClickFunctionName+'(\''+pageNo+'\');" >'+pageNo+'</button>&nbsp;';
+			}
+		}	
+
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\''+nextPageNo+'\');" title="다음 페이지" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_next.png" alt="다음 페이지" />';
+		pagiHtml += '</button>&nbsp;';
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\''+nextBlockPageNo+'\');" title="10페이지 뒤로" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_last.png" alt="10페이지 뒤로" />';
+		pagiHtml += '</button>';
+		return pagiHtml;
+	}
+
+
+	function getZTypePagiHtml(pageClickFunctionName, currentPageNo, startPageNo, endPageNo, prevPageNo, nextPageNo, prevBlockPageNo, nextBlockPageNo) {
+		var pagiHtml = '';
+
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\'' + prevBlockPageNo + '\');" title="10페이지 앞으로" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_first.png" alt="10페이지 앞으로" />';
+		pagiHtml += '</button>&nbsp;';
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\'' + prevPageNo + '\');" title="이전 페이지" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_prev.png" alt="이전 페이지" />';
+		pagiHtml += '</button>&nbsp;';
+
+		for(var pageNo=startPageNo; pageNo<=endPageNo; pageNo++)
+		{
+			if(pageNo == currentPageNo)
+			{
+				pagiHtml += '<button type="button" class="on">'+currentPageNo+'</button>&nbsp;';
+			}
+			else
+			{
+				pagiHtml += '<button type="button" onClick="'+pageClickFunctionName+'(\''+pageNo+'\');" >'+pageNo+'</button>&nbsp;';
+			}
+		}	
+
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\''+nextPageNo+'\');" title="다음 페이지" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_next.png" alt="다음 페이지" />';
+		pagiHtml += '</button>&nbsp;';
+		pagiHtml += '<button type="button" class="img" onClick="'+pageClickFunctionName+'(\''+nextBlockPageNo+'\');" title="10페이지 뒤로" >';
+		pagiHtml += '    <img src="/resources/images/common/paging_last.png" alt="10페이지 뒤로" />';
+		pagiHtml += '</button>';
+		return pagiHtml;
+	}
+
+	function displayPaging(data) {
+		var pagingParam = {
+			'totalSize' : data.page_totalSize,
+			'currentPageNo' : data.page_currentPageNo,
+			'rowPerPage': data.page_rowPerPage,     // list per page count
+			'pagePerPage': data.page_pagePerPage,  // page bar count 1 2 3 4 5
+			'navigationType':PAGING_NAVIGATION_TYPE,		
+			'pageClickFunctionName': 'goPage'
+		};
+
+		setPageNavigation('#pagination', pagingParam);	
+
+		if( PAGING_NAVIGATION_TYPE == "Z" )
+		{
+			gfnPageSearchDisplay( data );
+		}
+	}
+	
+	function getFirstNotEmptyItem() {
+		for(var a=0;a<arguments.length;a++){
+			if(arguments[a]!=null && arguments[a]!=undefined && arguments[a]!="")
+				return arguments[a];
+		}
+		
+		return "";
+	}
+
+	function callExposeData(contentsId, pubExec, successCallback, errorCallback) {
+		var exposeApiUrl = 
+			pubExec == 'N' ? '/api/getRenderContentsInfo?contentsId=' + contentsId + '&pubExec=N' : '/expose/' + contentsId + '.json?d='+moment().format("YYYYMMDDHHmm");
+		$.ajax({
+				url: exposeApiUrl,
+				type: 'get',
+				dataType: 'json',
+				success: function(data, status) { pubExec == 'N' ? successCallback(data.data, status) : successCallback(data, status)},
+				error: function(errorCallback) { 
+					if (errorCallback) {
+						errorCallback();
+					}
+				},
+		});
+	}
+	
+	function callExposeSyncData(contentsId, pubExec, successCallback, errorCallback) {
+		var exposeApiUrl = 
+			pubExec == 'N' ? '/api/getRenderContentsInfo?contentsId=' + contentsId + '&pubExec=N' : '/expose/' + contentsId + '.json?d='+moment().format("YYYYMMDDHHmm");
+		$.ajax({
+				url: exposeApiUrl,
+				type: 'get',
+				dataType: 'json',
+				async: false,
+				success: function(data, status) { pubExec == 'N' ? successCallback(data.data, status) : successCallback(data, status)},
+				error: function(errorCallback) { 
+					if (errorCallback) {
+						errorCallback();
+					}
+				},
+		});
+	}
+	
+	var doBack = function() {
+		window.history.back();
+	}
+	
+</script>
+
+<script type="text/javascript">
+	document.domain='kbs.co.kr';
+</script>
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M7J7R5');</script>
+<!-- End Google Tag Manager --> 
+
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7J7R5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --> 
+		<div id="wrap">
+			<div id="container" class="container container-sub">
+
+			<header id="header">
+	<div class="header-info">
+		<h1><a href="/mobile/main.html" class="logo_kbs"><span class="blind">KBS 뉴스</span></a></h1>
+		<h2 class="blind">본문영역</h2>
+		<h3 class="header-title"><span class="blind">메인</span></h3>
+		<a class="gnb-btn" href="#float" aria-label="메뉴 열기"><span class="blind">메뉴 열기</span></a>
+		<a class="btn-report" href="/mobile/report/write.do?ref=mGnb&spcd=&ncd=&rgb=M">제보</a>		
+	</div><!-- //.header-info -->  
+
+
+</header><!-- //#header -->
+<script type="text/javascript">
+	var gnb_search_btn = function(){
+		location.href = 'http://qsearch.kbs.co.kr/search.html';
+	}
+</script>
+	<!-- 속보 영역 -->
+	<div id="noticeZoneView" class="alertbox"></div>
+	<script>
+		$(document).ready(function(){
+			$.get('/sokbo/sokbo.json?d='+moment().format("YYYYMMDDHHmmss"), function(ret){
+				for(var a=0;a<ret.length;a++) {
+					var obj = ret[a];
+					if(moment(obj.endDate, 'YYYY-MM-DD HH:mm:ss').isBefore(moment())){
+						continue;
+					}					
+					var k = $("<p class='alert-item'><em class='label break'>속보</em><span class='txt' /></p>");
+					k.find("span").text(obj.flashEditContents);					
+					k.appendTo('#noticeZoneView');
+				}
+			});
+		});
+	</script>
+
+	<!-- 모바일 상단 속보 수동 미사용.-->
+	
+	
+	 
+	<style>
+.alert_box {position:relative; background-color:#f6f6f6; z-index:90000}
+		.alert_box .scroll-box {position:relative;}
+        .alert_box .sec_news_blk.type2 {width:90%; position:relative; margin:0; padding:10px 0;box-sizing:border-box; height:41px; overflow:hidden}
+		.alert_box .scroll-box:after {content:""; position:absolute; top:19px; right:11px; display:block; width:16px; height:8px; background:url('https://news.kbs.co.kr/resources/images/mobile/v1/ico/ico-arr-down.png') no-repeat 0 0; background-size:16px 8px}		
+		.alert_box .ico-arrow {width:10%;float:right}
+        .alert_box .news_blk li {display:-webkit-box; overflow:hidden; text-overflow:ellipsis;white-space:nowrap; padding:0 15px; box-sizing:border-box; text-overflow:ellipsis;white-space:nowrap; overflow:hidden; -webkit-box-orient:vertical; word-wrap:break-word; width:100%; -webkit-line-clamp:1;}
+        .alert_box .news_blk li a {display:inline-block; font-size:14px; line-height:25px; letter-spacing:-.5px; box-sizing:border-box; text-overflow:ellipsis;white-space:nowrap; max-width:320px; overflow:hidden; -webkit-box-orient:vertical; word-wrap:break-word; -webkit-line-clamp:1; width:90%; padding-right:10px}
+        .alert_box .news_blk li .tit {display:inline-block;margin:0 2px 0 0;font-size:14px;color:#f8364b;letter-spacing:-.75px; vertical-align:bottom}
+         @media screen and (max-width: 320px){
+            .alert_box .news_blk li  {max-width:300px;}  
+            .alert_box .news_blk li a {max-width:236px;}  
+        }
+		.alert_box .list_allBox {display:none; position:absolute; top:0; right:0; left:0; width:100%; padding:6px 0 0 0; z-index:3000; background-color:#f6f6f6;}
+		.alert_box .list_allBox .inner {margin-bottom:6px; height:340px; overflow-y:scroll; background-color:#f6f6f6; box-sizing: border-box}
+		.alert_box .list_allBox .list_all .tit {vertical-align:top}
+		.alert_box .list_allBox li {padding:3px 15px; font-size:13px; letter-spacing:-.75px}
+		.alert_box .list_allBox .close-box {display:block; text-align:center; height:30px; line-height:30px; background-color:#ccc;}
+		.alert_box .list_allBox .btn-close {display:inline-block; position:relative; padding-right:19px; vertical-align:initial; color:#fff; font-size:14px; font-weight:bold}
+		.alert_box .list_allBox .btn-close:after {background:url(https://news.kbs.co.kr/resources/images/mobile/v1/ico/ico-gnb.png) no-repeat 2px -14px; background-size:18px; position:absolute; top:7px; right:0; content:""; width:18px; height:18px}
+    </style>
+
+
+<div class="alert_box" id="noAutoArea">
+    <div class="scroll-box">		
+	<div class="sec_news_blk type2" id="newestView_noAuto">
+		<div class="news_blk news11">
+			<div class="cont" id="newestZoneView">
+				<ul id="newest_zone_noAuto"></ul>
+			</div>
+		</div>
+	</div>
+    </div>
+    <div class="list_allBox">
+  	<div class="inner">
+	   <ul class="list_all" id="list_all">
+	   </ul>	 
+	 </div>
+	 <div class="close-box"><a href="#" class="btn-close">닫기</a></div>
+    </div>
+</div>
+<script type="text/javascript">
+	var NewestViewCnt = 0;
+
+	$('#newestBtnStart').hide();
+
+	// 상단 뉴스보기 -  영역
+	function newestListRolling() {
+		$("#noAutoArea").show();
+		//뉴스보기 롤링 스크립트
+		var banner = $('#newest_zone_noAuto').bxSlider({
+			displaySlideQty : 1, //표시갯수
+			moveSlideQty : 1, //이동갯수
+			speed : 1400, //이동속도 기본 500
+			controls : false, //이전, 다음 표시여부 기본 true
+			mode : 'vertical', //스크롤 모드'horizontal', 'vertical', 'fade'
+			auto : true, //자동스크롤 여부 기본 false
+			autoHover : true
+			//마우스오버시 롤링중단
+		});
+
+		$('#newestBtnDown').click(function() {
+			banner.goToNextSlide();
+			return false;
+		});
+		$('#newestBtnUp').click(function() {
+			banner.goToPreviousSlide();
+			return false;
+		});
+		NewestViewCnt++;
+
+		//최신뉴스 stop 버튼
+		$("#newestBtnStop").unbind().bind('click', function() {			
+			banner.stopShow();
+			auto = false;
+			$("#newestBtnStart").show();
+			$(this).hide();
+			return false;
+		});
+
+		$("#newest_zone_noAuto li a").keyup(function() {
+			banner.stopShow();
+			auto = false;
+			$("#newest_zone_noAuto").css('top', 0);
+			$("#newestBtnStart").show();
+			$("#newestBtnStop").hide();
+			return false;
+		});
+
+		//최신뉴스 start 버튼
+		$("#newestBtnStart").unbind().bind('click',function(){
+            banner.stopShow(); 
+            banner.startShow(); 
+            auto = true;
+            $("#newestBtnStop").show();
+            $(this).hide();
+            return false;
+        });
+		$('.alert_box .scroll-box').click(function(){
+			var tg = $('.list_allBox'),
+				tgH = tg.outerHeight(),
+				outSpeed =0;
+
+	//		tg.stop().show().animate({
+	//			'height':tgH
+	//		},3000);
+			//tg.not(':animated').slideDown(700);
+			tg.show();
+			$('body,html').css({
+				'height':kbsNewsUi.uiUtil.get_winH(),
+				'overflow-y':'hidden'
+			});
+			banner.stopShow(); 
+
+		});		
+		$('.list_allBox > .close-box').click(function(){
+			var tg = $('.list_allBox'),
+				tgH = tg.outerHeight(),
+				outSpeed =0;
+			//tg.not(':animated').slideUp(700);
+			tg.hide();
+			$('body,html').css({
+				'height':'auto',
+				'overflow-y':'auto'
+			});
+			banner.stopShow(); 
+			banner.startShow();			
+		});	
+	}
+
+	$(document).ready(function(){
+		callExposeData("863", getParameterByName('pubExec'), function(data, status){
+			var list863_obj = data;
+
+			var arr = list863_obj[1].contents.split("\n");
+			for(var a=0;a<arr.length;a++)
+			{
+				if(arr[a]=="" || arr[a]==" ")
+					continue;
+				var li = $("<li></li>").text(arr[a]);
+				var li_all = $("<li></li>").text(arr[a]);
+				if(list863_obj[0].subTitle!=null)
+					$("<span class='tit'></span>").text(list863_obj[0].subTitle).prependTo(li);
+				li.appendTo("#newest_zone_noAuto");
+				li_all.appendTo("#list_all");
+			}
+
+			newestListRolling();
+		});
+	});
+
+
+</script>       
+	
+	
+	<!--// 모바일 상단 속보 수동-->
+
+	<!--작업공지-->
+	
+
+
+
+	<!-- // 작업공지-->
+
+<div class="gnb-blind"></div>
+<!-- for web start  -->
+
+<!-- gnb -->
+<div id="gnb" aria-hidden="true" class="gnb">
+	<div class="gnb-box">
+		<div class="gnb-my-box">
+
+			<a class="gnb-close"><span class="ico"></span><span class="blind">메뉴 닫기</span></a>
+
+			<div class="gnb-my-login"><a href="javascript:gfnGoLogin_M();" class="login-link" id="gnb_login_btn"><em>로그인</em>이 필요합니다</a></div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					if( gfnGetCookie('kbsvalue') ){
+						var sso_member_modify = "https://sso.kbs.co.kr/SSO2/KBSMobile/member/MemberModify00SN.php?from_url="+encodeURIComponent(document.location.href);
+
+						$.ajax({
+							url : 'https://pwwwapi.kbs.co.kr/api/v1/user/info',
+							type : "GET",
+							dataType : 'json',
+							crossDomain:true,
+							xhrFields: {
+								withCredentials: true
+							},
+							cache:false,
+							success : function(data) {
+								$(".gnb-my-login").remove();
+								var _info = data["sso-info"];
+								var nameHtml = '<div class="gnb-my-info"><span class="my-name">' + _info.name + '<a href="' + sso_member_modify + '" class="my-setting"><span class="blind">설정페이지</span></a></span></div>';
+								$(".gnb-my-box").append(nameHtml);
+
+								var footHtml = '<a href="javascript:gfnGoLogout();"><span>로그아웃</span></a>';
+								$(".btn-logout").html(footHtml);
+								$(".btn-logout").show();
+
+							}
+						});
+					}else{
+						//$(".gnb-my-box").append('<div class="gnb-my-login"><a href="javascript:gfnGoLogin_M();" class="login-link" id="gnb_login_btn"><em>로그인</em>이 필요합니다</a></div>');
+					}
+					if(navigator.userAgent.match(/kbsnews/i)) {
+					  $(".gnb-my-login").html("<span class='login-link' style='font-weight:bold'>메뉴</span>");
+					}
+				});
+			</script>
+		</div>
+		<div class="gnb-menu-box">
+			<div class="inr">                
+				<div class="gnb-menu-list">
+					<ul class="menu-list">
+						<li class="top"><a href="/mobile/main.html?ref=mSide" style="font-weight:bold">뉴스 홈</a></li>
+						<li><a href="/mobile/vod/program.do?bcd=0001&ref=mSide">뉴스9</a></li>
+						<li class="sub_link">
+							<a href="#">취재K</a>
+							<div class="sub_wrap">
+								<div class="sub_inr">
+									<div class="sub-btn">
+										<a href="#" class="sub_close">취재K</a>
+									</div>
+									<ul class="sub_list">
+										<li><a href="/mobile/news/list.do?mcd=0933&ref=mSide">전체</a></li>
+										<li><a href="/mobile/news/list.do?mcd=0795&ref=mSide">취재후</a></li>
+										<li><a href="/mobile/news/list.do?mcd=0915&ref=mSide">사건후</a></li>
+										<li><a href="/mobile/news/list.do?mcd=1044&ref=mSide">여심야심</a></li>											
+										<li><a href="/mobile/news/list.do?mcd=0909&ref=mSide">데이터룸</a></li>										
+										<li><a href="/mobile/news/list.do?mcd=1032&ref=mSide">팩트체크</a></li>
+										<li><a href="/mobile/news/list.do?mcd=1016&ref=mSide">탐사K</a></li>								    
+									</ul>
+									<div class="gnb-footer">                          
+										<div class="btn-logout" style="display:none;"></div>
+										<div class="home"><a href="https://www.kbs.co.kr" target="_blank"><span>KBS</span>홈</a></div>  
+										<div class="copyright"><em>KBS</em> All rights reserved</div>
+									</div>                                           
+								</div>
+							</div>
+						</li> 						
+						<li class="sub_link">
+							<a href="#">글로벌K</a>
+							<div class="sub_wrap">
+								<div class="sub_inr">
+									<div class="sub-btn">
+										<a href="#" class="sub_close">글로벌K</a>
+									</div>
+									<ul class="sub_list">
+										<li><a href="/mobile/news/list.do?mcd=1048&ref=mSide">전체</a></li>
+										<li><a href="/mobile/news/list.do?mcd=0978&ref=mSide">특파원 리포트</a></li>
+										<li><a href="/mobile/news/list.do?mcd=1031&ref=mSide">글로벌 돋보기</a></li>
+										<li><a href="/mobile/news/list.do?mcd=1083&ref=mSide">세계는 지금</a></li>
+									</ul>
+									<div class="gnb-footer">                          
+										<div class="btn-logout" style="display:none;"></div>
+										<div class="home"><a href="https://www.kbs.co.kr" target="_blank"><span>KBS</span>홈</a></div>  
+										<div class="copyright"><em>KBS</em> All rights reserved</div>
+									</div>                                           
+								</div>
+							</div>
+						</li>
+						<li class="sub_link">
+							<a href="#">케이야</a>
+							<div class="sub_wrap">
+								<div class="sub_inr">
+									<div class="sub-btn">
+										<a href="#" class="sub_close">케이야</a>
+									</div>
+									<ul class="sub_list">
+										<li><a href="/mobile/news/list.do?mcd=0990&ref=mSide">전체</a></li>
+										<li><a href="/mobile/news/list.do?mcd=1037&ref=mSide">현장영상</a></li>			        
+										<li><a href="/mobile/news/list.do?mcd=1072&ref=mSide">영상K</a></li>         								
+                    								
+									</ul>
+									<div class="gnb-footer">                          
+										<div class="btn-logout" style="display:none;"></div>
+										<div class="home"><a href="https://www.kbs.co.kr" target="_blank"><span>KBS</span>홈</a></div>  
+										<div class="copyright"><em>KBS</em> All rights reserved</div>
+									</div>                                           
+								</div>
+							</div>
+						</li>
+						<li><a href="/mobile/news/news24Category.do?ref=mSide">라이브</a></li>
+						<li><a href="/mobile/issue/main.do?ref=mSide">이슈</a></li>
+						<li><a href="/mobile/news/breaking.do?ref=mSide">속보 및 알림</a></li>
+					</ul>
+				</div>				
+                     				
+					
+				<div class="gnb-menu-list btm">
+					<ul class="menu-list">
+						<li class="sub_link">
+							<a href="#">뉴스 다시보기</a>
+							<div class="sub_wrap">
+								<div class="sub_inr news-replay">
+									<div class="sub-btn">
+										<a href="#" class="sub_close">뉴스 다시보기</a>
+									</div>
+
+									<dl>
+										<dt class="tit">1TV 뉴스</dt>
+										<dd>
+											<ul class="replay-news-list">
+												<li><a href="/mobile/vod/program.do?bcd=0004&ref=mSide">뉴스광장 1부</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0003&ref=mSide">뉴스광장 2부</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0008&ref=mSide">930뉴스</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0009&ref=mSide">뉴스 12</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0137&ref=mSide">뉴스 2</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0073&ref=mSide">사사건건</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0010&ref=mSide">뉴스 5</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0011&ref=mSide">뉴스 7</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0001&ref=mSide">뉴스 9</a></li>                                     
+												<li><a href="/mobile/vod/program.do?bcd=0012&ref=mSide">뉴스라인</a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>    
+										<dt class="tit">2TV 뉴스</dt>
+										<dd>
+											<ul class="replay-news-list">
+												<li><a href="/mobile/vod/program.do?bcd=0016&ref=mSide">아침뉴스타임</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0032&ref=mSide">지구촌뉴스</a></li>             
+												<li><a href="/mobile/vod/program.do?bcd=0049&ref=mSide">뉴스타임</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0076&ref=mSide">통합뉴스룸ET</a></li>				           
+
+											</ul>
+										</dd>
+									</dl>                                         
+									<div class="gnb-footer">                          
+										<div class="btn-logout" style="display:none;"></div>
+										<div class="home"><a href="https://www.kbs.co.kr" target="_blank"><span>KBS</span>홈</a></div>  
+										<div class="copyright"><em>KBS</em> All rights reserved</div>
+									</div>                                    
+								</div>                                      
+							</div>            
+						</li>
+						<li class="sub_link">
+							<a href="#">시사/다큐</a>
+							<div class="sub_wrap">
+								<div class="sub_inr news-replay">
+									<div class="sub-btn">
+										<a href="#" class="sub_close">시사/다큐</a>
+									</div>
+									<dl>
+										<dt class="tit">시사</dt>
+										<dd>
+											<ul class="replay-news-list">
+												<li><a href="/mobile/vod/program.do?bcd=0039&ref=mSide">시사기획 창</a></li>                 
+												<li><a href="/mobile/vod/program.do?bcd=0029&ref=mSide">일요진단 라이브</a></li>												
+												<li><a href="/mobile/vod/program.do?bcd=0193&ref=mSide">질문하는 기자들Q</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0072&ref=mSide">특파원 보고 세계는 지금</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0031&ref=mSide">남북의 창</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0071&ref=mSide">재난방송센터</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0138&ref=mSide">정치합시다</a></li>												
+												<li><a href="/mobile/vod/program.do?bcd=0061&ref=mSide">인사이드 경인</a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="tit">라디오</dt>
+										<dd>
+											<ul class="replay-news-list">
+												<li><a href="/mobile/news/list.do?mcd=1021&ref=mSide">최경영의 최강시사</a></li>
+												<li><a href="/mobile/news/list.do?mcd=1026&ref=mSide">최영일의 시사본부</a></li>												
+												<li><a href="/mobile/news/list.do?mcd=1055&ref=mSide">주진우 라이브</a></li>
+												<li><a href="/mobile/news/list.do?mcd=1084&ref=mSide">성공예감 김방희입니다</a></li>
+											</ul>
+										</dd>
+									</dl>	
+									<div class="gnb-footer">                          
+										<div class="btn-logout" style="display:none;"></div>
+										<div class="home"><a href="https://www.kbs.co.kr" target="_blank"><span>KBS</span>홈</a></div>  
+										<div class="copyright"><em>KBS</em> All rights reserved</div>
+									</div> 
+								</div>
+							</div>
+						</li>
+						<li class="sub_link">
+							<a href="#">분야별 뉴스</a>
+							<div class="sub_wrap">
+								<div class="sub_inr">
+									<div class="sub-btn">
+										<a href="#" class="sub_close">분야별 뉴스</a>
+									</div>
+									<ul class="sub_list devide">
+										<li><a href="/mobile/news/list.do?ref=mSide">전체</a></li>
+										<li><a href="/mobile/news/list.do?ctcd=0003&ref=mSide">정치</a></li>
+										<li><a href="/mobile/news/list.do?ctcd=0004&ref=mSide">경제</a></li>
+										<li><a href="/mobile/news/list.do?ctcd=0005&ref=mSide">사회</a></li>
+										<li><a href="/mobile/news/list.do?ctcd=0008&ref=mSide">문화</a></li>
+										<li><a href="/mobile/news/list.do?ctcd=0007&ref=mSide">IT&middot;과학</a></li>
+										<li><a href="/mobile/news/list.do?ctcd=0006&ref=mSide">국제</a></li>
+										<li><a href="/mobile/news/list.do?ctcd=0034&ref=mSide">생활&middot;건강</a></li>
+										<li><a href="/mobile/sports/subMain.do?ref=mSide">스포츠</a></li>
+										<li><a href="/mobile/enter/subMain.do?ref=mSide">연예</a></li>                               
+										<li><a href="/mobile/news/list.do?mcd=0048&ref=mSide">날씨</a></li>
+										<li><a href="/mobile/vod/program.do?bcd=0042&ref=mSide">특보</a></li>
+									</ul>
+									<div class="gnb-footer">                          
+										<div class="btn-logout" style="display:none;"></div>
+										<div class="home"><a href="https://www.kbs.co.kr" target="_blank"><span>KBS</span>홈</a></div>  
+										<div class="copyright"><em>KBS</em> All rights reserved</div>
+									</div> 
+								</div>               
+							</div>
+						</li>
+						<li class="sub_link">
+							<a href="#">뉴스코너</a>
+							<div class="sub_wrap">
+								<div class="sub_inr news-replay">
+									<div class="sub-btn">
+										<a href="#" class="sub_close">뉴스코너</a>
+									</div>
+									<dl>
+										<dt class="tit"><a href="/mobile/news/list.do?mcd=0933&ref=mSide">취재K</a></dt>
+										<dd>
+											<ul class="replay-news-list">
+												<li><a href="/mobile/news/list.do?mcd=0933&ref=mSide">전체</a></li>
+                                               							<li><a href="/mobile/news/list.do?mcd=0909&ref=mSide">데이터룸</a></li>
+												<li><a href="/mobile/news/list.do?mcd=0795&ref=mSide">취재후</a></li>
+                                                 						<li><a href="/mobile/news/list.do?mcd=1032&ref=mSide">팩트체크</a></li>  
+                                               							 <li><a href="/mobile/news/list.do?mcd=0915&ref=mSide">사건후</a></li>                                          
+                                               							 <li><a href="/mobile/news/list.do?mcd=1016&ref=mSide">탐사K</a></li>
+												 <li><a href="/mobile/news/list.do?mcd=1044&ref=pMenu">여심야심</a></li>
+											</ul>
+										</dd>
+									</dl>									
+									<dl>
+										<dt class="tit"><a href="/mobile/news/list.do?mcd=1048&ref=mSide">글로벌K</a></dt>
+										<dd>
+											<ul class="replay-news-list">
+												<li><a href="/mobile/news/list.do?mcd=1048&ref=mSide">전체</a></li>
+												<li><a href="/mobile/news/list.do?mcd=0978&ref=mSide">특파원 리포트</a></li>
+												<li><a href="/mobile/news/list.do?mcd=1031&ref=mSide">글로벌 돋보기</a></li>	
+												<li><a href="/mobile/news/list.do?mcd=1083&ref=mSide">세계는 지금</a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="tit"><a href="/mobile/news/list.do?mcd=0990&ref=pMenu">케이야</a></dt>
+										<dd>
+											<ul class="replay-news-list">
+												<li><a href="/mobile/news/list.do?mcd=0990&ref=pMenu">전체</a></li>
+												
+												<li><a href="/mobile/news/list.do?mcd=1072&ref=pMenu">영상K</a></li>
+												<li><a href="/mobile/news/list.do?mcd=1037&ref=pMenu">현장영상</a></li>			                            										
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="tit" style="display:none">기타</dt>
+										<dd>
+											<ul class="replay-news-list">
+												<li><a href="/mobile/news/list.do?mcd=1075&ref=pMenu">제대로 보겠습니다</a></li>
+												<li><a href="/mobile/news/list.do?mcd=0938&ref=pMenu">크랩</a></li>								
+												
+												<li><a href="/mobile/news/list.do?mcd=1052&ref=pMenu">속고살지마</a></li>
+												<li><a href="/mobile/news/list.do?mcd=1056&ref=pMenu">경제한방</a></li>
+												<li><a href="/mobile/vod/program.do?bcd=0023&ref=pMenu">News Today(영어뉴스)</a></li>
+											</ul>
+										</dd>
+									</dl>	
+									<div class="gnb-footer">                          
+										<div class="btn-logout" style="display:none;"></div>
+										<div class="home"><a href="https://www.kbs.co.kr" target="_blank"><span>KBS</span>홈</a></div>  
+										<div class="copyright"><em>KBS</em> All rights reserved</div>
+									</div> 
+								</div>
+							</div>
+						</li> 
+					</ul>
+				</div>
+				<div class="gnb-menu-list btm">
+					<ul class="menu-list">
+						<li>
+							<a href="/mobile/local/main.html?ref=mSide">지역뉴스</a>
+						</li>
+						<li class="sub_link">
+							<a href="#">경인뉴스</a>
+							<div class="sub_wrap">
+								<div class="sub_inr">
+									<div class="sub-btn">
+										<a href="#" class="sub_close">경인뉴스</a>
+									</div> 
+									<ul class="sub_list">
+										<li><a href="/mobile/vod/program.do?bcd=0060&ref=mSide">뉴스광장</a></li>
+										<li><a href="/mobile/vod/program.do?bcd=0059&ref=mSide">930뉴스</a></li>
+										<li><a href="/mobile/vod/program.do?bcd=0051&ref=mSide">뉴스7</a></li>
+										<li><a href="/mobile/vod/program.do?bcd=0052&ref=mSide">뉴스9</a></li>                       
+									</ul>
+									<div class="gnb-footer">                          
+										<div class="btn-logout" style="display:none;"></div>
+										<div class="home"><a href="https://www.kbs.co.kr" target="_blank"><span>KBS</span>홈</a></div>  
+										<div class="copyright"><em>KBS</em> All rights reserved</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="sub_link">
+							<a href="#">뉴스 아카이브</a>
+							<div class="sub_wrap">
+								<div class="sub_inr">
+									<div class="sub-btn">
+										<a href="#" class="sub_close">뉴스 아카이브</a>
+									</div> 
+									<div class="info">KBS뉴스가 제공해 드렸던 서비스들을 다시 만나보세요.</div>
+									<ul class="sub_list">
+										<li><a href="/mobile/news/listIssue-19608.html">2020 도쿄올림픽</a></li>
+										<li><a href="/mobile/news/listIssue-19609.html">2020 도쿄패럴림픽</a></li>
+										<li><a href="/special/by-election2021/m_main.html">4&middot;7 재보궐선거</a></li>
+										<li><a href="/mobile/news/list.do?mcd=1029&amp;ref=mSide">박광식의 건강365</a></li>
+										<li><a href="/mobile/vod/program.do?bcd=0078&amp;ref=mSide">저널리즘 토크쇼 J</a></li>
+										<li><a href="/mobile/news/list.do?mcd=1035&ref=mSide">한국언론 오도독</a></li>
+										<li><a href="/mobile/news/list.do?mcd=0772&ref=mSide">GO현장</a></li>
+										<li><a href="/mobile/news/list.do?mcd=0914&ref=mSide">고봉순</a></li>
+										<li><a href="/mobile/news/list.do?mcd=1015&ref=mSide">여의도 책방</a></li>
+										<li><a href="/special/election2020/m_main.html?ref=mSide">2020 총선</a></li>										
+										<li><a href="/mobile/news/listIssue.html?icd=19556&ref=mSide">2019 북미정상회담</a></li>
+										<li><a href="http://samil-100.kbs.co.kr/" target="_blank">3.1운동 100년</a></li>   
+										<li><a href="/mobile/news/listIssue.html?icd=19544&ref=mSide">2018 남북정상회담</a></li>
+										<li><a href="/mobile/news/listIssue.html?icd=19545&ref=mSide">2018 북미정상회담</a></li>   
+										<li><a href="/special/election2018/m_list.html?ref=mSide">6.13 지방선거</a></li> 
+										<li><a href="/mobile/news/listIssue.html?icd=19546&ref=mSide">러시아 월드컵</a></li>       
+										<li><a href="/special/pyeongchang2018/m_main.html?ref=mSide">[특집] 평창동계올림픽</a></li>   
+										<li><a href="/special/pyeongchang2018/m_paralympics.html?ref=mSide">[특집] 평창동계패럴림픽</a></li>
+										<li><a href="/mobile/news/list.do?mcd=0966&ref=mSide">지진대피요령</a></li>
+										
+									</ul>
+									<div class="gnb-footer">                          
+										<div class="btn-logout" style="display:none;"></div>
+										<div class="home"><a href="https://www.kbs.co.kr" target="_blank"><span>KBS</span>홈</a></div>  
+										<div class="copyright"><em>KBS</em> All rights reserved</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>                
+				<div class="gnb-footer">                          
+					<div class="btn-logout" style="display:none;"></div>
+					<div class="home"><a href="https://www.kbs.co.kr" target="_blank"><span>KBS</span>홈</a></div>  
+					<div class="copyright"><em>KBS</em> All rights reserved</div>
+				</div>                                
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- //gnb -->
+<!-- //for web end  -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var head_search_btn = '<a class="btn-srch-open" href="#search-area" aria-label="검색창 열기"><span class="blind">검색화면 열기</span></a>';
+
+		head_search_btn += '<div id="search-area" class="search-area">';
+		head_search_btn += '	<form id="searchFrm" name="searchFrm" method="get" action="/mobile/search/list.do" role="search">';
+		head_search_btn += '		<fieldset>';
+		head_search_btn += '			<div class="search-input">';
+		head_search_btn += '				<input type="search" class="input-txt" title="검색어를 입력해주세요" placeholder="검색어 입력" name="query" id="kwd">';
+		head_search_btn += '				<button type="button" class="input-del">입력 글자 삭제</button><!--  [c] 버튼 추가 2017-02-16 -->';
+		head_search_btn += '				<button type="button" class="btn btn-srch-action" onclick="javascript:goMSearch();">검색</button>';
+		head_search_btn += '			</div>';
+		head_search_btn += '			<button type="button" class="btn btn-srch-close"><span class="blind">검색 화면 닫기</span></button>';
+		head_search_btn += '		</fieldset>';
+		head_search_btn += '	</form>';
+		head_search_btn += '</div>';
+
+		$(".header-info").append(head_search_btn);
+	});
+</script>
+
+<!-- 기사뷰 정보 추가 : SEO -->
+<script type="application/ld+json">
+{
+   "@context": "https://schema.org",
+   "@type": "NewsArticle",
+   "@id": "https://news.kbs.co.kr/news/view.do?ncd=5245752",
+   "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https://news.kbs.co.kr/news/view.do?ncd=5245752"
+   },
+   "headline": "‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”",
+   "description": "양궁 국가대표 안산 선수에 대한 온라인상 혐오 표현과 윤석열 전 검찰총장 배우자 김건희 씨를 비방한 벽...",
+   "image": {
+      "@type": "ImageObject",
+      "@id": "https://news.kbs.co.kr/data/news/title_image/newsmp4/news9/2021/07/30/150_5245752.jpg",
+      "url": "https://news.kbs.co.kr/data/news/title_image/newsmp4/news9/2021/07/30/150_5245752.jpg",
+      "height": 422,
+      "width": 750
+   },
+   "datePublished": "2021-07-30 21:28:25",
+   "dateModified": "2021-07-30 21:39:35",
+   "author": [
+      {
+         "@type": "Person",
+         "name": "KBS"
+      }
+      
+   ],
+   "publisher": {
+      "@type": "Organization",
+      "@id": "https://news.kbs.co.kr",
+      "name": "KBS뉴스",
+      "logo": {
+         "@type": "ImageObject",
+         "url": "https://news.kbs.co.kr/resources/images/v1/common/logo-icon-300.png",
+         "width": 160
+      },
+      "sameAs":["https://www.youtube.com/c/newskbs", "https://www.facebook.com/kbsnews","https://twitter.com/KBSnews"]
+   }
+}
+</script>
+
+<!-- container area -->
+
+        <div id="content" class="content-sub">	      
+		<article class="view-news-area">
+                	<link rel="stylesheet" type="text/css" href="/resources/js/jwplayer7_9_3/skins/kbsnoon.css?v=20220304174039" media="all">
+
+
+<script type="text/javascript" >
+	function share_sns(type,newscode,title){
+
+		if(type == 1){
+			var popOption = "width=100, height=100, resizable=no, scrollbars=no, status=no;";
+			window.open('https://www.facebook.com/sharer/sharer.php?u=https://news.kbs.co.kr/news/view.do?ncd='+newscode,"pop",popOption);	
+		}
+		if(type == 2){						
+			var popOption = "width=350, height=500, resizable=no, scrollbars=no, status=no;";
+			window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(title)+'&url='+encodeURIComponent('https://news.kbs.co.kr/news/view.do?ncd='+newscode),"pop",popOption);			
+		}
+		if(type == 3){
+			Kakao.Story.share({
+				url: 'https://news.kbs.co.kr/news/view.do?ncd='+newscode,
+				text: title
+			});	
+		}
+		if(type == 4){						
+			var popOption = "width=350, height=500, resizable=no, scrollbars=no, status=no;";
+			window.open('https://blog.naver.com/openapi/share?url=https://news.kbs.co.kr/news/view.do?ncd='+newscode+'&title='+encodeURIComponent(title),"pop",popOption);			
+		}
+		if(type == 5){		
+			$("#lv-container").attr("tabindex", -1).focus();
+		}
+		if(type == 6){
+			var s_url = "https://news.kbs.co.kr/news/view.do?ncd="+newscode;
+			window.location = "https://band.us/plugin/share?body=" + encodeURIComponent(title) + encodeURIComponent("\n") + encodeURIComponent(s_url)+"&route="+s_url;
+		}
+	}
+</script>
+<script type="text/javascript">
+
+	var ncd = "5245752";
+	var _MAX_CONTENTS_LEN = 50;
+	var photoYn = "N";
+	var loadCheck = false;
+
+	$(document).ready(function()
+			  {
+		// 기자정보조회
+		goReporterNews();
+
+		//메타태그
+		displayMetaTag();
+
+		//추천뉴스
+		displayRecNewsList(); 
+
+		//댓글 수
+		displayReplyCount();
+		
+		//공감 수(하단 하트)
+		displayRecommend(0);
+		
+		$(".view_img_wrap").each(function(index, item) {
+			if($(item).find(".view_img_dsc").text() == '') { $(item).find(".view_img_dsc").remove(); }
+		});
+	});
+
+	//공감 버튼 처리
+	function displayRecommend(param)
+	{
+		// 해당 기사의 공감 기사를 가져온다     
+		$.ajax({
+			url: "/api/getRecommendCount",
+			type: "POST",
+			data: { 
+				newsCode : '5245752',
+				recommendGubun: 'M'
+			},
+			dataType: 'json',
+			success: function(data){
+				if(data.success == true){
+					var likeCnt = data.data.recommendCount;
+					var iconOn = data.data.recommendYn;        
+					$("#ico-like").html((parseInt( gfnIsEmptyStr( likeCnt, '0' ) )));
+					$("#like_cnt_under").html((parseInt( gfnIsEmptyStr( likeCnt, '0' ) )));
+					if(iconOn==true){                    
+						$("#likeNews").addClass("on");
+						$("#likeNews_top").addClass("on");
+						if(param == 1) {
+							alert("좋아요 완료 되었습니다.");
+						}
+						return
+					}
+
+					if(iconOn==false){                   
+						$("#likeNews").removeClass("on");
+						$("#likeNews_top").removeClass("on");
+						if(param == 1) {
+							alert("좋아요 취소 되었습니다.");
+						}
+						return
+					}
+				}                       
+			}
+		})
+	}
+
+	//공감 버튼 처리
+	function displayReplyCount()
+	{
+		// 해당 기사의 댓글 수를 가져온다     
+		$.ajax({
+			url: "/api/getReplyCount",
+			type: "POST",
+			data: { 
+				newsCode : '5245752'
+			},
+			dataType: 'json',
+			success: function(data){
+				if(data.success == true){
+					$("#reply_cnt").html((parseInt( gfnIsEmptyStr( data.data, '0' ) )));
+				}                       
+			}
+		})
+	}
+
+	/*************************** 뉴스픽 **************************/
+	var displayNewsPicImage = function( newsCd, photoType )
+	{
+		var pictureList = '[]';
+		var jsonPicturerList = JSON.parse(pictureList);
+		getDislapyNewsInImage(jsonPicturerList);
+	};
+
+	var getDislapyNewsInImage = function ( photoList )
+	{
+		var list = null;
+		var length = 0;
+
+		if( !gfnIsEmpty(  photoList  ) )
+		{
+			length = photoList.length;
+		}
+		var desc = "";
+
+		var imgAreaHeight= "500";
+		for(var cnt=1; cnt<length; cnt++)
+		{    	
+			list = photoList[ cnt ];
+			desc = list.imgDesc;
+			
+			var galleryList = $("<li class='swiper-slide'><img src ='' alt='' width='100%' /></li>");
+			
+			galleryList.find("img").attr("src", GV_IMGPATH_m_big + list.imgUrl);
+			galleryList.find("img").attr("alt", desc);
+			
+			galleryList.appendTo("#cardnews_view");
+		}
+	};
+
+	/*************************** 기자정보  *******************************/
+
+	/*************************** SNS 퍼가기 **************************/
+	function getLiverePosting(value,requestData){
+		var snsGubun = '';
+		if(requestData.service == 'kbs')				{	snsGubun = '1';
+										}else if(requestData.service == 'facebook')	{	snsGubun = '2';
+																}else if(requestData.service == 'twitter')		{	snsGubun = '3';
+	 }else if(requestData.service == 'me2day')		{	snsGubun = '4';
+								}else if(requestData.service == 'yozm')		{	snsGubun = '5';
+														}else if(requestData.service == 'cyworld')		{	snsGubun = '6';
+     }else if(requestData.service == 'kakao')       {   snsGubun = '7'; }
+		if(snsGubun!=''){
+			$.ajax({
+				url    		: '<c:url value="/social/insertSNS.do" />',
+				type   		: "POST",
+				dataType  	: 'json',
+				data		: { SAVE_NEWS_CODE     : "${ncd}",
+						   SAVE_RT_GUBUN      : snsGubun
+						  }
+			});
+		}
+	}
+
+	/*************************** SNS 퍼가기 **************************/
+
+	//기자정보 조회
+	var goReporterNews = function(){
+		var reporterList = [{"newsCode":"5245752","reporterCode":"99999","reporterName":"KBS"}];
+		//var reporterList = JSON.parse(jsonReporterList);
+		if(!gfnIsEmpty(reporterList)){
+			displayReporter(reporterList);
+		}
+	};
+
+	// 기자정보 setting
+	function displayReporter(reporterList){
+		$('.news-writer').empty();
+		for(var i=0; i<reporterList.length; i++){
+			if( !gfnIsEmpty( reporterList[i].reporterName ) ){
+			
+				var reporterHtml = $("<div class='writer'><span class='img'></span><p class='name'><span></span><a href=''></a></p><a href='' class='btn-ico-arr'></a></div>");
+				
+				if(!gfnIsEmpty( reporterList[i].imgUrl)){
+					reporterHtml.find(".img").attr("style", "background-image:url(" + GV_IMGPATH_m_reporter + reporterList[i].imgUrl + ")");
+				}
+			
+				if( reporterList[i].reporterName == "KBS" || reporterList[i].reporterName == "디지털뉴스부" || reporterList[i].reporterName == "KBS 지역국" || reporterList[i].jobName == "" || reporterList[i].jobName == null){
+					reporterHtml.find("p span").text(reporterList[i].reporterName);
+				}else{
+					reporterHtml.find("p span").text(reporterList[i].reporterName + ' ' + reporterList[i].jobName);
+				}
+				
+				if(!gfnIsEmpty(reporterList[i].email)){
+					reporterHtml.find("p a").attr("href", "mailto:" + reporterList[i].email);
+					reporterHtml.find("p a").text(reporterList[i].email);
+				}
+				
+				if( !( reporterList[i].reporterName == "KBS" || reporterList[i].reporterName == "디지털뉴스부" || reporterList[i].reporterName == "KBS 지역국") ) {
+					if(reporterList[i].jobName == "" || reporterList[i].jobName == null || reporterList[i].jobName == "null") {
+						reporterHtml.find(".btn-ico-arr").attr("href", '/mobile/news/list.do?rcd=' + reporterList[i].reporterCode);
+						reporterHtml.find(".btn-ico-arr").text(reporterList[i].reporterName + '의 기사 모음');
+					}else{
+						reporterHtml.find(".btn-ico-arr").attr("href", '/mobile/news/list.do?rcd=' + reporterList[i].reporterCode);
+						reporterHtml.find(".btn-ico-arr").text(reporterList[i].reporterName + ' ' + reporterList[i].jobName + '의 기사 모음');
+					}
+				}
+				
+				reporterHtml.appendTo(".news-writer");
+			}
+		}
+	}
+
+	/*************************** 기자정보  *******************************/
+
+
+	/*************************** TAG **************************/
+
+	function displayMetaTag( )
+	{
+		var metaTag = '';
+		var arrString = [];
+		var listHtml = "";
+
+		if( !gfnIsEmpty( metaTag ) )
+		{
+			arrString = metaTag.split("|");
+			for( var i = 0 ; i < arrString.length; i++ )
+			{
+				listHtml += '<li><a href="/mobile/search/list.do?kwd=' + arrString[i] + '" class="hashtag">#' + arrString[i] + '</a></li>';
+			}
+			$( '#keyword' ).html( listHtml );
+			$( '#hashtag_area' ).show();
+		}else{
+			$( '#hashtag_area' ).hide();
+			$( '#keyword' ).html("");
+		}
+	}
+
+	function displayRecNewsList(){
+		var actionUrl = "/api/getRecommendNews";
+		$.ajax({
+			url         : actionUrl,
+			type        : "GET",
+			data		: {		newsCode     : "5245752"
+						   ,	sort : "popular"
+						  },
+			dataType    : 'json',
+			success     : function(data, status){
+				if(data.success){
+
+					var item_len = data.data.length;
+					
+					if(item_len >= 15){
+						item_len = 15;
+					}else if(item_len > 5 && item_len < 11){
+						$("#recNewsList3").remove();
+					}else if(item_len < 6){
+						$("#recNewsList3").remove();
+						$("#recNewsList2").remove();
+					}
+
+
+					for(i=0; i<item_len; i++){
+						var item = data.data[i];
+						var k = $("<li><a href=''><p class='desc'><em class='tit'></em></p><span class='thumbnail'><img src='' alt='' /><i class='icon sp-ico-play' style='display:none;'>동영상 뉴스</i><span class='mask'></span></span></li>");
+
+						k.find("a").attr('href', item.targetUrl);
+						k.find("em").text(item.title);
+						k.find("img").attr('src',((item.tumbnailUrl.length > 0)?'https://img.kbs.co.kr/kbs/160/'+GV_DOMAIN+item.tumbnailUrl :GV_VOD_DEFAULT_IMG));
+						k.find("img").attr('alt', item.title);
+						if(item.vod_yn == 'Y') k.find(".sp-ico-play").show();
+						
+						if(i < 5) {
+							k.appendTo("#recNewsList1");
+							if(i == 4 || i == item_len-1)	$("#recNewsList1").show();
+						}else if(i < 10){
+							k.appendTo("#recNewsList2");
+							if(i == 9 || i == item_len) $("#recNewsList2").show();
+						}else if(i < 15){
+							k.appendTo("#recNewsList3");
+							if(i == 14 || i == item_len) $("#recNewsList3").show();
+						}
+					}
+
+					$("#recommNewsList").show();
+				}
+			}
+		});
+	}
+
+	function fnSnsRtAreaFixed()
+	{
+		$( window ).unbind( "scroll" ); //스크롤 이벤트 제거
+		scroll.snsFix();
+	}
+
+	function fnPlayerAreaFixed()
+	{
+		$( window ).unbind( "scroll" ); //스크롤 이벤트 제거
+		scroll.vodFix();
+	}
+
+	function fnAudioPlayerAreaFixed()
+	{
+		$( window ).unbind( "scroll" ); //스크롤 이벤트 제거
+		scroll.audioFix();
+	}
+	
+	function addRecommend( newsCode ){  
+		$.ajax({
+			url: '/api/toggleRecommend',
+			type: "POST",
+			dataType: 'json',
+			data: {
+				newsCode: newsCode,
+				recommendGubun: 'M'
+			},
+			param : {
+				newsCode: newsCode,
+				recommendGubun: 'M'
+			}, 
+			success: function(data){
+				if(data.success == true){
+					displayRecommend(1);
+				}
+			}
+		})
+	}
+
+</script>
+
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=vogmbm9h4v"></script>
+
+
+
+<div class="view-header  mcd1078 ">
+	<h2 class="title">
+		
+		
+		<span class="cate">
+			
+			
+				
+					<a href="/mobile/vod/program.do?bcd&#x3D;0001">뉴스 9</a>
+				
+			
+		</span>
+		<strong>‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”</strong>
+	</h2>
+	<script>document.title = '‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”';</script>
+	<div class="date-area">
+		<p class="fl">입력 2021.07.30 (21:28)</p>
+		
+			<p>수정 2021.07.30 (21:39)</p>
+		
+	</div>
+</div>
+
+
+
+
+<!-- 뉴스픽이 아닐경우 -->
+
+        
+                <div class="news-media-area ">
+                        
+                                                                                
+
+        <img id="imgMainPlay" src="/data/news/title_image/newsmp4/news9/2021/07/30/150_5245752.jpg" style="width:100%" alt="">
+	
+
+
+	
+                        
+
+
+
+
+<div id="JW_PLAYER" class="sec_video" ></div>  
+<script type="text/javascript" >
+	$(document).ready(function(){
+		kbsNewsUi.uiAction.pl_loading_on('.news-media-area');//player loading start
+		setTimeout(function(){
+			playVod();
+		}, 1000 );
+	});	
+	var chromecastInfo = "";
+	var item = [];
+	/*************************** VOD 재생 **************************/
+	function playVod(){
+		var vodUrl;
+		var mobileGubun = "";
+
+		var menuCode = "1078";
+
+		var ratio = "16:9";
+
+		if(menuCode == '1038')	ratio = "9:16";
+
+		var image = "";
+
+		if(gfnIsEmpty('/data/news/title_image/newsmp4/news9/2021/07/30/150_5245752.jpg'))	image = GV_VOD_DEFAULT_IMG;
+			      else	image = '/data/news/title_image/newsmp4/news9/2021/07/30/150_5245752.jpg';
+
+
+			      var lowVod = gfnIsEmptyStr( "/newsmp4/news9/2021/07/30/500k/150_5245752.mp4", "/newsmp4/news9/2021/07/30/1500k/150_5245752.mp4" );
+			      var arrUrl = lowVod.split( '|' );
+		   var srtUrl = arrUrl[arrUrl.length-1].replace( '.mp4', '.srt' );
+		var vodExt = lowVod.substring( lowVod.length - 3 );
+		var duty = 'N' , blockingYn = 'N', cdnYn= '' ;
+		var playBtnImg = "";
+
+		if(lowVod.indexOf('|') == 0){
+			var vodInfos = lowVod.split('|');
+			duty       = vodInfos[1];
+			cdnYn      = vodInfos[2];
+			blockingYn = vodInfos[3];
+		}
+
+		vodUrl = gfnGetKBSHlsVodUrl( lowVod );
+
+		if(vodUrl == null) return;
+
+		var vodParam = null;
+		var captionYn =  gfnIsEmptyStr( "Y", 'N' );
+
+		var playlist = [];
+		
+		if( captionYn == "Y" ){
+			playlist = [{
+				image: image,
+				file: vodUrl,
+				tracks: [ { file: '/data/srt/FIXED' + srtUrl, "default": "false" } ]
+			}];
+		}else{
+			playlist = [{
+				image: image,
+				file: vodUrl
+			}];
+		}
+
+		if( navigator.appVersion.indexOf("Android") != -1 ){
+			vodParam = { playlist:playlist,
+				    androidhls: true,
+				    primary: 'flash',
+				    skin:'',
+				    autostart: "false", //자동시작
+				    width: '100%',
+				    aspectratio: ratio,
+				    captions: {
+					    state:true,
+					    color: '#FFFFFF',
+					    fontFamily:'"Dotum", "돋움", "Gulim", "굴림"',
+					    fontSize: 16,
+					    backgroundOpacity:75,
+					    edgeStyle:"uniform"
+				    },
+				    vodPlayListInfo:[{ newscode:"" } ]
+						     };
+		}else{
+			vodParam = {playlist:playlist,
+				    skin:'',
+				    autostart: "false", //자동시작
+				    width: '100%',
+				    aspectratio: ratio,
+				    captions: {
+					    state:true,
+					    color: '#FFFFFF',
+					    fontFamily:'"Dotum", "돋움", "Gulim", "굴림"',
+					    fontSize: 16,
+					    backgroundOpacity:75,
+					    edgeStyle:"uniform"
+				    },
+				    vodPlayListInfo:[{ newscode:"" } ]
+						     };
+		}
+
+			if(navigator.appVersion.indexOf("iPhone") > -1 || navigator.appVersion.indexOf("iPad")> -1){
+				mobileGubun = 'I';
+			}else if(navigator.appVersion.indexOf("Android")!=-1){
+				mobileGubun = 'A';
+			}
+
+			gfnJWPlayerPlay_mobile( vodParam, 'JW_PLAYER' , mobileGubun/* 'I' */ , 'news' ); //동영상 재생
+
+			if( captionYn != "Y" ){
+				$("#JW_PLAYER .jw-icon-cc").hide();
+			}
+
+	}
+
+					function playVodStart( param )
+					{
+						$( '#JW_PLAYER' ).css("top", "0px");
+
+						var menuCode = '1078';
+						if(menuCode == '1038'){
+							var titleHtml = '<div class="title" id="vodSeroTitleArea">' + $("#seroTitleArea").html() + '</div>';
+							$("#JW_PLAYER").append(titleHtml);
+							$("#seroTitleArea").remove();
+							$(".ico-down").remove();
+						}
+						$('#btnMainPlay' ).remove( );
+
+						var lowVod = gfnIsEmptyStr( "${LOW_NEWS_VOD_URL}", "${NEWS_VOD_URL}" );
+						var vodExt = lowVod.substring( lowVod.length - 3 );
+
+						jwplayer( 'JW_PLAYER' ).play();
+						jwplayer('JW_PLAYER').getCurrentCaptions();
+
+						setTimeout( function(){
+							if( vodExt != 'mp3' )
+							{
+								$('#imgMainPlay' ).addClass( 'hide' );
+								$('#imgMainPlay' ).hide();
+								var menuCode = '1078';
+								if(menuCode == '1038'){
+									kbsNewsUi.uiResize.resize916($('.news-media-area'));
+
+								}else {
+									kbsNewsUi.uiResize.resize169($('.news-media-area'));
+									fnPlayerAreaFixed();
+								}
+							}
+							else
+							{
+								$('.jwplayer').css('top','-14px');
+								//fnAudioPlayerAreaFixed(); <!-- 주석 풀었음 -->
+							}
+							if( param == "full" )
+							{	            	            
+								if(ieBrowser == 9){
+									var i = document.getElementById('JW_PLAYER');
+									if (i.requestFullscreen) {
+										i.requestFullscreen();
+									} else if (i.webkitRequestFullscreen) {
+										i.webkitRequestFullscreen();
+									} else if (i.mozRequestFullScreen) {
+										i.mozRequestFullScreen();
+									} else if (i.msRequestFullscreen) {
+										i.msRequestFullscreen();
+									}
+								}else{
+									jwplayer( 'JW_PLAYER' ).setFullscreen(true);//전체화면
+								}
+
+							}
+						}, 1000 );
+					}
+</script>
+
+                                                        
+                </div>
+        
+
+   
+<!-- 뉴스픽일경우 -->
+
+<script type="text/javascript">
+	function setNextNews() {
+		$.ajax({
+			url 		: "/api/getPreNextNews",
+			type	 	: "GET",
+			dataType    : 'json',
+			data	 	: {newsCode: "5245752"},
+			success		: function(data, status){
+				var prevNextNews = data.data;
+				
+				if (prevNextNews == null || prevNextNews.nextNews == null) {
+					$('#nextNewsDiv').remove();
+					return;
+				}
+				
+				var nextNews = prevNextNews.nextNews;
+				$('#nextNewsDiv').show();
+				$('#nextNewsUrl').attr('href', '/news/view.do?ncd=' + nextNews.newsCode);
+				$('#nextNewsImg').attr('src', nextNews.imgUrl);
+				$('#nextNewsTitle').html(nextNews.newsTitle);
+				
+			}
+		});
+	
+	}
+	
+	$(document).ready(function(){
+		setNextNews();
+	});
+</script>
+
+<!-- 다음기사보기 -->
+<div id="nextNewsDiv" class="next-view" style="display:none;" >
+	<a id="nextNewsUrl" href="">
+		<span class="view-img">
+			<img id="nextNewsImg" src="" alt="">
+			<em>다음기사</em>
+		</span>
+		<span class="desc">
+			<em id="nextNewsTitle" class="tit"></em>
+		</span>
+	</a>
+</div>
+<!--다음기사보기 -->
+
+<div class="view-body">
+          	
+<script type="text/javascript">
+	/*************************** 기사컨텐츠  *******************************/
+	var modArrImg = [];
+	var modBxObj = [];
+	var oMarkerList = new Array();
+	var mapInfoTestWindowList = new Array();
+
+	var fnModSetContentsView = function( tagNm, tagType, TagKey ){
+
+		modArrImg.push( { "TAG_ID":tagNm, "TAG_LIST":null } );
+
+		switch ( tagType ) {
+			case "VIDEO":
+				{
+					fnModGetVideo( tagNm, TagKey );
+				}
+				break;
+			case "VOD":
+				{
+					fnModGetVod( tagNm, TagKey );
+				}
+				break;
+			case "NEWSVIDEO":
+				{
+					fnModGetNewsVideo( tagNm, TagKey );
+				}
+				break;
+		}
+	};
+
+	var fnModGetNewsVideo = function( tagNm, TagKey ) {
+		var tagArr = [];
+		tagArr = TagKey.split("_");
+
+		var ncd = tagArr[0];
+		var mediaSeq = tagArr[1];
+
+		var actionUrl = "/api/getNewsInfo";
+		$.ajax({
+			url         : actionUrl,
+			type        : "POST",
+			dataType    : 'json',
+			async : false,  /*  false 동기, true 비동기 */
+			data        : {newsCode:ncd  }, 
+			success     : function(data, status)
+			{         
+
+				fnModNewsVideoDisplay( data, tagNm, mediaSeq );
+			},
+			error       : gfnErrorResult    
+		}); 
+	};
+
+	var fnModNewsVideoDisplay = function( data, tagNm, mediaSeq ) {
+		var listTag = null;
+		var list = data.data;
+
+		var thumbnailImageUrl = "";
+		var srtUrl = "";
+		var vodCaption = "";
+		var dutyYN = "";
+		var vodBlockingYn = "";
+		var vodTypeArr = [];
+		
+		var imgUrl = "";
+		if(!gfnIsEmpty(list.images)){
+			imgUrl = list.images[0].imgUrl;
+		} else {
+			imgUrl = GV_VOD_DEFAULT_IMG;
+		}
+
+		if(!gfnIsEmpty(list.vods)){
+			var lowVodUrl = "";
+			var highVodUrl = "";
+			for(var i = 0;i<list.vods.length;i++){
+				var temp = list.vods[i];
+				if(temp.mediasetSeq == mediaSeq){
+					vodTypeArr.push(temp.vodType);
+					thumbnailImageUrl = temp.thumbnailImageUrl;
+					srtUrl = temp.subtitleUrl;
+					vodCaption = temp.caption;
+					dutyYN = temp.dutyYn;
+					vodBlockingYn = temp.vodBlockingYn;
+
+					if(temp.vodType == 'D') lowVodUrl = temp.vodUrl;
+					else if (temp.vodType == 'G') highVodUrl = temp.vodUrl;
+					else if (temp.vodType == 'K') highVodUrl = temp.vodUrl;
+				}
+			}
+			vodTypeArr.sort();
+
+			
+		}
+
+		listTag = fnModGetTagList( tagNm );
+		listTag.TAG_LIST = { 'NEWS_CODE' : list.newsCode, 'MEDIASET_SEQ' : mediaSeq, 'VOD_TYPE' : vodTypeArr , 'IMG_URL':thumbnailImageUrl, 'NEWS_TITLE':list.newsTitle, 'srtUrl' : srtUrl, 'dutyYn' : dutyYN, 'vodBlockingYn' : vodBlockingYn};
+
+		var k = $("<div class='vod_blk'><img class='vodBtn' src=''/><button type='button' title='동영상 시작' ><img id='btnPlay' src='/resources/images/mobile/common/btn_play_11.png' width='65'  alt='동영상 시작' /></button></div><em class='view_vod_dsc'><span class='blind'>동영상설명</span></em>");
+
+		k.find(".vodBtn").attr('id', "img_"+tagNm);
+		if(gfnIsEmpty(imgUrl)){
+			k.find(".vodBtn").attr('src', GV_VOD_DEFAULT_IMG);
+		}else{
+			k.find(".vodBtn").attr('src', GV_IMGPATH_m_big+imgUrl);
+		}
+		k.find("button").attr('onClick', "fnModPlayNewsVideo( \'" + tagNm + "\' );");
+		$( '#' + tagNm ).html(k);
+		$( '#' + tagNm ).addClass("vod_area");
+
+		$( '#' + tagNm + " .vod_blk").attr('id', "player_"+tagNm);
+		if(!gfnIsEmpty(vodCaption)){
+			k.find("em").text(vodCaption);
+		}
+
+		if(mediaSeq == 1 && list.sourceCode == '200'){
+			//setNextNewsVod(); 넣어야됨
+		}
+
+		fnModPlayNewsVideo(tagNm);
+
+	};
+
+	var fnModPlayNewsVideo = function(tagNm){
+		var listTag = fnModGetTagList( tagNm );
+		var list = listTag.TAG_LIST;
+		var vodUrl; 
+
+		if(list.dutyYN == 'Y'){
+			gfnAlert('I', '저작권 관련 서비스 사용이 불가합니다.');
+			return;
+		}
+
+		if(list.vodBlockingYn == 'Y'){
+			var blocking = '';
+
+			$.ajax({
+				url    		: GV_CONTEXTPATH+'/api/getIpInfo',
+				type   		: "POST",
+				async		: false,
+				dataType  	: 'json',
+				success   	: function(data, status){
+					if(!gfnIsEmpty(data.isAbroadIp))
+					{
+						blocking = data.isAbroadIp; //해외 IP 확인
+					}
+				},
+				error     	: function(request, status, error){	
+					blocking = 'N';
+				}
+			});
+
+			if( "N" == blocking )	{
+				gfnAlert('I', '저작권 관련 서비스 사용이 불가합니다.');	
+				return; 
+			}
+		}
+
+		var lowType = list.VOD_TYPE[0];
+		var highType = list.VOD_TYPE[list.VOD_TYPE.length-1];
+
+		if(!gfnIsEmpty(lowType)){
+			vodUrl = gfnGetNewsVodOneTimeUrl( list.NEWS_CODE, lowType, list.MEDIASET_SEQ );
+		}else{
+			vodUrl = gfnGetNewsVodOneTimeUrl( list.NEWS_CODE, highType, list.MEDIASET_SEQ );
+		}
+
+		if( gfnIsEmpty( vodUrl ) ) return;
+
+		var image = list.IMG_URL;
+
+		if( gfnIsEmpty(list.srtUrl)){
+			var vodParam = { playlist:
+					[{
+						image: image,
+						file: vodUrl
+					}],
+					skin:'',
+					autostart: "false", //자동시작
+					width: '100%',
+					aspectratio: "16:9"
+				       };
+		}else{
+			var vodParam = { playlist:
+					[{
+						image: image,
+						file: vodUrl,
+						tracks: [ { file: '/data/srt/FIXED' + srtUrl, "default": "false" } ]
+					}],
+					skin:'',
+					autostart: "false", //자동시작
+					width: '100%',
+					aspectratio: "16:9"
+				       };
+		}
+
+		var mobileGubun = "";
+
+		if(navigator.appVersion.indexOf("iPhone") > -1 || navigator.appVersion.indexOf("iPad")> -1){
+			mobileGubun = 'I';
+		}else if(navigator.appVersion.indexOf("Android")!=-1){
+			mobileGubun = 'A';
+		}
+
+		gfnJWPlayerPlay_mobile( vodParam, 'player_' + tagNm , mobileGubun);
+	};
+
+	function gfnGetNewsVodOneTimeUrl(ncd, vodType, mediaseq){
+		$.ajax({
+			url    		: '/api/getNewsVodOneTimeUrl',
+			type   		: "POST",
+			async		: false,
+			dataType  	: 'json',
+			data		: { mediasetSeq : mediaseq,
+					   newsCode : ncd,
+					   vodType : vodType
+					  }, 
+			success   	: function(data, status){
+				if(data.success){                    
+					streamUrl = data.data.streamUrl;
+				}else{
+					streamUrl = null;
+					alert(data.message);
+				}
+
+			},
+			error     	: function(request, status, error){	
+				streamUrl = null;
+				gfnAlert('E', 'VOD Url 정보를 가지고 오는데 실패하였습니다. >> ['+error+']');
+			}
+		});
+
+		return streamUrl;
+	}
+
+	//비디오
+	var fnModGetVideo = function( tagNm, TagKey )
+	{
+		var actionUrl = "/api/getNewsInfo";
+		$.ajax({
+			url         : actionUrl,
+			type        : "POST",
+			dataType    : 'json',
+			async : false,  /*  false 동기, true 비동기 */
+			data        : {newsCode:TagKey  },
+			success     : function(data, status)
+			{
+				fnModVideoDisplay( data, tagNm );
+			}
+		});
+	};
+
+	var fnModVideoDisplay = function( data, tagNm )
+	{
+		var videoHtml = '';
+		var listTag = null;
+		var list = data.data;
+		var length = 0;
+
+		var imgUrl = "";
+		if(!gfnIsEmpty(list.images)){
+			imgUrl = list.images[0].imgUrl;
+		} else {
+			imgUrl = GV_VOD_DEFAULT_IMG
+		}
+
+		var lowVodUrl = "";
+		var highVodUrl = "";
+		if(!gfnIsEmpty(list.vods)){
+			for(var i = 0;i<list.vods.length;i++){
+				var temp = list.vods[i];
+				if(temp.vodType == 'D') lowVodUrl = "|N|N|N|" + temp.vodUrl;
+				else if (temp.vodType == 'K') highVodUrl = "|N|N|N|" + temp.vodUrl;
+			}
+		}
+
+		listTag = fnModGetTagList( tagNm );
+		listTag.TAG_LIST = { 'NEWS_CODE' : list.newsCode, 'LOW_VOD_URL': lowVodUrl, 'HIGH_VOD_URL': highVodUrl, 'IMG_URL':imgUrl, 'NEWS_TITLE':list.newsTitle };
+
+		var k = $("<div class='vod_blk'><img class='vodBtn' src=''/><button type='button' title='동영상 시작' ><img id='btnPlay' src='/resources/images/mobile/common/btn_play_11.png' width='65'  alt='동영상 시작' /></button></div><em class='view_vod_dsc'><span class='blind'>동영상설명</span></em>");
+
+		k.find(".vodBtn").attr('id', "img_"+tagNm);
+		if(gfnIsEmpty(imgUrl)){
+			k.find(".vodBtn").attr('src', GV_VOD_DEFAULT_IMG);
+		}else{
+			k.find(".vodBtn").attr('src', GV_IMGPATH_m_big+imgUrl);
+		}
+		k.find("button").attr('onClick', "fnModPlayVideo_2( \'" + tagNm + "\' );");
+		k.find("em").text(list.newsTitle);
+
+		$( '#' + tagNm ).html(k);
+
+		$( '#' + tagNm + " .vod_blk").attr('id', "player_"+tagNm);
+
+		fnModPlayVideo_2(tagNm, GV_IMGPATH_m_big + imgUrl);
+	};
+
+	var fnModPlayVideo_2 = function( tagNm , image)
+	{
+		var listTag = fnModGetTagList( tagNm );
+		var list = listTag.TAG_LIST;
+
+		var vodUrl = "";
+		if(!gfnIsEmpty(list.LOW_VOD_URL)){
+			vodUrl = gfnGetKBSHlsVodUrl( list.LOW_VOD_URL );
+		} else {
+			vodUrl = gfnGetKBSHlsVodUrl( list.HIGH_VOD_URL );
+		}  
+
+		if( gfnIsEmpty( vodUrl ) ) return;
+
+		var vodParam = { playlist:
+				[{
+					image: image,
+					file: vodUrl
+				}],
+				skin:'',
+				autostart: "false", //자동시작
+				width: '100%',
+				aspectratio: "16:9"
+			       };
+
+		var mobileGubun = "";
+
+		if(navigator.appVersion.indexOf("iPhone") > -1 || navigator.appVersion.indexOf("iPad")> -1){
+			mobileGubun = 'I';
+		}else if(navigator.appVersion.indexOf("Android")!=-1){
+			mobileGubun = 'A';
+		}
+
+		gfnJWPlayerPlay_mobile( vodParam, 'player_' + tagNm , mobileGubun); //동영상 재생
+
+	};
+
+	var fnModPlayVideo = function( tagNm )
+	{
+		var listTag = fnModGetTagList( tagNm );
+		var list = listTag.TAG_LIST;
+
+		var vodUrl = "";
+		if(!gfnIsEmpty(list.LOW_VOD_URL)){
+			vodUrl = gfnGetKBSHlsVodUrl( list.LOW_VOD_URL );
+		} else {
+			vodUrl = gfnGetKBSHlsVodUrl( list.HIGH_VOD_URL );
+		}
+
+		if( gfnIsEmpty( vodUrl ) ) return;
+
+		var image = "";
+
+		if( gfnIsEmpty( list.IMG_URL ) ){
+			image = GV_VOD_DEFAULT_IMG;
+		}else{
+			image = list.IMG_URL;
+		}
+
+		var vodParam = { playlist:
+				[{
+					image: image,
+					file: vodUrl
+				}],
+				skin:'',
+				autostart: "false", //자동시작
+				width: '100%',
+				aspectratio: "16:9"
+			       };
+
+		var mobileGubun = "";
+
+		if(navigator.appVersion.indexOf("iPhone") > -1 || navigator.appVersion.indexOf("iPad")> -1){
+			mobileGubun = 'I';
+		}else if(navigator.appVersion.indexOf("Android")!=-1){
+			mobileGubun = 'A';
+		}
+
+		gfnJWPlayerPlay_mobile( vodParam, 'player_' + tagNm , mobileGubun); //동영상 재생
+	};
+
+	/*자체동영상 모바일 싱행*/
+	var fnModGetVod = function( tagNm, TagKey )
+	{
+		var listTag = null;
+		var arr_key = TagKey.split("|");
+		var loopCnt = arr_key.length;
+
+		if( loopCnt < 3 ) return false;
+
+		var vodUrl    = "";
+		var imgUrl    = "";
+		var newsTitle = "";
+
+		for( var i = 0; i < loopCnt ; i++ ){
+			if( i == ( loopCnt- 1 ) ){
+				newsTitle = arr_key[i];
+			}else if( i == ( loopCnt- 2 ) ){
+				imgUrl = arr_key[i];
+			}else{
+				if( gfnIsEmpty( vodUrl ) ){
+					vodUrl = arr_key[i];
+				}else{
+					vodUrl += "|" + arr_key[i];
+				}
+			}
+		}
+
+		if( vodUrl.indexOf( '|' ) == -1 ){
+			vodUrl = "|N|Y|N|" + vodUrl;
+		}else{
+			vodUrl = "|" + vodUrl;
+		}
+
+		listTag = fnModGetTagList( tagNm );
+		listTag.TAG_LIST = { 'VOD_URL': vodUrl, 'IMG_URL':imgUrl, 'NEWS_TITLE':newsTitle };
+
+		var k = $("<div class='vod_blk'><img class='vodBtn' src=''/><button type='button' title='동영상 시작'><img id='btnPlay' src='/resources/images/mobile/common/btn_play_11.png' width='65'  alt='동영상 시작' /></button></div><em class='view_vod_dsc'><span class='blind'>동영상설명</span></em>");
+
+		if(gfnIsEmpty(imgUrl)){
+			k.find(".vodBtn").attr('src', GV_VOD_DEFAULT_IMG);
+		}else{
+			k.find(".vodBtn").attr('src', GV_IMGPATH_m_big+imgUrl);
+		}
+		k.find(".vodBtn").attr('alt', newsTitle);
+		k.find("button").attr('onClick', "fnModPlayVod( \'" + tagNm + "\' );");
+		k.find("em").text(newsTitle);
+
+		$( '#' + tagNm ).html(k);
+
+		$( '#' + tagNm + " .vod_blk").attr('id', "player_"+tagNm);
+	};
+
+	var fnModPlayVod = function( tagNm )
+	{
+		var listTag = fnModGetTagList( tagNm );
+		var list = listTag.TAG_LIST;
+		var vodUrl = gfnGetKBSHlsVodUrl( list.VOD_URL );
+		var count = 0;
+
+		if( gfnIsEmpty( vodUrl ) ) return;
+
+		var image = "";
+
+		if( gfnIsEmpty( list.IMG_URL )) {
+			image = GV_VOD_DEFAULT_IMG;
+		} else {
+			image = list.IMG_URL;
+		}
+
+		var vodParam = { playlist:
+				[{
+					image: image,
+					file: vodUrl
+				}],
+				skin:'',
+				autostart: true, //자동시작
+				width: '100%',
+				aspectratio: "16:9"
+			       };
+
+		var mobileGubun = "";
+
+		if(navigator.appVersion.indexOf("iPhone") > -1 || navigator.appVersion.indexOf("iPad")> -1){
+			mobileGubun = 'I';
+		}else if(navigator.appVersion.indexOf("Android")!=-1){
+			mobileGubun = 'A';
+		}
+
+		gfnJWPlayerPlay_mobile( vodParam, 'player_' + tagNm , mobileGubun); //동영상 재생
+
+	};
+
+	var fnModGetTagList = function( tagNm ){
+
+		for( var i = 0; i < modArrImg.length ; i++ ){
+			if( modArrImg[i].TAG_ID == tagNm ){
+				listTag = modArrImg[ i ];
+				break;
+			}
+		}
+		return listTag;
+	};
+
+	/*************************** 기사컨텐츠 *******************************/
+</script>
+
+
+
+<div class="description" id="cont_newstext">
+	<!-- 서비스 기사 -->
+	양궁 국가대표 안산 선수에 대한 온라인상 혐오 표현과 윤석열 전 검찰총장 배우자  김건희 씨를 비방한 벽화와 관련해 여성가족부가 어떤 상황에서도 여성 혐오적 표현은 안된다고 밝혔습니다. <br /><br />여성가족부는 최근 스포츠계와 정치 영역 등에서 제기되는 문제와 관련해, 어떠한 상황에서도 여성 혐오적 표현이나 인권 침해적 행위가 있어서는 안 된다고 생각한다고 밝혔습니다. 
+
+	
+	<!--// 서비스 기사 -->
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {					
+		if(200 == 200){
+			news_contents_decorate();
+		}
+	});
+
+	// list format: [{section, contents}]
+	function news_contents_split_by_word(list, word)
+	{
+		var ret = [];
+
+		for(var a=0;a<list.length;a++)
+		{
+			var sub_list = list[a].contents.split(word);
+
+			for(var b=0;b<sub_list.length;b++)
+			{
+				if(b==0) {
+					ret.push({section: list[a].section, contents: sub_list[b]});
+					continue;
+				}
+
+				ret.push({section: word, contents: sub_list[b]});
+			}
+		}
+
+		return ret;
+	}
+
+
+	function news_contents_decorate()
+	{
+		var section_map = {"[앵커]": {section_color: "#4664e6", div_color: "#f7fbff", div_background:"rgb(18 18 55 / 4%)", font_color : "#121237", icon_name : "[앵커]"}
+				   , "[리포트]": {section_color: "#db9655", div_color: "#fefcfb", div_background:"rgb(0 128 204 / 4%)",font_color : "#0080CC", icon_name : "[리포트]"}
+				   , "[기자]": {section_color: "#db9655", div_color: "#fefcfb", div_background:"rgb(0 128 204 / 4%)",font_color : "#0080CC", icon_name : "[기자]"}
+				  };
+
+		// split
+		var list = [{section: "전체", contents: $("#cont_newstext").html()}];
+
+		for(var s in section_map)
+		{
+			list = news_contents_split_by_word(list, s);
+		}
+
+		// decorate
+		var decorated_html = list[0].contents;
+		for(var a=1;a<list.length;a++)
+		{
+			var obj = list[a];
+			var map = section_map[obj.section];
+
+			decorated_html += '<div style="background-color: '+map.div_color+';padding: 10px 10px 15px; margin : 0px 0px 28px; background:'+map.div_background+';line-height: 1.5">';
+			decorated_html += '<span class="" style="font-size: 17px;font-family: Noto Sans Bold;font-weight: 700; color: '+map.font_color+';">'+map.icon_name+'</span>';
+
+			decorated_html += obj.contents+'</div>';
+
+		}
+
+		$("#cont_newstext").html(decorated_html);
+	}	
+
+</script>
+
+
+
+
+	<div class="artical-btm"> <br> ■ 제보하기<br> ▷ 카카오톡 : 'KBS제보' 검색<br> ▷ 전화 : 02-781-1234<br> ▷ 이메일 : kbs1234@kbs.co.kr<br> ▷ 뉴스홈페이지 : https://goo.gl/4bWbkG<br> </div>
+
+	<!-- 네이버 배너 -->
+<div class="promotion" id="promotion">
+	<a href="https://media.naver.com/channel/promotion.nhn?oid=056" target="_blank"><img src="/resources/images/promotion/naver_channel.png" alt="kbs가 손수 골랐습니다. 네이버에서도 보세요."></a>
+</div>
+<!-- //네이버 배너 -->
+
+
+<div class="news-writer"></div>
+
+
+<div class="hashtag" id="hashtag_area" style="display:none;">
+	<dl class="hashtag-box">
+		<dt class="blind">해시태그</dt>
+		<dd>
+			<ul id="keyword"></ul>
+		</dd>
+	</dl>
+</div>
+
+<div class="detail-card-share-box">
+	<ul class="detail-card-share-list">
+		<li class="detail-card-back"><button type="button" onClick="javascript:doBack();"><span class="blind">뒤로가기</span></button></li>
+		<li class="detail-card-like"><button type="button" class="btn btn-like" id="likeNews_top" onclick="javascript:addRecommend('5245752');"><span class="ico"></span><span class="blind">좋아요</span><span class="count" id="ico-like"></span></button></li>
+		<li class="detail-card-msg"><a href="#reply" class="btn btn-comment"><span class="ico"></span><span class="blind">메시지</span><span class="count" id="reply_cnt"></span></a></li><!-- [C] 앵커 href 고정 -->
+		<li class="detail-card-share"><a href="#layer-sns" class="btn btn-share btn-pop-trigger"><span class="ico"></span><span class="blind">공유하기</span></a></li>
+	</ul>
+	<div class="detail-card-num" style="display:none;"><span class="txt"><span class="current">1</span><span class="total"></span></span><span class="ico"></span></div>
+	<ul class="detail-card-font">
+		<li class="smaller"><button type="button" class="ft-size-sm btn btn-ft"><span class="ico"></span><span class="blind">글씨 작게보기</span></button></li>
+		<li>가</li>
+		<li class="bigger"><button type="button" class="ft-size-lg btn btn-ft"><span class="ico"></span><span class="blind">글씨 크게보기</span></button></li>
+	</ul>
+</div>
+	
+</div>
+
+
+
+
+
+<section class="sec-temp" id="recommNewsList" style="display:none;">
+	<h2 class="tit-sec">Ai pick 맞춤 뉴스</h2>
+	<div class="inner">
+		<div class="thumblist-swiper-area swiper-container">
+			<div class="swiper-wrapper" id="recNewsList">
+				<ul class="swiper-slide list-type list-thumb06" id="recNewsList1" style="display:none;"></ul>
+				<ul class="swiper-slide list-type list-thumb06" id="recNewsList2" style="display:none;"></ul>
+				<ul class="swiper-slide list-type list-thumb06" id="recNewsList3" style="display:none;"></ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="sec-temp">
+	<h2 class="tit-sec">오늘의 HOT클릭</h2>                  
+	<div class="inner">
+		<div class="thumblist-swiper-area swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<ul class="list-type list-thumb01" id="mobile-view-hotclick-page1">
+					</ul>
+				</div>
+				<div class="swiper-slide">
+					<ul class="list-type list-thumb01" id="mobile-view-hotclick-page2">
+					</ul>
+				</div>
+			</div>
+			
+			<!-- Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$(document).ready(function() {
+		var successCallback = function (data, status) {
+			for(var a=0;a<4;a++)
+				{
+					var k = $("<li><a href=''><span class='thumbnail'><img src='' alt='' onerror='javascript:handleError(this);' /><i class='icon sp-ico-play ico-play02' style='display:none;'>동영상 뉴스</i><span class='mask'></span></span></span><p class='desc'><em class='tit'></em></p></a></li>");
+					k.find("a").attr('href', data[a].url);
+					   k.find("img").attr('src',((data[a].imgUrl != null && data[a].imgUrl != "")?data[a].imgUrl:GV_VOD_DEFAULT_IMG));
+					k.find("img").attr('alt', data[a].title);
+					k.find("em").text(data[a].title);
+					if(data[a].vodUrl !="") k.find(".sp-ico-play").show();
+					k.appendTo("#mobile-view-hotclick-page1");
+				}
+				for(var a=4;a<8;a++) {
+					var k = $("<li><a href=''><span class='thumbnail'><img src='' alt='' onerror='javascript:handleError(this);' /><i class='icon sp-ico-play ico-play02' style='display:none;'>동영상 뉴스</i><span class='mask'><span class='mask'></span></span></span><p class='desc'><em class='tit'></em></p></a></li>");
+					k.find("a").attr('href', data[a].url);
+					k.find("img").attr('src', (data[a].imgUrl != null && data[a].imgUrl != "")?data[a].imgUrl:GV_VOD_DEFAULT_IMG);
+					k.find("img").attr('alt', data[a].title);
+					k.find("em").text(data[a].title);
+					if(data[a].vodUrl !="") k.find(".sp-ico-play").show();
+					k.appendTo("#mobile-view-hotclick-page2");
+				}
+		}
+		
+		callExposeData(359, getParameterByName('pubExec'), successCallback);
+	});
+</script>
+<!-- //오늘의 HOT클릭! area -->
+
+<!-- 많이 본 뉴스 -->
+<section class="sec-temp">
+	<h2 class="tit-sec">많이 본 뉴스</h2>
+	<div class="scroll-list-area swiper-container">
+		<div class="swiper-scrollbar"></div>
+		<div class="swiper-wrapper">
+			<ul class="swiper-slide list-type list-thumb-scrollx" id="mobile-view-recent">
+			</ul>
+		</div>
+	</div>
+</section>
+
+<li id="mobile-view-recent-li-template" style="display: none;">
+	<a href="#">
+		<span class="thumbnail">
+			<strong class="flag"></strong>
+			<img src="" alt="" onerror="javascript:handleError(this);" />
+			<span class="mask"></span>
+		</span>
+		<p class="desc">
+			<em class="tit"></em>
+		</p>
+	</a>
+</li>                 
+
+<script>
+	$(document).ready(function(){		
+		var successCallback = function (data, status) {
+			for(var a=0;a<6;a++){
+				var imgUrl = data[a].imgUrl;
+				if(gfnIsEmpty(imgUrl)){
+					imgUrl = GV_VOD_DEFAULT_IMG;
+				}
+
+				var k = $('#mobile-view-recent-li-template').clone();
+				k.find("a").attr('href', data[a].url);
+				k.find("img").attr('src', ((data[a].imgUrl != null && data[a].imgUrl != "")?GV_IMGPATH_m_big + data[a].imgUrl:GV_VOD_DEFAULT_IMG));
+				k.find("img").attr('alt', data[a].title);
+				k.find("strong").text(a+1);
+				k.find("em").text(data[a].title);
+				k.appendTo("#mobile-view-recent").show();
+			}
+		}
+		
+		callExposeData(329, getParameterByName('pubExec'), successCallback);
+	});
+</script>
+
+
+<!-- //많이 본 뉴스 -->
+
+<!-- 댓글 영역 -->
+<section id="reply" class="sec-temp">
+	<!--<p class="reply-info">댓글 이용시 소셜계정으로 로그인하셔야 하며 로그인하시면 소셜회원으로 표시됩니다.</p>-->
+	<!-- 2018.10.04 라이브리 커스터마이징 작업 -->
+	<div id="lv-container" data-id="kbs" data-uid="NDE4LzIzNjQwLzQ2Mg==" style="padding:0 20px 20px">
+		<!--라이브리 플랫폼 설정 코드-->
+		<script type="text/javascript">
+			window.livereOptions = {
+				refer: GV_LIVEREPATH + '/news/view.do?ncd=5245752',
+				customMessage: {
+				m_kbs: 'KBS',
+				m_write_placeholder: '댓글을 입력해 주세요.'
+			}
+			};
+
+			(function(d, s) {
+				var j, e = d.getElementsByTagName(s)[0];
+
+				if (typeof LivereTower === 'function') { return; }
+
+				j = d.createElement(s);
+				j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+				j.async = true;
+
+				e.parentNode.insertBefore(j, e);
+			})(document, 'script');	
+
+			function getLivereCount( )
+			{
+				fnSnsRtAreaFixed();//라이브리 세팅후 영역 고정
+			}
+
+			//SNS 퍼가기
+			function getLiverePosting(value,requestData){
+				var snsGubun = '';
+				if(requestData.service == 'kbs') snsGubun = '1';
+				if(requestData.service == 'facebook') snsGubun = '2';
+				if(requestData.service == 'twitter') snsGubun = '3';
+				if(requestData.service == 'me2day') snsGubun = '4';
+				if(requestData.service == 'yozm') snsGubun = '5';
+				if(requestData.service == 'cyworld') snsGubun = '6';
+				if(requestData.service == 'kakao') snsGubun = '7';
+
+				if(snsGubun!='')
+				{
+					$.ajax({
+						url         : '/api/api/social/insertSNS" />',
+						type        : "POST",
+						dataType    : 'json',
+						data        : {
+							SAVE_NEWS_CODE     : "5245752",
+							SAVE_RT_GUBUN      : snsGubun,
+							LOGIN_MEMBER_ID:GV_MEMBER_ID
+						}
+					});
+				}
+			}
+
+		</script>
+	</div>    
+</section>
+<!-- //댓글 영역 -->
+        	</article>
+        </div>
+	
+<!-- //container area -->
+        
+<!-- share popup -->
+<!-- [c] sns 공유 팝업 -->
+<div id="layer-sns" class="layer-pop snsshare-pop">
+	<div class="pop-head">
+		<h2 class="tit">공유하기</h2>
+		<button type="button" class="btn btn-close">팝업 닫기</button>
+	</div>
+	<div class="pop-contents">
+		<ul class="sns-list">
+			<li><button class="fb btn" onclick="share_sns(1,'5245752','‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”')" class="fb"><span class="ico-fb"></span>페이스북</button></li>
+			<li><button class="tw btn" onclick="share_sns(2,'5245752','‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”')" class="fb"><span class="ico-tw"></span>트위터</button></li>
+			<li><button class="ka btn" id="kakao-link-btn"><span class="ico-ka"></span>카카오톡</button></li>
+			<li><button class="ks btn" onclick="share_sns(3,'5245752','‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”')"><span class="ico-ks"></span>카카오스토리</button></li>
+			<li><button class="nv btn" onclick="share_sns(4,'5245752','‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”')"><span class="ico-nv"></span>네이버블로그</button></li>
+			<li><button class="band btn" onclick="share_sns(6,'5245752','‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”')"><span class="ico-band"></span>네이버밴드</button></li>
+		</ul>
+		<div class="url-copy">
+			<input type="text" id="copy-tg" class="input-url" value="" readonly/>
+			<button type="button" id="btn-url-copy" class="btn btn-copy">복사</button>
+		</div>
+			<script type='text/javascript'>
+				var kakao_share_img = '/data/news/title_image/newsmp4/news9/2021/07/30/150_5245752.jpg';
+				
+				Kakao.init('d57b7eca9db04c5ccd91e4d309ce0288');					
+				Kakao.Link.createDefaultButton({
+					container: '#kakao-link-btn',
+					objectType: 'feed',
+					content : {
+						title: '‘안산 쇼트커트’·‘쥴리 벽화’에 여가부 “여성 혐오 표현 안 돼”',
+						imageUrl: 'https://mn.kbs.co.kr'+kakao_share_img,
+						link: {
+							mobileWebUrl: 'https://news.kbs.co.kr/news/view.do?ncd=5245752',
+				            webUrl: 'https://news.kbs.co.kr/news/view.do?ncd=5245752'
+				          }
+					},
+					buttons: [{
+						title: 'KBS 뉴스 기사 보기',
+						link: {
+							mobileWebUrl: 'https://news.kbs.co.kr/news/view.do?ncd=5245752',
+				            webUrl: 'https://news.kbs.co.kr/news/view.do?ncd=5245752'
+				          }
+					}]
+				  });
+			</script>
+	</div>
+</div>
+<!-- //공유 팝업-->
+<!--  //share popup -->
+
+<!-- ref :s -->
+<!--#include virtual="/include/common/964.html" -->
+<!-- ref :e -->
+
+<div id="footer" class="footer">
+	
+
+
+
+	<h2 class="blind">푸터영역</h2>
+
+
+	<div class="btn-top" style="display: block;">
+		<a href="#top"><span class="blind">상단으로 이동</span></a>
+	</div>
+	
+	<dl class="footer-app">
+		<dt>
+			<em>KBS 애플리케이션</em> 다운로드<span class="ico"></span>
+		</dt>
+		<dd>
+			<ul>
+				<li class="app2" app-name="myk"><a href="#none"><span class="ico"></span><span class="txt">my K</span></a></li>
+				<li class="app1" app-name="news"><a href="#none"><span class="ico"></span><span class="txt">KBS NEWS</span></a></li>
+				<li class="app3" app-name="kong"><a href="#none"><span class="ico"></span><span class="txt">라디오 Kong</span></a></li>
+				<li class="app4" app-name="world"><a href="#none"><span class="ico"></span><span class="txt">World TV</span></a></li>
+				<!-- <li class="app6" app-name="dokdo"><a href="#none"><span class="ico"></span><span class="txt">독도 Live</span></a></li>
+				     <li class="app5" app-name="classicfm"><a href="#none"><span class="ico"></span><span class="txt">KBS Classic</span></a></li> -->
+
+			</ul>
+		</dd>
+	</dl>
+	<dl>
+		<dt class="blind">SNS 공유하기</dt>
+		<dd>
+			<ul class="footer-sns">
+				<li class="sns1"><a href="https://m.youtube.com/user/NewsKBS" target="_blank"><span class="blind">Youtube 대표계정</span></a></li>
+				<li class="sns2"><a href="https://story.kakao.com/ch/kbsnews" target="_blank"><span class="blind">Kakao Stoty 대표계정</span></a></li>
+				<li class="sns3"><a href="https://m.facebook.com/kbsnews" target="_blank"><span class="blind">Facebook 대표계정</span></a></li>
+				<li class="sns4"><a href="https://mobile.twitter.com/KBSnews" target="_blank"><span class="blind">Twitter 대표계정</span></a></li>
+				<li class="sns5"><a href="https://www.instagram.com/kbsnews/" target="_blank"><span class="blind">Instagram 대표계정</span></a></li>
+			</ul>
+		</dd>
+	</dl>
+	<ul class="footer-list">
+		<li><a href="https://open.kbs.co.kr/"><span class="ko">KBS소개</span><span class="en">KBS infomation</span></a></li>
+		<li><a href="https://www.kbs.co.kr/m/more/corp.html"><span class="ko">사업자정보</span><span class="en">KBS infomation</span></a></li>
+		<li><a
+		       href="https://sso.kbs.co.kr/SSO2/KBSMobile/information/PersonalPolicies00SN.php"><span class="ko">개인정보처리방침</span><span class="en">Terms of Use</span></a></li>
+		<li><a
+		       href="https://sso.kbs.co.kr/SSO2/KBSMobile/information/ServiceTerms00SN.php"><span class="ko">이용약관</span><span class="en">Privacy policy</span></a></li>
+		<li><a href="http://smart.kbs.co.kr/viewer/index.html"><span class="ko">시청자권익센터</span><span class="en">Privacy policy</span></a></li>
+		<li><a href="https://audit.kbs.co.kr/CyberAudit"><span class="ko">사이버 감사실</span></a></li>
+		<li><a href="javascript:gfnPcMode();"><span class="ko">PC버전</span><span class="en">Privacy policy</span></a></li>
+	</ul>
+	<p>
+		<span class="logo">KBS</span> <span>All rights reserved</span>
+	</p>
+</div>
+
+<script type="text/javascript">
+	var kbs_android_app_url = {
+		noon : "https://play.google.com/store/apps/details?id=kr.co.kbs.noon",
+		myk : "https://play.google.com/store/apps/details?id=kr.co.kbs.kplayer",
+		news : "https://play.google.com/store/apps/details?id=kr.co.kbs.news301",
+		kong : "https://play.google.com/store/apps/details?id=kr.co.kbs.kong",
+		world : "https://play.google.com/store/apps/details?id=kr.co.kbs.kbsworld",
+		/*dokdo: "https://play.google.com/store/apps/details?id=com.kbs.DokdoLive",
+	classicfm: "https://play.google.com/store/apps/details?id=kr.co.kbs.radio.classic"*/
+	};
+
+	var kbs_ios_app_url = {
+		noon : "",
+		myk : "https://itunes.apple.com/kr/app/id462725252",
+		news : "https://itunes.apple.com/kr/app/id376746898",
+		kong : "https://itunes.apple.com/kr/app/id928368733",
+		world : "https://itunes.apple.com/kr/app/id1054275333",
+		/*dokdo: "https://itunes.apple.com/kr/app/id402616135",
+	classicfm: "https://itunes.apple.com/kr/app/id412677202"*/
+	};
+
+	$(document)
+		.ready(
+		function() {
+			//$(".footer-sns li").off("click").on("click",
+			//		function() {
+			//			var index = $(this).index();
+			//			share_sns_footer(index);
+			//		});
+
+			$(".footer-app li")
+				.off("click")
+				.on(
+				"click",
+				function(a) {
+					a.preventDefault();
+					var b = $(this).attr("app-name"), c = navigator.userAgent
+					.toLowerCase();
+					if (c.search("iphone") > -1
+					    || c.search("ipod") > -1
+					    || c.search("ipad") > -1) {
+						var d = kbs_ios_app_url[b];
+						"" == d ? kbsNewsUi.uiAction.popup
+							.open({
+							title : "안내",
+							contents : "안드로이드 애플리케이션만 지원합니다.",
+							type : 0,
+							num : [ 1 ]
+						})
+						: location.href = d
+					} else {
+						var d = kbs_android_app_url[b];
+						location.href = d
+					}
+				});
+		})
+
+	function share_sns_footer(gubun) {
+		var set = "width=400, height=600, resizable=no, scrollbars=no, status=no;";
+		var nowUrl = document.location.href.split("#")[0];
+		var contentMeta = $("meta[property=og\\:title]").attr("content");
+		$("meta[property=og\\:description]").attr("content"), $(
+			"meta[property=og\\:image]").attr("content");
+
+		switch (gubun) {
+			case 0:
+				Kakao.Link.sendScrap({
+					requestUrl : nowUrl
+				}), Kakao.Link.cleanup();
+				break;
+			case 1:
+				Kakao.Story.open({
+					url : nowUrl,
+					text : contentMeta
+				}), Kakao.Story.cleanup();
+				break;
+			case 2:
+				window.open("https://www.facebook.com/sharer/sharer.php?u="
+					    + encodeURIComponent(nowUrl), "pop", set);
+				break;
+			case 3:
+				window.open("https://twitter.com/intent/tweet?text="
+					    + encodeURIComponent(contentMeta) + "&url="
+					    + encodeURIComponent(nowUrl), "pop", set);
+				break;
+		}
+	}
+</script>
+	</div>
+</div>
+
+</body>
+</html>

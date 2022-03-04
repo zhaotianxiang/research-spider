@@ -87,14 +87,14 @@ AUTOTHROTTLE_MAX_DELAY = 0.5
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-ITEM_PIPELINES = {'MediaSpider.pipelines.ImgspiderPipeline': 1}
+ITEM_PIPELINES = {'MediaSpider.pipelines.ImgspiderPipeline': 1,'scrapy_save_as_pdf.pipelines.SaveAsPdfPipeline': -1,}
 
 IMAGES_THUMBS = {
     'small': (50, 50),
     'big': (470, 470),
 }
 
-IMAGES_STORE = "./data/images/"
+IMAGES_STORE = "./data/kbs/images/"
 
 IMAGES_URLS_FIELD = 'field_name_for_your_images_urls'
 IMAGES_RESULT_FIELD = 'field_name_for_your_processed_images'
@@ -110,7 +110,20 @@ IMAGES_EXPIRES = 30
 MEDIA_ALLOW_REDIRECTS = True
 
 # 导出文件格式和文件名称
-FEED_URI = 'data/%(name)s.csv'
+FEED_URI = 'data/kbs/%(name)s.csv'
 FEED_FORMAT = 'csv'
 FEED_EXPORT_ENCODING = 'utf-8'
 
+# pdf
+PROXY = ""
+CHROME_DRIVER_PATH ='/usr/local/bin/chromedriver'
+PDF_SAVE_PATH = "./pdfs"
+PDF_SAVE_AS_PDF = False
+PDF_DOWNLOAD_TIMEOUT = 60
+PDF_PRINT_OPTIONS = {
+    'landscape': False,
+    'displayHeaderFooter': False,
+    'printBackground': True,
+    'preferCSSPageSize': True,
+}
+WEBDRIVER_HUB_URL = 'http://127.0.0.1:4444/wd/hub'
