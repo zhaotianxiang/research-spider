@@ -45,7 +45,8 @@ default = voa.settings   # 指定要运行的子项目下的配置文件
 scrapy crawl voa
 
 ```
-  3.程序开始执行，结果见子项目下 data 文件
+
+  3. 程序开始执行，结果见子项目下 data 文件
 
 #### 5. Scrapy 的详细文档参见：
 [Scrapy官方文档](https://docs.scrapy.org/en/latest/)
