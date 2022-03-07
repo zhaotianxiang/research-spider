@@ -12,8 +12,6 @@ import logging
 
 class TransformDataPipeline:
     def process_item(self, item, spider):
-        item['news_title'] = item['news_title'].replace('\n','')
-        item['news_contents'] = item['news_contents'].replace('\n','')
         return item
 
 
