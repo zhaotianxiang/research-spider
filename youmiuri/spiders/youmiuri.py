@@ -53,7 +53,7 @@ class Youmiuri(scrapy.Spider):
         self.logger.info("REPORTER'S ARTICLE ---- %s", response.url)
         article_body = " ".join(response.css("article.article-content div.p-main-contents p::text").getall()).strip()
         if article_body:
-            author_list = re.findall(r'(?<=【).*(?=】)', article_body)
+            author_list = re.findall(r'(?<=【).*?(?=】)', article_body)
             if author_list and len(author_list) > 0:
                 for author_str in author_list:
                     author_area_list = author_str.split("、")
@@ -74,7 +74,7 @@ class Youmiuri(scrapy.Spider):
                                 'list_url': response.url,
                             }
                             return None
-            author_list = re.findall(r'（.*）$', article_body)
+            author_list = re.findall(r'（.*?）$', article_body)
             if author_list and len(author_list) > 0:
                 author_name = author_list[0]
                 yield {
