@@ -1,9 +1,5 @@
 import scrapy
 from scrapy.linkextractors import LinkExtractor
-from scrapy.spiders import XMLFeedSpider
-from scrapy.selector import Selector
-from scrapy.http import XmlResponse
-
 
 # 定义下载新闻分类的种子
 def seed():
