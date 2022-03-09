@@ -21,11 +21,11 @@ for line in csv_reader:
     news_detail_url_list.append(line[9])
 
 mkdir("./data/pdf")
-for url in news_detail_url_list[1:]:
+for url in news_detail_url_list[1:2]:
     print(url)
-    try:
-        download_pdf(url)
-    except:
-        print("failed download pdf %s"%url)
-    else:
-        print("success download pdf %s"%url)
+    # try:
+    download_pdf(url)
+    # except:
+    #     print("failed download pdf %s"%url)
+    # else:
+    #     print("success download pdf %s"%url)
