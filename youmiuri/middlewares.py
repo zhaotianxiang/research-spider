@@ -79,12 +79,6 @@ class MediaspiderDownloaderMiddleware:
         # - or raise IgnoreRequest: process_exception() methods of
         #   installed downloader middleware will be called
         #
-        # HSSID=842B85A7AB51AA740834CF9BCDAC6B7F9BBB0487C2101472CC75297D1B8D6CE4
-        # YOMISESSID=kdts9r9o7c9jp7d1671qtnem6g
-        request.cookies={
-            'HSSID':'842B85A7AB51AA740834CF9BCDAC6B7F9BBB0487C2101472CC75297D1B8D6CE4',
-            'YOMISESSID':'kdts9r9o7c9jp7d1671qtnem6g'
-        }
         return None
 
     def process_response(self, request, response, spider):

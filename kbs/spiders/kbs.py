@@ -26,7 +26,7 @@ class KBS(scrapy.Spider):
         response_obj = json.loads(response.body)
         if not response_obj["success"]:
             self.logger.error(response_obj)
-            yield None
+            return None
 
         for item in response_obj["data"]:
             news_detail_url = 'https://news.kbs.co.kr/news/view.do?ncd=' + item["newsCode"]
