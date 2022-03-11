@@ -1,26 +1,28 @@
-# Define your item pipelines here
-#
-# Don't forget to add your pipeline to the ITEM_PIPELINES setting
-# See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+import os, logging, json
+import csv
+from scrapy.utils.project import get_project_settings
+
+logger = logging.getLogger(__name__)
+SETTINGS = get_project_settings()
 
 
-# useful for handling different item types with a single interface
-from scrapy import Request
-from scrapy.pipelines.images import ImagesPipeline
-import logging
+def mkdirs(dirs):
+    if not os.path.exists(dirs):
+        os.makedirs(dirs)
 
 
-class TransformDataPipeline:
+class SaveToFilePipeline:
+    def __init__(self):
+        self.savePostPath = SETTINGS['SAVE_POST_PATH']
+        self.saveUserPath = SETTINGS['SAVE_USER_PATH']
+        logger.info(self.saveUserPath)
+        logger.info(self.savePostPath)
+        mkdirs(self.savePostPath)  # ensure the path exists
+        mkdirs(self.saveUserPath)
+
     def process_item(self, item, spider):
-        return item
+        self.save_to_file(item, self.saveUserPath + "twitter.user.csv")
 
-
-class ImageSpiderPipeline(ImagesPipeline):
-    def get_media_requests(self, item, response):
-        logging.info("ImageSpiderPipeline imageUrl ----------------- {} ".format(item.get('reporter_image_url')))
-        if item.get('reporter_image_url') and type(item.get('reporter_image_url')) == str:
-            yield Request(url=item['reporter_image_url'],
-                          meta={"image_name": "%s_%s" % (item['reporter_name'],item['reporter_image_url'].split("/")[-1])})
-
-    def file_path(self, request, response=None, info=None):
-        return request.meta["image_name"]
+    def save_to_file(self, item, filename):
+        with open(fname, 'w', encoding='utf-8') as f:
+            json.dump(dict(item), f, ensure_ascii=False)

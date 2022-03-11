@@ -1,17 +1,102 @@
+import json
+import csv
+from urllib.parse import quote
+
 import scrapy
-from scrapy.linkextractors import LinkExtractor
+from scrapy.spiders import CrawlSpider
+from scrapy_selenium import SeleniumRequest, SeleniumMiddleware
 
-# 定义下载新闻分类的种子
-def seed():
-    return [
-        'https://twitter.com/i/api/2/search/adaptive.json?include_profile_interstitial_type=1&include_blocking=1&include_blocked_by=1&include_followed_by=1&include_want_retweets=1&include_mute_edge=1&include_can_dm=1&include_can_media_tag=1&include_ext_has_nft_avatar=1&skip_status=1&cards_platform=Web-12&include_cards=1&include_ext_alt_text=true&include_quote_count=true&include_reply_count=1&tweet_mode=extended&include_entities=true&include_user_entities=true&include_ext_media_color=true&include_ext_media_availability=true&include_ext_sensitive_media_warning=true&include_ext_trusted_friends_metadata=true&send_error_codes=true&simple_quoted_tweet=true&q=%25EC%259D%25B4%25EC%25B2%25A0%25ED%2598%25B8&result_filter=user&count=20&query_source=typed_query&cursor=DAAFCgABFNdHWgs__z8LAAIAAADwRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUJRU1pJanYrdFdRQmdBQUFBQWhzUWo1QUFBQUFBa0paS29BQUFBQXB4dDV0UUFBQUFBR291VTRBQUFBQUFscFNVa0FBQUFBdzlrRk1Bd3AzZThmRmFBQUFBQUFBQWFsSXZZQUFBQUFDajE0T2dBQUFBREFldE1VQUFBQUFCVTZxaDRPZVZkRi9oUlFBQlJrQUpUQkdnQURBQUFBQUErczFtQUFBQUFBRWdmUi93QUFBQUFjVlVFY0VDcVhFYzdWQUFJQUFBQUFDYmFFYndBQUFBQURIVlo1AAA&pc=1&spelling_corrections=1&ext=mediaStats%252ChighlightedLabel%252ChasNftAvatar%252CvoiceInfo%252Cenrichments%252CsuperFollowMetadata',
-    ]
+import re
 
 
-class Voa(scrapy.Spider):
+class Twitter(CrawlSpider):
     name = 'twitter'
-    start_urls = seed()
+    allowed_domains = ['twitter.com']
+    x_guest_token = ""
 
-    def parse(self, response):
-        self.logger.info("twitter url %s",response.url)
-        self.logger.info("response", response.body)
+    def __init__(self):
+        self.url = (
+            f'https://api.twitter.com/2/search/adaptive.json?'
+            f'include_profile_interstitial_type=1'
+            f'&include_blocking=1'
+            f'&include_blocked_by=1'
+            f'&include_followed_by=1'
+            f'&include_want_retweets=1'
+            f'&include_mute_edge=1'
+            f'&include_can_dm=1'
+            f'&include_can_media_tag=1'
+            f'&skip_status=1'
+            f'&cards_platform=Web-12'
+            f'&include_cards=1'
+            f'&include_ext_alt_text=true'
+            f'&include_quote_count=true'
+            f'&include_reply_count=1'
+            f'&tweet_mode=extended'
+            f'&include_entities=true'
+            f'&include_user_entities=true'
+            f'&include_ext_media_color=true'
+            f'&include_ext_media_availability=true'
+            f'&send_error_codes=true'
+            f'&simple_quoted_tweet=true'
+            f'&query_source=typed_query'
+            f'&pc=1'
+            f'&spelling_corrections=1'
+            f'&ext=mediaStats%2ChighlightedLabel'
+            f'&count=20'
+            f'&tweet_search_mode=live'
+            f'&result_filter=user'
+        )
+        self.url = self.url + '&q={query}'
+        self.num_search_issued = 0
+        self.cursor_re = re.compile('"(scroll:[^"]*)"')
+
+        self.user_list = set()
+
+        for line in csv.reader(open("./kbs/data/csv/kbs.csv")):
+            self.user_list.add(line[5])
+        self.user_list = list(self.user_list)
+        self.user_list.sort()
+        self.user_list = self.user_list[12:13]
+        self.logger.info("INIT [ ---- %s ---- ] USERS", len(self.user_list))
+
+    def start_requests(self):
+        yield SeleniumRequest(url="https://twitter.com/explore", callback=self.add_cookie)
+
+    def add_cookie(self, response):
+        self.headers = {
+            'authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA',
+        }
+        self.logger.info('Headers %s', self.headers)
+        for r in self.start_query_request():
+            yield r
+
+    def start_query_request(self, cursor=None):
+        for user_name in self.user_list:
+            if cursor:
+                url = self.url + '&cursor={cursor}'
+                url = url.format(query=quote(user_name), cursor=quote(cursor))
+            else:
+                url = self.url.format(query=quote(user_name))
+            yield scrapy.Request(url, meta={"userName": user_name}, callback=self.parse_user_list, headers=self.headers)
+
+    def parse_user_list(self, response):
+        data = json.loads(response.text)
+        user_dict = data.get("globalObjects").get("users")
+        self.logger.info("PARSE USER USER_NAME: %s ITEM: %s", response.meta.get("userName"), len(user_dict))
+
+        for userId in user_dict:
+            user = user_dict.get(userId)
+            user["search_reporter_name"] = response.meta.get("userName")
+            user_description = user.get("description") + user.get("name") + user.get("screen_name")
+            if user_description:
+                kbs = re.compile(r'kbs', re.I)
+                if kbs.search(user_description):
+                    self.logger.info("SUCCESS MATCH  %s ---- %s", response.meta.get("userName"), user_description)
+                    yield user
+                    url = 'https://twitter.com/' + user.get("screen_name")
+                    yield scrapy.Request(url, meta={"userName": response.meta.get('userName')},
+                                         callback=self.parse_user_post, headers=self.headers)
+
+    def parse_user_post(self, response):
+        self.logger.info(response.text)
+        pass
