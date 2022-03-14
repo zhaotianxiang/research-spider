@@ -11,6 +11,7 @@ BOT_NAME = 'kbs'
 
 SPIDER_MODULES = ['kbs.spiders']
 NEWSPIDER_MODULE = 'kbs.spiders'
+LOGGER_LEVEL="INFO"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'

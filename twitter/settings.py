@@ -8,9 +8,20 @@ ROBOTSTXT_OBEY = False
 CONCURRENT_REQUESTS = 16
 DOWNLOAD_DELAY = 1
 DEFAULT_REQUEST_HEADERS = {
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Language': '*',
+    'content-type': 'application/json',
+    'accept': '*/*',
+    'referer': 'https://mobile.twitter.com/RhythmHive_twt'
 }
+COOKIES_ENABLED = True
+
+SPIDER_MIDDLEWARES = {
+    'twitter.middlewares.MediaspiderDownloaderMiddleware': 543,
+}
+
+DOWNLOADER_MIDDLEWARES = {
+    'twitter.middlewares.MediaspiderDownloaderMiddleware': 543,
+}
+
 ITEM_PIPELINES = {
     'twitter.pipelines.ImageSpiderPipeline': 2,
 }

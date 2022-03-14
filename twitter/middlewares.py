@@ -78,6 +78,15 @@ class MediaspiderDownloaderMiddleware:
         # - or return a Request object
         # - or raise IgnoreRequest: process_exception() methods of
         #   installed downloader middleware will be called
+        # request.cookies = {
+        #     "ct0": "090c17999926034cf375b4863027d2ed",
+        #     "guest_id_marketing": "v1%3A164726504986628201",
+        #     "guest_id_ads": "v1%3A164726504986628201",
+        #     "personalization_id": "v1_9IVg3KUO2l603hfZ3fpHtw==",
+        #     "guest_id": "v1%3A164726504986628201",
+        #     "id": "c937f1fc-5a5f-47bd-84e0-6172df94ecd7&created=1647265056455"
+        # }
+        # print("--------- %s", request.headers)
         return None
 
     def process_response(self, request, response, spider):
