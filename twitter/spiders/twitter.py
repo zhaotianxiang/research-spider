@@ -56,7 +56,7 @@ class Twitter(CrawlSpider):
             self.user_list.add(line[5])
         self.user_list = list(self.user_list)
         self.user_list.sort()
-        self.user_list = self.user_list[12:13]
+        self.user_list = self.user_list
         self.logger.info("INIT [ ---- %s ---- ] USERS", len(self.user_list))
 
     def start_requests(self):
