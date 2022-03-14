@@ -17,6 +17,6 @@ ITEM_PIPELINES = {
 COOKIES_DEBUG = True
 MEDIA_ALLOW_REDIRECTS = True
 # # 导出文件格式和文件名称
-FEED_URI = './%(name)s/data/csv/%(name)s_%(time)s.csv'
+FEED_URI = './twitter/data/csv/%(name)s_%(time)s.csv'
 FEED_FORMAT = 'csv'
 FEED_EXPORT_ENCODING = 'utf-8'
