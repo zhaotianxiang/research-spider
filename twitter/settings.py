@@ -12,10 +12,11 @@ DEFAULT_REQUEST_HEADERS = {
     'Accept-Language': '*',
 }
 ITEM_PIPELINES = {
-    # 'twitter.pipelines.SaveToFilePipeline': 2,
+    'twitter.pipelines.ImageSpiderPipeline': 2,
 }
 COOKIES_DEBUG = True
 MEDIA_ALLOW_REDIRECTS = True
+IMAGES_STORE = "./twitter/data/images/"
 # # 导出文件格式和文件名称
 FEED_URI = './twitter/data/csv/%(name)s_%(time)s.csv'
 FEED_FORMAT = 'csv'

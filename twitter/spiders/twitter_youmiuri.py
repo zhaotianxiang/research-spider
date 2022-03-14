@@ -89,7 +89,7 @@ class TwitterYoumiuri(CrawlSpider):
             user["search_reporter_name"] = response.meta.get("userName")
             user_description = user.get("description") + user.get("name") + user.get("screen_name")
             if user_description:
-                kbs = re.compile(r'youmiuri', re.I)
+                kbs = re.compile(r'読売新聞', re.I)
                 if kbs.search(user_description):
                     self.logger.info("SUCCESS MATCH  %s ---- %s", response.meta.get("userName"), user_description)
                     yield user
