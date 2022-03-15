@@ -9,8 +9,7 @@ CONCURRENT_REQUESTS = 16
 DOWNLOAD_DELAY = 1
 DEFAULT_REQUEST_HEADERS = {
     'content-type': 'application/json',
-    'accept': '*/*',
-    'referer': 'https://mobile.twitter.com/RhythmHive_twt'
+    'accept': '*/*'
 }
 COOKIES_ENABLED = True
 
