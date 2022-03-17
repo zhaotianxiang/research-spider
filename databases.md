@@ -1,15 +1,25 @@
-# 数据库设计
+# 数据库设计 (media)
 
-## 数据表设计（MongoDB）
+## 数据库访问
+
+```text
+host: 39.107.26.235
+port: 27017
+database: media
+mongo user: root
+password  : aini1314
+```
+
+## 数据表设计
 
 ### 1. entity_media
-  - media_id
+  - media_id (_id)
   - media_name_cn
   - media_name_en
   - media_type   en/ch/jp/ka
 
 ### 2. entity_news
-  - news_id
+  - news_id (_id)
   - news_title
   - news_title_cn
   - news_content
@@ -24,7 +34,7 @@
   - media_id
 
 ### 3. entity_reporter
-  - reporter_id (社交媒体编号_人员内部编号)
+  - reporter_id (社交媒体编号_人员内部编号) (_id)
   - reporter_name
   - reporter_image (媒体编号_人员名称_人员内部编号.[jpg|png|jpeg])
   - reporter_image_url
@@ -39,7 +49,7 @@
   - media_name
 
 ### 4. entity_social_dynamics
-  - dynamics_id    社交媒体类型+社交动态内部编号
+  - dynamics_id    社交媒体类型+社交动态内部编号 (_id)
   - dynamics_publish_time
   - dynamics_content
   - dynamics_content_cn
