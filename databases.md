@@ -24,9 +24,9 @@
   - media_id
 
 ### 3. entity_reporter
-  - reporter_id (社交媒体编号+人员内部编号)
+  - reporter_id (社交媒体编号_人员内部编号)
   - reporter_name
-  - reporter_image (媒体编号_人员名称_人员内部编号.jpg)
+  - reporter_image (媒体编号_人员名称_人员内部编号.[jpg|png|jpeg])
   - reporter_image_url
   - reporter_intro
   - reporter_url
