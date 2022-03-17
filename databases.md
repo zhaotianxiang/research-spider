@@ -12,13 +12,13 @@ password  : aini1314
 
 ## 数据表设计
 
-### 1. entity_media
+### 1. media
   - media_id (_id)
   - media_name_cn
   - media_name_en
   - media_type   en/ch/jp/ka
 
-### 2. entity_news
+### 2. news
   - news_id (_id)
   - news_title
   - news_title_cn
@@ -33,7 +33,7 @@ password  : aini1314
     - { reporter_id:123, reporter_name:"xxxx"} 
   - media_id
 
-### 3. entity_reporter
+### 3. reporter
   - reporter_id (社交媒体编号_人员内部编号) (_id)
   - reporter_name
   - reporter_image (媒体编号_人员名称_人员内部编号.[jpg|png|jpeg])
@@ -48,7 +48,7 @@ password  : aini1314
   - media_id
   - media_name
 
-### 4. entity_social_dynamics
+### 4. social_dynamics
   - dynamics_id    社交媒体类型+社交动态内部编号 (_id)
   - dynamics_publish_time
   - dynamics_content
