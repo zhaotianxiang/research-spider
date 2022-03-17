@@ -53,5 +53,7 @@ class MongoDBPipeline(object):
         if isinstance(item, ReporterItem):
             self.db.reporter.update_one({"reporter_id": item["reporter_id"]}, {"$set": dict(item)}, upsert=True)
         if isinstance(item, NewsItem):
-            self.db.news.update_one({"news_id": item["news_id"]}, {"$set": dict(item)}, upsert=True)
+            self.db.news.update_one({"news_id": item["news_id"], "media_id": item["media_id"]},
+                                    {"$set": dict(item)},
+                                    upsert=True)
         return item

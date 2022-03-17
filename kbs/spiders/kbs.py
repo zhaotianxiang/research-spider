@@ -25,7 +25,7 @@ now = datetime.datetime.now().strftime('%Y%m%d')
 
 class KBS(scrapy.Spider):
     name = 'kbs'
-    start_urls = list(map(generate_url_list, date_range("20180101", now)))
+    start_urls = list(map(generate_url_list, date_range("20220312", now)))
 
     def parse(self, response):
 
