@@ -13,6 +13,7 @@ import logging
 
 class TransformDataPipeline:
     def process_item(self, item, spider):
+        print("TransformDataPipeline")
         if item.get("reporter_name"):
             item["news_contents"] = item["news_contents"].replace("<br />", " ")
             return item
