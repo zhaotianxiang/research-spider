@@ -26,8 +26,8 @@ password  : aini1314
   - news_content_cn
   - news_publish_time
   - news_url
-  - news_pdf（新闻标题_媒体编号_新闻编号.pdf）
-  - news_pdf_cn（新闻标题_媒体编号_新闻编号_cn.pdf）
+  - news_pdf（媒体名称_新闻编号.pdf）
+  - news_pdf_cn（媒体名称_新闻编号_cn.pdf）
   - --------------
   - reporter_list
     - { reporter_id:123, reporter_name:"xxxx"} 
@@ -36,7 +36,7 @@ password  : aini1314
 ### 3. reporter
   - reporter_id (社交媒体编号_人员内部编号) (_id)
   - reporter_name
-  - reporter_image (媒体编号_人员名称_人员内部编号.[jpg|png|jpeg])
+  - reporter_image (媒体名称_人员名称_人员内部编号.[jpg|png|jpeg])
   - reporter_image_url
   - reporter_intro
   - reporter_url
