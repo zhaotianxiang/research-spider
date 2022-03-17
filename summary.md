@@ -1,58 +1,83 @@
 # Summary
+> 金融时报 Financial Times
+> 
+> https://www.ft.com/opinion?page=1	有	有	有	有	有
 
-https://www.ft.com/opinion?page=1	有	有	有	有	有	https://www.ft.com/megan-greene	所有网站仅采集有记者信息的报道	"金融时报
+> 记者详情：https://www.ft.com/megan-greene	
+
+> 所有网站仅采集有记者信息的报道
+> 
+> 中文版-简体：http://www.ftchinese.com/	有	无	无	无	无			"金融时报
 Financial Times"
-中文版-简体：http://www.ftchinese.com/	有	无	无	无	无			"金融时报
+> 
+> 中文版-繁体：http://big5.ftchinese.com/	有	无	无	无	无			"金融时报
 Financial Times"
-中文版-繁体：http://big5.ftchinese.com/	有	无	无	无	无			"金融时报
-Financial Times"
-https://www.thetimes.co.uk	有	有	有	有	无	https://www.thetimes.co.uk/profile/john-curtice?page=1		"泰晤士报
+
+> 泰晤士报
+> https://www.thetimes.co.uk	有	有	有	有	无
+
+> https://www.thetimes.co.uk/profile/john-curtice?page=1		"泰晤士报
 The Times"
-https://www.npr.org/	有	有	有	有	无	https://www.npr.org/people/1019412563/jonathan-franklin		"全国公共广播电台
+
+> https://www.npr.org/	有	有	有	有	无	https://www.npr.org/people/1019412563/jonathan-franklin		"全国公共广播电台
 National Public Radio"
-https://us.cnn.com/specials/profiles	有	有	有	有	无		数据已采集，页面已失效	"美国有线电视新闻网
+
+> https://us.cnn.com/specials/profiles	有	有	有	有	无		数据已采集，页面已失效	"美国有线电视新闻网
 Cable News Network"
-https://edition.cnn.com/china	有	有	有	有	无	https://edition.cnn.com/profiles/steve-george		"美国有线电视新闻网
+
+> https://edition.cnn.com/china	有	有	有	有	无	https://edition.cnn.com/profiles/steve-george		"美国有线电视新闻网
 Cable News Network"
-https://www.theepochtimes.com/	有	有	有	无	无	https://www.theepochtimes.com/author-morgan-deane		"大纪元
+
+> https://www.theepochtimes.com/	有	有	有	无	无	https://www.theepochtimes.com/author-morgan-deane		"大纪元
 The Epoch Times"
 "中文版：
-https://www.epochtimes.com/ "	有	无	无	无	无			"大纪元
+
+> https://www.epochtimes.com/ "	有	无	无	无	无			"大纪元
 The Epoch Times"
 "中文-繁体版
-https://www.epochtimes.com/b5/ncnews.htm"	有	无	无	无	无			"大纪元
+
+> https://www.epochtimes.com/b5/ncnews.htm"	有	无	无	无	无			"大纪元
 The Epoch Times"
 "中文-简体版
-https://www.epochtimes.com/gb/ncnews.htm"	有	无	无	无	无			"大纪元
+
+> https://www.epochtimes.com/gb/ncnews.htm"	有	无	无	无	无			"大纪元
 The Epoch Times"
 "香港版：
-https://hk.epochtimes.com/"	有	无	无	无	无			"大纪元
+
+> https://hk.epochtimes.com/"	有	无	无	无	无			"大纪元
 The Epoch Times"
 "台湾版：
-https://www.epochtimes.com/b5/ncid1184623.htm"	有	无	无	无	无			"大纪元
+
+> https://www.epochtimes.com/b5/ncid1184623.htm"	有	无	无	无	无			"大纪元
 The Epoch Times"
-https://www.washingtonpost.com	有	有	有	有	有	https://www.washingtonpost.com/people/brittany-shammas/		"华盛顿邮报
+
+> https://www.washingtonpost.com	有	有	有	有	有	https://www.washingtonpost.com/people/brittany-shammas/		"华盛顿邮报
 The Washington Post"
-https://www.spiegel.de/impressum	有	有	有	有	有	https://www.spiegel.de/impressum/autor-85020ffb-0001-0003-0000-000000009212	"
+
+> https://www.spiegel.de/impressum	有	有	有	有	有	https://www.spiegel.de/impressum/autor-85020ffb-0001-0003-0000-000000009212	"
 页面集中呈现记者列表"	"德国明镜周刊
 Der Spiegel"
-https://www.spiegel.de/thema/asien/	有	有	有	有	有	https://www.spiegel.de/ausland/myanmar-nach-dem-putsch-icg-bericht-zur-lage-unter-der-militaerjunta-a-4a5ee620-d840-42d4-a25b-cc68b7d1f151		"德国明镜周刊
-Der Spiegel"
-https://www.ntd.com/	有	有	有	有	无	https://www.ntd.com/author/miguel-moreno		"新唐人电视台
-NTD Television"
-"中文版：
-https://www.ntdtv.com/
 
-"	有	无	无	无	无			"新唐人电视台
+> https://www.spiegel.de/thema/asien/	有	有	有	有	有	https://www.spiegel.de/ausland/myanmar-nach-dem-putsch-icg-bericht-zur-lage-unter-der-militaerjunta-a-4a5ee620-d840-42d4-a25b-cc68b7d1f151		"德国明镜周刊
+Der Spiegel"
+
+>https://www.ntd.com/	有	有	有	有	无	https://www.ntd.com/author/miguel-moreno		"新唐人电视台
 NTD Television"
 "中文版：
-https://www.ntdtv.com.tw/"	无	无	无	无	无			"新唐人电视台
+https://www.ntdtv.com/ 有	无	无	无	无			"新唐人电视台
 NTD Television"
-https://www.upi.com/	有	有	有	无	无	https://www.upi.com/author/Clyde-Hughes/		"美国合众国际社
+"中文版：
+
+> https://www.ntdtv.com.tw/"	无	无	无	无	无			"新唐人电视台
+NTD Television"
+
+> https://www.upi.com/	有	有	有	无	无	https://www.upi.com/author/Clyde-Hughes/		"美国合众国际社
 United Press International"
-https://time.com/	有	有	有	有	无	https://time.com/author/jamie-ducharme/		"泰晤士报
+
+> https://time.com/	有	有	有	有	无	https://time.com/author/jamie-ducharme/		"泰晤士报
 The Times"
-https://www.wsj.com/	有	有	有	有	有	https://www.wsj.com/news/author/suzanne-vranica		"华尔街日报
+
+> https://www.wsj.com/	有	有	有	有	有	https://www.wsj.com/news/author/suzanne-vranica		"华尔街日报
 "
 https://www.ap.org/media-center/national-politics-team	有	无	有	有	有	"
 https://www.ap.org/media-center/national-politics-team
