@@ -6,7 +6,7 @@ read_file_path = "./kbs/data/csv/kbs.csv"
 write_file_path = "./kbs/data/pdf/%s.pdf"
 
 
-def download_pdf(url='http://google.com?xxx'):
+def download_pdf(url, write_filepath=None):
     print(url)
     options = {
         'page-size': 'A4',
@@ -18,6 +18,7 @@ def download_pdf(url='http://google.com?xxx'):
     }
     try:
         pdfkit.from_url(url, write_file_path % url.split("?")[-1], options=options)
+        # pdfkit.from_url(url, write_filepath, options=options)
     except:
         pass
 
