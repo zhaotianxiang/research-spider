@@ -7,22 +7,12 @@
 # useful for handling different item types with a single interface
 from scrapy import Request
 from scrapy.pipelines.images import ImagesPipeline
+from scrapy.exceptions import DropItem
 import logging
 
 
-class TransformDataPipeline:
+class FilterPipeline:
     def process_item(self, item, spider):
-        item['news_title'] = item['news_title'].replace('\n','')
-        item['news_contents'] = item['news_contents'].replace('\n','')
+        if not item['注册资本']:
+            raise DropItem(f"Missing report_name in {item}")
         return item
-
-
-class ImageSpiderPipeline(ImagesPipeline):
-    def get_media_requests(self, item, response):
-        logging.info("ImageSpiderPipeline imageUrl ----------------- {} ".format(item.get('reporter_image_url')))
-        if item.get('reporter_image_url') and type(item.get('reporter_image_url')) == str:
-            yield Request(url=item['reporter_image_url'],
-                          meta={"image_name": "%s_%s" % (item['reporter_name'],item['reporter_image_url'].split("/")[-1])})
-
-    def file_path(self, request, response=None, info=None):
-        return request.meta["image_name"]

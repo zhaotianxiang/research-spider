@@ -14,8 +14,14 @@ class Voa(scrapy.Spider):
             'Connection': 'keep-alive',
             'Accept': '*/*'
         }
+        done_list = []
+        for line in csv.reader(open("./india/data/csv/india.csv")):
+            done_list.append(line[0])
+        self.logger.info("done %s", len(done_list))
         for line in csv.reader(open("./india/spiders/company.csv")):
             company_name = line[0]
+            if company_name in done_list:
+                continue
             body = {"keyword": company_name, "pageSize": 5}
             yield scrapy.Request(url=seed, method="POST",
                                  body=json.dumps(body, ensure_ascii=False),
@@ -67,7 +73,7 @@ class Voa(scrapy.Spider):
         item["公司地址"] = detail.css(
             "div.f0.clearfix.mb0.address > div.in-block.sup-ie-company-header-child-2.copy-component-box > span > div > div > div::text").extract_first()
         item["公司电话"] = detail.css(
-            "div.in-block.sup-ie-company-header-child-1.copy-info-box span.link-hover-click::text").extract_first()
+            "div:nth-child(2) > div.in-block.sup-ie-company-header-child-1.copy-info-box > span > span.copy-it.info-need-copy._phone::text").extract_first()
         item["公司邮箱-单个"] = detail.css(
             "div.in-block.sup-ie-company-header-child-2.copy-info-box > span > span.email.copy-it.info-need-copy._email::text").extract_first()
         item["公司邮箱-多个"] = detail.css(
@@ -115,11 +121,11 @@ class Voa(scrapy.Spider):
         item["登记机关"] = response.css(
             "#_container_baseInfo > table > tbody > tr:nth-child(8) > td:nth-child(4)::text").extract_first()
         item["英文名称"] = response.css(
-            "#_container_baseInfo > table > tbody > tr:nth-child(9) > td:nth-child(4) > span::text").extract_first()
+            "#_container_baseInfo > table > tbody > tr:nth-child(9) > td:nth-child(4) > span > span::text").extract_first()
         item["组织机构代码"] = response.css(
             "#_container_baseInfo > table > tbody > tr:nth-child(5) > td:nth-child(6) > span > span::text").extract_first()
         item["核准日期"] = response.css(
-            "#_container_baseInfo > table > tbody > tr:nth-child(6) > td:nth-child(6) > text::text").extract_first()
+            "#_container_baseInfo > table > tbody > tr:nth-child(6) > td:nth-child(6)::text").extract_first()
         item["人员规模"] = response.css(
             "#_container_baseInfo > table > tbody > tr:nth-child(7) > td:nth-child(6)::text").extract_first()
         item["评分"] = ""

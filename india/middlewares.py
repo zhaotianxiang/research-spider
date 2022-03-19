@@ -71,13 +71,10 @@ class MediaspiderDownloaderMiddleware:
     def process_request(self, request, spider):
         # Called for each request that goes through the downloader
         # middleware.
-
-        # Must either:
-        # - return None: continue processing this request
-        # - or return a Response object
-        # - or return a Request object
-        # - or raise IgnoreRequest: process_exception() methods of
-        #   installed downloader middleware will be called
+        request.cookies = {
+            'auth_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODk1MTY1NjAxMyIsImlhdCI6MTY0NzY3MzEyMCwiZXhwIjoxNjUwMjY1MTIwfQ.nu-gUb-Hl_lPJYlyp6S-A6Vos9s7pKlO2ZCFSbJT1BoSYIMLgXvnxM_AsirAkIEYZq4Q9zadExoHy31Up1UuZQ',
+            # 'auth_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODk1MTY1NjAxMyIsImlhdCI6MTY0NzY3MzEyMCwiZXhwIjoxNjUwMjY1MTIwfQ.nu-gUb-Hl_lPJYlyp6S-A6Vos9s7pKlO2ZCFSbJT1BoSYIMLgXvnxM_AsirAkIEYZq4Q9zadExoHy31Up1UuZQ'
+        }  # Must either:
         return None
 
     def process_response(self, request, response, spider):

@@ -13,18 +13,24 @@ SPIDER_MODULES = ['india.spiders']
 NEWSPIDER_MODULE = 'india.spiders'
 TELNETCONSOLE_ENABLED = True
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
-
-# Obey robots.txt rules
 ROBOTSTXT_OBEY = False
-# CONCURRENT_REQUESTS = 100
+COOKIES_ENABLED = True
 DOWNLOAD_DELAY = 10
+# The initial download delay
+AUTOTHROTTLE_START_DELAY = 5
+# The maximum download delay to be set in case of high latencies
+AUTOTHROTTLE_MAX_DELAY = 10
 DEFAULT_REQUEST_HEADERS = {
-    'Accept': '*/*'
+    'Accept': '*/*',
+}
+SPIDER_MIDDLEWARES = {
+    'india.middlewares.MediaspiderSpiderMiddleware': 543,
 }
 DOWNLOADER_MIDDLEWARES = {
     'india.middlewares.MediaspiderDownloaderMiddleware': 543,
 }
 ITEM_PIPELINES = {
+    'india.pipelines.FilterPipeline': 545,
 }
 
 MEDIA_ALLOW_REDIRECTS = True
