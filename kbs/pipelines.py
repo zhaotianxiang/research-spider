@@ -13,7 +13,6 @@ import pymongo
 import sys
 
 sys.path.append("..")
-from items.MongoDBItems import MediaItem
 from items.MongoDBItems import ReporterItem
 from items.MongoDBItems import NewsItem
 
@@ -51,7 +50,9 @@ class MongoDBPipeline(object):
 
     def process_item(self, item, spider):
         if isinstance(item, ReporterItem):
-            self.db.reporter.update_one({"reporter_id": item["reporter_id"]}, {"$set": dict(item)}, upsert=True)
+            self.db.reporter.update_one({"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
+                                        {"$set": dict(item)},
+                                        upsert=True)
         if isinstance(item, NewsItem):
             self.db.news.update_one({"news_id": item["news_id"], "media_id": item["media_id"]},
                                     {"$set": dict(item)},
