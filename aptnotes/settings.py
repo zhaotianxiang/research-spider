@@ -1,4 +1,4 @@
-# Scrapy settings for APTnotes project
+# Scrapy settings for aptnotes project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,21 +7,21 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'APTnotes'
+BOT_NAME = 'aptnotes'
 
-SPIDER_MODULES = ['APTnotes.spiders']
-NEWSPIDER_MODULE = 'APTnotes.spiders'
+SPIDER_MODULES = ['aptnotes.spiders']
+NEWSPIDER_MODULE = 'aptnotes.spiders'
 LOGGER_LEVEL = 'INFO'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'APTnotes (+http://www.yourdomain.com)'
+# USER_AGENT = 'aptnotes (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 REDIRECT_ENABLE = False
 ITEM_PIPELINES = {
-    'APTnotes.pipelines.DownLoadPdfPipeline': 201,
-    'APTnotes.pipelines.AptnotesPipeline': 300,
+    'aptnotes.pipelines.DownLoadPdfPipeline': 201,
+    'aptnotes.pipelines.aptnotesPipeline': 300,
 }
 
 FILES_STORE = './data/'
@@ -52,13 +52,13 @@ CONCURRENT_REQUESTS = 32
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'APTnotes.middlewares.AptnotesSpiderMiddleware': 543,
+#    'aptnotes.middlewares.aptnotesSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'APTnotes.middlewares.AptnotesDownloaderMiddleware': 543,
+#    'aptnotes.middlewares.aptnotesDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -70,7 +70,7 @@ CONCURRENT_REQUESTS = 32
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 # ITEM_PIPELINES = {
-#    'APTnotes.pipelines.AptnotesPipeline': 300,
+#    'aptnotes.pipelines.aptnotesPipeline': 300,
 # }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
