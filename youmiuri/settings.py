@@ -9,15 +9,11 @@ COOKIES_ENABLED = True
 CONCURRENT_REQUESTS = 32
 DOWNLOAD_DELAY = 0.1
 DEFAULT_REQUEST_HEADERS = {
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Language': '*/*',
+    'Accept': '*/*'
 }
 SPIDER_MIDDLEWARES = {
     'youmiuri.middlewares.MediaspiderSpiderMiddleware': 543,
 }
-
-# Enable or disable downloader middlewares
-# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
     'youmiuri.middlewares.MediaspiderDownloaderMiddleware': 543,
 }

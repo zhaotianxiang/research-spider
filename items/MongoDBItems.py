@@ -25,9 +25,9 @@ class NewsItem(Item):
 
 
 class ReporterItem(Item):
-    reporter_id = Field()  # (社交媒体编号_人员内部编号) (_id)
+    reporter_id = Field()  # (人员内部编号) 
     reporter_name = Field()
-    reporter_image = Field()  # (媒体名称_人员名称_人员内部编号.[jpg|png|jpeg])
+    reporter_image = Field()  # (媒体名称_人员内部编号.[jpg|png|jpeg])
     reporter_image_url = Field()
     reporter_intro = Field()
     reporter_url = Field()
@@ -37,7 +37,8 @@ class ReporterItem(Item):
 
 
 class SocialDynamicsItem(Item):
-    dynamics_id = Field()  # 社交媒体类型+社交动态内部编号 (_id)
+    dynamics_id = Field()  # 社交动态内部编号 
+    account_type = Field()  # 社交账号类型 
     dynamics_publish_time = Field()
     dynamics_content = Field()
     dynamics_content_cn = Field()
