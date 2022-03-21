@@ -1,5 +1,5 @@
 import csv
-from tools.utils import download_img, read_csv
+from tools.utils import read_csv
 from openpyxl import Workbook
 from openpyxl.styles import Alignment
 from openpyxl.drawing.image import Image
