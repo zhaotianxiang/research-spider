@@ -1,6 +1,12 @@
 import scrapy
 import datetime
 import json
+import sys
+
+sys.path.append("../../")
+from items.MongoDBItems import MediaItem
+from items.MongoDBItems import ReporterItem
+from items.MongoDBItems import NewsItem
 
 
 def date_range(start, end, step=1, format="%Y%m%d"):
@@ -19,7 +25,7 @@ now = datetime.datetime.now().strftime('%Y%m%d')
 
 class KBS(scrapy.Spider):
     name = 'kbs'
-    start_urls = list(map(generate_url_list, date_range("20210101", now)))
+    start_urls = list(map(generate_url_list, date_range("20220312", now)))
 
     def parse(self, response):
 
@@ -30,23 +36,39 @@ class KBS(scrapy.Spider):
 
         for item in response_obj["data"]:
             news_detail_url = 'https://news.kbs.co.kr/news/view.do?ncd=' + item["newsCode"]
+
+            newItem = NewsItem()
+            newItem["news_id"] = item["newsCode"]
+            newItem["news_title"] = item["newsTitle"]
+            newItem["news_title_cn"] = item["newsCode"]
+            if item["newsContents"]:
+                newItem["news_content"] = item["newsContents"].replace("<br /><br />", " ")
+            newItem["news_content_cn"] = item["newsCode"]
+            newItem["news_publish_time"] = item["broadDate"]
+            newItem["news_url"] = news_detail_url
+            newItem["news_pdf"] = self.name + "_" + item["newsCode"] + ".pdf"
+            newItem["news_pdf_cn"] = self.name + "_" + item["newsCode"] + "_cn.pdf"
+            newItem["reporter_list"] = []
+            newItem["media_id"] = 1
+            newItem["media_name"] = self.name
+
             if item['reporters']:
                 for reporter in item['reporters']:
-                    reporter_image_url = None
+                    reporterItem = ReporterItem()
                     if reporter['imgUrl']:
-                        reporter_image_url = response.urljoin(reporter['imgUrl'])
-                    yield {
-                        "broad_time": item["broadDate"],
-                        "news_id": item["newsCode"],
-                        "news_title": item["newsTitle"],
-                        "news_contents": item["newsContents"],
-                        "reporter_id": reporter["reporterCode"],
-                        "reporter_name": reporter["reporterName"],
-                        "reporter_email": reporter["email"],
-                        "reporter_job_name": reporter["jobName"],
-                        "reporter_image_url": reporter_image_url,
-                        "news_detail_url": news_detail_url,
-                        "news_list_api": response.url,
-                        "reporter_twitter": reporter["twitter"],
-                        "reporter_facebook": reporter["facebook"],
-                    }
+                        reporterItem["reporter_image_url"] = response.urljoin(reporter['imgUrl'])
+                        reporterItem["reporter_image"] = "%s_%s_%s.jpg" % (
+                            self.name, reporter["reporterName"], reporter["reporterCode"])
+
+                    reporterItem["reporter_id"] = reporter["reporterCode"]
+                    reporterItem["reporter_name"] = reporter["reporterName"]
+                    reporterItem["reporter_intro"] = reporter["jobName"]
+                    if reporter["email"]:
+                        reporterItem["reporter_code_list"] = [{"code_content": reporter["email"], "code_type": "email"}]
+                    reporterItem["reporter_name"] = reporter["reporterName"]
+                    reporterItem["media_id"] = 1
+                    reporterItem["media_name"] = self.name
+                    newItem["reporter_list"].append(reporterItem)
+                    yield reporterItem
+
+            yield newItem

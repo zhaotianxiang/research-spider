@@ -71,7 +71,10 @@ class MediaspiderDownloaderMiddleware:
     def process_request(self, request, spider):
         # Called for each request that goes through the downloader
         # middleware.
-
+        request.cookies={
+            'HSSID':'842B85A7AB51AA740834CF9BCDAC6B7F9BBB0487C2101472CC75297D1B8D6CE4',
+            'YOMISESSID':'kdts9r9o7c9jp7d1671qtnem6g'
+        }
         # Must either:
         # - return None: continue processing this request
         # - or return a Response object

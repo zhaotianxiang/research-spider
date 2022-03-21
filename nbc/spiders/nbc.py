@@ -1,6 +1,10 @@
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 
+import sys
+sys.path.append("../../")    # ..是上一级目录
+from items.MongoDBItems import MediaItem
+
 
 # 定义下载新闻分类的种子
 def seed():

@@ -13,6 +13,7 @@
 ```shell
 pip3 install scrapy
 pip3 install pillow
+pip3 install 
 ...
 ```
 
@@ -53,3 +54,6 @@ scrapy crawl voa
 
 #### 6. 任务列表参见：
 [任务列表](https://github.com/zhaotianxiang/MediaSpider/blob/master/summary.md)
+
+#### 7. 数据库设计：
+[数据表设计](https://github.com/zhaotianxiang/MediaSpider/blob/master/database.md)
