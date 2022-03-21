@@ -45,14 +45,11 @@ class Spider(scrapy.Spider):
 
     def parse(self, response):
         response_json = json.loads(response.text)
-        if response_json["statusCode"] != 200:
-            self.logger.error("error %s %s", response.url, response_json)
-            return None
-
         articles = response_json["result"]["articles"]
         if articles and len(articles) > 0:
-            self.logger.info("%s %s", response.url, len(articles))
-            for article in articles[0:1]:
+            self.logger.warn("%s %s", response.url, len(articles))
+            self.logger.warn("第 %s 页 %s 新闻", response.meta["offset"] / response.meta["size"], len(articles))
+            for article in articles:
                 newsItem = NewsItem()
                 newsItem['news_id'] = article["id"]
                 newsItem['news_title'] = article["title"]
@@ -67,7 +64,7 @@ class Spider(scrapy.Spider):
                 newsItem['media_id'] = 6
                 newsItem['media_name'] = 'reuters'
 
-                for author in article["authors"][0:1]:
+                for author in article["authors"]:
                     reporterItem = ReporterItem()
                     if author.get('id'):
                         reporterItem['reporter_id'] = author['id']
@@ -94,6 +91,12 @@ class Spider(scrapy.Spider):
                 yield scrapy.Request(url=newsItem['news_url'],
                                      meta={"newsItem": newsItem},
                                      callback=self.news)
+            # 下一页
+            meta = {
+                "offset": response.meta['offset']+response.meta['size'],
+                "size": response.meta['size']
+            }
+            yield scrapy.Request(get_query(meta["offset"], meta["size"]), meta=meta)
 
     def reporter(self, response):
         # 能补充获取头像 作者简介

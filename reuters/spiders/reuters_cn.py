@@ -25,7 +25,7 @@ class Spider(scrapy.Spider):
 
     def parse(self, response):
         news_links = LinkExtractor(restrict_css='#blogStyleNews > section > div > article').extract_links(response)
-        for link in news_links[0:1]:
+        for link in news_links:
             yield scrapy.Request(link.url, callback=self.parse_news)
         self.logger.info("URL %s 共 %s 条新闻", response.url, len(news_links))
         next_links = LinkExtractor(restrict_css='#content a.control-nav-next').extract_links(response)

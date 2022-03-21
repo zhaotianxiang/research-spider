@@ -21,8 +21,8 @@ class ImageSpiderPipeline(ImagesPipeline):
 
     def get_media_requests(self, item, response):
         if isinstance(item, ReporterItem):
-            logging.info("reporter_image_url ---- {} ".format(item.get('reporter_image_url')))
             if item.get('reporter_image_url') and type(item.get('reporter_image_url')) == str:
+                logging.info("reporter_image_url ---- {} ".format(item.get('reporter_image_url')))
                 yield Request(url=item['reporter_image_url'], meta=item)
 
     def file_path(self, request, response=None, info=None):

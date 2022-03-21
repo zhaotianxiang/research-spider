@@ -2,12 +2,12 @@ BOT_NAME = 'reuters'
 SPIDER_MODULES = ['reuters.spiders']
 NEWSPIDER_MODULE = 'reuters.spiders'
 
-LOGGER_LEVEL = "INFO"
+LOG_LEVEL = "INFO"
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
 ROBOTSTXT_OBEY = False
 COOKIES_ENABLED = True
 CONCURRENT_REQUESTS = 32
-DOWNLOAD_DELAY = 1
+DOWNLOAD_DELAY = 0.3
 DEFAULT_REQUEST_HEADERS = {
     'Accept': '*/*'
 }
