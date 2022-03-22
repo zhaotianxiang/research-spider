@@ -63,6 +63,7 @@ class KBS(scrapy.Spider):
                     reporterItem["reporter_id"] = reporter["reporterCode"]
                     reporterItem["reporter_name"] = reporter["reporterName"]
                     reporterItem["reporter_intro"] = reporter["jobName"]
+                    reporterItem["reporter_url"] = 'https://news.kbs.co.kr/news/list.do?rcd='+reporterItem["reporter_id"]
                     if reporter["email"]:
                         reporterItem["reporter_code_list"] = [{"code_content": reporter["email"], "code_type": "email"}]
                     reporterItem["reporter_name"] = reporter["reporterName"]
