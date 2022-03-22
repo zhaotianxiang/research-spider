@@ -25,7 +25,7 @@ now = datetime.datetime.now().strftime('%Y%m%d')
 
 class KBS(scrapy.Spider):
     name = 'kbs'
-    start_urls = list(map(generate_url_list, date_range("20220312", now)))
+    start_urls = list(map(generate_url_list, date_range("20180101", now)))
 
     def parse(self, response):
 
@@ -40,10 +40,10 @@ class KBS(scrapy.Spider):
             newItem = NewsItem()
             newItem["news_id"] = item["newsCode"]
             newItem["news_title"] = item["newsTitle"]
-            newItem["news_title_cn"] = item["newsCode"]
+            newItem["news_title_cn"] = None
             if item["newsContents"]:
                 newItem["news_content"] = item["newsContents"].replace("<br /><br />", " ")
-            newItem["news_content_cn"] = item["newsCode"]
+            newItem["news_content_cn"] = None
             newItem["news_publish_time"] = item["broadDate"]
             newItem["news_url"] = news_detail_url
             newItem["news_pdf"] = self.name + "_" + item["newsCode"] + ".pdf"
@@ -57,13 +57,12 @@ class KBS(scrapy.Spider):
                     reporterItem = ReporterItem()
                     if reporter['imgUrl']:
                         reporterItem["reporter_image_url"] = response.urljoin(reporter['imgUrl'])
-                        reporterItem["reporter_image"] = "%s_%s_%s.jpg" % (
-                            self.name, reporter["reporterName"], reporter["reporterCode"])
+                        reporterItem["reporter_image"] = "%s_%s.jpg" % (self.name, reporter["reporterCode"])
 
                     reporterItem["reporter_id"] = reporter["reporterCode"]
                     reporterItem["reporter_name"] = reporter["reporterName"]
                     reporterItem["reporter_intro"] = reporter["jobName"]
-                    reporterItem["reporter_url"] = 'https://news.kbs.co.kr/news/list.do?rcd='+reporterItem["reporter_id"]
+                    reporterItem["reporter_url"] = 'https://news.kbs.co.kr/news/list.do?rcd=' + reporterItem["reporter_id"]
                     if reporter["email"]:
                         reporterItem["reporter_code_list"] = [{"code_content": reporter["email"], "code_type": "email"}]
                     reporterItem["reporter_name"] = reporter["reporterName"]
@@ -71,5 +70,4 @@ class KBS(scrapy.Spider):
                     reporterItem["media_name"] = self.name
                     newItem["reporter_list"].append(reporterItem)
                     yield reporterItem
-
             yield newItem

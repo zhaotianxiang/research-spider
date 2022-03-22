@@ -2,7 +2,7 @@ BOT_NAME = 'upi'
 SPIDER_MODULES = ['upi.spiders']
 NEWSPIDER_MODULE = 'upi.spiders'
 
-LOG_LEVEL = "INFO"
+LOG_LEVEL = "WARN"
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
 ROBOTSTXT_OBEY = False
 COOKIES_ENABLED = True
