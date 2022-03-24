@@ -13,7 +13,7 @@ from items.MongoDBItems import NewsItem
 
 
 class YanCNSpider(scrapy.Spider):
-    name = 'yan_cn'
+    name = 'yan'
     allowed_domains = ['cn.yna.co.kr']
     start_urls = ['https://cn.yna.co.kr/']
 
