@@ -4,13 +4,13 @@
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 
 
-# useful for handling different item types with a single interface
-from scrapy import Request
-from scrapy.pipelines.images import ImagesPipeline
-from scrapy.exceptions import DropItem
 import logging
 import pymongo
 import sys
+# useful for handling different item types with a single interface
+from scrapy import Request
+from scrapy.exceptions import DropItem
+from scrapy.pipelines.images import ImagesPipeline
 
 sys.path.append("..")
 from items.MongoDBItems import ReporterItem
@@ -44,9 +44,9 @@ class MongoDBPipeline(object):
     def open_spider(self, spider):
         self.client = pymongo.MongoClient(self.mongo_uri)
         self.db = self.client[self.mongo_db]
-        logging.warn("正在清空媒体数据库中 %s 的所有数据", spider.name)
-        self.db.news.remove({'media_name': spider.name})
-        self.db.reporter.remove({'media_name': spider.name})
+        # logging.warn("正在清空媒体数据库中 %s 的所有数据", spider.name)
+        # self.db.news.remove({'media_name': spider.name})
+        # self.db.reporter.remove({'media_name': spider.name})
 
     def close_spider(self, spider):
         self.client.close()
