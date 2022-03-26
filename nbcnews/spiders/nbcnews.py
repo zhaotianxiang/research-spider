@@ -1,5 +1,6 @@
 import json
 import re
+import re
 import scrapy
 import sys
 from scrapy.linkextractors import LinkExtractor
@@ -23,7 +24,7 @@ class YanSpider(scrapy.Spider):
         # 泛查询
         for link in LinkExtractor(restrict_css='body').extract_links(response):
             url = link.url
-            if 'rcna' in url.split('-')[-1] or 'ncna' in url.split('-')[-1]:
+            if re.search('\d{4}$', url) and re.search('n', url.split('-')[-1]):
                 yield scrapy.Request(url, callback=self.news)
             else:
                 yield scrapy.Request(url)
@@ -63,11 +64,10 @@ class YanSpider(scrapy.Spider):
         newsItem['reporter_list'] = [{'reporter_id': reporter_id, 'reporter_name': reporter_name}]
         self.logger.warn("保存新闻信息 %s", response.url)
         yield newsItem
-
         # 泛查询
         for link in LinkExtractor(restrict_css='body').extract_links(response):
             url = link.url
-            if 'rcna' in url.split('-')[-1] or 'ncna' in url.split('-')[-1]:
+            if re.search('\d{4}$', url) and re.search('n', url.split('-')[-1]):
                 yield scrapy.Request(url, callback=self.news)
             else:
                 yield scrapy.Request(url)
@@ -112,7 +112,7 @@ class YanSpider(scrapy.Spider):
         # 泛查询
         for link in LinkExtractor(restrict_css='body').extract_links(response):
             url = link.url
-            if 'rcna' in url.split('-')[-1] or 'ncna' in url.split('-')[-1]:
+            if re.search('\d{4}$', url) and re.search('n', url.split('-')[-1]):
                 yield scrapy.Request(url, callback=self.news)
             else:
                 yield scrapy.Request(url)

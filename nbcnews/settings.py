@@ -3,7 +3,7 @@ SPIDER_MODULES = ['nbcnews.spiders']
 NEWSPIDER_MODULE = 'nbcnews.spiders'
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
 
-LOG_LEVEL = "WARN"
+LOG_LEVEL = "INFO"
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 CONCURRENT_REQUESTS = 32
