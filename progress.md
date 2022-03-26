@@ -120,6 +120,14 @@
         <td>否</td>
         <td>否</td>
     <tr><tr>
+        <td>NBC</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+        <td>无</td>
+        <td>否</td>
+        <td>否</td>
+    <tr><tr>
         <td colspan="7" align="center">外协</td>
     <tr><tr>
         <td>华尔街日报</td>
@@ -189,14 +197,6 @@
         <td>外协</td>
     <tr><tr>
         <td colspan="7" align="center">待爬取</td>
-    <tr><tr>
-        <td>NBC</td>
-        <td>√</td>
-        <td>√</td>
-        <td>√</td>
-        <td>无</td>
-        <td>否</td>
-        <td>否</td>
     <tr><tr>
         <td>全国公共广播电台NPR——li</td>
         <td>√</td>

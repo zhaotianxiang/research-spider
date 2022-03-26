@@ -22,9 +22,13 @@ class YanSpider(scrapy.Spider):
         links = LinkExtractor(restrict_css='body').extract_links(response)
         self.logger.warn("泛查询 %s --- %s 个子页面", response.url, len(links))
         # 泛查询
-        for link in LinkExtractor(restrict_css='body').extract_links(response):
-            url = link.url
-            if re.search('\d{4}$', url) and re.search('n', url.split('-')[-1]):
+        for link in LinkExtractor(
+                restrict_css='body',
+                allow_domains=self.allowed_domains,
+                canonicalize=True).extract_links(response):
+            url = link.url.replace('featureFlag=false', '')
+            if re.search('\d{4}$', url) and re.search('n', url.split('/')[-1].split('-')[-1]) and not re.search(
+                    'author', url):
                 yield scrapy.Request(url, callback=self.news)
             else:
                 yield scrapy.Request(url)
@@ -60,14 +64,19 @@ class YanSpider(scrapy.Spider):
                                          },
                                          callback=self.reporter,
                                          priority=10)
-
-        newsItem['reporter_list'] = [{'reporter_id': reporter_id, 'reporter_name': reporter_name}]
+        if reporter_id:
+            newsItem['reporter_list'] = [{'reporter_id': reporter_id, 'reporter_name': reporter_name}]
         self.logger.warn("保存新闻信息 %s", response.url)
         yield newsItem
+
         # 泛查询
-        for link in LinkExtractor(restrict_css='body').extract_links(response):
+        for link in LinkExtractor(
+                restrict_css='body',
+                allow_domains=self.allowed_domains,
+                canonicalize=True).extract_links(response):
             url = link.url
-            if re.search('\d{4}$', url) and re.search('n', url.split('-')[-1]):
+            if re.search('\d{4}$', url) and re.search('n', url.split('/')[-1].split('-')[-1]) and not re.search(
+                    'author', url):
                 yield scrapy.Request(url, callback=self.news)
             else:
                 yield scrapy.Request(url)
@@ -108,11 +117,3 @@ class YanSpider(scrapy.Spider):
         reporterItem['media_name'] = self.name
         self.logger.warn("保存记者信息 %s", response.url)
         yield reporterItem
-
-        # 泛查询
-        for link in LinkExtractor(restrict_css='body').extract_links(response):
-            url = link.url
-            if re.search('\d{4}$', url) and re.search('n', url.split('-')[-1]):
-                yield scrapy.Request(url, callback=self.news)
-            else:
-                yield scrapy.Request(url)

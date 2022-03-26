@@ -20,7 +20,10 @@ class YanSpider(scrapy.Spider):
         links = LinkExtractor(restrict_css='body').extract_links(response)
         self.logger.warn("泛查询 %s --- %s 个子页面", response.url, len(links))
         # 泛查询
-        for link in LinkExtractor(restrict_css='body').extract_links(response):
+        for link in LinkExtractor(
+                restrict_css='body',
+                allow_domains=self.allowed_domains,
+                canonicalize=True).extract_links(response):
             url = link.url
             if 'view/AKR' in url.split('cn.yna.co.kr')[-1]:
                 yield scrapy.Request(url, callback=self.news)
@@ -53,13 +56,6 @@ class YanSpider(scrapy.Spider):
                 })
                 self.logger.warn("保存新闻信息 %s", response.url)
                 yield newsItem
-        # 泛查询
-        for link in LinkExtractor(restrict_css='body').extract_links(response):
-            url = link.url
-            if 'view/AKR' in url.split('cn.yna.co.kr')[-1]:
-                yield scrapy.Request(url, callback=self.news)
-            else:
-                yield scrapy.Request(url)
 
     def reporter(self, response):
         image_link = response.css('div.area img::attr(src)').extract_first()
@@ -81,11 +77,3 @@ class YanSpider(scrapy.Spider):
         reporterItem['media_name'] = self.name
         self.logger.warn("保存记者信息 %s", response.url)
         yield reporterItem
-
-        # 泛查询
-        for link in LinkExtractor(restrict_css='body').extract_links(response):
-            url = link.url
-            if 'view/AKR' in url.split('cn.yna.co.kr')[-1]:
-                yield scrapy.Request(url, callback=self.news)
-            else:
-                yield scrapy.Request(url)

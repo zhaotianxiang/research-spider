@@ -29,7 +29,10 @@ class Spider(scrapy.Spider):
         self.logger.warn("泛查询 %s --- %s 个子页面", response.url, len(links))
 
         # 泛查询
-        for link in LinkExtractor(restrict_css='body').extract_links(response):
+        for link in LinkExtractor(
+                restrict_css='body',
+                allow_domains=self.allowed_domains,
+                canonicalize=True).extract_links(response):
             url = link.url
             if '_News' in url.split('www.upi.com')[-1] and '20' in url.split('www.upi.com')[-1]:
                 yield scrapy.Request(url, callback=self.news)
@@ -68,14 +71,6 @@ class Spider(scrapy.Spider):
                     self.logger.warn("保存新闻信息 %s", response.url)
                     yield newsItem
 
-        # 泛查询
-        for link in LinkExtractor(restrict_css='body').extract_links(response):
-            url = link.url
-            if '_News' in url.split('www.upi.com')[-1] and '20' in url.split('www.upi.com')[-1]:
-                yield scrapy.Request(url, callback=self.news)
-            else:
-                yield scrapy.Request(url)
-
     def reporter(self, response):
         reporterItem = ReporterItem()
         reporterItem['reporter_id'] = response.url.split('/')[-2]
@@ -91,11 +86,3 @@ class Spider(scrapy.Spider):
         reporterItem['media_name'] = self.name
         self.logger.warn("保存作者 %s", response.url)
         yield reporterItem
-
-        # 泛查询
-        for link in LinkExtractor(restrict_css='body').extract_links(response):
-            url = link.url
-            if '_News' in url.split('www.upi.com')[-1] and '20' in url.split('www.upi.com')[-1]:
-                yield scrapy.Request(url, callback=self.news)
-            else:
-                yield scrapy.Request(url)
