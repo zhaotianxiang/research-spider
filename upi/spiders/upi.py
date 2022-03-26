@@ -1,10 +1,9 @@
+import json
+import re
 import scrapy
+import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
-import re
-import json
-
-import sys
 
 sys.path.append("../../")
 from items.MongoDBItems import MediaItem
@@ -26,58 +25,58 @@ class Spider(scrapy.Spider):
     start_urls = seed()
 
     def parse(self, response):
-        news_links = LinkExtractor(
-            restrict_css='div.container').extract_links(
-            response)
-        # 下一页
-        next_links = LinkExtractor(restrict_css='#pn_arw a').extract_links(response)
-        if next_links and len(next_links) > 0:
-            for next_link in next_links:
-                if next_link.text == 'Next':
-                    yield scrapy.Request(next_link.url)
+        links = LinkExtractor(restrict_css='body').extract_links(response)
+        self.logger.warn("泛查询 %s --- %s 个子页面", response.url, len(links))
 
-        for link in news_links:
-            yield scrapy.Request(link.url, callback=self.parse_news)
-        self.logger.warn("URL %s 共 %s 条新闻", response.url, len(news_links))
+        # 泛查询
+        for link in LinkExtractor(restrict_css='body').extract_links(response):
+            url = link.url
+            if '_News' in url.split('www.upi.com')[-1] and '20' in url.split('www.upi.com')[-1]:
+                yield scrapy.Request(url, callback=self.news)
+            else:
+                yield scrapy.Request(url)
 
-    def parse_news(self, response):
+    def news(self, response):
         newsItem = NewsItem()
-        if not response.css('div.article-date::text').extract_first():
-            self.logger.warn("页面不是新闻详情页 %s", response.url)
-            reporter_news_links = LinkExtractor(restrict_css='div.container').extract_links(response)
-            if reporter_news_links and len(reporter_news_links) > 0:
-                self.logger.warn("详情页衍生出来 %s 条新闻", len(reporter_news_links))
-                for news_link in reporter_news_links:
-                    if 'https://www.upi.com/' in news_link.url and 'Top_News/p' not in news_link.url:
-                        yield scrapy.Request(news_link.url, callback=self.parse_news)
-        else:
-            newsItem['news_id'] = response.url.split('/')[-2]
-            newsItem['news_title'] = response.css('title::text').extract_first()
-            constents = response.css('p::text').extract()
-            newsItem['news_content'] = ''
-            for constent in constents:
-                constent = constent.strip()
-                newsItem['news_content'] += " " + constent
-            newsItem['news_publish_time'] = response.css('div.article-date::text').extract_first().strip()
-            newsItem['news_url'] = response.url
-            newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
-            newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
-            newsItem['reporter_list'] = []
-            newsItem['media_id'] = 7
-            newsItem['media_name'] = self.name
-            newsItem['reporter_list'] = []
+        newsItem['news_id'] = response.url.split('/')[-2]
+        newsItem['news_title'] = response.css('title::text').extract_first()
+        constents = response.css('p::text').extract()
+        newsItem['news_content'] = ''
+        for constent in constents:
+            constent = constent.strip()
+            newsItem['news_content'] += " " + constent
+        newsItem['news_publish_time'] = response.css('div.article-date::text').extract_first().strip()
+        newsItem['news_url'] = response.url
+        newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
+        newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
+        newsItem['reporter_list'] = []
+        newsItem['media_id'] = 7
+        newsItem['media_name'] = self.name
+        newsItem['reporter_list'] = []
 
-            # 记者详情页面
-            reporter_links = LinkExtractor(restrict_css='div.author-social > div').extract_links(response)
-            if reporter_links and len(reporter_links):
-                for reporter_link in reporter_links:
-                    url = reporter_link.url
-                    if 'author' in url:
-                        newsItem['reporter_list'].append(
-                            {"reporter_name": reporter_link.text, "reporter_id": url.split('/')[-2]})
-                        yield scrapy.Request(url, callback=self.parse_reporter)
+        # 记者详情页面
+        reporter_links = LinkExtractor(restrict_css='div.author-social a').extract_links(response)
+        if reporter_links and len(reporter_links):
+            for reporter_link in reporter_links:
+                url = reporter_link.url
+                if 'author' in url:
+                    yield scrapy.Request(url, callback=self.reporter, priority=10)
+                    newsItem['reporter_list'] = [{
+                        'reporter_name': reporter_link.text,
+                        'reporter_id': response.url.split('/')[-2]
+                    }]
+                    self.logger.warn("保存新闻信息 %s", response.url)
+                    yield newsItem
 
-    def parse_reporter(self, response):
+        # 泛查询
+        for link in LinkExtractor(restrict_css='body').extract_links(response):
+            url = link.url
+            if '_News' in url.split('www.upi.com')[-1] and '20' in url.split('www.upi.com')[-1]:
+                yield scrapy.Request(url, callback=self.news)
+            else:
+                yield scrapy.Request(url)
+
+    def reporter(self, response):
         reporterItem = ReporterItem()
         reporterItem['reporter_id'] = response.url.split('/')[-2]
         reporterItem['reporter_name'] = response.css(
@@ -90,11 +89,13 @@ class Spider(scrapy.Spider):
         reporterItem['reporter_code_list'] = None
         reporterItem['media_id'] = 7
         reporterItem['media_name'] = self.name
-
-        reporter_news_links = LinkExtractor(restrict_css='div.container').extract_links(response)
-        if reporter_news_links and len(reporter_news_links) > 0:
-            self.logger.warn("作者页衍生出来 %s 条新闻", len(reporter_news_links))
-            for news_link in reporter_news_links:
-                if 'https://www.upi.com/' in news_link.url and 'Top_News/p' not in news_link.url:
-                    yield scrapy.Request(news_link.url, callback=self.parse_news)
+        self.logger.warn("保存作者 %s", response.url)
         yield reporterItem
+
+        # 泛查询
+        for link in LinkExtractor(restrict_css='body').extract_links(response):
+            url = link.url
+            if '_News' in url.split('www.upi.com')[-1] and '20' in url.split('www.upi.com')[-1]:
+                yield scrapy.Request(url, callback=self.news)
+            else:
+                yield scrapy.Request(url)
