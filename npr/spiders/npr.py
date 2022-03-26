@@ -29,6 +29,8 @@ class YanSpider(scrapy.Spider):
             url = link.url
             if re.search('^https://www.npr.org/\d{4}/\d{2}/\d{2}/', url):
                 yield scrapy.Request(url, callback=self.news)
+            elif re.search('https://www.npr.org/people', url):
+                yield scrapy.Request(url, callback=self.reporter)
             else:
                 yield scrapy.Request(url)
 
@@ -38,7 +40,8 @@ class YanSpider(scrapy.Spider):
         newsItem['news_id'] = response.url.split('www.npr.org/')[-1].split('/')[3]
         newsItem['news_title'] = response.css('div.storytitle > h1::text').extract_first()
         newsItem['news_title_cn'] = None
-        newsItem['news_content'] = "".join(response.css("div#storytext p *::text").extract()).replace('\n', '').replace('          ', '')
+        newsItem['news_content'] = "".join(response.css("div#storytext p *::text").extract()).replace('\n', '').replace(
+            '          ', '')
         newsItem['news_content_cn'] = None
         newsItem['news_publish_time'] = ''.join(response.url.split('www.npr.org/')[-1].split('/')[0:3])
         newsItem['news_url'] = response.url
@@ -59,6 +62,19 @@ class YanSpider(scrapy.Spider):
         yield newsItem
         for reporter in newsItem['reporter_list']:
             yield scrapy.Request(reporter['reporter_url'], callback=self.reporter)
+
+        # 泛查询
+        for link in LinkExtractor(
+                restrict_css='body',
+                allow_domains=self.allowed_domains,
+                canonicalize=True).extract_links(response):
+            url = link.url
+            if re.search('^https://www.npr.org/\d{4}/\d{2}/\d{2}/', url):
+                yield scrapy.Request(url, callback=self.news)
+            elif re.search('https://www.npr.org/people', url):
+                yield scrapy.Request(url, callback=self.reporter)
+            else:
+                yield scrapy.Request(url)
 
     def reporter(self, response):
         reporterItem = ReporterItem()
@@ -87,3 +103,16 @@ class YanSpider(scrapy.Spider):
         reporterItem['media_name'] = self.name
         self.logger.warn("保存记者信息 %s", response.url)
         yield reporterItem
+
+        # 泛查询
+        for link in LinkExtractor(
+                restrict_css='body',
+                allow_domains=self.allowed_domains,
+                canonicalize=True).extract_links(response):
+            url = link.url
+            if re.search('^https://www.npr.org/\d{4}/\d{2}/\d{2}/', url):
+                yield scrapy.Request(url, callback=self.news)
+            elif re.search('https://www.npr.org/people', url):
+                yield scrapy.Request(url, callback=self.reporter)
+            else:
+                yield scrapy.Request(url)
