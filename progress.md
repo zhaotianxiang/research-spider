@@ -136,6 +136,22 @@
         <td>否</td>
         <td>否</td>
     <tr><tr>
+        <td>共同通讯社</td>
+        <td>部分√</td>
+        <td>无</td>
+        <td>无</td>
+        <td>无</td>
+        <td>否</td>
+        <td>否</td>
+    <tr><tr>
+        <td>全国公共广播电台NPR——li</td>
+        <td>√</td>
+        <td>无</td>
+        <td>√</td>
+        <td>√</td>
+        <td>否</td>
+        <td>否</td>
+    <tr><tr>
         <td colspan="7" align="center">外协</td>
     <tr><tr>
         <td>华尔街日报</td>
@@ -206,24 +222,8 @@
     <tr><tr>
         <td colspan="7" align="center">待爬取</td>
     <tr><tr>
-        <td>全国公共广播电台NPR——li</td>
-        <td>√</td>
-        <td>无</td>
-        <td>√</td>
-        <td>√</td>
-        <td>否</td>
-        <td>否</td>
-    <tr><tr>
         <td>日本广播协会</td>
         <td>无</td>
-        <td>无</td>
-        <td>无</td>
-        <td>无</td>
-        <td>否</td>
-        <td>否</td>
-    <tr><tr>
-        <td>共同通讯社</td>
-        <td>部分√</td>
         <td>无</td>
         <td>无</td>
         <td>无</td>
