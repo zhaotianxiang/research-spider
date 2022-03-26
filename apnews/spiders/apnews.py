@@ -66,4 +66,6 @@ class YanSpider(scrapy.Spider):
                     newsItem['reporter_list'].append(reporterItem)
                     yield reporterItem
         self.logger.warn("保存新闻和记者信息 %s", response.url)
+        if len(newsItem['reporter_list']) == 0:
+            yield None
         yield newsItem

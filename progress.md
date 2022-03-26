@@ -128,6 +128,14 @@
         <td>否</td>
         <td>否</td>
     <tr><tr>
+        <td>美联社</td>
+        <td>√</td>
+        <td>无</td>
+        <td>无</td>
+        <td>无</td>
+        <td>否</td>
+        <td>否</td>
+    <tr><tr>
         <td colspan="7" align="center">外协</td>
     <tr><tr>
         <td>华尔街日报</td>
@@ -203,14 +211,6 @@
         <td>无</td>
         <td>√</td>
         <td>√</td>
-        <td>否</td>
-        <td>否</td>
-    <tr><tr>
-        <td>美联社</td>
-        <td>√</td>
-        <td>无</td>
-        <td>无</td>
-        <td>无</td>
         <td>否</td>
         <td>否</td>
     <tr><tr>
