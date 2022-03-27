@@ -23,7 +23,7 @@ class ImageSpiderPipeline(ImagesPipeline):
         if isinstance(item, ReporterItem):
             if item.get('reporter_image_url') and type(item.get('reporter_image_url')) == str:
                 logging.info("reporter_image_url ---- {} ".format(item.get('reporter_image_url')))
-                yield Request(url=item['reporter_image_url'], meta=item)
+                yield Request(url=item['reporter_image_url'], meta=item, priority=10)
 
     def file_path(self, request, response=None, info=None, *, item=None):
         return request.meta["reporter_image"]
