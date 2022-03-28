@@ -4,7 +4,6 @@ import json
 import sys
 
 sys.path.append("../../")
-from items.MongoDBItems import MediaItem
 from items.MongoDBItems import ReporterItem
 from items.MongoDBItems import NewsItem
 
