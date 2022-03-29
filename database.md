@@ -19,7 +19,6 @@ password  : aini1314
 | media_id | 媒体机构编号 | 主键 |
 | media_name_cn | 媒体机构中文名称 |    |
 | media_name_en | 媒体机构英文缩写 |    |
-| media_type | 媒体机构语言类型 | en/ch |
 
 ### 数据表 news 新闻报道
 

@@ -1,19 +1,18 @@
-import pymongo
-import logging
 import csv
-
+import logging
+import pymongo
 import sys
+
 sys.path.append("..")
 from items.MongoDBItems import MediaItem
 
 media_list = []
 for line in csv.reader(open("./media.csv")):
     mediaItem = MediaItem()
+    print(line)
     mediaItem["media_id"] = line[0]
     mediaItem["media_name_en"] = line[1]
     mediaItem["media_name_cn"] = line[2]
-    mediaItem["media_content_type"] = line[3]
-    mediaItem["media_official_website"] = line[4]
     media_list.append(mediaItem)
 
 
