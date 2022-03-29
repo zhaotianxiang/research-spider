@@ -1,0 +1,9 @@
+itemadapter==0.4.0
+mySpider==1.1.0
+openpyxl==3.0.9
+pdfkit==1.0.0
+pymongo==4.0.2
+requests==2.27.1
+Scrapy==2.5.1
+scrapy_selenium==0.0.7
+tqdm==4.63.0
