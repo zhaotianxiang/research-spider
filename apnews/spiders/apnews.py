@@ -44,7 +44,7 @@ class YanSpider(scrapy.Spider):
             newsItem['news_content'] = " ".join(response.css("div.Body > div > article *::text").extract())
 
         newsItem['news_content_cn'] = None
-        newsItem['news_publish_time'] = response_json["datePublished"]
+        newsItem['news_publish_time'] = response_json["datePublished"].replace('Z','')
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"

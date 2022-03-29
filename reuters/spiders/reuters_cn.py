@@ -44,7 +44,7 @@ class Spider(scrapy.Spider):
             'div.ArticleBodyWrapper div.Attribution-attribution-Y5JpY > p::text').extract_first()
         newsItem['news_content']+="\n"+author_describe
         newsItem['news_content_cn'] = newsItem['news_content']
-        newsItem['news_publish_time'] = news_detail['datePublished']
+        newsItem['news_publish_time'] = news_detail['datePublished'].replace('Z','')
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"

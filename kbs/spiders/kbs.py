@@ -44,6 +44,8 @@ class KBS(scrapy.Spider):
                 newItem["news_content"] = item["newsContents"].replace("<br /><br />", " ")
             newItem["news_content_cn"] = None
             newItem["news_publish_time"] = item["broadDate"]
+            newItem["news_publish_time"] = datetime.datetime(int(item["broadDate"][0:4]), int(item["broadDate"][4:6]),
+                                                             int(item["broadDate"][6:8])).isoformat()
             newItem["news_url"] = news_detail_url
             newItem["news_pdf"] = self.name + "_" + item["newsCode"] + ".pdf"
             newItem["news_pdf_cn"] = self.name + "_" + item["newsCode"] + "_cn.pdf"
@@ -61,7 +63,8 @@ class KBS(scrapy.Spider):
                     reporterItem["reporter_id"] = reporter["reporterCode"]
                     reporterItem["reporter_name"] = reporter["reporterName"]
                     reporterItem["reporter_intro"] = reporter["jobName"]
-                    reporterItem["reporter_url"] = 'https://news.kbs.co.kr/news/list.do?rcd=' + reporterItem["reporter_id"]
+                    reporterItem["reporter_url"] = 'https://news.kbs.co.kr/news/list.do?rcd=' + reporterItem[
+                        "reporter_id"]
                     if reporter["email"]:
                         reporterItem["reporter_code_list"] = [{"code_content": reporter["email"], "code_type": "email"}]
                     reporterItem["reporter_name"] = reporter["reporterName"]

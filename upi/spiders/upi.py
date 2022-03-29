@@ -2,6 +2,7 @@ import json
 import re
 import scrapy
 import sys
+import datetime
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
 
@@ -48,7 +49,9 @@ class Spider(scrapy.Spider):
         for constent in constents:
             constent = constent.strip()
             newsItem['news_content'] += " " + constent
-        newsItem['news_publish_time'] = response.css('div.article-date::text').extract_first().strip()
+        publish_time = response.css('div.article-date::text').extract_first().strip()
+
+        tnewsItem['news_publish_time'] = datetime.datetime.strptime(publish_time, "%B %d, %Y / %I:%M %p").isoformat()
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"

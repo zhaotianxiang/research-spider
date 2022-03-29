@@ -39,17 +39,17 @@ password  : aini1314
 
 ### 数据表 reporter 记者信息
 
-| 字段名称 | 字段含义   | 字段说明                                            |
-| ----|--------|-------------------------------------------------|
-| media_id | 媒体机构编号 | 主键                                              |
-| reporter_id | 记者编号   | 主键                                              |
-| reporter_name | 记者名称   |                                                 |
-| reporter_image | 记者图片名称 |                                                 |
-| reporter_image_url | 记者图片地址 |                                                 |
-| reporter_intro | 记者简介   |                                                 |
-| reporter_url | 记者详情地址 |                                                 |
+| 字段名称 | 字段含义   | 字段说明                                        |
+| ----|--------|---------------------------------------------|
+| media_id | 媒体机构编号 | 主键                                          |
+| reporter_id | 记者编号   | 主键                                          |
+| reporter_name | 记者名称   |                                             |
+| reporter_image | 记者图片名称 | 媒体英文名称_内部编号                                 |
+| reporter_image_url | 记者图片地址 |                                             |
+| reporter_intro | 记者简介   |                                             |
+| reporter_url | 记者详情地址 |                                             |
 | reporter_code_list | 记者mz列表 | [{ code_content:"13423334", code_type:"phone"}] |
-| media_name | 媒体英文名称 | kbs voa                                         |
+| media_name | 媒体英文名称 | kbs voa                                     |
 
 ### 数据表 social_dynamics 社交动态信息
 

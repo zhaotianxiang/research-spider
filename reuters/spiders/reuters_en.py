@@ -56,7 +56,7 @@ class Spider(scrapy.Spider):
                 newsItem['news_title_cn'] = None
                 newsItem['news_content'] = article["description"]
                 newsItem['news_content_cn'] = None
-                newsItem['news_publish_time'] = article["published_time"]
+                newsItem['news_publish_time'] = article["published_time"].replace('Z','')
                 newsItem['news_url'] = response.urljoin(article['canonical_url'])
                 newsItem['news_pdf'] = f"reuters_{newsItem['news_id']}.pdf"
                 newsItem['news_pdf_cn'] = f"reuters_{newsItem['news_id']}_cn.pdf"

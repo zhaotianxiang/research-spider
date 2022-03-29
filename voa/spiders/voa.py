@@ -1,4 +1,5 @@
 import scrapy
+import datetime
 from scrapy.linkextractors import LinkExtractor
 
 import sys
@@ -122,7 +123,8 @@ class Voa(scrapy.Spider):
                 newsItem['news_title_cn'] = ""
                 newsItem['news_content'] = child.xpath('./description/text()').extract_first()
                 newsItem['news_content_cn'] = ""
-                newsItem['news_publish_time'] = child.xpath('./pubDate/text()').extract_first()
+                newsItem['news_publish_time'] = datetime.datetime.strptime(
+                    child.xpath('./pubDate/text()').extract_first(), "%a, %d %b %Y %X %z").isoformat()
                 newsItem['news_url'] = link
                 newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
                 newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
