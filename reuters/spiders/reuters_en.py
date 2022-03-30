@@ -1,10 +1,9 @@
+import json
+import re
 import scrapy
+import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
-import re
-import json
-
-import sys
 
 sys.path.append("../../")
 from items.MongoDBItems import MediaItem
@@ -63,7 +62,7 @@ class Spider(scrapy.Spider):
                 newsItem['news_pdf_cn'] = f"reuters_{newsItem['news_id']}_cn.pdf"
                 newsItem['reporter_list'] = []
                 newsItem['media_id'] = self.id
-                newsItem['media_name'] = self.name
+                newsItem['media_name'] = 'reuters'
 
                 for author in article["authors"]:
                     reporterItem = ReporterItem()
@@ -76,13 +75,13 @@ class Spider(scrapy.Spider):
                     if author.get('social_links'):
                         for social in author["social_links"]:
                             reporterItem['reporter_code_list'].append({
-                                "code_type": social["url"],
-                                "code_content": social["site"]
+                                "code_type": social["site"],
+                                "code_content": social["url"].replace('mailto:','')
                             })
                     reporterItem['reporter_intro'] = author.get('description')
                     reporterItem['reporter_url'] = response.urljoin(author["topic_url"])
                     reporterItem['media_id'] = self.id
-                    reporterItem['media_name'] = self.name
+                    reporterItem['media_name'] = 'reuters'
                     newsItem['reporter_list'].append(reporterItem)
                     # 进入作者详情页面
                     yield scrapy.Request(url=reporterItem['reporter_url'],
