@@ -33,6 +33,7 @@ def get_query(offect, size):
 
 
 class Spider(scrapy.Spider):
+    id = 6
     name = 'reuters_en'
 
     def start_requests(self):
@@ -56,13 +57,13 @@ class Spider(scrapy.Spider):
                 newsItem['news_title_cn'] = None
                 newsItem['news_content'] = article["description"]
                 newsItem['news_content_cn'] = None
-                newsItem['news_publish_time'] = article["published_time"].replace('Z','')
+                newsItem['news_publish_time'] = article["published_time"].replace('Z', '')
                 newsItem['news_url'] = response.urljoin(article['canonical_url'])
                 newsItem['news_pdf'] = f"reuters_{newsItem['news_id']}.pdf"
                 newsItem['news_pdf_cn'] = f"reuters_{newsItem['news_id']}_cn.pdf"
                 newsItem['reporter_list'] = []
-                newsItem['media_id'] = 6
-                newsItem['media_name'] = 'reuters'
+                newsItem['media_id'] = self.id
+                newsItem['media_name'] = self.name
 
                 for author in article["authors"]:
                     reporterItem = ReporterItem()
@@ -80,8 +81,8 @@ class Spider(scrapy.Spider):
                             })
                     reporterItem['reporter_intro'] = author.get('description')
                     reporterItem['reporter_url'] = response.urljoin(author["topic_url"])
-                    reporterItem['media_id'] = 6
-                    reporterItem['media_name'] = 'reuters'
+                    reporterItem['media_id'] = self.id
+                    reporterItem['media_name'] = self.name
                     newsItem['reporter_list'].append(reporterItem)
                     # 进入作者详情页面
                     yield scrapy.Request(url=reporterItem['reporter_url'],
@@ -93,7 +94,7 @@ class Spider(scrapy.Spider):
                                      callback=self.news)
             # 下一页
             meta = {
-                "offset": response.meta['offset']+response.meta['size'],
+                "offset": response.meta['offset'] + response.meta['size'],
                 "size": response.meta['size']
             }
             yield scrapy.Request(get_query(meta["offset"], meta["size"]), meta=meta)
