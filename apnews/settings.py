@@ -9,14 +9,13 @@ ROBOTSTXT_OBEY = False
 CONCURRENT_REQUESTS = 32
 DOWNLOAD_DELAY = 0.1
 DEFAULT_REQUEST_HEADERS = {
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Language': '*',
+    'Accept': '*/*'
 }
 ITEM_PIPELINES = {
     'apnews.pipelines.MongoDBPipeline': 523,
 }
 MEDIA_ALLOW_REDIRECTS = True
-IMAGES_STORE = "./apnews/data/images/"
+IMAGES_STORE = "./images/data/images/"
 
 # MongoDB 数据库配置
 MONGO_URI = 'mongodb://root:aini1314@39.107.26.235:27017'

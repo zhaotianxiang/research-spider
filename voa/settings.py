@@ -23,7 +23,7 @@ ITEM_PIPELINES = {
 }
 
 # 保存图片配置
-IMAGES_STORE = "./voa/data/images/"
+IMAGES_STORE = "./images/data/images/"
 MEDIA_ALLOW_REDIRECTS = True
 
 # MongoDB 数据库配置
