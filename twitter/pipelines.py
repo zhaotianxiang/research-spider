@@ -1,42 +1,63 @@
 import os, logging, json
 import csv
+import pymongo
 from scrapy.utils.project import get_project_settings
 from scrapy import Request
 from scrapy.pipelines.images import ImagesPipeline
 import logging
+import sys
+
+sys.path.append("..")
+from items.MongoDBItems import SocialDynamicsItem
 
 logger = logging.getLogger(__name__)
 SETTINGS = get_project_settings()
 
 
-def mkdirs(dirs):
-    if not os.path.exists(dirs):
-        os.makedirs(dirs)
-
-
-class SaveToFilePipeline:
-    def __init__(self):
-        self.savePostPath = SETTINGS['SAVE_POST_PATH']
-        self.saveUserPath = SETTINGS['SAVE_USER_PATH']
-        logger.info(self.saveUserPath)
-        logger.info(self.savePostPath)
-        mkdirs(self.savePostPath)  # ensure the path exists
-        mkdirs(self.saveUserPath)
-
-    def process_item(self, item, spider):
-        self.save_to_file(item, self.saveUserPath + "twitter.user.csv")
-
-    def save_to_file(self, item, filename):
-        with open(fname, 'w', encoding='utf-8') as f:
-            json.dump(dict(item), f, ensure_ascii=False)
-
-
 class ImageSpiderPipeline(ImagesPipeline):
     def get_media_requests(self, item, response):
-        if item.get('profile_image_url') and type(item.get('profile_image_url')) == str:
-            logging.info("ImageSpiderPipeline imageUrl ----------------- %s ",item.get('profile_image_url'))
-            yield Request(url=item['profile_image_url'].replace("normal","400x400"),
-                          meta={"image_name": "%s-%s-%s" % (item.get("search_reporter_name"),item.get("screen_name"),item['profile_image_url'].split("/")[-1].replace("normal","400x400"))})
+        if not item.get('reporter_image_url'):
+            pass
+        elif item.get('profile_image_url') and type(item.get('profile_image_url')) == str:
+            logging.info("ImageSpiderPipeline imageUrl ----------------- %s ", item.get('profile_image_url'))
+            yield Request(url=item['reporter_image_url'], meta=item)
 
-    def file_path(self, request, response=None, info=None):
-        return request.meta["image_name"]
+    def file_path(self, request, response=None, info=None, *, item=None):
+        return request.meta["reporter_image"]
+
+
+class MongoDBPipeline(object):
+    def __init__(self, mongo_uri, mongo_db):
+        self.mongo_uri = mongo_uri
+        self.mongo_db = mongo_db
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(
+            mongo_uri=crawler.settings.get('MONGO_URI'),
+            mongo_db=crawler.settings.get('MONGO_DB')
+        )
+
+    def open_spider(self, spider):
+        self.client = pymongo.MongoClient(self.mongo_uri)
+        self.db = self.client[self.mongo_db]
+
+    def close_spider(self, spider):
+        self.client.close()
+
+    def process_item(self, item, spider):
+        if item.get('screen_name'):
+            self.db.twitter_account.update_one({"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
+                                               {"$set": dict(item)},
+                                               upsert=True)
+        if isinstance(item, SocialDynamicsItem):
+            self.db.social_dynamic.update_one(
+                {
+                    "media_id": item["media_id"],
+                    "reporter_id": item["reporter_id"],
+                    "dynamics_id": item["dynamics_id"],
+                    "account_type": item["account_type"],
+                },
+                {"$set": dict(item)},
+                upsert=True)
+        return item

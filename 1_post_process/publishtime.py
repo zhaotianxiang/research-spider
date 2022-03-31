@@ -53,7 +53,7 @@ class NewsPostProgress:
                     print(row['news_publish_time'])
                     publish_time = row['news_publish_time']
                     # March 24, 2022 / 7:54 PM
-                    time = datetime.datetime.strptime(publish_time, "%B %d, %Y / %I:%M %p")
+                    time = datetime.datetime.strptime(publish_time, "%a %b %d %X %z %Y")
                     row['news_publish_time'] = time.isoformat()
                     print(row['media_name'], row['news_publish_time'])
                 except:
