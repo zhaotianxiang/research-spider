@@ -37,14 +37,16 @@ class ReporterItem(Item):
 
 
 class SocialDynamicsItem(Item):
-    dynamics_id = Field()  # 社交动态内部编号 
-    account_type = Field()  # 社交账号类型 
+    account_name = Field()
+    account_id = Field()
+    account_type = Field()  # 社交账号类型
+    dynamics_id = Field()  # 社交动态内部编号
+    dynamics_url = Field()  # 社交动态内部编号
     dynamics_publish_time = Field()
     dynamics_content = Field()
     dynamics_content_cn = Field()
     dynamics_favorite_count = Field()
-    dynamics_keywords = Field()
-    dynamics_keyword_cn = Field()
+    dynamics_media_list = Field()
     twitter_tweets_url = Field()
     dynamics_image_list = Field()  # { image_name:"xxx.jpg", image_url:"..."}
     media_id = Field()

@@ -41,6 +41,7 @@ class MongoDBPipeline(object):
     def open_spider(self, spider):
         self.client = pymongo.MongoClient(self.mongo_uri)
         self.db = self.client[self.mongo_db]
+        self.db.social_dynamic.remove()
 
     def close_spider(self, spider):
         self.client.close()

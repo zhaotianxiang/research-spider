@@ -1,7 +1,7 @@
 BOT_NAME = 'twitter'
 SPIDER_MODULES = ['twitter.spiders']
 NEWSPIDER_MODULE = 'twitter.spiders'
-LOG_LEVEL = 'DEBUG'
+LOG_LEVEL = 'INFO'
 
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36'
 ROBOTSTXT_OBEY = False
