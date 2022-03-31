@@ -1,10 +1,9 @@
+import json
+import re
 import scrapy
+import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
-import re
-import json
-
-import sys
 
 sys.path.append("../../")
 from items.MongoDBItems import MediaItem
@@ -20,6 +19,7 @@ def seed():
 
 
 class Spider(scrapy.Spider):
+    id = 6
     name = 'reuters_cn'
     start_urls = seed()
 
@@ -42,14 +42,14 @@ class Spider(scrapy.Spider):
         newsItem['news_content'] = " ".join(response.css('div.ArticleBodyWrapper > p::text').extract())
         author_describe = response.css(
             'div.ArticleBodyWrapper div.Attribution-attribution-Y5JpY > p::text').extract_first()
-        newsItem['news_content']+="\n"+author_describe
+        newsItem['news_content'] += "\n" + author_describe
         newsItem['news_content_cn'] = newsItem['news_content']
-        newsItem['news_publish_time'] = news_detail['datePublished'].replace('Z','')
+        newsItem['news_publish_time'] = news_detail['datePublished'].replace('Z', '')
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
         newsItem['reporter_list'] = []
-        newsItem['media_id'] = 26
+        newsItem['media_id'] = self.id
         newsItem['media_name'] = 'reuters'
 
         if author_describe:
@@ -64,7 +64,7 @@ class Spider(scrapy.Spider):
                         reporterItem['reporter_image_url'] = None
                         reporterItem['reporter_intro'] = authors.split(" ")[0]
                         reporterItem['reporter_url'] = None
-                        reporterItem['media_id'] = 26
+                        reporterItem['media_id'] = self.id
                         reporterItem['media_name'] = 'reuters'
                         newsItem['reporter_list'].append(reporterItem)
                         yield reporterItem
