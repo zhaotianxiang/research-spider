@@ -28,8 +28,7 @@ ITEM_PIPELINES = {
 }
 COOKIES_DEBUG = True
 MEDIA_ALLOW_REDIRECTS = True
-IMAGES_STORE = "./twitter/data/images/"
-
+IMAGES_STORE = "./images/data/images/"
 
 # MongoDB 数据库配置
 MONGO_URI = 'mongodb://root:aini1314@39.107.26.235:27017'

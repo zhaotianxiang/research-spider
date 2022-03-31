@@ -45,6 +45,7 @@ class SocialDynamicsItem(Item):
     dynamics_favorite_count = Field()
     dynamics_keywords = Field()
     dynamics_keyword_cn = Field()
+    twitter_tweets_url = Field()
     dynamics_image_list = Field()  # { image_name:"xxx.jpg", image_url:"..."}
     media_id = Field()
     media_name = Field()
