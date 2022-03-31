@@ -129,7 +129,11 @@ class MobileTwitter(scrapy.Spider):
                             f"https://twitter.com/{twitter_user['screen_name']}/status/{item['dynamics_id']}"
                         if 'media' in legacy['entities']:
                             item['dynamics_media_list'] = list(map(
-                                lambda media: {'type': 'photo', 'media_url': media['media_url_https']},
+                                lambda media: {
+                                    'type': 'photo',
+                                    'media_url': media['media_url_https'],
+                                    'media_name': 'twitter_' + media['media_url_https'].split('/')[-1]
+                                },
                                 list(legacy['entities']['media'])))
                         item['media_id'] = twitter_user['media_id']
                         item['media_name'] = twitter_user['media_name']

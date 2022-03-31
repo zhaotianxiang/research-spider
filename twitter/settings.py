@@ -23,8 +23,8 @@ DOWNLOADER_MIDDLEWARES = {
 }
 
 ITEM_PIPELINES = {
-    'twitter.pipelines.ImageSpiderPipeline': 4,
     'twitter.pipelines.MongoDBPipeline': 3,
+    'twitter.pipelines.ImageSpiderPipeline': 4,
 }
 COOKIES_DEBUG = True
 MEDIA_ALLOW_REDIRECTS = True

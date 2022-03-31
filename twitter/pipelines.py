@@ -16,14 +16,15 @@ SETTINGS = get_project_settings()
 
 class ImageSpiderPipeline(ImagesPipeline):
     def get_media_requests(self, item, response):
-        if not item.get('reporter_image_url'):
-            pass
-        elif item.get('profile_image_url') and type(item.get('profile_image_url')) == str:
-            logging.info("ImageSpiderPipeline imageUrl ----------------- %s ", item.get('profile_image_url'))
-            yield Request(url=item['reporter_image_url'], meta=item)
+        if isinstance(item, SocialDynamicsItem):
+            if item.get('dynamics_media_list') and len(item.get('dynamics_media_list')) > 0:
+                for media in item.get('dynamics_media_list'):
+                    if media['type'] == 'photo':
+                        logging.info("ImageSpiderPipeline imageUrl ----------------- %s ", media['media_url'])
+                        yield Request(url=media['media_url'], meta=media)
 
     def file_path(self, request, response=None, info=None, *, item=None):
-        return request.meta["reporter_image"]
+        return request.meta["media_name"]
 
 
 class MongoDBPipeline(object):
