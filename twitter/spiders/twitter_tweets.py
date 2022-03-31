@@ -120,6 +120,7 @@ class MobileTwitter(scrapy.Spider):
                         item['dynamics_id'] = legacy['conversation_id_str']
                         item['account_name'] = twitter_user['name']
                         item['account_id'] = twitter_user['id']
+                        item['account_location'] = twitter_user['location']
                         item['dynamics_content'] = legacy['full_text']
                         item['dynamics_content_cn'] = ''
                         item['dynamics_favorite_count'] = legacy['favorite_count']
