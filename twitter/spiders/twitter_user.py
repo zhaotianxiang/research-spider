@@ -1,10 +1,9 @@
 import json
 import pymongo
-from urllib.parse import quote
-
+import re
 import scrapy
 from scrapy.spiders import CrawlSpider
-import re
+from urllib.parse import quote
 
 
 class Twitter(CrawlSpider):
@@ -51,9 +50,24 @@ class Twitter(CrawlSpider):
         self.cursor_re = re.compile('"(scroll:[^"]*)"')
 
         self.user_list = []
-        database_data = self.db.reporter.find({'media_name': 'youmiuri'})
+        database_data = self.db.reporter.find({'media_name': 'cnn'})
         for reporter in database_data:
-            self.user_list.append(reporter)
+            is_has_twitter_account = False
+            if reporter.get("reporter_code_list"):
+                print(reporter['reporter_code_list'])
+                reporter_code_list = list(reporter['reporter_code_list'])
+                for reporter_code in reporter_code_list:
+                    print([reporter_code])
+                    if reporter_code['code_type'] == 'twitter':
+                        is_has_twitter_account = True
+                        reporter['screen_name'] = reporter_code['code_content'].split('/')[-1]
+            if is_has_twitter_account:
+                reporter['search_by'] = 'reporter_name'
+                self.user_list.append(reporter)
+            else:
+                reporter['search_by'] = 'twitter_url_suffix'
+                self.user_list.append(reporter)
+
         self.logger.info("INIT [ ---- %s ---- ] USERS", len(self.user_list))
 
     def start_requests(self):
@@ -74,28 +88,52 @@ class Twitter(CrawlSpider):
                 url = url.format(query=quote(user['reporter_name']), cursor=quote(cursor))
             else:
                 url = self.url.format(query=quote(user['reporter_name']))
-            yield scrapy.Request(url, meta={"userName": user['reporter_name'], 'user': user},
-                                 callback=self.parse_user_list, headers=self.headers)
+            yield scrapy.Request(url, meta={
+                "userName": user['reporter_name'],
+                'user': user
+            }, callback=self.user, headers=self.headers)
 
-    def parse_user_list(self, response):
+    def user(self, response):
         data = json.loads(response.text)
         user_dict = data.get("globalObjects").get("users")
         self.logger.info("PARSE USER USER_NAME: %s ITEM: %s", response.meta.get("userName"), len(user_dict))
 
-        for userId in user_dict:
-            user = user_dict.get(userId)
-            user["search_reporter_name"] = response.meta.get("userName")
-            user_description = user.get("description") + user.get("name") + user.get("screen_name")
-            if user_description:
-                kbs = re.compile(r'kbs|朝日新聞|読売新聞|voa|npr|yna', re.I)
-                if kbs.search(user_description):
-                    self.logger.info("SUCCESS MATCH  %s ---- %s", response.meta.get("userName"), user_description)
-                    if user.get('profile_image_url'):
-                        item = response.meta['user'].copy()
-                        if not item.get("reporter_image_url"):
-                            item['reporter_image_url'] = user.get('profile_image_url')
-                            self.db.reporter.update_one({"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
-                                                                        {"$set": dict(item)},
-                                                                        upsert=True)
-                    user.update(response.meta['user'])
-                    yield user
+        if response.meta['user']['search_by'] == 'twitter_url_suffix':
+            for userId in user_dict:
+                user = user_dict.get(userId)
+                if user['screen_name'] != response.meta.get("screen_name"):
+                    continue
+                self.logger.warn("根据后缀screen_name找到了记者用户")
+                user["search_reporter_name"] = response.meta.get("userName")
+                user_description = user.get("description") + user.get("name") + user.get("screen_name")
+                self.logger.info("SUCCESS MATCH  %s ---- %s", response.meta.get("userName"), user_description)
+                if user.get('profile_image_url'):
+                    item = response.meta['user'].copy()
+                    if not item.get("reporter_image_url"):
+                        item['reporter_image_url'] = user.get('profile_image_url')
+                        self.db.reporter.update_one(
+                            {"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
+                            {"$set": dict(item)},
+                            upsert=True)
+                user.update(response.meta['user'])
+                yield user
+        else:
+            for userId in user_dict:
+                user = user_dict.get(userId)
+                user["search_reporter_name"] = response.meta.get("userName")
+                user_description = user.get("description") + user.get("name") + user.get("screen_name")
+                if user_description:
+                    kbs = re.compile(r'kbs|朝日新聞|読売新聞|voa|npr|yna｜'
+                                     r'upi｜apnews', re.I)
+                    if kbs.search(user_description):
+                        self.logger.info("SUCCESS MATCH  %s ---- %s", response.meta.get("userName"), user_description)
+                        if user.get('profile_image_url'):
+                            item = response.meta['user'].copy()
+                            if not item.get("reporter_image_url"):
+                                item['reporter_image_url'] = user.get('profile_image_url')
+                                self.db.reporter.update_one(
+                                    {"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
+                                    {"$set": dict(item)},
+                                    upsert=True)
+                        user.update(response.meta['user'])
+                        yield user

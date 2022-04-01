@@ -52,7 +52,7 @@ class MobileTwitter(scrapy.Spider):
 
     def active(self, response):
         response_json = json.loads(response.text)
-        self.logger.warn('激活游客Token ！！ ----  %s', response_json)
+        self.logger.warn('激活游客 Token ！！ ----  %s', response_json)
         if response_json.get("guest_token"):
             response.meta['guest_token'] = response_json["guest_token"]
             for user in self.user_list:
@@ -140,7 +140,7 @@ class MobileTwitter(scrapy.Spider):
                         item['reporter_id'] = twitter_user['reporter_id']
                         item['reporter_name'] = twitter_user['reporter_name']
                         item['dynamics_publish_time'] = datetime.datetime. \
-                            strptime(legacy['created_at'], "%a %b %d %X %z %Y").isoformat()
+                            strptime(legacy['created_at'], "%a %b %d %X %z %Y").strftime('%Y-%m-%d %H:%M:%S')
                         yield item
         # 下一页
         if len(posts) == 102:
