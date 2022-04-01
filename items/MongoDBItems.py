@@ -37,8 +37,8 @@ class ReporterItem(Item):
 
 
 class SocialDynamicsItem(Item):
-    account_name = Field()
     account_id = Field()
+    account_name = Field()
     account_type = Field()
     account_location = Field()
     dynamics_id = Field()
@@ -48,7 +48,7 @@ class SocialDynamicsItem(Item):
     dynamics_content_cn = Field()
     dynamics_favorite_count = Field()
     dynamics_media_list = Field()
-    twitter_tweets_url = Field()
+    dynamics_url = Field()
     media_id = Field()
     media_name = Field()
     reporter_id = Field()
