@@ -8,11 +8,13 @@ ROBOTSTXT_OBEY = False
 CONCURRENT_REQUESTS = 32
 DOWNLOAD_DELAY = 0.1
 DEFAULT_REQUEST_HEADERS = {
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Language': '*',
+    'Accept': '*/*',
+}
+SPIDER_MIDDLEWARES = {
+    'media.middlewares.MediaSpiderMiddleware': 543,
 }
 DOWNLOADER_MIDDLEWARES = {
-    'media.middlewares.MediaDownloaderMiddleware': 543,
+    'media.middlewares.MediaDownloaderMiddleware': 544,
 }
 ITEM_PIPELINES = {
     'media.pipelines.ImageSpiderPipeline': 1,
@@ -20,7 +22,7 @@ ITEM_PIPELINES = {
 }
 
 # 保存图片配置
-IMAGES_STORE = "./images/data/images/"
+IMAGES_STORE = "./data/images/"
 MEDIA_ALLOW_REDIRECTS = True
 
 # MongoDB 数据库配置

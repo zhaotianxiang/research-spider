@@ -45,7 +45,7 @@ class KBS(scrapy.Spider):
             newItem["news_content_cn"] = None
             newItem["news_publish_time"] = item["broadDate"]
             newItem["news_publish_time"] = datetime.datetime(int(item["broadDate"][0:4]), int(item["broadDate"][4:6]),
-                                                             int(item["broadDate"][6:8])).isoformat()
+                                                             int(item["broadDate"][6:8])).strftime('%Y-%m-%d %H:%M:%S')
             newItem["news_url"] = news_detail_url
             newItem["news_pdf"] = self.name + "_" + item["newsCode"] + ".pdf"
             newItem["news_pdf_cn"] = self.name + "_" + item["newsCode"] + "_cn.pdf"
