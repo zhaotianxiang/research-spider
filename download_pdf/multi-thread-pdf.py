@@ -4,7 +4,7 @@ import pdfkit
 import logging
 import threading
 
-output_path = "./data/npr"
+output_path = "./data/pdf"
 
 if not os.path.exists(output_path):
     os.mkdir(output_path)
