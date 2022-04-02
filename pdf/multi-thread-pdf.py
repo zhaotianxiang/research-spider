@@ -56,15 +56,16 @@ def thread_func(tasks):  # 线程函数
 
 def multi_thread_run(thread_num):
 
-    news_detail_url_list = mongo_datas(media_id=24)
+    for media_id in range(1, 13):
+        news_detail_url_list = mongo_datas(media_id=24)
 
-    n = thread_num
-    num = len(news_detail_url_list) // n
+        n = thread_num
+        num = len(news_detail_url_list) // n
 
-    for i in range(n + 1):
-        tasks = news_detail_url_list[i * num:(i + 1) * num]
-        t = threading.Thread(target=thread_func, args=(tasks,))
-        t.start()
+        for i in range(n + 1):
+            tasks = news_detail_url_list[i * num:(i + 1) * num]
+            t = threading.Thread(target=thread_func, args=(tasks,))
+            t.start()
 
 
 if __name__ == '__main__':

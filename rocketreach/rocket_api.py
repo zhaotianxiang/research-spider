@@ -76,7 +76,7 @@ def get_info(peoples):
 if __name__ == '__main__':
 
     # 基于rocketreach的API，可以实现全自动的结果获取任务
-    rocket = RocketAPI(key="a4ddcak269cdc3eb1d3c6d354e7ddbfa460d774")
+    rocket = RocketAPI(key="a4ddcakf04a765dec0f1ae54df8ae9197c32a47")
 
     query = {"name": ["mask"], "keyword": ["shanghai"], "current_employer": [""]}   # 查询条件
 
