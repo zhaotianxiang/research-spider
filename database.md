@@ -39,33 +39,37 @@ password  : aini1314
 
 ### 数据表 reporter 记者信息
 
-| 字段名称 | 字段含义   | 字段说明                                            |
-| ----|--------|-------------------------------------------------|
-| media_id | 媒体机构编号 | 主键                                              |
-| reporter_id | 记者编号   | 主键                                              |
-| reporter_name | 记者名称   |                                                 |
-| reporter_image | 记者图片名称 |                                                 |
-| reporter_image_url | 记者图片地址 |                                                 |
-| reporter_intro | 记者简介   |                                                 |
-| reporter_url | 记者详情地址 |                                                 |
+| 字段名称 | 字段含义   | 字段说明                                        |
+| ----|--------|---------------------------------------------|
+| media_id | 媒体机构编号 | 主键                                          |
+| reporter_id | 记者编号   | 主键                                          |
+| reporter_name | 记者名称   |                                             |
+| reporter_image | 记者图片名称 | 媒体英文名称_内部编号                                 |
+| reporter_image_url | 记者图片地址 |                                             |
+| reporter_intro | 记者简介   |                                             |
+| reporter_url | 记者详情地址 |                                             |
 | reporter_code_list | 记者mz列表 | [{ code_content:"13423334", code_type:"phone"}] |
-| media_name | 媒体英文名称 | kbs voa                                         |
+| media_name | 媒体英文名称 | kbs voa                                     |
 
 ### 数据表 social_dynamics 社交动态信息
 
-| 字段名称                     | 字段含义   | 字段说明 |
-|--------------------------|--------|----|
-| media_id                 | 媒体机构编号 | 主键       |
-| reporter_id              | 记者编号   | 主键        |
-| dynamics_id              | 社交动态编号 | 主键        |
-| dynamics_url             | 社交动态地址 |         |
-| dynamics_publish_time    | 发布时间   |          |
-| dynamics_content         | 动态内容   |          |
-| dynamics_content_cn      | 中文动态内容 |          |
-| dynamics_favourite_count | 点赞喜欢人数 |          |
-| dynamics_keywords        | 关键字    |          |
-| dynamics_keyword_cn      | 中文关键字  |          |
-| dynamics_image_list      | 动态图片列表 |          |
-| social_media_type        | 社交账号类别 |          |
-| reporter_name            | 记者名称   |          |
-| media_name | 媒体名称   |  |
+| 字段名称                         | 字段含义                | 字段说明                                                                                       |
+|------------------------------|---------------------|--------------------------------------------------------------------------------------------|
+| media_id                     | 媒体机构编号              | 主键                                                                                         |
+| reporter_id                  | 记者编号                | 主键                                                                                         |
+| dynamics_id                  | 社交动态编号              | 主键                                                                                         |
+| media_name                   | 媒体名称                |                                                                                            |
+| reporter_name                | 记者名称                |                                                                                            |
+| account_id                   | 账号编号                |                                                                                            |
+| account_name                 | 账号名称                |                                                                                            |
+| account_type                 | 账号类型                | twitter facebook                                                                           |
+| account_location             | 账号地理位置              |                                                                                            |
+| dynamics_url                 | 社交动态地址              |                                                                                            |
+| dynamics_publish_time        | 发布时间                |                                                                                            |
+| dynamics_content             | 动态内容                |                                                                                            |
+| dynamics_content_cn          | 中文动态内容              |                                                                                            |
+| dynamics_favourite_count     | 点赞喜欢人数              |                                                                                            |
+| dynamics_keywords            | 关键字                 |                                                                                            |
+| dynamics_keyword_cn          | 中文关键字               |                                                                                            |
+| dynamics_media_list          | 动态媒体列表              | [{"type": "photo", "media_url": "https://XYIYAAtoLs.jpg", "media_name": "twitter_Ls.jpg"}] |
+| dynamics_url                 | 社交动态地址              | https://twitter.com/presscha/status/402246305977614336 |

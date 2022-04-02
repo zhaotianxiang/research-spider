@@ -25,7 +25,7 @@ class NewsItem(Item):
 
 
 class ReporterItem(Item):
-    reporter_id = Field()  # (人员内部编号) 
+    reporter_id = Field()  # (人员内部编号)
     reporter_name = Field()
     reporter_image = Field()  # (媒体名称_人员内部编号.[jpg|png|jpeg])
     reporter_image_url = Field()

@@ -11,10 +11,11 @@ DEFAULT_REQUEST_HEADERS = {
     'content-type': 'application/json',
     'accept': '*/*'
 }
-COOKIES_ENABLED = True
+
+COOKIES_ENABLED = False
 
 SPIDER_MIDDLEWARES = {
-    'twitter.middlewares.MediaspiderDownloaderMiddleware': 543,
+    'twitter.middlewares.MediaspiderSpiderMiddleware': 543,
 }
 
 DOWNLOADER_MIDDLEWARES = {
@@ -22,12 +23,13 @@ DOWNLOADER_MIDDLEWARES = {
 }
 
 ITEM_PIPELINES = {
-    'twitter.pipelines.ImageSpiderPipeline': 2,
+    'twitter.pipelines.MongoDBPipeline': 3,
+    'twitter.pipelines.ImageSpiderPipeline': 4,
 }
 COOKIES_DEBUG = True
 MEDIA_ALLOW_REDIRECTS = True
-IMAGES_STORE = "./twitter/data/images/"
-# # 导出文件格式和文件名称
-FEED_URI = './twitter/data/csv/%(name)s_%(time)s.csv'
-FEED_FORMAT = 'csv'
-FEED_EXPORT_ENCODING = 'utf-8'
+IMAGES_STORE = "./images/data/images/"
+
+# MongoDB 数据库配置
+MONGO_URI = 'mongodb://root:aini1314@39.107.26.235:27017'
+MONGO_DB = 'media'
