@@ -1,11 +1,13 @@
-import os, logging, json
 import csv
+import json
+import logging
+import logging
+import os
 import pymongo
-from scrapy.utils.project import get_project_settings
+import sys
 from scrapy import Request
 from scrapy.pipelines.images import ImagesPipeline
-import logging
-import sys
+from scrapy.utils.project import get_project_settings
 
 sys.path.append("..")
 from items.MongoDBItems import SocialDynamicsItem
@@ -48,17 +50,21 @@ class MongoDBPipeline(object):
 
     def process_item(self, item, spider):
         if item.get('screen_name'):
-            self.db.twitter_account.update_one({"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
-                                               {"$set": dict(item)},
-                                               upsert=True)
-        if isinstance(item, SocialDynamicsItem):
-            self.db.social_dynamic.update_one(
-                {
-                    "media_id": item["media_id"],
-                    "reporter_id": item["reporter_id"],
-                    "dynamics_id": item["dynamics_id"],
-                    "account_type": item["account_type"],
-                },
+            self.db.twitter_account.update_one({
+                "reporter_id": item["reporter_id"],
+                "media_id": item["media_id"],
+                "id": item["id"]},
                 {"$set": dict(item)},
                 upsert=True)
+            if isinstance(item, SocialDynamicsItem):
+                self.db.social_dynamic.update_one(
+                    {
+                        "media_id": item["media_id"],
+                        "reporter_id": item["reporter_id"],
+                        "dynamics_id": item["dynamics_id"],
+                        "account_type": item["account_type"],
+                    },
+                    {"$set": dict(item)},
+                    upsert=True)
+
         return item

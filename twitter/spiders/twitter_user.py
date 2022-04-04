@@ -1,3 +1,9 @@
+# 程序作用：
+# 从记者数据库中读取所有记者数据，
+# 1. 如果记者的麻汁列表有twitter账号，根据记者的账号获取记者在twitter的用户数据
+# 2. 如果记者的麻汁列表没有twitter数据则根据记者名称检索可能存在的账号，并保存用户数据
+# 程序幂等，即多次执行本程序不会对原有的数据库造成影响，只更新不删除，不会入重复数据
+
 import json
 import pymongo
 import re
@@ -50,30 +56,36 @@ class Twitter(CrawlSpider):
         self.cursor_re = re.compile('"(scroll:[^"]*)"')
 
         self.user_list = []
-        database_data = self.db.reporter.find({'media_name': 'cnn'})
+        database_data = self.db.reporter.find({})
         for reporter in database_data:
             is_has_twitter_account = False
             if reporter.get("reporter_code_list"):
-                print(reporter['reporter_code_list'])
-                reporter_code_list = list(reporter['reporter_code_list'])
+                reporter_code_list = reporter['reporter_code_list']
+                try:
+                    reporter_code_list = json.loads(reporter['reporter_code_list'])
+                except:
+                    pass
+                if isinstance(reporter_code_list, str):
+                    self.logger.warn("数据的麻汁列别格式有问题 %s", reporter)
+                    continue
                 for reporter_code in reporter_code_list:
-                    print([reporter_code])
                     if reporter_code['code_type'] == 'twitter':
                         is_has_twitter_account = True
                         reporter['screen_name'] = reporter_code['code_content'].split('/')[-1]
+
             if is_has_twitter_account:
-                reporter['search_by'] = 'reporter_name'
+                reporter['search_by'] = 'account'
                 self.user_list.append(reporter)
             else:
-                reporter['search_by'] = 'twitter_url_suffix'
+                reporter['search_by'] = 'reporter_name'
                 self.user_list.append(reporter)
 
         self.logger.info("INIT [ ---- %s ---- ] USERS", len(self.user_list))
 
     def start_requests(self):
-        yield scrapy.Request(url="https://twitter.com/explore", callback=self.add_cookie)
+        yield scrapy.Request(url="https://twitter.com/explore", callback=self.add_header)
 
-    def add_cookie(self, response):
+    def add_header(self, response):
         self.headers = {
             'authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA',
         }
@@ -89,51 +101,53 @@ class Twitter(CrawlSpider):
             else:
                 url = self.url.format(query=quote(user['reporter_name']))
             yield scrapy.Request(url, meta={
-                "userName": user['reporter_name'],
                 'user': user
             }, callback=self.user, headers=self.headers)
 
     def user(self, response):
         data = json.loads(response.text)
+        meta_user = response.meta['user']
         user_dict = data.get("globalObjects").get("users")
-        self.logger.info("PARSE USER USER_NAME: %s ITEM: %s", response.meta.get("userName"), len(user_dict))
 
-        if response.meta['user']['search_by'] == 'twitter_url_suffix':
+        #  根据twitter账号搜索
+        if meta_user['search_by'] == 'account':
             for userId in user_dict:
                 user = user_dict.get(userId)
-                if user['screen_name'] != response.meta.get("screen_name"):
+                if user['screen_name'] != meta_user.get("screen_name"):
                     continue
-                self.logger.warn("根据后缀screen_name找到了记者用户")
-                user["search_reporter_name"] = response.meta.get("userName")
+                self.logger.info("根据后缀 %s 找到了记者用户", meta_user['search_by'])
+                user["search_reporter_name"] = meta_user['reporter_name']
                 user_description = user.get("description") + user.get("name") + user.get("screen_name")
-                self.logger.info("SUCCESS MATCH  %s ---- %s", response.meta.get("userName"), user_description)
+                self.logger.info("找到用户  %-20s %s", meta_user['reporter_name'], user_description)
                 if user.get('profile_image_url'):
-                    item = response.meta['user'].copy()
+                    item = meta_user.copy()
                     if not item.get("reporter_image_url"):
                         item['reporter_image_url'] = user.get('profile_image_url')
                         self.db.reporter.update_one(
                             {"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
                             {"$set": dict(item)},
                             upsert=True)
-                user.update(response.meta['user'])
+                user.update(meta_user)
                 yield user
         else:
             for userId in user_dict:
                 user = user_dict.get(userId)
-                user["search_reporter_name"] = response.meta.get("userName")
+                user["search_reporter_name"] = meta_user['reporter_name']
                 user_description = user.get("description") + user.get("name") + user.get("screen_name")
                 if user_description:
                     kbs = re.compile(r'kbs|朝日新聞|読売新聞|voa|npr|yna｜'
                                      r'upi｜apnews', re.I)
                     if kbs.search(user_description):
-                        self.logger.info("SUCCESS MATCH  %s ---- %s", response.meta.get("userName"), user_description)
+                        self.logger.info("根据后缀 %s 找到了记者用户", meta_user['search_by'])
+
+                        # 找到了记者的Twitter账号，反向更新记者数据库
                         if user.get('profile_image_url'):
-                            item = response.meta['user'].copy()
+                            item = meta_user.copy()
                             if not item.get("reporter_image_url"):
                                 item['reporter_image_url'] = user.get('profile_image_url')
                                 self.db.reporter.update_one(
                                     {"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
                                     {"$set": dict(item)},
                                     upsert=True)
-                        user.update(response.meta['user'])
+                        user.update(meta_user)
                         yield user
