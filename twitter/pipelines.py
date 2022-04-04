@@ -49,10 +49,8 @@ class MongoDBPipeline(object):
         self.client.close()
 
     def process_item(self, item, spider):
-        if item.get('screen_name'):
+        if item.get('screen_name') and item.get('id'):
             self.db.twitter_account.update_one({
-                "reporter_id": item["reporter_id"],
-                "media_id": item["media_id"],
                 "id": item["id"]},
                 {"$set": dict(item)},
                 upsert=True)
