@@ -6,15 +6,14 @@ import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
 
-sys.path.append("../../")
-from items.MongoDBItems import MediaItem
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from ..items import MediaItem
+from ..items import NewsItem
+from ..items import ReporterItem
 
 
-class YanSpider(scrapy.Spider):
-    name = 'apnews'
+class Spider(scrapy.Spider):
     id = 8
+    name = 'apnews'
     allowed_domains = ['apnews.com']
     start_urls = ['https://apnews.com/']
 
@@ -48,8 +47,6 @@ class YanSpider(scrapy.Spider):
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
-        newsItem['media_id'] = self.id
-        newsItem['media_name'] = self.name
         newsItem['reporter_list'] = []
 
         for reporter_name_str in response_json["author"]:
@@ -61,8 +58,6 @@ class YanSpider(scrapy.Spider):
                     reporterItem = ReporterItem()
                     reporterItem['reporter_id'] = reporter_id
                     reporterItem['reporter_name'] = reporter_name
-                    reporterItem['media_id'] = self.id
-                    reporterItem['media_name'] = self.name
                     newsItem['reporter_list'].append(reporterItem)
                     yield reporterItem
         self.logger.warn("保存新闻和记者信息 %s", response.url)

@@ -1,18 +1,17 @@
+import json
+import re
 import scrapy
+import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
-import re
-import json
 
-import sys
-
-sys.path.append("../../")
-from items.MongoDBItems import MediaItem
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from ..items import MediaItem
+from ..items import NewsItem
+from ..items import ReporterItem
 
 
-class YanCNSpider(scrapy.Spider):
+class Spider(scrapy.Spider):
+    id = 21
     name = 'yna_cn'
     allowed_domains = ['cn.yna.co.kr']
     start_urls = ['https://cn.yna.co.kr/']

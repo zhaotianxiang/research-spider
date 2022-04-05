@@ -177,6 +177,22 @@
         <td>否</td>
         <td>否</td>
     <tr><tr>
+        <td>新唐人电视台</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>否</td>
+        <td>否</td>
+    <tr><tr>
+        <td>大纪元</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>否</td>
+        <td>否</td>
+    <tr><tr>
         <td colspan="7" align="center">外协</td>
     <tr><tr>
         <td>华尔街日报</td>
@@ -252,22 +268,6 @@
         <td>无</td>
         <td>无</td>
         <td>无</td>
-        <td>否</td>
-        <td>否</td>
-    <tr><tr>
-        <td>新唐人电视台</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>否</td>
-        <td>否</td>
-    <tr><tr>
-        <td>大纪元</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
         <td>否</td>
         <td>否</td>
     <tr>

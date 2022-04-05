@@ -1,11 +1,11 @@
-import scrapy
 import datetime
 import json
+import scrapy
 import sys
 
-sys.path.append("../../")
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from ..items import MediaItem
+from ..items import NewsItem
+from ..items import ReporterItem
 
 
 def date_range(start, end, step=1, format="%Y%m%d"):
@@ -22,7 +22,8 @@ def generate_url_list(date_str):
 now = datetime.datetime.now().strftime('%Y%m%d')
 
 
-class KBS(scrapy.Spider):
+class Spider(scrapy.Spider):
+    id = 1
     name = 'kbs'
     start_urls = list(map(generate_url_list, date_range("20180101", now)))
 
@@ -50,8 +51,6 @@ class KBS(scrapy.Spider):
             newItem["news_pdf"] = self.name + "_" + item["newsCode"] + ".pdf"
             newItem["news_pdf_cn"] = self.name + "_" + item["newsCode"] + "_cn.pdf"
             newItem["reporter_list"] = []
-            newItem["media_id"] = 1
-            newItem["media_name"] = self.name
 
             if item['reporters']:
                 for reporter in item['reporters']:
@@ -68,8 +67,6 @@ class KBS(scrapy.Spider):
                     if reporter["email"]:
                         reporterItem["reporter_code_list"] = [{"code_content": reporter["email"], "code_type": "email"}]
                     reporterItem["reporter_name"] = reporter["reporterName"]
-                    reporterItem["media_id"] = 1
-                    reporterItem["media_name"] = self.name
                     newItem["reporter_list"].append(reporterItem)
                     yield reporterItem
             yield newItem

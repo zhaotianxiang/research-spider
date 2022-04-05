@@ -4,12 +4,9 @@ import scrapy
 import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
-
-sys.path.append("../../")
-from items.MongoDBItems import MediaItem
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
-
+from ..items import MediaItem
+from ..items import ReporterItem
+from ..items import NewsItem
 
 # 定义下载新闻分类的种子
 def seed():

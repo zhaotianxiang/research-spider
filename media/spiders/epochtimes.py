@@ -1,3 +1,4 @@
+import datetime
 import json
 import re
 import re
@@ -6,15 +7,15 @@ import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
 
-sys.path.append("../../")
-from items.MongoDBItems import MediaItem
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from ..items import MediaItem
+from ..items import NewsItem
+from ..items import ReporterItem
 
 
-class YanSpider(scrapy.Spider):
-    name = 'epochtimes'
+# 大纪元
+class Spider(scrapy.Spider):
     id = 20
+    name = 'epochtimes'
     allowed_domains = ['www.epochtimes.com']
     start_urls = ['https://www.epochtimes.com/']
 
@@ -27,83 +28,55 @@ class YanSpider(scrapy.Spider):
                 allow_domains=self.allowed_domains,
                 canonicalize=True).extract_links(response):
             url = link.url.replace('featureFlag=false', '')
-            if re.search('\d{4}$', url) and re.search('n', url.split('/')[-1].split('-')[-1]) and not re.search(
-                    'author', url):
+            if re.search('https://www.epochtimes.com/gb/\d{2}/\d{1,2}/\d{1,2}/n', url):
                 yield scrapy.Request(url, callback=self.news)
             else:
                 yield scrapy.Request(url)
 
     def news(self, response):
-        # 解析详情页
         newsItem = NewsItem()
-        newsItem['news_id'] = response.url.split('-')[-1].split("?")[0]
-        newsItem['news_title'] = response.css("div.article-hero-headline h1::text").extract_first()
-        newsItem['news_title_cn'] = None
-        newsItem['news_content'] = "".join(response.css("div.article-body__content > p::text").extract())
-        newsItem['news_content_cn'] = None
-        newsItem['news_publish_time'] = response.css("div.article-body__date-source > time::text").extract_first()
+        newsItem['news_id'] = response.url.split('/')[-1].replace('.htm', '')
+        newsItem['news_title'] = response.css("h1.title::text").extract_first().strip()
+        newsItem['news_title_cn'] = newsItem['news_title']
+        content = response.css("div.whitebg > *::text").extract()
+        if not content:
+            content = response.css("div#artbody > *::text").extract()
+        newsItem['news_content'] = " ".join(content).replace("\n", ' ').strip()
+        newsItem['news_content_cn'] = newsItem['news_content']
+        publish_time = response.css("time::attr(datetime)").extract_first()
+        newsItem['news_publish_time'] = datetime.datetime.strptime(publish_time, "%Y-%m-%dT%H:%M:%S%z") \
+            .strftime('%Y-%m-%d %H:%M:%S')
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
-        newsItem['media_id'] = self.id
-        newsItem['media_name'] = self.name
+        newsItem['reporter_list'] = []
 
-        reporter_name = response.css('div.article-inline-byline > span.byline-name::text').extract_first()
-        reporter_id = reporter_name
+        search_result1 = re.findall(r'(?<=大纪元记者).{2,10}(?=报道)', newsItem['news_content'])
+        for reporter_name1 in search_result1:
+            reporterItem1 = ReporterItem()
+            reporterItem1['reporter_id'] = reporter_name1
+            reporterItem1['reporter_name'] = reporter_name1
+            reporterItem1['reporter_intro'] = '大纪元记者'
+            newsItem['reporter_list'].append(reporterItem1)
+            yield reporterItem1
+        search_result2 = re.findall(r'(?<=责任编辑：).{2,5}$', newsItem['news_content'])
+        for reporter_name2 in search_result2:
+            reporterItem2 = ReporterItem()
+            reporterItem2['reporter_id'] = reporter_name2.replace('#', '').replace(' ', '').replace('@', '') \
+                .replace('*', '').strip()
+            reporterItem2['reporter_name'] = reporterItem2['reporter_id']
+            reporterItem2['reporter_intro'] = '责任编辑'
+            newsItem['reporter_list'].append(reporterItem2)
+            yield reporterItem2
+        yield newsItem
 
-
-        # reporter_links = LinkExtractor(restrict_css='div.article-inline-byline > span.byline-name').extract_links(
-        #     response)
-        # if reporter_links and len(reporter_links) > 0:
-        #     for reporter_link in reporter_links:
-        #         if 'author' in reporter_link.url:
-        #             reporter_id = reporter_link.url.split('-')[-1]
-        #             reporter_name = reporter_link.text
-        #             yield scrapy.Request(url=reporter_link.url,
-        #                                  meta={
-        #                                      'reporter_id': reporter_id, 'reporter_name': reporter_name
-        #                                  },
-        #                                  callback=self.reporter,
-        #                                  priority=10)
-        # if reporter_id:
-        #     newsItem['reporter_list'] = [{'reporter_id': reporter_id, 'reporter_name': reporter_name}]
-        # self.logger.warn("保存新闻信息 %s", response.url)
-        # yield newsItem
-        self.logger.info(newsItem)
-
-    def reporter(self, response):
-        image_link = response.css('div.person-lead__image > picture > img::attr(src)').extract_first()
-        reporterItem = ReporterItem()
-        reporterItem['reporter_id'] = response.meta["reporter_id"]
-        reporterItem['reporter_name'] = response.meta["reporter_name"]
-        reporterItem['reporter_image'] = f"{self.name}_{reporterItem['reporter_id']}.jpg"
-        reporterItem['reporter_intro'] = response.css('div.person-lead__bio > p::text').extract_first()
-        reporterItem['reporter_url'] = response.url
-        reporterItem['reporter_image_url'] = response.urljoin(image_link)
-        reporterItem['reporter_code_list'] = []
-        email_list = response.css('ul.social-profile-list > li > a::attr(href)').extract()
-        for email in email_list:
-            if "mailto" in email:
-                reporterItem['reporter_code_list'].append(
-                    {'code_content': email.replace("mailto:", "").strip(), 'code_type': 'email'})
-
-        social_account_list = LinkExtractor(restrict_css='div.person-lead__item').extract_links(response)
-        for link in social_account_list:
-            social_account = link.url
-            if "twitter" in social_account:
-                reporterItem['reporter_code_list'].append(
-                    {'code_content': social_account, 'code_type': 'twitter'})
-            elif "facebook" in social_account:
-                reporterItem['reporter_code_list'].append(
-                    {'code_content': social_account, 'code_type': 'facebook'})
-            elif "instagram" in social_account:
-                reporterItem['reporter_code_list'].append(
-                    {'code_content': social_account, 'code_type': 'instagram'})
+        # 泛查询
+        for link in LinkExtractor(
+                restrict_css='body',
+                allow_domains=self.allowed_domains,
+                canonicalize=True).extract_links(response):
+            url = link.url.replace('featureFlag=false', '')
+            if re.search('https://www.epochtimes.com/gb/\d{2}/\d{1,2}/\d{1,2}/n', url):
+                yield scrapy.Request(url, callback=self.news)
             else:
-                reporterItem['reporter_code_list'].append(
-                    {'code_content': social_account, 'code_type': 'account'})
-
-        reporterItem['media_id'] = self.id
-        reporterItem['media_name'] = self.name
-        self.logger.warn("保存记者信息 %s", response.url)
-        yield reporterItem
+                yield scrapy.Request(url)

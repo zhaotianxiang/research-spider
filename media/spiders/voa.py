@@ -3,9 +3,9 @@ import scrapy
 import sys
 from scrapy.linkextractors import LinkExtractor
 
-sys.path.append("../../")
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from ..items import MediaItem
+from ..items import NewsItem
+from ..items import ReporterItem
 
 
 # 定义下载新闻分类的种子
@@ -18,7 +18,8 @@ def seed():
     ]
 
 
-class Voa(scrapy.Spider):
+class Spider(scrapy.Spider):
+    id = 2
     name = 'voa'
     start_urls = seed()
 
@@ -101,8 +102,6 @@ class Voa(scrapy.Spider):
                 if 'twitter' in link.url:
                     if not len(reporterItem['reporter_code_list']):
                         reporterItem['reporter_code_list'].append({'code_type': 'twitter', 'code_content': link.url})
-        reporterItem['media_id'] = 2
-        reporterItem['media_name'] = 'voa'
         yield reporterItem
         # 作者文章列表的链接
         if author_api_link:
@@ -127,6 +126,4 @@ class Voa(scrapy.Spider):
                 newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
                 newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
                 newsItem['reporter_list'] = [response.meta["reporterItem"]]
-                newsItem['media_id'] = 2
-                newsItem['media_name'] = self.name
                 yield newsItem

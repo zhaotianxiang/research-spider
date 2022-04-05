@@ -5,11 +5,9 @@ import scrapy
 import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
-
-sys.path.append("../../")
-from items.MongoDBItems import MediaItem
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from ..items import MediaItem
+from ..items import ReporterItem
+from ..items import NewsItem
 
 
 # 定义下载新闻分类的种子
@@ -21,6 +19,7 @@ def seed():
 
 
 class Spider(scrapy.Spider):
+    id=7
     name = 'upi'
     allowed_domains = ['www.upi.com']
     start_urls = seed()
@@ -56,9 +55,6 @@ class Spider(scrapy.Spider):
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
         newsItem['reporter_list'] = []
-        newsItem['media_id'] = 7
-        newsItem['media_name'] = self.name
-        newsItem['reporter_list'] = []
 
         # 记者详情页面
         reporter_links = LinkExtractor(restrict_css='div.author-social a').extract_links(response)
@@ -85,7 +81,5 @@ class Spider(scrapy.Spider):
             'div.sections-header > div.breadcrumb.l-s-25 > div::text').extract_first()
         reporterItem['reporter_url'] = response.url
         reporterItem['reporter_code_list'] = None
-        reporterItem['media_id'] = 7
-        reporterItem['media_name'] = self.name
         self.logger.warn("保存作者 %s", response.url)
         yield reporterItem

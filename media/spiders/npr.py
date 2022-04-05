@@ -5,16 +5,14 @@ import scrapy
 import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
-
-sys.path.append("../../")
-from items.MongoDBItems import MediaItem
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from ..items import MediaItem
+from ..items import ReporterItem
+from ..items import NewsItem
 
 
-class YanSpider(scrapy.Spider):
-    name = 'npr'
+class Spider(scrapy.Spider):
     id = 24
+    name = 'npr'
     allowed_domains = ['www.npr.org']
     start_urls = ['https://www.npr.org/']
 
@@ -47,8 +45,6 @@ class YanSpider(scrapy.Spider):
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
-        newsItem['media_id'] = self.id
-        newsItem['media_name'] = self.name
         newsItem['reporter_list'] = []
         reporter_links = LinkExtractor(restrict_css='div.byline-container--block > div.byline > p > a').extract_links(
             response)
@@ -90,8 +86,6 @@ class YanSpider(scrapy.Spider):
         reporterItem['reporter_code_list'] = []
         for link in share_data_list:
             reporterItem['reporter_code_list'].append({'code_content': link.url, 'code_type': link.text.lower()})
-        reporterItem['media_id'] = self.id
-        reporterItem['media_name'] = self.name
         self.logger.warn("保存记者信息 %s", response.url)
         yield reporterItem
 

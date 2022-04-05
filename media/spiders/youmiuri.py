@@ -1,15 +1,12 @@
+import json
+import re
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import Selector
-import json
-import re
 
-import sys
-
-sys.path.append("../../")
-from items.MongoDBItems import MediaItem
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from ..items import MediaItem
+from ..items import NewsItem
+from ..items import ReporterItem
 
 
 # 定义下载新闻分类的种子
@@ -28,7 +25,8 @@ def seed():
     ]
 
 
-class Youmiuri(scrapy.Spider):
+class Spider(scrapy.Spider):
+    id = 3
     name = 'youmiuri'
     start_urls = seed()
 
@@ -72,8 +70,6 @@ class Youmiuri(scrapy.Spider):
                         author_area_splits = author_area_str.split("＝", 1)
                         if author_area_splits and len(author_area_splits) == 2:
                             reporterItem = ReporterItem()
-                            reporterItem["media_id"] = 3
-                            reporterItem["media_name"] = self.name
                             reporterItem["reporter_id"] = author_area_str.split("＝", 1)[1]
                             reporterItem["reporter_name"] = author_area_str.split("＝", 1)[1]
                             reporterItem["reporter_intro"] = author_area_str.split("＝", 1)[0]
@@ -84,10 +80,8 @@ class Youmiuri(scrapy.Spider):
         newItem["news_id"] = news_id
         newItem["news_title"] = response.meta.get('article').get("news_title")
         newItem["news_content"] = article_body
-        newItem["news_publish_time"] = response.meta.get('article').get("released_time").replace('Z','')
+        newItem["news_publish_time"] = response.meta.get('article').get("released_time").replace('Z', '')
         newItem["news_url"] = response.meta.get('article').get("news_url")
         newItem["news_pdf"] = self.name + "_" + news_id + ".pdf"
         newItem["news_pdf_cn"] = self.name + "_" + news_id + "_cn.pdf"
-        newItem["media_id"] = 3
-        newItem["media_name"] = self.name
         yield newItem

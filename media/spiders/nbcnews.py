@@ -5,14 +5,12 @@ import scrapy
 import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
-
-sys.path.append("../../")
-from items.MongoDBItems import MediaItem
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from ..items import MediaItem
+from ..items import ReporterItem
+from ..items import NewsItem
 
 
-class YanSpider(scrapy.Spider):
+class Spider(scrapy.Spider):
     name = 'nbcnews'
     id = 13
     allowed_domains = ['www.nbcnews.com']
@@ -45,8 +43,6 @@ class YanSpider(scrapy.Spider):
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{self.id}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{self.id}_cn.pdf"
-        newsItem['media_id'] = self.id
-        newsItem['media_name'] = self.name
 
         reporter_name = response.css('div.article-inline-byline > span.byline-name::text').extract_first()
         reporter_id = reporter_name
@@ -112,8 +108,5 @@ class YanSpider(scrapy.Spider):
             else:
                 reporterItem['reporter_code_list'].append(
                     {'code_content': social_account, 'code_type': 'account'})
-
-        reporterItem['media_id'] = self.id
-        reporterItem['media_name'] = self.name
         self.logger.warn("保存记者信息 %s", response.url)
         yield reporterItem

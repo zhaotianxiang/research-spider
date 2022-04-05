@@ -11,10 +11,10 @@ from ..items import NewsItem
 from ..items import ReporterItem
 
 
-class YanSpider(scrapy.Spider):
+class Spider(scrapy.Spider):
     id = 23
     name = 'chinaaid'
-    allowed_domains = ['www.chinaaid.net', 'www.voachinese.com']
+    allowed_domains = ['www.chinaaid.net']
     start_urls = ['https://www.chinaaid.net/']
 
     def parse(self, response):
@@ -46,7 +46,7 @@ class YanSpider(scrapy.Spider):
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
-
+        newsItem['reporter_list'] = []
         reporter_links = LinkExtractor(restrict_css='div.post-entry > ul').extract_links(response)
         if len(reporter_links) > 0:
             for reporter_link in reporter_links:
@@ -54,10 +54,10 @@ class YanSpider(scrapy.Spider):
                     reporter_id = reporter_link.url.split('/')[-1].replace('_', '-')
                     reporter_name = reporter_link.text
                     if reporter_id:
-                        newsItem['reporter_list'] = [{
+                        newsItem['reporter_list'].append({
                             'reporter_id': reporter_id,
                             'reporter_name': reporter_name
-                        }]
+                        })
                         self.logger.info("发出获取记者信息请求 %s", reporter_link.url)
                         reporterItem = ReporterItem()
                         reporterItem['reporter_id'] = reporter_id
@@ -65,27 +65,41 @@ class YanSpider(scrapy.Spider):
                         reporterItem['reporter_intro'] = 'voa chinese author'
                         yield reporterItem
 
-        search_result1 = re.findall(r'(?<=对华援助网特约记者).*?(?=报道)', newsItem['news_content'])
+        search_result1 = re.findall(r'(?<=对华援助网特约记者).{2,10}(?=报道)', newsItem['news_content'])
         for reporter_name1 in search_result1:
-            reporterItem = ReporterItem()
-            reporterItem['reporter_id'] = reporter_name1
-            reporterItem['reporter_name'] = reporter_name1
-            reporterItem['reporter_intro'] = '对华援助网特约记者'
-            yield reporterItem
-        search_result2 = re.findall(r'(?<=对华援助协会特约通讯员).*?(?=\))', newsItem['news_content'])
+            reporterItem1 = ReporterItem()
+            reporterItem1['reporter_id'] = reporter_name1
+            reporterItem1['reporter_name'] = reporter_name1
+            reporterItem1['reporter_intro'] = '对华援助网特约记者'
+            newsItem['reporter_list'].append(reporterItem1)
+            yield reporterItem1
+
+        search_result2 = re.findall(r'(?<=对华援助协会特约通讯员).{2,10}(?=\))', newsItem['news_content'])
         for reporter_name2 in search_result2:
-            reporterItem = ReporterItem()
-            reporterItem['reporter_id'] = reporter_name2
-            reporterItem['reporter_name'] = reporter_name2
-            reporterItem['reporter_intro'] = '对华援助网特约记者'
-            yield reporterItem
-        search_result3 = re.findall(r'(?<=对华援助协会记者).*?(?=\))', newsItem['news_content'])
+            reporterItem2 = ReporterItem()
+            reporterItem2['reporter_id'] = reporter_name2
+            reporterItem2['reporter_name'] = reporter_name2
+            reporterItem2['reporter_intro'] = '对华援助网特约记者'
+            newsItem['reporter_list'].append(reporterItem2)
+            yield reporterItem2
+
+        search_result3 = re.findall(r'(?<=对华援助协会记者).{2,10}(?=\))', newsItem['news_content'])
         for reporter_name3 in search_result3:
-            reporterItem = ReporterItem()
-            reporterItem['reporter_id'] = reporter_name3
-            reporterItem['reporter_name'] = reporter_name3
-            reporterItem['reporter_intro'] = '对华援助协会记者'
-            yield reporterItem
+            reporterItem3 = ReporterItem()
+            reporterItem3['reporter_id'] = reporter_name3
+            reporterItem3['reporter_name'] = reporter_name3
+            reporterItem3['reporter_intro'] = '对华援助协会记者'
+            newsItem['reporter_list'].append(reporterItem3)
+            yield reporterItem3
+
+        search_result6 = re.findall(r'(?<=（記者).{2,10}(?=報導)', newsItem['news_content'])
+        for reporter_name6 in search_result6:
+            reporterItem6 = ReporterItem()
+            reporterItem6['reporter_id'] = reporter_name6
+            reporterItem6['reporter_name'] = reporter_name6
+            reporterItem6['reporter_intro'] = '对华援助协会记者'
+            newsItem['reporter_list'].append(reporterItem6)
+            yield reporterItem6
 
         yield newsItem
 

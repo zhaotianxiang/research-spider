@@ -5,13 +5,13 @@ import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
 
-sys.path.append("../../")
-from items.MongoDBItems import MediaItem
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from ..items import MediaItem
+from ..items import NewsItem
+from ..items import ReporterItem
 
 
-class YanSpider(scrapy.Spider):
+class Spider(scrapy.Spider):
+    id = 21
     name = 'yna'
     allowed_domains = ['www.yna.co.kr']
     start_urls = ['https://www.yna.co.kr/']
@@ -42,8 +42,6 @@ class YanSpider(scrapy.Spider):
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}.pdf"
-        newsItem['media_id'] = 21
-        newsItem['media_name'] = self.name
         newsItem['reporter_list'] = []
         reporter_links = LinkExtractor(restrict_css='article > div.writer-zone > a').extract_links(response)
         if reporter_links and len(reporter_links) == 1:
@@ -73,7 +71,5 @@ class YanSpider(scrapy.Spider):
         for share_data in share_data_list:
             if "@yna.co.kr" in share_data:
                 reporterItem['reporter_code_list'] = [{'code_content': share_data.strip(), 'code_type': 'email'}]
-        reporterItem['media_id'] = 21
-        reporterItem['media_name'] = self.name
         self.logger.warn("保存记者信息 %s", response.url)
         yield reporterItem
