@@ -54,8 +54,9 @@ class Spider(scrapy.Spider):
         search_result1 = re.findall(r'(?<=大纪元记者).{2,10}(?=报道)', newsItem['news_content'])
         for reporter_name1 in search_result1:
             reporterItem1 = ReporterItem()
-            reporterItem1['reporter_id'] = reporter_name1
-            reporterItem1['reporter_name'] = reporter_name1
+            reporterItem1['reporter_id'] = reporter_name1.replace('＃', '').replace(' ', '').replace('@', '') \
+                .replace('*', '').replace('＃', '').replace('◇', '').replace('◇', '').replace(')', '').strip()
+            reporterItem1['reporter_name'] = reporterItem1['reporter_id']
             reporterItem1['reporter_intro'] = '大纪元记者'
             newsItem['reporter_list'].append(reporterItem1)
             yield reporterItem1
@@ -63,7 +64,7 @@ class Spider(scrapy.Spider):
         for reporter_name2 in search_result2:
             reporterItem2 = ReporterItem()
             reporterItem2['reporter_id'] = reporter_name2.replace('#', '').replace(' ', '').replace('@', '') \
-                .replace('*', '').strip()
+                .replace('*', '').replace('＃', '').replace('◇', '').replace('◇', '').replace(')', '').strip()
             reporterItem2['reporter_name'] = reporterItem2['reporter_id']
             reporterItem2['reporter_intro'] = '责任编辑'
             newsItem['reporter_list'].append(reporterItem2)
