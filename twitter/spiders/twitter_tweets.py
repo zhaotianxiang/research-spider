@@ -12,6 +12,7 @@ from items.MongoDBItems import SocialDynamicsItem
 
 class MobileTwitter(scrapy.Spider):
     name = 'twitter_tweets'
+    main_list = ['main.114ab985.js', 'main.6dea40c5.js']
     start_urls = ['https://abs.twimg.com/responsive-web/client-web/main.114ab985.js']
 
     def __init__(self):

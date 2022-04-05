@@ -161,11 +161,19 @@
         <td>否</td>
         <td>否</td>
     <tr><tr>
-        <td>全国公共广播电台NPR——li</td>
+        <td>全国公共广播电台NPR</td>
         <td>√</td>
         <td>无</td>
         <td>√</td>
         <td>√</td>
+        <td>否</td>
+        <td>否</td>
+    <tr><tr>
+        <td>对华援助社</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
         <td>否</td>
         <td>否</td>
     <tr><tr>
@@ -256,14 +264,6 @@
         <td>否</td>
     <tr><tr>
         <td>大纪元</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>否</td>
-        <td>否</td>
-    <tr><tr>
-        <td>对华援助社</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>

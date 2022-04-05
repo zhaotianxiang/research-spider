@@ -4,17 +4,27 @@
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 
 
-# useful for handling different item types with a single interface
-from scrapy import Request
-from scrapy.pipelines.images import ImagesPipeline
-from scrapy.exceptions import DropItem
 import logging
 import pymongo
 import sys
+from scrapy import Request
+from scrapy.exceptions import DropItem
+from scrapy.pipelines.images import ImagesPipeline
 
-sys.path.append("..")
-from items.MongoDBItems import ReporterItem
-from items.MongoDBItems import NewsItem
+from .items import NewsItem
+from .items import ReporterItem
+
+
+class FilterPipeline(ImagesPipeline):
+
+    def process_item(self, item, spider):
+        if isinstance(item, NewsItem):
+            if len(item.get('news_content')) < 3:
+                raise DropItem("news content is empty")
+        if isinstance(item, ReporterItem):
+            if not item.get('reporter_name'):
+                raise DropItem("reporter_name is empty")
+        return item
 
 
 class ImageSpiderPipeline(ImagesPipeline):
@@ -50,11 +60,29 @@ class MongoDBPipeline(object):
 
     def process_item(self, item, spider):
         if isinstance(item, ReporterItem):
+            if not item.get('media_id'):
+                item['media_id'] = spider.id
+                item['media_name'] = spider.name
+
             self.db.reporter.update_one({"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
                                         {"$set": dict(item)},
                                         upsert=True)
+            spider.logger.info("成功保存记者信息 %s", item)
+
         if isinstance(item, NewsItem):
+            if not item.get('media_id'):
+                item['media_id'] = spider.id
+                item['media_name'] = spider.name
+            if item.get('news_reporter_list'):
+                news_reporter_list = []
+                for reporter in item['news_reporter_list']:
+                    reporter['media_id'] = spider.id
+                    reporter['media_name'] = spider.name
+                    news_reporter_list.append(reporter)
+                item['news_reporter_list'] = news_reporter_list
+
             self.db.news.update_one({"news_id": item["news_id"], "media_id": item["media_id"]},
                                     {"$set": dict(item)},
                                     upsert=True)
+            spider.logger.info("成功保存新闻信息 %s", item)
         return item

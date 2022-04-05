@@ -48,7 +48,6 @@ class SocialDynamicsItem(Item):
     dynamics_content_cn = Field()
     dynamics_favorite_count = Field()
     dynamics_media_list = Field()
-    dynamics_url = Field()
     media_id = Field()
     media_name = Field()
     reporter_id = Field()

@@ -54,15 +54,14 @@ class MongoDBPipeline(object):
                 "id": item["id"]},
                 {"$set": dict(item)},
                 upsert=True)
-            if isinstance(item, SocialDynamicsItem):
-                self.db.social_dynamic.update_one(
-                    {
-                        "media_id": item["media_id"],
-                        "reporter_id": item["reporter_id"],
-                        "dynamics_id": item["dynamics_id"],
-                        "account_type": item["account_type"],
-                    },
-                    {"$set": dict(item)},
-                    upsert=True)
-
+        if isinstance(item, SocialDynamicsItem):
+            self.db.social_dynamic.update_one(
+                {
+                    "media_id": item["media_id"],
+                    "reporter_id": item["reporter_id"],
+                    "dynamics_id": item["dynamics_id"],
+                    "account_type": item["account_type"],
+                },
+                {"$set": dict(item)},
+                upsert=True)
         return item
