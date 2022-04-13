@@ -8,3 +8,5 @@ html
 scrapy.cfg
 log
 scrapy.cfg
+build
+project.egg-info

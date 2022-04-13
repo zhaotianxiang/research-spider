@@ -64,7 +64,7 @@ class Spider(scrapy.Spider):
         for reporter_name2 in search_result2:
             reporterItem2 = ReporterItem()
             reporterItem2['reporter_id'] = reporter_name2.replace('#', '').replace(' ', '').replace('@', '') \
-                .replace('*', '').replace('＃', '').replace('◇', '').replace('◇', '').replace(')', '').strip()
+                .replace('*', '').replace('＃', '').replace('◇', '').replace('', '').replace(')', '').strip()
             reporterItem2['reporter_name'] = reporterItem2['reporter_id']
             reporterItem2['reporter_intro'] = '责任编辑'
             newsItem['reporter_list'].append(reporterItem2)
