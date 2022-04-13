@@ -27,5 +27,5 @@ IMAGES_STORE = "./data/images/"
 MEDIA_ALLOW_REDIRECTS = True
 
 # MongoDB 数据库配置
-MONGO_URI = 'mongodb://root:aini1314@39.107.26.235:27017'
+MONGO_URI = 'mongodb://root:841_sjzc@8.210.221.113:8410'
 MONGO_DB = 'media'
