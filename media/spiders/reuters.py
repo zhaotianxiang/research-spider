@@ -4,7 +4,7 @@ import scrapy
 import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
-from ..items import MediaItem
+
 from ..items import ReporterItem
 from ..items import NewsItem
 
@@ -31,7 +31,7 @@ class Spider(scrapy.Spider):
                 yield scrapy.Request(next_link.url)
 
     def parse_news(self, response):
-        news_detail = json.loads(re.findall(r'(?<=json">)\{.*?\}(?=<)', response.text)[0])
+        response_json = json.loads(response.css("script[type=application\/ld\+json]::text").extract_first().strip())
         newsItem = NewsItem()
         newsItem['news_id'] = response.url.split('/')[-1].split('-')[-1].replace('^id', '')
         newsItem['news_title'] = response.css('h1.Headline-headline-2FXIq::text').extract_first()
@@ -41,7 +41,9 @@ class Spider(scrapy.Spider):
             'div.ArticleBodyWrapper div.Attribution-attribution-Y5JpY > p::text').extract_first()
         newsItem['news_content'] += "\n" + author_describe
         newsItem['news_content_cn'] = newsItem['news_content']
-        newsItem['news_publish_time'] = news_detail['datePublished'].replace('Z', '')
+        newsItem['news_publish_time'] = datetime.datetime \
+            .strptime(response_json["datePublished"], "%Y-%m-%dT%H:%M:%S%z") \
+            .strftime('%Y-%m-%d %H:%M:%S')
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"

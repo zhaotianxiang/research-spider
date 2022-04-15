@@ -67,6 +67,17 @@ class MongoDBPipeline(object):
                 item['media_id'] = spider.id
                 item['media_name'] = spider.name
 
+            if 'reporter_code_list' in item:
+                reporter_code_list = []
+                code_content_set = set()
+                for code in item['reporter_code_list']:
+                    if not code["code_content"] in code_content_set:
+                        code_content_set.add(code["code_content"])
+                        reporter_code_list.append(code)
+                item["reporter_code_list"] = reporter_code_list
+            else:
+                item["reporter_code_list"] = []
+
             self.db.reporter.update_one({"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
                                         {"$set": dict(item)},
                                         upsert=True)
@@ -76,7 +87,7 @@ class MongoDBPipeline(object):
             if not item.get('media_id'):
                 item['media_id'] = spider.id
                 item['media_name'] = spider.name
-            if item.get('news_reporter_list'):
+            if 'news_reporter_list' in item:
                 if len(item['news_reporter_list']) == 0:
                     raise DropItem("news_reporter_list is empty")
                 news_reporter_list = []

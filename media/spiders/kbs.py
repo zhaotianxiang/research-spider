@@ -3,7 +3,6 @@ import json
 import scrapy
 import sys
 
-from ..items import MediaItem
 from ..items import NewsItem
 from ..items import ReporterItem
 

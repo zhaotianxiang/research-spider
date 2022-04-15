@@ -4,7 +4,6 @@ import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import Selector
 
-from ..items import MediaItem
 from ..items import NewsItem
 from ..items import ReporterItem
 
