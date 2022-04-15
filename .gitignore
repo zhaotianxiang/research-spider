@@ -5,6 +5,7 @@ venv
 log
 kbs/data/pdf
 data/pdf
+pdf
 html
 scrapy.cfg
 log
