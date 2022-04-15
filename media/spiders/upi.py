@@ -49,12 +49,15 @@ class Spider(scrapy.Spider):
         if "author" in response_json:
             for reporter in response_json["author"]:
                 reporterItem = ReporterItem()
-                reporterItem['reporter_id'] = reporter["name"]
-                reporterItem['reporter_name'] = "-".join(reporter["name"].split(" "))
+                reporterItem['reporter_id'] = "-".join(reporter["name"].split(" "))
+                reporterItem['reporter_name'] = reporter["name"]
                 newsItem['reporter_list'].append(reporterItem)
                 yield reporterItem
                 if "url" in reporter:
-                    yield scrapy.Request(reporter["url"], callback=self.reporter, priority=10)
+                    yield scrapy.Request(reporter["url"], meta={
+                        "reporter_name": reporterItem['reporter_name'],
+                        "reporter_id": reporterItem['reporter_id'],
+                    }, callback=self.reporter, priority=10)
         else:
             result = re.findall(r'(?<=async_config.authors = \').*?(?=\')', response.text)
             if len(result) >= 1 and len(result[0]) > 0:
@@ -70,8 +73,7 @@ class Spider(scrapy.Spider):
     def reporter(self, response):
         reporterItem = ReporterItem()
         reporterItem['reporter_id'] = response.url.split('/')[-2]
-        reporterItem['reporter_name'] = response.css(
-            'div.sections-header > div.category-header > h1::text').extract_first()
+        reporterItem['reporter_name'] = response.meta["reporter_name"]
         reporterItem['reporter_image'] = None
         reporterItem['reporter_image_url'] = None
         reporterItem['reporter_intro'] = response.css(
