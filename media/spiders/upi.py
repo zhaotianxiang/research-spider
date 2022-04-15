@@ -28,9 +28,8 @@ class Spider(scrapy.Spider):
             url = link.url
             if re.search(r'News.*?20\d{2}/\d{2}/\d{2}/.*?/\d*?/', url):
                 yield scrapy.Request(url, callback=self.news)
-
-    #             else:
-    #                 yield scrapy.Request(url)
+            else:
+                yield scrapy.Request(url)
 
     def news(self, response):
         response_json = json.loads(response.css("script[type=application\/ld\+json]::text").extract_first().strip())
