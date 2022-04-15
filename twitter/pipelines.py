@@ -10,7 +10,7 @@ from scrapy.pipelines.images import ImagesPipeline
 from scrapy.utils.project import get_project_settings
 
 sys.path.append("..")
-from items.MongoDBItems import SocialDynamicsItem
+from .items import SocialDynamicsItem
 
 logger = logging.getLogger(__name__)
 SETTINGS = get_project_settings()

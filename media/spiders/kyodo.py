@@ -46,8 +46,8 @@ class Spider(scrapy.Spider):
         if re.search("china.kyodonews.net", response.url):
             newsItem['news_title_cn'] = newsItem['news_title']
             newsItem['news_content_cn'] = newsItem['news_content']
-
-        newsItem['news_publish_time'] = response_json["datePublished"]
+        publish_time = response_json["datePublished"]
+        newsItem['news_publish_time'] = datetime.datetime.strptime(publish_time, "%Y-%m-%dT%H:%M:%S%z").strftime('%Y-%m-%d %H:%M:%S')
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"

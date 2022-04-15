@@ -22,6 +22,9 @@ class FilterPipeline(ImagesPipeline):
             if len(item.get('news_content')) < 3:
                 raise DropItem("news content is empty")
         if isinstance(item, ReporterItem):
+            if not item.get('reporter_name') or len(item["reporter_name"]) < 1:
+                raise DropItem("reporter_name is empty")
+        if isinstance(item, ReporterItem):
             if not item.get('reporter_name'):
                 raise DropItem("reporter_name is empty")
         return item
@@ -74,6 +77,8 @@ class MongoDBPipeline(object):
                 item['media_id'] = spider.id
                 item['media_name'] = spider.name
             if item.get('news_reporter_list'):
+                if len(item['news_reporter_list']) == 0:
+                    raise DropItem("news_reporter_list is empty")
                 news_reporter_list = []
                 for reporter in item['news_reporter_list']:
                     reporter['media_id'] = spider.id

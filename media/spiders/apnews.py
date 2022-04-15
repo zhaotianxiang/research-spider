@@ -43,7 +43,8 @@ class Spider(scrapy.Spider):
             newsItem['news_content'] = " ".join(response.css("div.Body > div > article *::text").extract())
 
         newsItem['news_content_cn'] = None
-        newsItem['news_publish_time'] = response_json["datePublished"].replace('Z','')
+        publish_time = response_json["datePublished"]
+        newsItem['news_publish_time'] = datetime.datetime.strptime(publish_time, "%Y-%m-%dT%H:%M:%S%z").strftime('%Y-%m-%d %H:%M:%S')
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"

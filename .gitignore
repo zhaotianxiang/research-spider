@@ -4,6 +4,7 @@ venv
 .idea
 log
 kbs/data/pdf
+data/pdf
 html
 scrapy.cfg
 log
