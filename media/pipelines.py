@@ -78,6 +78,11 @@ class MongoDBPipeline(object):
             else:
                 item["reporter_code_list"] = []
 
+            # 数据库中防止无码址的作者覆盖有码址的作者
+            old_item = self.db.reporter.find_one({"reporter_id": item["reporter_id"], "media_id": item["media_id"]})
+            if old_item and len(old_item['reporter_code_list']) >= len(item['reporter_code_list']):
+                raise DropItem("reporter_code_list keep old")
+
             self.db.reporter.update_one({"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
                                         {"$set": dict(item)},
                                         upsert=True)

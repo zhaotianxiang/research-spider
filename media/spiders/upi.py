@@ -83,12 +83,11 @@ class Spider(scrapy.Spider):
         reporterItem['reporter_url'] = response.url
         reporterItem['reporter_code_list'] = []
 
-        twitter_list = re.findall(r'https://.{0,4}twitter.com/.*?(?=[",\s])', response.text)
+        twitter_list = re.findall(r'https://.{0,4}twitter.com/.*?(?=\?)', response.text)
         for twitter in twitter_list:
             if re.search('share', twitter):
                 continue
             self.logger.info("找到了 twitter %s", twitter)
-            twitter = twitter.replace("\"", "").replace(";", "").replace("'", "").strip().split("?")[0]
             reporterItem['reporter_code_list'].append({
                 "code_type": "twitter",
                 "code_content": twitter,
