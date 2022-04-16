@@ -65,7 +65,7 @@ class Spider(scrapy.Spider):
                         reporterItem['reporter_intro'] = 'voa chinese author'
                         yield reporterItem
 
-        search_result1 = re.findall(r'(?<=对华援助网特约记者).{2,10}(?=报道)', newsItem['news_content'])
+        search_result1 = re.findall(r'(?<=对华援助网特约记者).{2,4}(?=报道)', newsItem['news_content'])
         for reporter_name1 in search_result1:
             reporterItem1 = ReporterItem()
             reporterItem1['reporter_id'] = reporter_name1
