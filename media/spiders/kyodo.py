@@ -33,7 +33,11 @@ class Spider(scrapy.Spider):
 
     def news(self, response):
         if re.search('www.47news.jp', response.url):
-            response_json = json.loads(response.css("script[type=application\/ld\+json]::text").extract_first().strip())
+            if response.css("script[type=application\/ld\+json]::text").extract_first():
+                response_json = json.loads(
+                    response.css("script[type=application\/ld\+json]::text").extract_first().strip())
+            else:
+                return None
         else:
             response_json = \
                 json.loads(response.css("script[type=application\/ld\+json]::text").extract_first().strip())[0]
