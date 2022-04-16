@@ -11,6 +11,7 @@ from ..items import ReporterItem
 
 
 # 共同通讯社
+# 记者数量很少很少
 class Spider(scrapy.Spider):
     id = 22
     name = 'kyodo'
