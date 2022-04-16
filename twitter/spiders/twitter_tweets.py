@@ -18,8 +18,8 @@ class MobileTwitter(scrapy.Spider):
     def __init__(self):
         self.headers = {}
         self.user_list = []
-        self.client = pymongo.MongoClient('mongodb://root:aini1314@39.107.26.235:27017')
-        self.db = self.client['media']
+        self.client = pymongo.MongoClient(get_project_settings().get('MONGO_URI'))
+        self.db = self.client[get_project_settings().get('MONGO_DB')]
         self.mongo_user_accounts = self.db.twitter_account.find({})
         for user in self.mongo_user_accounts:
             self.user_list.append(user)

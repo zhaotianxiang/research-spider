@@ -18,8 +18,8 @@ class Twitter(CrawlSpider):
     x_guest_token = ""
 
     def __init__(self):
-        self.client = pymongo.MongoClient('mongodb://root:aini1314@39.107.26.235:27017')
-        self.db = self.client['media']
+        self.client = pymongo.MongoClient(get_project_settings().get('MONGO_URI'))
+        self.db = self.client[get_project_settings().get('MONGO_DB')]
         self.url = (
             f'https://api.twitter.com/2/search/adaptive.json?'
             f'include_profile_interstitial_type=1'
