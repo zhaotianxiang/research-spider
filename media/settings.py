@@ -5,8 +5,8 @@ NEWSPIDER_MODULE = 'media.spiders'
 LOG_LEVEL = "INFO"
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
 ROBOTSTXT_OBEY = False
-CONCURRENT_REQUESTS = 32
-DOWNLOAD_DELAY = 0.1
+CONCURRENT_REQUESTS = 16
+DOWNLOAD_DELAY = 1
 DEFAULT_REQUEST_HEADERS = {
     'Accept': '*/*',
 }
