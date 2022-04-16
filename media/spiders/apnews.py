@@ -1,3 +1,4 @@
+import datetime
 import json
 import re
 import re
@@ -53,8 +54,8 @@ class Spider(scrapy.Spider):
             reporter_name_list = reporter_name_str.strip().replace("^By ", "")
             for reporter_list2 in reporter_name_list.split(','):
                 for reporter_name in reporter_list2.split('And'):
-                    reporter_name = reporter_name.strip()
-                    reporter_id = reporter_name
+                    reporter_name = reporter_name.replace("BY ", "").replace("by ", "").strip()
+                    reporter_id = "-".join(reporter_name.split(" "))
                     reporterItem = ReporterItem()
                     reporterItem['reporter_id'] = reporter_id
                     reporterItem['reporter_name'] = reporter_name
