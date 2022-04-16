@@ -16,7 +16,6 @@ from .items import ReporterItem
 
 
 class FilterPipeline(ImagesPipeline):
-
     def process_item(self, item, spider):
         if isinstance(item, NewsItem):
             if len(item.get('news_content')) < 3:
@@ -28,18 +27,6 @@ class FilterPipeline(ImagesPipeline):
             if not item.get('reporter_name'):
                 raise DropItem("reporter_name is empty")
         return item
-
-
-class ImageSpiderPipeline(ImagesPipeline):
-
-    def get_media_requests(self, item, response):
-        if isinstance(item, ReporterItem):
-            if item.get('reporter_image_url') and type(item.get('reporter_image_url')) == str:
-                logging.info("reporter_image_url ---- {} ".format(item.get('reporter_image_url')))
-                yield Request(url=item['reporter_image_url'], meta=item)
-
-    def file_path(self, request, response=None, info=None, *, item=None):
-        return request.meta["reporter_image"]
 
 
 class MongoDBPipeline(object):
