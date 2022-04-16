@@ -50,8 +50,13 @@ class Spider(scrapy.Spider):
                 "news_url": item.xpath('./div/h3/a/@href').extract_first(),
                 "released_time": item.xpath('./div/div/time/@datetime').extract_first(),
             }
-            yield scrapy.Request(url=article.get("news_url"), meta={'article': article},
-                                 callback=self.parse_reporter_articles)
+            request = scrapy.Request(url=article.get("news_url"), meta={'article': article},
+                                     callback=self.parse_reporter_articles)
+            request.cookies = {
+                'HSSID': '842B85A7AB51AA740834CF9BCDAC6B7F9BBB0487C2101472CC75297D1B8D6CE4',
+                'YOMISESSID': 'kdts9r9o7c9jp7d1671qtnem6g'
+            }
+            yield request
 
     def parse_reporter_articles(self, response):
         self.logger.info("REPORTER'S ARTICLE ---- %s", response.url)
