@@ -49,6 +49,7 @@ class Spider(scrapy.Spider):
         if "author" in response_json:
             for reporter in response_json["author"]:
                 reporterItem = ReporterItem()
+                reporter["name"] = reporter["name"].replace("By ","")
                 reporterItem['reporter_id'] = "-".join(reporter["name"].split(" "))
                 reporterItem['reporter_name'] = reporter["name"]
                 newsItem['reporter_list'].append(reporterItem)
@@ -62,6 +63,7 @@ class Spider(scrapy.Spider):
             result = re.findall(r'(?<=async_config.authors = \').*?(?=\')', response.text)
             if len(result) >= 1 and len(result[0]) > 0:
                 author_name = result[0].split(",")[0]
+                author_name = author_name.replace("By ","")
                 author_id = "-".join(author_name.split(" "))
                 reporterItem = ReporterItem()
                 reporterItem['reporter_id'] = author_id
