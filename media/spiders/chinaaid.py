@@ -60,16 +60,16 @@ class Spider(scrapy.Spider):
                         })
                         self.logger.info("发出获取记者信息请求 %s", reporter_link.url)
                         reporterItem = ReporterItem()
-                        reporterItem['reporter_id'] = reporter_id
-                        reporterItem['reporter_name'] = reporter_name
+                        reporterItem['reporter_id'] = reporter_id.strip()
+                        reporterItem['reporter_name'] = reporter_name.strip()
                         reporterItem['reporter_intro'] = 'voa chinese author'
                         yield reporterItem
 
         search_result1 = re.findall(r'(?<=对华援助网特约记者).{2,4}(?=报道)', newsItem['news_content'])
         for reporter_name1 in search_result1:
             reporterItem1 = ReporterItem()
-            reporterItem1['reporter_id'] = reporter_name1
-            reporterItem1['reporter_name'] = reporter_name1
+            reporterItem1['reporter_id'] = reporter_name1.strip()
+            reporterItem1['reporter_name'] = reporter_name1.strip()
             reporterItem1['reporter_intro'] = '对华援助网特约记者'
             newsItem['reporter_list'].append(reporterItem1)
             yield reporterItem1
@@ -77,17 +77,17 @@ class Spider(scrapy.Spider):
         search_result2 = re.findall(r'(?<=对华援助协会特约通讯员).{2,10}(?=\))', newsItem['news_content'])
         for reporter_name2 in search_result2:
             reporterItem2 = ReporterItem()
-            reporterItem2['reporter_id'] = reporter_name2
-            reporterItem2['reporter_name'] = reporter_name2
-            reporterItem2['reporter_intro'] = '对华援助网特约记者'
+            reporterItem2['reporter_id'] = reporter_name2.strip()
+            reporterItem2['reporter_name'] = reporter_name2.strip()
+            reporterItem2['reporter_intro'] = '对华援助协会特约通讯员'
             newsItem['reporter_list'].append(reporterItem2)
             yield reporterItem2
 
-        search_result3 = re.findall(r'(?<=对华援助协会记者).{2,10}(?=\))', newsItem['news_content'])
+        search_result3 = re.findall(r'(?<=对华援助协会记者).{2,10}(?=报道)', newsItem['news_content'])
         for reporter_name3 in search_result3:
             reporterItem3 = ReporterItem()
-            reporterItem3['reporter_id'] = reporter_name3
-            reporterItem3['reporter_name'] = reporter_name3
+            reporterItem3['reporter_id'] = reporter_name3.strip()
+            reporterItem3['reporter_name'] = reporter_name3.strip()
             reporterItem3['reporter_intro'] = '对华援助协会记者'
             newsItem['reporter_list'].append(reporterItem3)
             yield reporterItem3
@@ -95,9 +95,9 @@ class Spider(scrapy.Spider):
         search_result6 = re.findall(r'(?<=（記者).{2,10}(?=報導)', newsItem['news_content'])
         for reporter_name6 in search_result6:
             reporterItem6 = ReporterItem()
-            reporterItem6['reporter_id'] = reporter_name6
-            reporterItem6['reporter_name'] = reporter_name6
-            reporterItem6['reporter_intro'] = '对华援助协会记者'
+            reporterItem6['reporter_id'] = reporter_name6.strip()
+            reporterItem6['reporter_name'] = reporter_name6.strip()
+            reporterItem6['reporter_intro'] = '記者'
             newsItem['reporter_list'].append(reporterItem6)
             yield reporterItem6
 
