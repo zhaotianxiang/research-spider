@@ -40,6 +40,7 @@ class Spider(scrapy.Spider):
         newsItem = NewsItem()
         newsItem['news_id'] = response.url.split('/')[-2]
         newsItem['news_title'] = response_json['headline']
+        newsItem['news_keywords'] = response.css("meta[name=article\:tag]::attr(content)").extract_first().strip()
         newsItem['news_title_cn'] = None
         newsItem['news_content'] = "\n".join(list(map(get_content, global_content["result"]["content_elements"])))
         newsItem['news_content_cn'] = None
@@ -77,7 +78,7 @@ class Spider(scrapy.Spider):
 
     def reporter(self, response):
         # 能补充获取头像 作者简介
-        reporterItem = response.meta["reporterItem"]
+        reporterItem = response.meta["reporterItem"].copy()
         response_json = None
         try:
             response_json = json.loads(re.findall(r'(?<=globalContent=){.*?}(?=;)', response.text)[0])
@@ -90,3 +91,11 @@ class Spider(scrapy.Spider):
             if author.get('description'):
                 reporterItem["reporter_intro"] = author['description']
         yield reporterItem
+
+        for link in LinkExtractor(
+                restrict_css='body',
+                allow_domains=self.allow_domains).extract_links(response):
+            if re.search('reuters.com/.*?\d{2,4}-\d{2}-\d{2}/', link.url):
+                yield scrapy.Request(link.url, callback=self.news)
+            else:
+                yield scrapy.Request(link.url)
