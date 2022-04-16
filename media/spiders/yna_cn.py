@@ -52,13 +52,7 @@ class Spider(scrapy.Spider):
                 reporterItem = ReporterItem()
                 reporterItem['reporter_id'] = author_name
                 reporterItem['reporter_name'] = author_name
-                reporterItem['reporter_image'] = None
-                reporterItem['reporter_image_url'] = None
-                reporterItem['reporter_intro'] = None
-                reporterItem['reporter_url'] = None
                 reporterItem['reporter_code_list'] = [{'code_content': author_email, 'code_type': 'email'}]
-                reporterItem['media_id'] = 21
-                reporterItem['media_name'] = 'yna'
                 newsItem['reporter_list'].append(reporterItem)
                 yield reporterItem
         newsItem['media_id'] = 21

@@ -95,15 +95,15 @@ class MongoDBPipeline(object):
             if not item.get('media_id'):
                 item['media_id'] = spider.id
                 item['media_name'] = spider.name
-            if 'news_reporter_list' in item:
-                if len(item['news_reporter_list']) == 0:
-                    raise DropItem("news_reporter_list is empty")
-                news_reporter_list = []
-                for reporter in item['news_reporter_list']:
+            if 'reporter_list' in item:
+                if len(item['reporter_list']) == 0:
+                    raise DropItem("reporter_list is empty")
+                reporter_list = []
+                for reporter in item['reporter_list']:
                     reporter['media_id'] = spider.id
                     reporter['media_name'] = spider.name
-                    news_reporter_list.append(reporter)
-                item['news_reporter_list'] = news_reporter_list
+                    reporter_list.append(reporter)
+                item['reporter_list'] = reporter_list
 
             self.db.news.update_one({"news_id": item["news_id"], "media_id": item["media_id"]},
                                     {"$set": dict(item)},

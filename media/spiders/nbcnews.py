@@ -6,8 +6,8 @@ import sys
 from scrapy.linkextractors import LinkExtractor
 from urllib.parse import urlparse
 
-from ..items import ReporterItem
 from ..items import NewsItem
+from ..items import ReporterItem
 
 
 class Spider(scrapy.Spider):
@@ -78,14 +78,19 @@ class Spider(scrapy.Spider):
                 yield scrapy.Request(url)
 
     def reporter(self, response):
-        image_link = response.css('div.person-lead__image > picture > img::attr(src)').extract_first()
+
         reporterItem = ReporterItem()
         reporterItem['reporter_id'] = response.meta["reporter_id"]
         reporterItem['reporter_name'] = response.meta["reporter_name"]
-        reporterItem['reporter_image'] = f"{self.name}_{reporterItem['reporter_id']}.jpg"
+
         reporterItem['reporter_intro'] = response.css('div.person-lead__bio > p::text').extract_first()
         reporterItem['reporter_url'] = response.url
-        reporterItem['reporter_image_url'] = response.urljoin(image_link)
+
+        image_link = response.css('div.person-lead__image > picture > img::attr(src)').extract_first()
+
+        if image_link and re.search(r"nbcnews.com/image/", image_link):
+            reporterItem['reporter_image_url'] = response.urljoin(image_link)
+            reporterItem['reporter_image'] = f"{self.name}_{reporterItem['reporter_id']}.jpg"
         reporterItem['reporter_code_list'] = []
         email_list = response.css('ul.social-profile-list > li > a::attr(href)').extract()
         for email in email_list:
