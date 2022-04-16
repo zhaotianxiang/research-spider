@@ -28,3 +28,8 @@ class ReporterItem(Item):
     reporter_code_list = Field()  # [{ code_content:"tiaasxgmail.com", code_type:"email"}]
     media_id = Field()
     media_name = Field()
+
+
+class ImageItem(Item):
+    reporter_image = Field()  # (媒体名称_人员内部编号.[jpg|png|jpeg])
+    reporter_image_url = Field()

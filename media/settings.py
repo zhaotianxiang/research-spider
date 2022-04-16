@@ -17,10 +17,13 @@ DOWNLOADER_MIDDLEWARES = {
     'media.middlewares.MediaDownloaderMiddleware': 544,
 }
 ITEM_PIPELINES = {
+    'media.pipelines.ImageSpiderPipeline': 1,
     'media.pipelines.FilterPipeline': 2,
     'media.pipelines.MongoDBPipeline': 3,
 }
 
+# 保存图片配置
+IMAGES_STORE = "~/data/images/"
 MEDIA_ALLOW_REDIRECTS = True
 
 # MongoDB 数据库配置

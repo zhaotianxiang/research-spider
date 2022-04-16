@@ -13,6 +13,7 @@ from scrapy.pipelines.images import ImagesPipeline
 
 from .items import NewsItem
 from .items import ReporterItem
+from .items import ImageItem
 
 
 class FilterPipeline(ImagesPipeline):
@@ -27,6 +28,17 @@ class FilterPipeline(ImagesPipeline):
             if not item.get('reporter_name'):
                 raise DropItem("reporter_name is empty")
         return item
+
+
+class ImageSpiderPipeline(ImagesPipeline):
+    def get_media_requests(self, item, response):
+        if isinstance(item, ImageItem):
+            if item.get('reporter_image_url') and type(item.get('reporter_image_url')) == str:
+                logging.info("reporter_image_url ---- {} ".format(item.get('reporter_image_url')))
+                yield Request(url=item['reporter_image_url'], meta=item)
+
+    def file_path(self, request, response=None, info=None, *, item=None):
+        return request.meta["reporter_image"]
 
 
 class MongoDBPipeline(object):
