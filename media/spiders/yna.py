@@ -1,3 +1,4 @@
+import datetime
 import json
 import re
 import scrapy
@@ -37,7 +38,9 @@ class Spider(scrapy.Spider):
         newsItem['news_title_cn'] = None
         newsItem['news_content'] = "".join(response.css("article > p::text").extract())
         newsItem['news_content_cn'] = None
-        newsItem['news_publish_time'] = newsItem['news_id'][3:11]
+        publish_time = response.css("meta[property=article\:published_time]::attr(content)").extract_first()
+        newsItem['news_publish_time'] = datetime.datetime.strptime(publish_time, "%Y-%m-%dT%H:%M:%S%z").strftime(
+            '%Y-%m-%d %H:%M:%S')
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}.pdf"

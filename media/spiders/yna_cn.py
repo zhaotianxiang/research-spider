@@ -35,9 +35,11 @@ class Spider(scrapy.Spider):
         newsItem['news_title'] = response.css("#container > section > article > header > h1::text").extract_first()
         newsItem['news_title_cn'] = None
         newsItem['news_content'] = "".join(response.css(
-            "#container > section > article > div.view-body > div.sub-content > div.article-story p::text").extract())
+            "#container > section > article > div.view-body > div.sub-content > div.article-story p::text").extract()).strip()
         newsItem['news_content_cn'] = None
-        newsItem['news_publish_time'] = newsItem['news_id'][3:11]
+        publish_time = response.css("meta[property=article\:published_time]::attr(content)").extract_first()
+        newsItem['news_publish_time'] = datetime.datetime.strptime(publish_time, "%Y-%m-%dT%H:%M:%S%z").strftime(
+            '%Y-%m-%d %H:%M:%S')
         newsItem['news_url'] = response.url
         newsItem['news_pdf'] = f"yna_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"yna_{newsItem['news_id']}.pdf"
