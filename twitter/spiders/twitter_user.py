@@ -10,6 +10,8 @@ import re
 import scrapy
 from scrapy.spiders import CrawlSpider
 from urllib.parse import quote
+from scrapy.utils.project import get_project_settings
+SETTINGS = get_project_settings()
 
 
 class Twitter(CrawlSpider):
@@ -56,7 +58,7 @@ class Twitter(CrawlSpider):
         self.cursor_re = re.compile('"(scroll:[^"]*)"')
 
         self.user_list = []
-        database_data = self.db.reporter.find({})
+        database_data = self.db.reporter.find()
         for reporter in database_data:
             is_has_twitter_account = False
             if reporter.get("reporter_code_list"):

@@ -6,8 +6,10 @@ import re
 import scrapy
 import sys
 
-sys.path.append("../../")
-from items.MongoDBItems import SocialDynamicsItem
+from ..items import SocialDynamicsItem
+from scrapy.utils.project import get_project_settings
+SETTINGS = get_project_settings()
+
 
 
 class MobileTwitter(scrapy.Spider):

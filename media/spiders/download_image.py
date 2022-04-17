@@ -1,9 +1,7 @@
 import pymongo
 import scrapy
-from scrapy.utils.project import get_project_settings
-
 from ..items import ImageItem
-
+from scrapy.utils.project import get_project_settings
 SETTINGS = get_project_settings()
 
 
