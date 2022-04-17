@@ -116,6 +116,7 @@ class Spider(scrapy.Spider):
                 link = child.xpath('./link/text()').extract_first()
                 newsItem['news_id'] = link.split("/")[-1].replace('.html', '')
                 newsItem['news_title'] = child.xpath('./title/text()').extract_first()
+                newsItem['news_keywords'] = response.css("meta[name=keywords]::attr(content)").extract_first()
                 newsItem['news_title_cn'] = ""
                 newsItem['news_content'] = child.xpath('./description/text()').extract_first()
                 newsItem['news_content_cn'] = ""

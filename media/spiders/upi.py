@@ -37,7 +37,7 @@ class Spider(scrapy.Spider):
         newsItem = NewsItem()
         newsItem['news_id'] = response.url.split('/')[-2]
         newsItem['news_title'] = response_json["headline"]
-        newsItem['news_keywords'] = response.css("meta[name=keywords]::attr(content)").extract_first().strip()
+        newsItem['news_keywords'] = response.css("meta[name=keywords]::attr(content)").extract_first()
         newsItem['news_content'] = " ".join(response.css('p::text').extract()).strip()
         newsItem['news_publish_time'] = datetime.datetime \
             .strptime(response_json["datePublished"], "%Y-%m-%dT%H:%M:%S%z") \

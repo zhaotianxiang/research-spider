@@ -48,7 +48,7 @@ class Spider(scrapy.Spider):
                 yield scrapy.Request(url=reporter_link.url, meta={'newsItem': newsItem}, callback=self.reporter)
 
                 newsItem['reporter_list'].append({
-                    "reporter_name": response.css("a > div > strong::text").extract_first(),
+                    "reporter_name": response.css("a > div > strong::text").extract_first().replace(" 기자", ""),
                     "reporter_id": reporter_link.url.split('?id=')[-1]
                 })
                 self.logger.warn("保存新闻信息 %s", response.url)
@@ -59,7 +59,8 @@ class Spider(scrapy.Spider):
         reporterItem = ReporterItem()
         reporterItem['reporter_id'] = response.url.split('?id=')[-1]
         reporterItem['reporter_name'] = response.css(
-            "#container > div > div:nth-child(2) > div > div > figure > div > strong::text").extract_first()
+            "#container > div > div:nth-child(2) > div > div > figure > div > strong::text").extract_first().replace(
+            " 기자", "")
         reporterItem['reporter_image'] = f"{self.name}_{reporterItem['reporter_id']}.jpg"
         reporterItem['reporter_intro'] = response.css(
             '#container > div > div:nth-child(2) > div > div > div::text').extract_first()

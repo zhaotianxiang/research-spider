@@ -39,6 +39,7 @@ class Spider(scrapy.Spider):
             newItem = NewsItem()
             newItem["news_id"] = item["newsCode"]
             newItem["news_title"] = item["newsTitle"]
+            newItem['news_keywords'] = response.css("meta[name=keywords]::attr(content)").extract_first()
             newItem["news_title_cn"] = None
             if item["newsContents"]:
                 newItem["news_content"] = item["newsContents"].replace("<br /><br />", " ")
