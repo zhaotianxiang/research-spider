@@ -17,7 +17,8 @@ class MobileTwitter(scrapy.Spider):
     main_list = ['main.114ab985.js', 'main.6dea40c5.js']
     start_urls = ['https://abs.twimg.com/responsive-web/client-web/main.114ab985.js']
 
-    def __init__(self):
+    def __init__(self, **kwargs):
+        kwargs.pop('_job')
         self.headers = {}
         self.user_list = []
         self.client = pymongo.MongoClient(get_project_settings().get('MONGO_URI'))

@@ -1,7 +1,9 @@
 import pymongo
 import scrapy
-from ..items import ImageItem
 from scrapy.utils.project import get_project_settings
+
+from ..items import ImageItem
+
 SETTINGS = get_project_settings()
 
 
@@ -10,7 +12,8 @@ class Spider(scrapy.Spider):
     name = 'download_image'
     start_urls = ["https://www.baidu.com"]
 
-    def __init__(self):
+    def __init__(self, **kwargs):
+        kwargs.pop('_job')
         self.client = pymongo.MongoClient(get_project_settings().get('MONGO_URI'))
         self.db = self.client[get_project_settings().get('MONGO_DB')]
 

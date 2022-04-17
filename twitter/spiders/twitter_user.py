@@ -19,7 +19,8 @@ class Twitter(CrawlSpider):
     allowed_domains = ['twitter.com']
     x_guest_token = ""
 
-    def __init__(self):
+    def __init__(self, **kwargs):
+        kwargs.pop('_job')
         self.client = pymongo.MongoClient(get_project_settings().get('MONGO_URI'))
         self.db = self.client[get_project_settings().get('MONGO_DB')]
         self.url = (
