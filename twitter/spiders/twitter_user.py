@@ -9,8 +9,9 @@ import pymongo
 import re
 import scrapy
 from scrapy.spiders import CrawlSpider
-from urllib.parse import quote
 from scrapy.utils.project import get_project_settings
+from urllib.parse import quote
+
 SETTINGS = get_project_settings()
 
 
@@ -20,7 +21,8 @@ class Twitter(CrawlSpider):
     x_guest_token = ""
 
     def __init__(self, **kwargs):
-        kwargs.pop('_job')
+        # kwargs.pop('_job')
+
         self.client = pymongo.MongoClient(get_project_settings().get('MONGO_URI'))
         self.db = self.client[get_project_settings().get('MONGO_DB')]
         self.url = (
@@ -122,6 +124,18 @@ class Twitter(CrawlSpider):
                 user["search_reporter_name"] = meta_user['reporter_name']
                 user_description = user.get("description") + user.get("name") + user.get("screen_name")
                 self.logger.info("找到用户  %-20s %s", meta_user['reporter_name'], user_description)
+
+                # add twitter
+                is_has_twitter = False
+                for code in meta_user["reporter_code_list"]:
+                    if code["code_type"] == "twitter":
+                        is_has_twitter = True
+                if not is_has_twitter:
+                    meta_user["reporter_code_list"].append({
+                        "code_type": "twitter",
+                        "code_content": "https://twitter.com/" + user.get("screen_name")
+                    })
+
                 if user.get('profile_image_url'):
                     item = meta_user.copy()
                     if not item.get("reporter_image_url"):
@@ -144,6 +158,16 @@ class Twitter(CrawlSpider):
                         self.logger.info("根据后缀 %s 找到了记者用户", meta_user['search_by'])
 
                         # 找到了记者的Twitter账号，反向更新记者数据库
+                        # add twitter
+                        is_has_twitter = False
+                        for code in meta_user["reporter_code_list"]:
+                            if code["code_type"] == "twitter":
+                                is_has_twitter = True
+                        if not is_has_twitter:
+                            meta_user["reporter_code_list"].append({
+                                "code_type": "twitter",
+                                "code_content": "https://twitter.com/" + user.get("screen_name")
+                            })
                         if user.get('profile_image_url'):
                             item = meta_user.copy()
                             if not item.get("reporter_image_url"):
