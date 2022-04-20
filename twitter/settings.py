@@ -27,8 +27,9 @@ ITEM_PIPELINES = {
     'twitter.pipelines.ImageSpiderPipeline': 4,
 }
 COOKIES_DEBUG = True
+# 保存图片配置
+IMAGES_STORE = "/Users/zhaotianxiang/data/images/"
 MEDIA_ALLOW_REDIRECTS = True
-IMAGES_STORE = "./images/data/images/"
 
 # MongoDB 数据库配置
 MONGO_URI = 'mongodb://root:841_sjzc@8.210.221.113:8410'
