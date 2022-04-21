@@ -153,7 +153,8 @@ class Twitter(CrawlSpider):
                 user_description = user.get("description") + user.get("name") + user.get("screen_name")
                 if user_description:
                     kbs = re.compile(r'kbs|朝日新聞|読売新聞|voa|npr|yna｜'
-                                     r'upi｜apnews', re.I)
+                                     r'reporter|associated press|kyodonews|nbcmews|reuters|media｜'
+                                     r'upi｜apnews|upi|news|writer|', re.I)
                     if kbs.search(user_description):
                         self.logger.info("根据后缀 %s 找到了记者用户", meta_user['search_by'])
 
