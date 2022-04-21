@@ -127,7 +127,7 @@ class Twitter(CrawlSpider):
                     continue
                 user["search_reporter_name"] = meta_user['reporter_name']
                 user_description = user.get("description") + user.get("name") + user.get("screen_name")
-                self.logger.info("找到用户  %-20s %s", meta_user['reporter_name'], user_description)
+                self.logger.info("根据账号找到用户  %-20s %s", meta_user['reporter_name'], user_description)
 
                 # add twitter
                 is_has_twitter = False
@@ -137,14 +137,17 @@ class Twitter(CrawlSpider):
                 if not is_has_twitter:
                     meta_user["reporter_code_list"].append({
                         "code_type": "twitter",
+                        "matching": True,
                         "code_content": "https://twitter.com/" + user.get("screen_name")
                     })
 
                 if user.get('profile_image_url'):
                     item = meta_user.copy()
-                    if not item.get("reporter_image_url"):
+                    if item.get("reporter_image_url") and re.search(r'twimg.com', item.get("reporter_image_url")):
                         item['reporter_image_url'] = user.get('profile_image_url')
-                    if not item.get("reporter_image"):
+                        item['reporter_image'] = "twitter_" + user.get('screen_name') + '.jpg'
+                    elif not item.get("reporter_image_url"):
+                        item['reporter_image_url'] = user.get('profile_image_url')
                         item['reporter_image'] = "twitter_" + user.get('screen_name') + '.jpg'
 
                 self.db.reporter.update_one(
@@ -160,11 +163,12 @@ class Twitter(CrawlSpider):
                 user["search_reporter_name"] = meta_user['reporter_name']
                 user_description = user.get("description") + user.get("name") + user.get("screen_name")
                 if user_description:
-                    kbs = re.compile(r'kbs|朝日新聞|読売新聞|voa|npr|yna｜'
-                                     r'reporter|associated press|kyodonews|nbcmews|reuters|media｜'
-                                     r'upi｜apnews|upi|news|writer|', re.I)
+                    kbs = re.compile(
+                        r'kbs|朝日新聞|読売新聞|voa|npr|yna|reporter|associated press|kyodonews|nbcmews|reuters|media|apnews|upi|news|writer',
+                        re.I)
                     if kbs.search(user_description):
-                        self.logger.info("根据描述关键词找到了记者用户 %s - %s", meta_user['reporter_name'], user.get("screen_name"))
+                        self.logger.info("根据描述关键词找到了记者用户 %s - %s - %s", meta_user['reporter_name'],
+                                         user.get("screen_name"), user_description)
                         # 找到了记者的Twitter账号，反向更新记者数据库
                         # add twitter
                         is_has_twitter = False
@@ -174,14 +178,18 @@ class Twitter(CrawlSpider):
                         if not is_has_twitter:
                             meta_user["reporter_code_list"].append({
                                 "code_type": "twitter",
+                                "matching": True,
                                 "code_content": "https://twitter.com/" + user.get("screen_name")
                             })
 
                         if user.get('profile_image_url'):
                             item = meta_user.copy()
-                            if not item.get("reporter_image_url"):
+                            if item.get("reporter_image_url") and re.search(r'twimg.com',
+                                                                            item.get("reporter_image_url")):
                                 item['reporter_image_url'] = user.get('profile_image_url')
-                            if not item.get("reporter_image"):
+                                item['reporter_image'] = "twitter_" + user.get('screen_name') + '.jpg'
+                            elif not item.get("reporter_image_url"):
+                                item['reporter_image_url'] = user.get('profile_image_url')
                                 item['reporter_image'] = "twitter_" + user.get('screen_name') + '.jpg'
 
                         self.db.reporter.update_one(
