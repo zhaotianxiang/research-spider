@@ -250,17 +250,7 @@
         <td>√</td>
         <td>是</td>
         <td>是</td>
-    <tr><tr>
-        <td colspan="7" align="center"></td>
-    <tr>    <tr>
-        <td>媒体</td>
-        <td>文章包含<br>记者姓名</td>
-        <td>全体记者页面</td>
-        <td>个人详情页面</td>
-        <td>个人社交账号</td>
-        <td>收费</td>
-        <td>外协</td>
-    <tr><tr>
+    <tr> <tr>
         <td colspan="7" align="center">待爬取</td>
     <tr><tr>
         <td>日本广播协会</td>
