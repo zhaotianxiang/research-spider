@@ -1,4 +1,4 @@
-# Media Spider
+# Reseacrch Spider
   本项目的目的是抓取新闻媒体内容，用于测试自主研发的语言翻译识别程序的准确度，在互联网上采集一些新闻媒体信息作为训练集。
 ## Getting Start
 #### 1. 运行环境
