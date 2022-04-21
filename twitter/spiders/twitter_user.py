@@ -5,12 +5,13 @@
 # 程序幂等，即多次执行本程序不会对原有的数据库造成影响，只更新不删除，不会入重复数据
 
 import json
-import pymongo
 import re
+from urllib.parse import quote
+
+import pymongo
 import scrapy
 from scrapy.spiders import CrawlSpider
 from scrapy.utils.project import get_project_settings
-from urllib.parse import quote
 
 SETTINGS = get_project_settings()
 
@@ -22,7 +23,7 @@ class Twitter(CrawlSpider):
 
     def __init__(self, **kwargs):
         # kwargs.pop('_job')
-
+        self.logger.info("初始化spider")
         self.client = pymongo.MongoClient(get_project_settings().get('MONGO_URI'))
         self.db = self.client[get_project_settings().get('MONGO_DB')]
         self.url = (
@@ -61,7 +62,9 @@ class Twitter(CrawlSpider):
         self.cursor_re = re.compile('"(scroll:[^"]*)"')
 
         self.user_list = []
+        self.logger.info("开始查询数据库")
         database_data = self.db.reporter.find()
+        self.logger.info("查询完毕")
         for reporter in database_data:
             is_has_twitter_account = False
             if reporter.get("reporter_code_list"):
@@ -91,6 +94,8 @@ class Twitter(CrawlSpider):
         yield scrapy.Request(url="https://twitter.com/explore", callback=self.add_header)
 
     def add_header(self, response):
+        authorization = re.findall(r'AAAAAAAAAAAA.*?(?=")', response.text)
+        self.logger.info(authorization)
         self.headers = {
             'authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA',
         }
@@ -120,7 +125,6 @@ class Twitter(CrawlSpider):
                 user = user_dict.get(userId)
                 if user['screen_name'] != meta_user.get("screen_name"):
                     continue
-                self.logger.info("根据后缀 %s 找到了记者用户", meta_user['search_by'])
                 user["search_reporter_name"] = meta_user['reporter_name']
                 user_description = user.get("description") + user.get("name") + user.get("screen_name")
                 self.logger.info("找到用户  %-20s %s", meta_user['reporter_name'], user_description)
@@ -140,12 +144,16 @@ class Twitter(CrawlSpider):
                     item = meta_user.copy()
                     if not item.get("reporter_image_url"):
                         item['reporter_image_url'] = user.get('profile_image_url')
-                        self.db.reporter.update_one(
-                            {"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
-                            {"$set": dict(item)},
-                            upsert=True)
+                    if not item.get("reporter_image"):
+                        item['reporter_image'] = "twitter_" + user.get('screen_name') + '.jpg'
+
+                self.db.reporter.update_one(
+                    {"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
+                    {"$set": dict(item)},
+                    upsert=True)
                 user.update(meta_user)
                 yield user
+        # 根据描述的关键词搜索
         else:
             for userId in user_dict:
                 user = user_dict.get(userId)
@@ -156,8 +164,7 @@ class Twitter(CrawlSpider):
                                      r'reporter|associated press|kyodonews|nbcmews|reuters|media｜'
                                      r'upi｜apnews|upi|news|writer|', re.I)
                     if kbs.search(user_description):
-                        self.logger.info("根据后缀 %s 找到了记者用户", meta_user['search_by'])
-
+                        self.logger.info("根据描述关键词找到了记者用户 %s - %s", meta_user['reporter_name'], user.get("screen_name"))
                         # 找到了记者的Twitter账号，反向更新记者数据库
                         # add twitter
                         is_has_twitter = False
@@ -169,13 +176,17 @@ class Twitter(CrawlSpider):
                                 "code_type": "twitter",
                                 "code_content": "https://twitter.com/" + user.get("screen_name")
                             })
+
                         if user.get('profile_image_url'):
                             item = meta_user.copy()
                             if not item.get("reporter_image_url"):
                                 item['reporter_image_url'] = user.get('profile_image_url')
-                                self.db.reporter.update_one(
-                                    {"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
-                                    {"$set": dict(item)},
-                                    upsert=True)
+                            if not item.get("reporter_image"):
+                                item['reporter_image'] = "twitter_" + user.get('screen_name') + '.jpg'
+
+                        self.db.reporter.update_one(
+                            {"reporter_id": item["reporter_id"], "media_id": item["media_id"]},
+                            {"$set": dict(item)},
+                            upsert=True)
                         user.update(meta_user)
                         yield user

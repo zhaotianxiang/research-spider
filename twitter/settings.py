@@ -5,8 +5,8 @@ LOG_LEVEL = 'INFO'
 
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36'
 ROBOTSTXT_OBEY = False
-CONCURRENT_REQUESTS = 1
-DOWNLOAD_DELAY = 2
+CONCURRENT_REQUESTS = 16
+DOWNLOAD_DELAY = 1
 DEFAULT_REQUEST_HEADERS = {
     'content-type': 'application/json',
     'accept': '*/*'
