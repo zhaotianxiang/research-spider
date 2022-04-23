@@ -48,7 +48,6 @@ class MongoDBPipeline(object):
         self.client.close()
 
     def process_item(self, item, spider):
-        del item["_id"]
         if item.get('screen_name') and item.get('id'):
             self.db.twitter_account.update_one({
                 "id": item["id"]},
