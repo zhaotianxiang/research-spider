@@ -1,7 +1,8 @@
 import json
 import re
+import datetime
+
 import scrapy
-from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import Selector
 
 from ..items import NewsItem
@@ -84,7 +85,9 @@ class Spider(scrapy.Spider):
         newItem["news_id"] = news_id
         newItem["news_title"] = response.meta.get('article').get("news_title")
         newItem["news_content"] = article_body
-        newItem["news_publish_time"] = response.meta.get('article').get("released_time").replace('Z', '').replace('T', ' ')
+        publish_time = response.meta.get('article').get("released_time")
+        newItem["news_publish_time"] = datetime.datetime.strptime(publish_time, "%Y-%m-%dT%H:%M").strftime(
+            '%Y-%m-%d %H:%M:%S')
         newItem["news_url"] = response.meta.get('article').get("news_url")
         newItem["news_pdf"] = self.name + "_" + news_id + ".pdf"
         newItem["news_pdf_cn"] = self.name + "_" + news_id + "_cn.pdf"
