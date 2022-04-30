@@ -84,7 +84,7 @@ class Spider(scrapy.Spider):
         newItem["news_id"] = news_id
         newItem["news_title"] = response.meta.get('article').get("news_title")
         newItem["news_content"] = article_body
-        newItem["news_publish_time"] = response.meta.get('article').get("released_time").replace('Z', '')
+        newItem["news_publish_time"] = response.meta.get('article').get("released_time").replace('Z', '').replace('T', ' ')
         newItem["news_url"] = response.meta.get('article').get("news_url")
         newItem["news_pdf"] = self.name + "_" + news_id + ".pdf"
         newItem["news_pdf_cn"] = self.name + "_" + news_id + "_cn.pdf"
