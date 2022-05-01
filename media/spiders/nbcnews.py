@@ -15,8 +15,8 @@ class Spider(CrawlSpider):
     allowed_domains = ['www.nbcnews.com']
     start_urls = ['https://www.nbcnews.com/']
     rules = (
-        Rule(LinkExtractor(allow=r'https://www.nbcnews.com/politics.*?d{4}$'), callback='news'),
-        Rule(LinkExtractor(allow=r'https://www.nbcnews.com/news.*?\d{4}$'), callback='news')
+        Rule(LinkExtractor(allow=r'https://www.nbcnews.com/politics.*?d{4}$'), callback='news', follow=True),
+        Rule(LinkExtractor(allow=r'https://www.nbcnews.com/news.*?\d{4}$'), callback='news', follow=True),
     )
 
     def news(self, response):
