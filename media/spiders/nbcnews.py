@@ -47,8 +47,8 @@ class Spider(scrapy.Spider):
                 .strftime('%Y-%m-%d %H:%M:%S')
 
         newsItem['news_url'] = response.url
-        newsItem['news_pdf'] = f"{self.name}_{self.id}.pdf"
-        newsItem['news_pdf_cn'] = f"{self.name}_{self.id}_cn.pdf"
+        newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
+        newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
 
         reporter_name = response.css('div.article-inline-byline > span.byline-name::text').extract_first()
         reporter_id = reporter_name
