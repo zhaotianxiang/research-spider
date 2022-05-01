@@ -1,32 +1,23 @@
-import re
-import scrapy
 import datetime
+import re
+
+import scrapy
 from scrapy.linkextractors import LinkExtractor
+from scrapy.spiders import CrawlSpider, Rule
 
 from ..items import NewsItem
 from ..items import ReporterItem
 
 
-class Spider(scrapy.Spider):
+class Spider(CrawlSpider):
     name = 'nbcnews'
     id = 13
     allowed_domains = ['www.nbcnews.com']
     start_urls = ['https://www.nbcnews.com/']
-
-    def parse(self, response):
-        links = LinkExtractor(restrict_css='body').extract_links(response)
-        self.logger.warn("泛查询 %s --- %s 个子页面", response.url, len(links))
-        # 泛查询
-        for link in LinkExtractor(
-                restrict_css='body',
-                allow_domains=self.allowed_domains,
-                canonicalize=True).extract_links(response):
-            url = link.url.replace('featureFlag=false', '')
-            if re.search('\d{4}$', url) and re.search('n', url.split('/')[-1].split('-')[-1]) and not re.search(
-                    'author', url):
-                yield scrapy.Request(url, callback=self.news)
-            else:
-                yield scrapy.Request(url)
+    rules = (
+        Rule(LinkExtractor(allow=r'https://www.nbcnews.com/politics.*?d{4}$'), callback='news'),
+        Rule(LinkExtractor(allow=r'https://www.nbcnews.com/news.*?\d{4}$'), callback='news')
+    )
 
     def news(self, response):
         # 解析详情页
@@ -71,20 +62,7 @@ class Spider(scrapy.Spider):
         self.logger.warn("保存新闻信息 %s", response.url)
         yield newsItem
 
-        # 泛查询
-        for link in LinkExtractor(
-                restrict_css='body',
-                allow_domains=self.allowed_domains,
-                canonicalize=True).extract_links(response):
-            url = link.url
-            if re.search('\d{4}$', url) and re.search('n', url.split('/')[-1].split('-')[-1]) and not re.search(
-                    'author', url):
-                yield scrapy.Request(url, callback=self.news)
-            else:
-                yield scrapy.Request(url)
-
     def reporter(self, response):
-
         reporterItem = ReporterItem()
         reporterItem['reporter_id'] = response.meta["reporter_id"]
         reporterItem['reporter_name'] = response.meta["reporter_name"]
