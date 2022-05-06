@@ -19,6 +19,7 @@ def get_content(content):
 class Spider(scrapy.Spider):
     id = 6
     name = 'reuters'
+    media_name = 'Reuters'
     allow_domains = ['www.reuters.com', 'cn.reuters.com', ]
     start_urls = ['https://www.reuters.com/']
 

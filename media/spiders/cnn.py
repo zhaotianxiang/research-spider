@@ -14,6 +14,7 @@ from ..items import ReporterItem
 class Spider(scrapy.Spider):
     id = 16
     name = 'cnn'
+    media_name = 'CNN'
     allowed_domains = ['us.cnn.com']
     start_urls = ['https://us.cnn.com/specials/profiles',
                   'https://us.cnn.com/specials/tv/anchors-and-reporters',

@@ -28,6 +28,7 @@ def seed():
 class Spider(scrapy.Spider):
     id = 3
     name = 'youmiuri'
+    media_name = 'Youmiuri'
     start_urls = seed()
 
     def parse(self, response):

@@ -14,6 +14,7 @@ from ..items import ReporterItem
 class Spider(scrapy.Spider):
     id = 23
     name = 'chinaaid'
+    media_name = 'ChinaAid'
     allowed_domains = ['www.chinaaid.net']
     start_urls = ['https://www.chinaaid.net/']
 

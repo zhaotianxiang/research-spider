@@ -24,6 +24,7 @@ now = datetime.datetime.now().strftime('%Y%m%d')
 class Spider(scrapy.Spider):
     id = 1
     name = 'kbs'
+    media_name = 'KBS'
     start_urls = list(map(generate_url_list, date_range("20180101", now)))
 
     def parse(self, response):

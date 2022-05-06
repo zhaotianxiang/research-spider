@@ -1,9 +1,5 @@
-import json
-import re
 import scrapy
-import sys
 from scrapy.linkextractors import LinkExtractor
-from urllib.parse import urlparse
 import datetime
 
 from ..items import NewsItem
@@ -13,6 +9,7 @@ from ..items import ReporterItem
 class Spider(scrapy.Spider):
     id = 21
     name = 'yna_cn'
+    media_name = 'YNA'
     allowed_domains = ['cn.yna.co.kr']
     start_urls = ['https://cn.yna.co.kr/']
 
@@ -58,6 +55,4 @@ class Spider(scrapy.Spider):
                 reporterItem['reporter_code_list'] = [{'code_content': author_email, 'code_type': 'email'}]
                 newsItem['reporter_list'].append(reporterItem)
                 yield reporterItem
-        newsItem['media_id'] = 21
-        newsItem['media_name'] = 'yna'
         yield newsItem

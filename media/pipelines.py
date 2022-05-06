@@ -69,7 +69,7 @@ class MongoDBPipeline(object):
         if isinstance(item, ReporterItem):
             if not item.get('media_id'):
                 item['media_id'] = spider.id
-                item['media_name'] = spider.name
+                item['media_name'] = spider.media_name
 
             if 'reporter_code_list' in item:
                 reporter_code_list = []
@@ -95,14 +95,14 @@ class MongoDBPipeline(object):
         if isinstance(item, NewsItem):
             if not item.get('media_id'):
                 item['media_id'] = spider.id
-                item['media_name'] = spider.name
+                item['media_name'] = spider.media_name
             if 'reporter_list' in item:
                 if len(item['reporter_list']) == 0:
                     raise DropItem("reporter_list is empty")
                 reporter_list = []
                 for reporter in item['reporter_list']:
                     reporter['media_id'] = spider.id
-                    reporter['media_name'] = spider.name
+                    reporter['media_name'] = spider.media_name
                     reporter_list.append(reporter)
                 item['reporter_list'] = reporter_list
 

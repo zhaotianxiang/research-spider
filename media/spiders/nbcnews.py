@@ -11,6 +11,7 @@ from ..items import ReporterItem
 
 class Spider(CrawlSpider):
     name = 'nbcnews'
+    media_name = 'NBC'
     id = 13
     allowed_domains = ['www.nbcnews.com']
     start_urls = ['https://www.nbcnews.com/']

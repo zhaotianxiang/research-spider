@@ -14,6 +14,7 @@ from ..items import ReporterItem
 class Spider(scrapy.Spider):
     id = 4
     name = 'asahi'
+    media_name = 'Asahi'
     allowed_domains = ['www.asahi.com']
     start_urls = ['https://www.asahi.com/sns/reporter/']
 

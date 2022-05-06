@@ -15,6 +15,7 @@ from ..items import ReporterItem
 class Spider(scrapy.Spider):
     id = 22
     name = 'kyodo'
+    media_name = 'Kyodo'
     allowed_domains = ['english.kyodonews.net', 'china.kyodonews.net', 'www.47news.jp']
     start_urls = ['https://china.kyodonews.net/']
 

@@ -13,6 +13,7 @@ from ..items import ReporterItem
 class Spider(scrapy.Spider):
     id = 7
     name = 'upi'
+    media_name = 'UPI'
     start_urls = ['https://www.upi.com/']
     allowed_domains = ['www.upi.com']
 

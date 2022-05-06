@@ -20,6 +20,7 @@ def seed():
 class Spider(scrapy.Spider):
     id = 2
     name = 'voa'
+    media_name = 'VOA'
     start_urls = seed()
 
     def parse(self, response):

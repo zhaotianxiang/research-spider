@@ -15,6 +15,7 @@ from ..items import ReporterItem
 class Spider(scrapy.Spider):
     id = 15
     name = 'ntdtv'
+    media_name = 'NTD'
     allowed_domains = ['www.ntdtv.com']
     start_urls = ['https://www.ntdtv.com/']
 

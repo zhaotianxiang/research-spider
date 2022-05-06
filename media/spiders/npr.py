@@ -12,6 +12,7 @@ from ..items import ReporterItem
 class Spider(scrapy.Spider):
     id = 24
     name = 'npr'
+    media_name = 'NPR'
     allowed_domains = ['www.npr.org']
     start_urls = ['https://www.npr.org/']
 
