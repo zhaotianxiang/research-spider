@@ -1,6 +1,5 @@
 # coding:utf-8
 import json
-import logging
 import os
 import time
 from urllib.parse import urlparse
@@ -11,7 +10,7 @@ from selenium import webdriver
 client = pymongo.MongoClient('mongodb://root:841_sjzc@8.210.221.113:8410')
 db = client['media']
 col = db['news']
-downloaded_file_dir = '/Users/zhaotianxiang/data/pdf/'
+downloaded_file_dir = 'E:\data\pdf'
 file_set = set()
 
 
@@ -63,7 +62,7 @@ def google_download(url, filename):
 
 def convert_to_google_url(url):
     parsed_url = urlparse(url)
-    return f"https://{'-'.join(parsed_url.hostname.split('.'))}.translate.goog/{parsed_url.path}?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp"
+    return f"https://{'-'.join(parsed_url.hostname.split('.'))}.translate.goog{parsed_url.path}?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp"
 
 
 def init_downloaded_file_set(dir):
@@ -73,24 +72,26 @@ def init_downloaded_file_set(dir):
 
 
 def read_draft_url_from_mongo():
-    cursor = col.find().limit(10)
-    for news in cursor:
-        url_en = news["news_url"]
-        url_cn = convert_to_google_url(url_en)
-        filename_en = news["news_pdf"]
-        filename_cn = news["news_pdf_cn"]
-        # skip duplicated pdf file
-        if filename_cn in file_set and filename_en in file_set:
-            logging.info("%s %s downloaded", filename_cn, filename_en)
-            continue
-        else:
-            try:
-                logging.info("downloading %s %s", filename_cn, filename_en)
-                # google_download(url_en, filename_en)
-                google_download(url_cn, filename_cn)
-            except:
-                logging.error("Error download %s", filename_cn)
-
+    cursor = col.find({'media_name':'youmiuri'})
+    try:
+        for news in cursor:
+            url_en = news["news_url"]
+            url_cn = convert_to_google_url(url_en)
+            filename_en = news["news_pdf"]
+            filename_cn = news["news_pdf_cn"]
+            # skip duplicated pdf file
+            if filename_cn in file_set:
+                print("downloaded", filename_cn, filename_en)
+                continue
+            else:
+                try:
+                    print("downloading %s %s", filename_cn, filename_en)
+                    print(url_en, url_cn)
+                    google_download(url_cn, filename_cn)
+                except:
+                    print("Error download %s", filename_cn)
+    except:
+        pass
 
 if __name__ == '__main__':
     init_downloaded_file_set(downloaded_file_dir)
