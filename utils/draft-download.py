@@ -10,7 +10,7 @@ from selenium import webdriver
 client = pymongo.MongoClient('mongodb://root:841_sjzc@8.210.221.113:8410')
 db = client['media']
 col = db['news']
-downloaded_file_dir = 'E:\data\pdf'
+downloaded_file_dir = '/Users/zhaotianxiang/data/pdf'
 file_set = set()
 
 
@@ -72,26 +72,29 @@ def init_downloaded_file_set(dir):
 
 
 def read_draft_url_from_mongo():
-    cursor = col.find({'media_name':'youmiuri'})
-    try:
-        for news in cursor:
-            url_en = news["news_url"]
-            url_cn = convert_to_google_url(url_en)
-            filename_en = news["news_pdf"]
-            filename_cn = news["news_pdf_cn"]
-            # skip duplicated pdf file
-            if filename_cn in file_set:
-                print("downloaded", filename_cn, filename_en)
-                continue
-            else:
-                try:
-                    print("downloading %s %s", filename_cn, filename_en)
-                    print(url_en, url_cn)
-                    google_download(url_cn, filename_cn)
-                except:
-                    print("Error download %s", filename_cn)
-    except:
-        pass
+    cursor = col.find({"media_name": "Youmiuri"})
+    news_list = []
+    for i in cursor:
+        news_list.append(i)
+
+    for news in news_list:
+        url_en = news["news_url"]
+        url_cn = convert_to_google_url(url_en)
+        filename_en = news["news_pdf"]
+        filename_cn = news["news_pdf_cn"]
+        # skip duplicated pdf file
+        if filename_cn in file_set:
+            print("downloaded", filename_cn, filename_en)
+            continue
+        else:
+            try:
+                print("downloading %s %s", filename_cn, filename_en)
+                print(url_en, url_cn)
+                google_download(url_cn, filename_cn)
+                google_download(url_en, filename_en)
+            except:
+                print("Error download %s", filename_cn)
+
 
 if __name__ == '__main__':
     init_downloaded_file_set(downloaded_file_dir)
