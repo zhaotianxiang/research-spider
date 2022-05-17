@@ -26,7 +26,7 @@
 -d start=0
 -d size=2
 -d key=a4f232k9333d66b17f359eec8b1e4b89de31df6
--d query={"employer": ["state.gov"], "current_title": ["Secretary"]}
+-d query={"employer": ["abc.com"], "current_title": ["Secretary"]}
 ```
 
 #### （6） 点击 Check CMD
