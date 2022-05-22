@@ -3,8 +3,6 @@ node_modules
 venv
 .idea
 log
-kbs/data/pdf
-data/pdf
 pdf
 html
 scrapy.cfg

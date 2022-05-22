@@ -3,6 +3,11 @@ import logging
 
 import rocketreach
 import scrapy
+import logging
+import pymongo
+import rocketreach
+import scrapy
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -26,12 +31,12 @@ def parse_education(item):
     if not item.get("start"):
         ret += "None" + "～"
     else:
-        ret += item["start"] + "～"
+        ret += str(item["start"]) + "～"
     if not item.get("end"):
         ret += "None"
     else:
-        ret += item["end"]
-    ret += ":" + item["school"]
+        ret += str(item["end"])
+    ret += ":" + str(item["school"])
     return ret
 
 
@@ -39,41 +44,69 @@ class Spider(scrapy.Spider):
     name = 'rocket_cost_credits'
 
     allowed_domains = []
-    query = None
+    # query = {"name":["Amit Shanbhag"],"keyword":["Founder"],"current_employer":["RocketReach.co"]}
     start = 0
-    size = 1
-    key = None
-    start_urls = ['https://www.baidu.com']
+    size = 5
+    # youxiao
+    key = 'ab52edkd117f699da82a53926b1db64f8a215ed'
+
+    # tian
+    # key = 'a4f232k9333d66b17f359eec8b1e4b89de31df6'
+
+    def start_requests(self):
+        self.client = pymongo.MongoClient(self.settings.get('MONGO_URI'))
+        self.db = self.client[self.settings.get('MONGO_DB')]
+        result = self.db.reporter.find({"media_id": 8})
+
+        reporter_list = []
+        for reporter in result:
+            reporter_list.append(reporter)
+
+        self.logger.info("=================== %s ===============", len(reporter_list))
+
+        for reporter in reporter_list:
+            url = f"https://www.baidu.com/?q={reporter['reporter_name']}"
+            query = {"name":[reporter['reporter_name']], "employer":'Associated Press'}
+            # query = {"name":['Mariano Castillo'], "employer":['CNN']}
+            yield scrapy.Request(url, meta={'query':  query, 'reporter_id': reporter['reporter_id']})
+
 
     def parse(self, response):
+        query = response.meta["query"]
+        reporter_id = response.meta["reporter_id"]
         rr = rocketreach.Gateway(rocketreach.GatewayConfig(self.key))
-        self.logger.info("query %s", [self.query])
+        self.logger.info("query %s", [query])
         self.logger.info("start %s", [self.start])
         self.logger.info("size %s", [self.size])
         self.logger.info("key %s", [self.key])
-        s = rr.person.search().filter(**eval(self.query))
+        s = rr.person.search().filter(**query)
         s = s.params(start=self.start, size=self.size)  # 设置查询数量
         results = s.execute()
         if isinstance(results, rocketreach.result.ErrorResult):
-            self.logger.error("查询结果错误 %s", results.message)
+            self.logger.error("query error %s", results.message)
+            self.logger.error("query error %s", results)
         if isinstance(results, rocketreach.result.SuccessfulResult):
             peoples = results.people
-            self.logger.info("成功查询到 %s 个人的信息", len(peoples))
+            self.logger.info("query success %s people", len(peoples))
             for people in peoples:
+                print(people.current_employer, people.name)
                 url = f"https://api.rocketreach.co/v2/api/lookupProfile?api_key={self.key}&id={people.id}"
-                yield scrapy.Request(url, meta={'people': people}, callback=self.profile)
+                yield scrapy.Request(url, meta={'people': people, 'reporter_id':reporter_id}, callback=self.profile)
+                break
 
     def profile(self, response):
         people = response.meta["people"]
+        reporter_id = response.meta["reporter_id"]
         profile = json.loads(response.text)
-        self.logger.info("个人联系信息详情 %s", json.dumps(profile))
+        self.logger.info("people detail data %s", json.dumps(profile))
         item = {
+            'reporter_id': reporter_id,
             '人员编号': people.id,
             '人员名称': people.name,
             '地区': people.region,
             '城市': people.city,
             '城市代码': people.country_code,
-            '雇员信息': people.name,
+            '雇主信息': people.current_employer,
             '当前职位': people.current_title,
             '当前领英地址': people.linkedin_url,
             '地理位置': people.location,
