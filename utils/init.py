@@ -1,14 +1,12 @@
 import csv
-import logging
 import pymongo
 import sys
 
 sys.path.append("..")
-from items.MongoDBItems import MediaItem
 
 media_list = []
 for line in csv.reader(open("./media.csv")):
-    mediaItem = MediaItem()
+    mediaItem = {}
     print(line)
     mediaItem["media_id"] = line[0]
     mediaItem["media_name_en"] = line[1]
@@ -26,8 +24,7 @@ class MediaInit(object):
     def process(self):
         self.db.media.drop()
         for item in media_list:
-            if isinstance(item, MediaItem):
-                self.db.media.update_one({"media_id": item["media_id"]}, {"$set": dict(item)}, upsert=True)
+            self.db.media.update_one({"media_id": item["media_id"]}, {"$set": dict(item)}, upsert=True)
         print(f"init  {len(media_list)}  media")
         self.client.close()
 

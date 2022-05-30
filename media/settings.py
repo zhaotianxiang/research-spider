@@ -2,7 +2,6 @@ BOT_NAME = 'media'
 SPIDER_MODULES = ['media.spiders']
 NEWSPIDER_MODULE = 'media.spiders'
 
-LOG_LEVEL = "INFO"
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
 ROBOTSTXT_OBEY = False
 CONCURRENT_REQUESTS = 16

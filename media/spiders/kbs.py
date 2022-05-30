@@ -1,7 +1,7 @@
 import datetime
 import json
+
 import scrapy
-import sys
 
 from ..items import NewsItem
 from ..items import ReporterItem

@@ -55,8 +55,8 @@ class MongoDBPipeline(object):
 
     def open_spider(self, spider):
         pass
-        # self.client = pymongo.MongoClient(self.mongo_uri)
-        # self.db = self.client[self.mongo_db]
+        self.client = pymongo.MongoClient(self.mongo_uri)
+        self.db = self.client[self.mongo_db]
         # spider.logger.info("正在清空数据库数据...")
         # reporter_result = self.db.reporter.delete_many({'media_id': spider.id})
         # news_result = self.db.news.delete_many({'media_id': spider.id})

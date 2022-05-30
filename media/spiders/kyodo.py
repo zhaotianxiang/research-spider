@@ -1,10 +1,8 @@
 import json
 import re
-import re
+
 import scrapy
-import sys
 from scrapy.linkextractors import LinkExtractor
-from urllib.parse import urlparse
 
 from ..items import NewsItem
 from ..items import ReporterItem

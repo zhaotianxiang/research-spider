@@ -1,6 +1,6 @@
 import datetime
+
 import scrapy
-import sys
 from scrapy.linkextractors import LinkExtractor
 
 from ..items import NewsItem

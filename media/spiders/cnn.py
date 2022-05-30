@@ -1,11 +1,8 @@
 import datetime
 import json
-import re
+
 import scrapy
-import time
-from scrapy import Request
 from scrapy.linkextractors import LinkExtractor
-from urllib.parse import urlparse
 
 from ..items import NewsItem
 from ..items import ReporterItem
