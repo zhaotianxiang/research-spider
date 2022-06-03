@@ -3,21 +3,16 @@ import threading
 
 import pdfkit
 
-output_path = "/Volumes/data/pdfcn/"
+output_path = "/Volumes/data/pdfcn_back/"
+downloaded = "./done.txt"
+
 file_set = set()
-
-
-def init_downloaded_file_set(dir):
-    list_dir = os.listdir(dir)
-    for file in list_dir:
-        file_set.add(file)
-
-
-init_downloaded_file_set(output_path)
-
-if not os.path.exists(output_path):
-    os.mkdir(output_path)
-
+fwrite = open("./done.txt", "a")
+fread = open("./done.txt", "r")
+def init_downloaded_file_set():
+    file_list = fread.readlines()
+    for file in file_list:
+        file_set.add(file.strip("\n"))
 
 def mongo_datas():
     import pymongo
@@ -39,7 +34,7 @@ def mongo_datas():
 
 
 def download_pdf(url, write_filepath=None):
-    print(url)
+    print("downloading", url)
     options = {
         'page-size': 'A4',
         'margin-top': '5mm',
@@ -54,13 +49,15 @@ def download_pdf(url, write_filepath=None):
     except:
         print("wrong")
         pass
+    print("all done ", len(file_set))
 
 
 def thread_func(tasks):  # 线程函数
     for (url, pdf_filename) in tasks:
         if pdf_filename in file_set:
-            print(pdf_filename, "is downloaded")
+            print("downloaded ",pdf_filename)
             continue
+        fwrite.write(pdf_filename+"\n")
         filepath = os.path.join(output_path, pdf_filename)
         if os.path.isfile(filepath):
             continue
@@ -80,4 +77,6 @@ def multi_thread_run(thread_num):
 
 
 if __name__ == '__main__':
+    init_downloaded_file_set()
+    print("all done ",len(file_set))
     multi_thread_run(10)
