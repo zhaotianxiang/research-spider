@@ -5,14 +5,21 @@
 
 from urllib.parse import urlparse, parse_qs
 
+import scrapy
 from scrapy.pipelines.files import FilesPipeline
+
+from lexicon.items import DownfilesItem
 
 
 class DownfilesPipeline(FilesPipeline):
+    def get_media_requests(self, item, response):
+        if isinstance(item, DownfilesItem):
+            for url in item['file_urls']:
+                yield scrapy.Request(url, meta={"item": item})
+
     def file_path(self, request, response=None, info=None):
-        parsed_url = urlparse(request.url)
-        qs = parse_qs(parsed_url.query)
-        cate_name = qs['name'][0].replace("/","")
-        file_name = f"{cate_name}_cate_{qs['id'][0]}.scel"
-        print("正在下载：", file_name)
-        return file_name
+        item = request.meta['item']
+
+        if item["file_name"]:
+            print("正在下载：", item['file_name'])
+            return item['file_name']

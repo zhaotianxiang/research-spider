@@ -1,13 +1,14 @@
 import struct
 import binascii
+import os
 
 
 class Baidu(object):
 
-    def __init__(self, originfile):
+    def __init__(self, originfile, out_path):
         self.originfile = originfile
         self.lefile = originfile + '.le'
-        self.txtfile = originfile[0:(originfile.__len__() - 5)] + 'txt'
+        self.txtfile = out_path[0:(out_path.__len__() - 5)] + 'txt'
         self.buf = [b'0' for x in range(0, 2)]
         self.listwords = []
 
@@ -42,7 +43,10 @@ class Baidu(object):
             result = le_bytes[i:i + 4]
             i += 4
             # 将所有字符解码成汉字，拼音或字符
-            content = binascii.a2b_hex(result).decode('utf-16-be')
+            try:
+                content = binascii.a2b_hex(result).decode('utf-16-be')
+            except:
+                return
             # 判断汉字
             if '\u4e00' <= content <= '\u9fff':
                 self.listwords.append(content)
@@ -57,7 +61,12 @@ class Baidu(object):
 
 
 if __name__ == '__main__':
-    path = './baidu/dict_file_632_20111213223044_1.0.0.bdict'
-    bd = Baidu(path)
-    bd.be2le()
-    bd.le2txt()
+    in_dir = "../data"
+    out_dir = "../txt"
+    fin = [fname for fname in os.listdir(in_dir) if fname[-6:] == ".bdict"]
+    for path in fin:
+        in_path = os.path.join(in_dir, path)
+        out_path = os.path.join(out_dir, path)
+        bd = Baidu(in_path, out_path)
+        bd.be2le()
+        bd.le2txt()

@@ -5,15 +5,15 @@
 
 
 import logging
+
 import pymongo
-import sys
 from scrapy import Request
 from scrapy.exceptions import DropItem
 from scrapy.pipelines.images import ImagesPipeline
 
+from .items import ImageItem
 from .items import NewsItem
 from .items import ReporterItem
-from .items import ImageItem
 
 
 class FilterPipeline(ImagesPipeline):

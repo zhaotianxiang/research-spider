@@ -13,7 +13,6 @@ class Spider(scrapy.Spider):
     start_urls = ["https://www.baidu.com"]
 
     def __init__(self, **kwargs):
-        kwargs.pop('_job')
         self.client = pymongo.MongoClient(get_project_settings().get('MONGO_URI'))
         self.db = self.client[get_project_settings().get('MONGO_DB')]
 

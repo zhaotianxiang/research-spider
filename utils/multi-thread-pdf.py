@@ -79,4 +79,4 @@ def multi_thread_run(thread_num):
 if __name__ == '__main__':
     init_downloaded_file_set()
     print("all done ",len(file_set))
-    multi_thread_run(10)
+    multi_thread_run(20)
