@@ -4,6 +4,7 @@ import re
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 
+from hanlp_restful import HanLPClient
 from ..items import NewsItem
 from ..items import ReporterItem
 
@@ -47,6 +48,13 @@ class Spider(scrapy.Spider):
         newsItem['news_pdf'] = f"{self.name}_{newsItem['news_id']}.pdf"
         newsItem['news_pdf_cn'] = f"{self.name}_{newsItem['news_id']}_cn.pdf"
         newsItem['reporter_list'] = []
+
+        HanLP = HanLPClient('https://hanlp.hankcs.com/api', auth=None, language='mul')
+        doc = HanLP(
+            'In 2021, HanLPv2.1 delivers state-of-the-art multilingual NLP techniques to production environments. ' \
+            '2021年、HanLPv2.1は次世代の最先端多言語NLP技術を本番環境に導入します。' \
+            '2021年 HanLPv2.1为生产环境带来次世代最先进的多语种NLP技术。')
+        print(doc)
 
         search_result1 = re.findall(r'(?<=大纪元记者).{2,10}(?=[报|)|@|#])', newsItem['news_content'])
         for reporter_name1 in search_result1:
