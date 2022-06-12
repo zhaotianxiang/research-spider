@@ -1,40 +1,44 @@
-# 使用教程
+# rocketreach 
 
-## 1. 访问 http://101.35.230.198:5000/
-
-#### （1） 选择 Run Spider
-
-#### （2） 选择 Scrapyd serve 为 43.135.68.41:6800
-
-#### （3） 选择 project 为 rocket
-
-#### （4） 选择 _version 为 default: the latest version
-
-#### （5） 选中 settings & arguments
-
-- USER_AGENT  **Mozilla/5.0**
-- ROBOTSTXT_OBEY **False**
-- COOKIES_ENABLED **False**
-- CONCURRENT_REQUESTS **5**
-- DOWNLOAD_DELAY **1**
-
-**设置 additional 参数如下，参数根据情况调整**
-
-```text
--d setting=CLOSESPIDER_TIMEOUT=60
--d setting=CLOSESPIDER_PAGECOUNT=10
--d start=0
--d size=2
--d key=a4f232k9333d66b17f359eec8b1e4b89de31df6
--d query={"employer": ["abc.com"], "current_title": ["Secretary"]}
+```
+        item = {
+            'reporter_id': reporter_id,
+            '人员编号': id,
+            '人员名称': name,
+            '地区': region,
+            '城市': city,
+            '城市代码': country_code,
+            '雇主信息': current_employer,
+            '当前职位': current_title,
+            '当前领英地址': linkedin_url,
+            '地理位置': location,
+            '正式职位': normalized_title,
+            '人员状态': status,
+            '附加信息': other,
+            '头像信息（源数据）': profile['profile_pic'],
+            '社交账号（源数据）': profile['links'],
+            '工作经历（源数据）': profile['job_history'],
+            '教育经历（源数据）': profile['education'],
+            '邮箱地址（源数据）': profile['emails'],
+            '电话号码（源数据）': profile['phones']
+        }
+        # profile info
+        self.logger.info("people : %s \n\n", people)
+        # added
+        if profile['emails'] is not None:
+            item['邮箱列表'] = "\n".join(list(map(lambda e: e['email'], profile['emails'])))
+        if profile['phones'] is not None:
+            item['电话列表'] = "\n".join(list(map(lambda p: p['number'], profile['phones'])))
+        if profile['job_history'] is not None:
+            item['工作列表'] = "\n".join(list(map(parse_job_history, profile['job_history'])))
+        if profile['education'] is not None:
+            item['教育列表'] = "\n".join(list(map(parse_education, profile['education'])))
+        if profile['links'] is not None:
+            for link in profile['links']:
+                print("link", link)
+                item[link] = profile['links'][link]
+        item['最原始详情数据'] = profile
 ```
 
-#### （6） 点击 Check CMD
-
-#### （7） 点击运行
-
-#### （8） 访问 http://43.135.68.41:8888/1895165
-
-#### （9） 在【文件】 /data/ftp/csv 下获取数据爬取结果
-
-
+## 1. reporter 表
+  - 

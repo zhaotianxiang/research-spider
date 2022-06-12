@@ -36,7 +36,10 @@ def parse_education(item):
         ret += "None"
     else:
         ret += str(item["end"])
-    ret += ":" + str(item["school"])
+    school = " "
+    if 'school' in item:
+        school = item['school']
+    ret += ":" + str(school)
     return ret
 
 

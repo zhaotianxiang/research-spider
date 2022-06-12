@@ -8,9 +8,9 @@ logger = logging.getLogger(__name__)
 
 class ImageSpiderPipeline(ImagesPipeline):
     def get_media_requests(self, item, response):
-        if item.get('image_url'):
-            logging.info("ImageSpiderPipeline imageUrl ----------------- %s ", item['image_url'])
-            yield scrapy.Request(url=item['image_url'], media=item)
+        if item['profile_pic']:
+            logging.info("ImageSpiderPipeline imageUrl ----------------- %s ", item['profile_pic'])
+            yield scrapy.Request(url=item['profile_pic'], media=item)
 
     def file_path(self, request, response=None, info=None, *, item=None):
         return request.meta["name"]
