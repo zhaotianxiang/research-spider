@@ -4,27 +4,17 @@ NEWSPIDER_MODULE = 'media.spiders'
 
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11'
 ROBOTSTXT_OBEY = False
-CONCURRENT_REQUESTS = 16
-DOWNLOAD_DELAY = 1
+COOKIES_ENABLED = True
+DOWNLOAD_DELAY = 0
+# The initial download delay
+AUTOTHROTTLE_START_DELAY = 0
+# The maximum download delay to be set in case of high latencies
+AUTOTHROTTLE_MAX_DELAY = 0
 DEFAULT_REQUEST_HEADERS = {
     'Accept': '*/*',
 }
-SPIDER_MIDDLEWARES = {
-    'media.middlewares.MediaSpiderMiddleware': 543,
-}
-DOWNLOADER_MIDDLEWARES = {
-    'media.middlewares.MediaDownloaderMiddleware': 544,
-}
 ITEM_PIPELINES = {
-    'media.pipelines.ImageSpiderPipeline': 1,
-    'media.pipelines.FilterPipeline': 2,
-    'media.pipelines.MongoDBPipeline': 3,
+    'media.pipelines.JsonWriterPipeline': 545,
 }
 
-# 保存图片配置
-IMAGES_STORE = "/Users/zhaotianxiang/data/images/"
 MEDIA_ALLOW_REDIRECTS = True
-
-# MongoDB 数据库配置
-MONGO_URI = 'mongodb://root:841_sjzc@8.210.221.113:8410'
-MONGO_DB = 'media'

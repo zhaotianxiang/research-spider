@@ -11,3 +11,5 @@ scrapy.cfg
 build
 project.egg-info
 data
+
+*.jsonl
